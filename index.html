@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for mainpage -->
+<link rel="stylesheet" href="./styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Datatable information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./datatable.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>DQT Unit List</title>
+</head>
+
+<body>
+  <h1>Unit List</h1>
+  <table id="myTable" class="display">
+    <thead>
+      <tr>
+<!-- Table headers: Icon, Rarity and Family cannot be sorted -->
+        <th scope="col">Almanac No.</th>
+        <th scope="col">Icon</th>
+        <th scope="col">Name</th>
+        <th scope="col">Rarity</th>
+        <th scope="col">Family</th>
+        <th scope="col">HP</th>
+        <th scope="col">MP</th>
+        <th scope="col">ATK</th>
+        <th scope="col">DEF</th>
+        <th scope="col">AGL</th>
+        <th scope="col">WIS</th>
+        <th scope="col">Move</th>
+        <th scope="col">Weight</th>
+      </tr>
+    </thead>
+    <tbody>
+<!-- Base Game Farmables -->
+      <tr>
+        <td>001</td>
+        <td><img src="./images/Slime.png" class="icon"></td>
+        <td><a href='./units/slime.html'>Slime</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>332</td>
+        <td>144</td>
+        <td>149</td>
+        <td>131</td>
+        <td>138</td>
+        <td>97</td>
+        <td>2</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>010</td>
+        <td><img src="./images/BubbleSlime.jpeg" class="icon"></td>
+        <td><a href="./units/bubbleslime.html">Bubble Slime</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>571</td>
+        <td>153</td>
+        <td>199</td>
+        <td>140</td>
+        <td>93</td>
+        <td>103</td>
+        <td>2</td>
+        <td>10</td>
+      </tr>
+<!-- 1 Year Anniversary -->
+      <tr>
+        <td>278</td>
+        <td><img src="./images/Nokturnus.png" class="icon"></td>
+        <td><a href="./units/nokturnus.html">Nokturnus</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyMystery.png"></td>
+        <td>1146</td>
+        <td>332</td>
+        <td>504</td>
+        <td>376</td>
+        <td>358</td>
+        <td>213</td>
+        <td>3</td>
+        <td>65</td>
+      </tr> 
+<!-- True DQ VI Event -->
+      <tr>
+        <td>612</td>
+        <td><img src="./images/RottenCotton.jpeg" class="icon"></td>
+        <td><a href="./units/rottencotton.html">Rotten Cotton</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>414</td>
+        <td>132</td>
+        <td>144</td>
+        <td>140</td>
+        <td>162</td>
+        <td>142</td>
+        <td>2</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>613</td>
+        <td><img src="./images/Skullrider.jpeg" class="icon"></td>
+        <td><a href="./units/skullrider.html">Skullrider</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyUndead.png"></td>
+        <td>618</td>
+        <td>201</td>
+        <td>413</td>
+        <td>154</td>
+        <td>350</td>
+        <td>102</td>
+        <td>4</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>614</td>
+        <td><img src="./images/Lizzie.jpeg" class="icon"></td>
+        <td><a href="./units/lizzie.html">Lizzie</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDragon.png"></td>
+        <td>913</td>
+        <td>342</td>
+        <td>333</td>
+        <td>397</td>
+        <td>308</td>
+        <td>102</td>
+        <td>2</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>615</td>
+        <td><img src="./images/Demonrider.jpeg" class="icon"></td>
+        <td><a href="./units/demonrider.html">Demonrider</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyUndead.png"></td>
+        <td>707</td>
+        <td>306</td>
+        <td>391</td>
+        <td>317</td>
+        <td>332</td>
+        <td>120</td>
+        <td>4</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>616</td>
+        <td><img src="./images/Milly.jpeg" class="icon"></td>
+        <td><a href="./units/milly.html">Milly</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyHero.png"></td>
+        <td>983</td>
+        <td>486</td>
+        <td>192</td>
+        <td>271</td>
+        <td>472</td>
+        <td>404</td>
+        <td>2</td>
+        <td>60</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+<!-- Empty table row
+
+      <tr>
+        <td></td>
+        <td><img src="./images" class="icon"></td>
+        <td></td>
+        <td><img src="./images/Rank"></td>
+        <td><img src="./images/Family"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr> 
+
+-->

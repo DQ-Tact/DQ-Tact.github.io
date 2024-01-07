@@ -1,0 +1,133 @@
+body{
+    background-color: darkslateblue;
+    font-family: Merriweather, 'Times New Roman';
+    margin:0;
+    padding:0;
+}
+
+h1{
+    background-color: slateblue;
+    color: rgb(244, 242, 253);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+a{
+    color: lightsteelblue;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    padding: 5px;
+    border: 1.5px solid darkslateblue;
+    border-radius: 4px;
+}
+a:hover{
+    color: rgb(244, 242, 253);
+}
+
+table{
+    background-color: rgb(166, 160, 194);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 85%;
+}
+
+thead{
+    background-color: rgb(196, 187, 232);
+    height: 4em; 
+}
+
+tbody{
+    background-color: rgb(244, 242, 253);
+}
+
+td{
+    height: 1.5em;
+}
+
+.flat td{
+    height: 1em;
+}
+
+.bigheader{
+    text-align: center;
+    background-color: rgb(151, 122, 214);
+}
+
+.flat{
+    background-color: rgb(244, 242, 253);
+    width: 20%;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.border{
+    background-color: rgb(244, 242, 253);
+    padding: 16px;
+    width:80px;
+    height: 102px;
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+    top:50px;
+}
+
+.large{
+    font-size: 40px;
+}
+
+#level{
+    position: absolute;
+    left: 640px;
+    top: 95px;
+    height: 346px;
+}
+
+#weakres{
+    position: absolute;
+    left: 250px;
+    top: 250px;
+}
+
+h2{
+    background-color: rgb(244, 242, 253);
+    text-align: center;
+    width: 227px;
+    height: 118px;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    left: 380px;
+    bottom: 108px;
+}
+
+.skills{
+    margin-top: 140px;
+}
+
+.fintable{
+    margin-bottom: 15px;
+}
+
+strong{
+    font-style: oblique
+}
+
+.grey{
+    background-color: rgb(231, 227, 248);
+}
+
+img[src*="AttackType"]{
+    width: 100px;
+}
+
+img[src*="AttackRange"]{
+    width: 70px;
+}
