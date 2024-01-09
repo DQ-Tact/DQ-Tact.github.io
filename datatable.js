@@ -5,6 +5,7 @@ $(document).ready( function () {
           ,{ orderable: false, targets: 3}
           ,{ orderable: false, targets: 4}
         ],
-        order: [[0, 'asc']]
+        order: [[0, 'asc']],
+        "pageLength": 25
       });
 } );

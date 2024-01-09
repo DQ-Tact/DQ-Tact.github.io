@@ -82,6 +82,14 @@ td{
     font-size: 40px;
 }
 
+.metal{
+    font-size: 14px;
+}
+
+img.metal{
+    width: 18px;
+}
+
 #level{
     position: absolute;
     left: 640px;
@@ -122,6 +130,10 @@ strong{
 
 .grey{
     background-color: rgb(231, 227, 248);
+}
+
+.attackdesc{
+    color: rgb(151, 122, 214);
 }
 
 img[src*="AttackType"]{
