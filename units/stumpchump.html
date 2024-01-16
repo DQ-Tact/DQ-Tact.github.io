@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Bubble Slime</title>
+    <title>Stump Chump</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Bubble Slime</h1>
+    <h1>Stump Chump</h1>
     <a href="../index.html">Return to Unit List</a>
-    <img src="../images/BubbleSlime.jpeg" class="border">
+    <img src="../images/StumpChump.png" class="border">
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
@@ -26,27 +26,27 @@
         </tr>
         <tr>
             <th scope="row">HP:</th>
-            <td>541</td>
+            <td>514</td>
         </tr>
         <tr>
             <th scope="row">MP:</th>
-            <td>133</td>
+            <td>161</td>
         </tr>
         <tr>
             <th scope="row">ATK:</th>
-            <td>189</td>
+            <td>148</td>
         </tr>
         <tr>
             <th scope="row">DEF:</th>
-            <td>125</td>
+            <td>141</td>
         </tr>
         <tr>
             <th scope="row">AGL:</th>
-            <td>83</td>
+            <td>95</td>
         </tr>
         <tr>
             <th scope="row">WIS:</th>
-            <td>93</td>
+            <td>103</td>
         </tr>
         <tr>
             <th scope="row">Move:</th>
@@ -61,23 +61,23 @@
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Bang.png"></td>
-            <td><img src="../images/Element/Zap.png"></td>
-            <td class="large">/</td>
-            <td><img src="../images/Status/Sleep.png"></td> 
-            <td><img src="../images/Status/SpellLock.png"></td>   
-        </tr>
-        <tr>
-            <th scope="row">Resistances:</th>
             <td><img src="../images/Element/Frizz.png"></td>
             <td><img src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/Curse.png"></td> 
-            <td><img src="../images/Status/Charm.png"></td>
+            <td><img src="../images/Status/Stun.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>    
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Poison.png"></td>
+            <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
 <!-- Table containing all skills the unit learns -->
@@ -99,30 +99,30 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/CBluePhysical.png"></td>
-                <td>Poison Attack</td>
-                <td>12</td>
+                <td><img src="../images/AttackType/CGreenMartial.png"></td>
+                <td>Medicinal Herb</td>
+                <td>7</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
-                <td>Deals minor physical damage (130% potency) to 1 enemy, occasionally poisons</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+                <td>Heals a minor amount of HP for 1 ally</td>
             </tr>
             <tr>
                 <td>16</td>
-                <td><img src="../images/AttackType/CRedPhysical.png"></td>
-                <td>Pounce</td>
-                <td>7</td>
+                <td><img src="../images/AttackType/CBlueSpell.png"></td>
+                <td>Fizzle</td>
+                <td>8</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
-                <td>Deals minor physical damage (145% potency) to 1 enemy</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Occasionally locks 1 enemy's spells</td>
             </tr>
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
-                <td><img src="../images/AttackType/ABlueMartial.png"></td>
-                <td>Scouring Bubbles</td>
-                <td>77</td>
+                <td><img src="../images/AttackType/BBlueBreath.png"></td>
+                <td>Sealing Breath</td>
+                <td>22</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>2-3</td>
-                <td>Deals minor martial damage (12 base potency) to all enemies in area of effect 5 times, rarely poisons</td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Occasionally locks physical and spell attacks for all enemies in area of effect</td>
             </tr>
         </tbody>
     </table>
@@ -141,8 +141,8 @@
         <tbody>
             <tr>
                 <td>75, 85, 95, 105</td>
-                <td>Pounce potency +2%</td>
-                <td>Raises Pounce potency by 2%</td>
+                <td>Medicinal Herb recovery +2%</td>
+                <td>Raises Medicinal Herb recovery by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -161,28 +161,28 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>ATK +5</td>
-                <td>Raises max ATK by 5</td>
+                <td>Max HP +15</td>
+                <td>Raises max HP by 15</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Zam Res +25</td>
-                <td>Raises Zam resistance by 25</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Pounce potency +5%</td>
-                <td>Raises Pounce potency by 5%</td>
+                <td>Medicinal Herb recovery +5%</td>
+                <td>Raises Medicinal Herb recovery by 5%</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Ability MP Cost -5%</td>
-                <td>Lowers Ability MP cost by 5%</td>
+                <td>Spell Lock Success Rate +5%</td>
+                <td>Raises Spell Lock success rate by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Frizz Res +25</td>
-                <td>Raises Frizz resistance by 25</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
@@ -204,27 +204,27 @@
         </thead>
         <tbody>
             <tr>
-                <td>Scouring Bubbles</td>
-                <td>Deals minor martial damage (12 base potency) to all enemies in area of effect 5 times, rarely poisons</td>
+                <td>Sealing Breath</td>
+                <td>Occasionally locks physical and spell attacks for all enemies in area of effect</td>
             </tr>
             <tr>
-                <td>Late Rain</td>
-                <td>When attacked and KO'd by enemy:<br>Triggers Scouring Bubbles if enemy is within 2 to 3-space range, 1 time per battle</td>
+                <td>Spell Lock Success Rate +10%</td>
+                <td>Raises Spell Lock success rate by 10%</td>
             </tr>
             <tr>
-                <td>(Poison Success Rate +10%) x2</td>
-                <td>Raises Poison success rate by 10%</td>
+                <td>Strong Medicine Throw</td>
+                <td>When an ally is attacked by enemy:<br>Heals with Strong Medicine if ally is within 1 to 2-space range</td>
             </tr>
             <tr>
-                <td>Move +1</td>
-                <td>Raises Move by 1</td>
+                <td>(HP +20) x2</td>
+                <td>Raises max HP by 20</td>
             </tr>
             <tr class="grey">
-                <td>(HP +15) x2</td>
+                <td>(HP +15) x4</td>
                 <td>Raises max HP by 15</td>
             </tr>
             <tr class="grey">
-                <td>(MP +10) x2</td>
+                <td>(MP +10) x4</td>
                 <td>Raises max MP by 10</td>
             </tr>
             <tr class="grey">
@@ -232,7 +232,7 @@
                 <td>Raises max ATK by 10</td>
             </tr>
             <tr class="grey">
-                <td>DEF +15</td>
+                <td>(DEF +15) x2</td>
                 <td>Raises max DEF by 15</td>
             </tr>
             <tr class="grey">
@@ -244,88 +244,76 @@
                 <td>Raises max WIS by 10</td>
             </tr>
             <tr>
-                <td>(Martial Potency +1%) x2</td>
-                <td>Raises martial potency by 1%</td>
+                <td>(Healing Martial Recovery +1.5%) x3</td>
+                <td>Raises healing martial recovery by 1.5%</td>
             </tr>
             <tr>
-                <td>(Martial Brilliant +1%) x2</td>
-                <td>Raises martial brilliant by 1%</td>
+                <td>Spell MP Cost -5%</td>
+                <td>Lowers spell MP cost by 5%</td>
             </tr>
             <tr>
                 <td>Martial MP Cost -5%</td>
-                <td>Lowers martial MP cost by 5%</td>
-            </tr>
-            <tr>
-                <td>(Physical Potency +1%) x2</td>
-                <td>Raises physical potency by 1%</td>
-            </tr>
-            <tr>
-                <td>(Physical Brilliant +1%) x2</td>
-                <td>Raises physical brilliant by 1%</td>
-            </tr>
-            <tr>
-                <td>Physical MP Cost -5%</td>
-                <td>Lowers physical MP cost by 5%</td>
+                <td>Lowers Martial MP cost by 5%</td>
             </tr>
             <tr class="grey">
                 <td>All Damage Down 1%</td>
                 <td>Reduces all damage by 1%</td>
             </tr>
             <tr class="grey">
-                <td>Bang Res +5%</td>
-                <td>Raises Bang Res by 5%</td>
+                <td>Frizz Res +5%</td>
+                <td>Raises Frizz Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Physical Res +5%</td>
-                <td>Raises Bang-type Physical Res by 5%</td>
+                <td>Frizz-type Physical Res +5%</td>
+                <td>Raises Frizz-type Physical Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Martial Res +5%</td>
-                <td>Raises Bang-type Martial Res by 5%</td>
+                <td>Frizz-type Martial Res +5%</td>
+                <td>Raises Frizz-type Martial Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Spell Res +5%</td>
-                <td>Raises Bang-type Spell Res by 5%</td>
+                <td>Frizz-type Spell Res +5%</td>
+                <td>Raises Frizz-type Spell Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Breath Res +5%</td>
-                <td>Raises Bang-type Breath Res by 5%</td>
+                <td>Frizz-type Breath Res +5%</td>
+                <td>Raises Frizz-type Breath Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap Res +5%</td>
-                <td>Raises Zap Res by 5%</td>
+                <td>Zam Res +5%</td>
+                <td>Raises Zam Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Physical Res +5%</td>
-                <td>Raises Zap-type Physical Res by 5%</td>
+                <td>Zam-type Physical Res +5%</td>
+                <td>Raises Zam-type Physical Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Martial Res +5%</td>
-                <td>Raises Zap-type Martial Res by 5%</td>
+                <td>Zam-type Martial Res +5%</td>
+                <td>Raises Zam-type Martial Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Spell Res +5%</td>
-                <td>Raises Zap-type Spell Res by 5%</td>
+                <td>Zam-type Spell Res +5%</td>
+                <td>Raises Zam-type Spell Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Breath Res +5%</td>
-                <td>Raises Zap-type Breath Res by 5%</td>
+                <td>Zam-type Breath Res +5%</td>
+                <td>Raises Zam-type Breath Res by 5%</td>
             </tr>
             <tr>
-                <td>(Sleep Res +5%) x2</td>
-                <td>Raises Sleep Res by 5%</td>
+                <td>(Stun Res +5%) x2</td>
+                <td>Raises Stun Res by 5%</td>
             </tr>
             <tr>
-                <td>(Spell Lock Res +5%) x2</td>
-                <td>Raises Spell Lock Res by 5%</td>
-            </tr>
-            <tr>
-                <td>Charm Res +5%</td>
-                <td>Raises Charm Res by 5%</td>
-            </tr>
-            <tr>
-                <td>Curse Res +5%</td>
+                <td>(Curse Res +5%) x2</td>
                 <td>Raises Curse Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Confusion Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Martial Lock Res +5%</td>
+                <td>Raises Martial Lock Res by 5%</td>
             </tr>
         </tbody>
     </table>

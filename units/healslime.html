@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Bubble Slime</title>
+    <title>Healslime</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Bubble Slime</h1>
+    <h1>Healslime</h1>
     <a href="../index.html">Return to Unit List</a>
-    <img src="../images/BubbleSlime.jpeg" class="border">
+    <img src="../images/Healslime.png" class="border">
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
@@ -26,27 +26,27 @@
         </tr>
         <tr>
             <th scope="row">HP:</th>
-            <td>541</td>
+            <td>399</td>
         </tr>
         <tr>
             <th scope="row">MP:</th>
-            <td>133</td>
+            <td>179</td>
         </tr>
         <tr>
             <th scope="row">ATK:</th>
-            <td>189</td>
+            <td>143</td>
         </tr>
         <tr>
             <th scope="row">DEF:</th>
-            <td>125</td>
+            <td>158</td>
         </tr>
         <tr>
             <th scope="row">AGL:</th>
-            <td>83</td>
+            <td>125</td>
         </tr>
         <tr>
             <th scope="row">WIS:</th>
-            <td>93</td>
+            <td>111</td>
         </tr>
         <tr>
             <th scope="row">Move:</th>
@@ -61,23 +61,23 @@
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Bang.png"></td>
-            <td><img src="../images/Element/Zap.png"></td>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
             <td><img src="../images/Status/Sleep.png"></td> 
             <td><img src="../images/Status/SpellLock.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Frizz.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
             <td class="large">/</td>
             <td><img src="../images/Status/Curse.png"></td> 
             <td><img src="../images/Status/Charm.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Poison.png"></td>
+            <td><img src="../images/Status/Blind.png"></td>
         </tr>
     </table>
 <!-- Table containing all skills the unit learns -->
@@ -99,30 +99,30 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/CBluePhysical.png"></td>
-                <td>Poison Attack</td>
-                <td>12</td>
+                <td><img src="../images/AttackType/CGreenSpell.png"></td>
+                <td>Heal</td>
+                <td>7</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
-                <td>Deals minor physical damage (130% potency) to 1 enemy, occasionally poisons</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+                <td>Heals a minor amount of HP for 1 ally</td>
             </tr>
             <tr>
                 <td>16</td>
-                <td><img src="../images/AttackType/CRedPhysical.png"></td>
-                <td>Pounce</td>
-                <td>7</td>
+                <td><img src="../images/AttackType/CGreenSpell.png"></td>
+                <td>Buff</td>
+                <td>16</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
-                <td>Deals minor physical damage (145% potency) to 1 enemy</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+                <td>Greatly raises 1 ally's DEF for 3 turns</td>
             </tr>
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
-                <td><img src="../images/AttackType/ABlueMartial.png"></td>
-                <td>Scouring Bubbles</td>
-                <td>77</td>
+                <td><img src="../images/AttackType/AGreenSpell.png"></td>
+                <td>Wartime Moreheal</td>
+                <td>46</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>2-3</td>
-                <td>Deals minor martial damage (12 base potency) to all enemies in area of effect 5 times, rarely poisons</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+                <td>Heals a major amount of HP and raises 1 ally's ATK for 3 turns</td>
             </tr>
         </tbody>
     </table>
@@ -141,8 +141,8 @@
         <tbody>
             <tr>
                 <td>75, 85, 95, 105</td>
-                <td>Pounce potency +2%</td>
-                <td>Raises Pounce potency by 2%</td>
+                <td>Heal recovery +2%</td>
+                <td>Raises Heal recovery by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -161,28 +161,28 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>ATK +5</td>
-                <td>Raises max ATK by 5</td>
+                <td>WIS +5</td>
+                <td>Raises max WIS by 5</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Zam Res +25</td>
-                <td>Raises Zam resistance by 25</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Pounce potency +5%</td>
-                <td>Raises Pounce potency by 5%</td>
+                <td>Heal recovery +5%</td>
+                <td>Raises Heal recovery by 5%</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Ability MP Cost -5%</td>
-                <td>Lowers Ability MP cost by 5%</td>
+                <td>Wartime Moreheal recovery +5%</td>
+                <td>Raises Wartime Moreheal recovery by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Frizz Res +25</td>
-                <td>Raises Frizz resistance by 25</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
@@ -204,27 +204,27 @@
         </thead>
         <tbody>
             <tr>
-                <td>Scouring Bubbles</td>
-                <td>Deals minor martial damage (12 base potency) to all enemies in area of effect 5 times, rarely poisons</td>
+                <td>Wartime Moreheal</td>
+                <td>Heals a major amount of HP and raises 1 ally's ATK for 3 turns</td>
             </tr>
             <tr>
-                <td>Late Rain</td>
-                <td>When attacked and KO'd by enemy:<br>Triggers Scouring Bubbles if enemy is within 2 to 3-space range, 1 time per battle</td>
+                <td>Rare MP Regen</td>
+                <td>Action start:<br>Rarely restores 8% of max MP</td>
             </tr>
             <tr>
-                <td>(Poison Success Rate +10%) x2</td>
-                <td>Raises Poison success rate by 10%</td>
+                <td>Healing Spell Recovery +15%</td>
+                <td>Raises healing spell recovery by 15%</td>
             </tr>
             <tr>
-                <td>Move +1</td>
-                <td>Raises Move by 1</td>
+                <td>(WIS +20) x2</td>
+                <td>Raises max WIS by 20</td>
             </tr>
             <tr class="grey">
-                <td>(HP +15) x2</td>
+                <td>(HP +15) x3</td>
                 <td>Raises max HP by 15</td>
             </tr>
             <tr class="grey">
-                <td>(MP +10) x2</td>
+                <td>(MP +10) x3</td>
                 <td>Raises max MP by 10</td>
             </tr>
             <tr class="grey">
@@ -236,80 +236,64 @@
                 <td>Raises max DEF by 15</td>
             </tr>
             <tr class="grey">
-                <td>AGL +10</td>
+                <td>(AGL +10) x2</td>
                 <td>Raises max AGL by 10</td>
             </tr>
             <tr class="grey">
-                <td>WIS +10</td>
+                <td>(WIS +10) x3</td>
                 <td>Raises max WIS by 10</td>
             </tr>
             <tr>
-                <td>(Martial Potency +1%) x2</td>
-                <td>Raises martial potency by 1%</td>
+                <td>(Healing Spell Recovery +1.5%) x3</td>
+                <td>Raises healing spell recovery by 1.5%</td>
             </tr>
             <tr>
-                <td>(Martial Brilliant +1%) x2</td>
-                <td>Raises martial brilliant by 1%</td>
-            </tr>
-            <tr>
-                <td>Martial MP Cost -5%</td>
-                <td>Lowers martial MP cost by 5%</td>
-            </tr>
-            <tr>
-                <td>(Physical Potency +1%) x2</td>
-                <td>Raises physical potency by 1%</td>
-            </tr>
-            <tr>
-                <td>(Physical Brilliant +1%) x2</td>
-                <td>Raises physical brilliant by 1%</td>
-            </tr>
-            <tr>
-                <td>Physical MP Cost -5%</td>
-                <td>Lowers physical MP cost by 5%</td>
+                <td>(Spell MP Cost -5%) x2</td>
+                <td>Lowers spell MP cost by 5%</td>
             </tr>
             <tr class="grey">
                 <td>All Damage Down 1%</td>
                 <td>Reduces all damage by 1%</td>
             </tr>
             <tr class="grey">
-                <td>Bang Res +5%</td>
-                <td>Raises Bang Res by 5%</td>
+                <td>Frizz Res +5%</td>
+                <td>Raises Frizz Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Physical Res +5%</td>
-                <td>Raises Bang-type Physical Res by 5%</td>
+                <td>Frizz-type Physical Res +5%</td>
+                <td>Raises Frizz-type Physical Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Martial Res +5%</td>
-                <td>Raises Bang-type Martial Res by 5%</td>
+                <td>Frizz-type Martial Res +5%</td>
+                <td>Raises Frizz-type Martial Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Spell Res +5%</td>
-                <td>Raises Bang-type Spell Res by 5%</td>
+                <td>Frizz-type Spell Res +5%</td>
+                <td>Raises Frizz-type Spell Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Bang-type Breath Res +5%</td>
-                <td>Raises Bang-type Breath Res by 5%</td>
+                <td>Frizz-type Breath Res +5%</td>
+                <td>Raises Frizz-type Breath Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap Res +5%</td>
-                <td>Raises Zap Res by 5%</td>
+                <td>Zam Res +5%</td>
+                <td>Raises Zam Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Physical Res +5%</td>
-                <td>Raises Zap-type Physical Res by 5%</td>
+                <td>Zam-type Physical Res +5%</td>
+                <td>Raises Zam-type Physical Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Martial Res +5%</td>
-                <td>Raises Zap-type Martial Res by 5%</td>
+                <td>Zam-type Martial Res +5%</td>
+                <td>Raises Zam-type Martial Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Spell Res +5%</td>
-                <td>Raises Zap-type Spell Res by 5%</td>
+                <td>Zam-type Spell Res +5%</td>
+                <td>Raises Zam-type Spell Res by 5%</td>
             </tr>
             <tr class="grey">
-                <td>Zap-type Breath Res +5%</td>
-                <td>Raises Zap-type Breath Res by 5%</td>
+                <td>Zam-type Breath Res +5%</td>
+                <td>Raises Zam-type Breath Res by 5%</td>
             </tr>
             <tr>
                 <td>(Sleep Res +5%) x2</td>
