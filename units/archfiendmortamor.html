@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Archfiend Mortamor</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Archfiend Mortamor</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/ArchfiendMortamor.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1043</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>439</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>209</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>407</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>401</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>407</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>??? Spell & Martial Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>進撃のさけび</td>
+                <td>42</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>+ (incl. self)</td>
+                <td>Raises Move of all allies in area of effect for 1 turn</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>夢幻の咆哮</td>
+                <td>126</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/FanLong.png"><br>Fan (Long)</td>
+                <td>Deals major Bang-type martial damage (346 base potency) to all enemies in area of effect, greatly lowers Sleep Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>現世穿つ魔弾</td>
+                <td>130</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major spell damage to 1 enemy, ignores some Light Damage Res</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>狭間の大魔王</td>
+                <td>Action start:<br>Summons the <a href="./archfiendsrighthand.html" class="summon">Archfiend's Right Hand</a> and the <a href="./archfiendslefthand.html" class="summon">Archfiend's Left Hand</a>, 1 time per battle</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>夢幻の眼光</td>
+                <td>When any other ally makes a martial or spell attack:<br>Attacks with 夢幻の眼光 if enemy is within 2 to 4-space range, up to 5 times per battle<br><div class="attackdesc">(夢幻の眼光: Deals major spell damage to 1 enemy, occasionally puts to sleep)</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>現世穿つ魔弾 potency +2%</td>
+                <td>Raises 現世穿つ魔弾 potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>幻狭魔壁</td>
+                <td>Battle start:<br>Reduces damage taken by 50% up to 3 times for 99 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>不動のこころ</td>
+                <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>現世穿つ魔弾 potency +5%</td>
+                <td>Raises 現世穿つ魔弾 potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Spell Tricks</td>
+                <td>Lowers spell ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

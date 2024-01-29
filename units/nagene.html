@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Nagene</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Nagene</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Nagene.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1016</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>330</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>465</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>425</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>410</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>164</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>ATK +10%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Poison.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>盾となるかまえ</td>
+                <td>20</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/MontCover.png"><br>Self</td>
+                <td>Raises the user's AGL for 3 turns and takes attacks for directly adjacent allies for 1 turn</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>ネクロデア流剣技・凪</td>
+                <td>86</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/T.png"><br>T</td>
+                <td>Deals major physical damage (260% potency) to all enemies in area of effect, occasionally lowers Physical Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>火炎鳥の抱擁</td>
+                <td>127</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Deals major Frizz-type spell damage proportional to ATK to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>ネクロデア流剣技・絶</td>
+                <td>105</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Rhombus.png"><br>Rhombus</td>
+                <td>Deals major physical damage (400% potency) to all enemies in area of effect, rarely stuns and binds<br>Can be used when user's HP is 50% or less<br>(Times usable: 2)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>血の契約を受けし者</td>
+                <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20%, reduces damage taken by 30%, and enables the use of ネクロデア流剣技・絶 if the user's HP is 50% or lower</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>火炎鳥の抱擁 potency +2%</td>
+                <td>Raises 火炎鳥の抱擁 potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>ネクロデア流剣技・絶 potency +2%</td>
+                <td>Raises ネクロデア流剣技・絶 potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>鉄壁の忠義</td>
+                <td>Battle start:<br>Raises Physical and Spell Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>火炎鳥の抱擁 potency +5%</td>
+                <td>Raises 火炎鳥の抱擁 potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>ネクロデア流剣技・絶 potency +5%</td>
+                <td>Raises ネクロデア流剣技・絶 potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>不屈の魂</td>
+                <td>Lowers physical and spell ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

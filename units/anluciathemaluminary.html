@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Anlucia the Maluminary</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Anlucia the Maluminary</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Maluminary.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>914</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>380</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>470</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>290</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>364</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>406</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>??? Spell Potency +25%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Blind.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Battlefield Abyss</td>
+                <td>45</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/SelfRhombusL.png"><br>Rhombus (L) (incl. self)</td>
+                <td>Generates spaces in area of effect that raise damage dealt by 15% for 3 turns for allies on those spaces only</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueSpell.png"></td>
+                <td>Fairy Light</td>
+                <td>42</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Deals moderate spell damage to 1 enemy, occasionally puts to sleep</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Totally Cold Blade</td>
+                <td>64</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
+                <td>Deals major Crack-type physical damage (260% potency) to all enemies in area of effect, pulls them up to 1 space closer</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>The Magic of Creation</td>
+                <td>140</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-3</td>
+                <td>Deals major spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>創世の領域</td>
+                <td>57</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>3-4</td>
+                <td>Generates 1000-damage creation realm spaces that target enemies and allies in that area for 2 turns<br>This attack cannot be redirected by selflessness</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Wicked Robes</td>
+                <td>Battle start:<br>Reduces damage taken by 15% and raises damage dealt by 15% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Physical Potency +2%</td>
+                <td>Raises physical potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Spell Potency +2%</td>
+                <td>Raises spell potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Wicked Spirit</td>
+                <td>Action start on odd turns until turn 10:<br>Raises ATK, WIS, and Move for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Wicked Benevolence</td>
+                <td>When attacked by enemy:<br>Heals 15% of the user's max HP</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical potency +5%</td>
+                <td>Raises physical potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical potency/recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell potency +5%</td>
+                <td>Raises spell potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell potency/recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>創世の領域 MP Cost -5%</td>
+                <td>Lowers 創世の領域 MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Auto MP Regen (S)</td>
+                <td>Action start:<br>Restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>創世の領域</td>
+                <td>Generates 1000-damage creation realm spaces that target enemies and allies in that area for 2 turns<br>This attack cannot be redirected by selflessness</td>
+            </tr>
+            <tr>
+                <td>領域誘発のかまえ</td>
+                <td>When attacked by enemy:<br>Attacks with 創世の領域 if enemy is within 3 to 4-space range, 1 time per battle</td>
+            </tr>
+            <tr>
+                <td>Wicked Robes (Lv. 2)</td>
+                <td>Battle start:<br>Reduces damage taken by 30% and raises damage dealt by 20% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Wicked Spirit (Lv. 2)</td>
+                <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, WIS, and Move for 3 turns, cures Confusion for the user</td>
+            </tr>
+            <tr>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(Max HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(Max MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Spell Potency +1%) x2</td>
+                <td>Raises spell potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Spell MP Cost -5%) x3</td>
+                <td>Lowers spell MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Physical Potency +1.5%) x2</td>
+                <td>Raises Crack-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Crack-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Crack-type Physical MP Cost -10%</td>
+                <td>Lowers Crack-type physical MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap Res +5%</td>
+                <td>Raises Zap Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Physical Res +5%</td>
+                <td>Raises Zap-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Martial Res +5%</td>
+                <td>Raises Zap-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Spell Res +5%</td>
+                <td>Raises Zap-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Breath Res +5%</td>
+                <td>Raises Zap-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Blind Res +5%) x2</td>
+                <td>Raises Blind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Charm Res +5%</td>
+                <td>Raises Charm Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Spell Lock Res +5%</td>
+                <td>Raises Spell Lock Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

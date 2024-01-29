@@ -23,9 +23,24 @@ a{
     padding: 5px;
     border: 1.5px solid darkslateblue;
     border-radius: 4px;
+    text-decoration: none;
 }
 a:hover{
     color: rgb(244, 242, 253);
+}
+
+.summon{
+    position:relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    color: rgb(74, 59, 171);
+    text-decoration: underline;
+}
+.summon:hover{
+    color: rgb(102, 205, 223);
 }
 
 table{

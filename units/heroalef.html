@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Alef, Scion of Erdrick</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Alef, Scion of Erdrick</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/HeroAlef.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1044</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>367</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>482</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>400</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>391</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>223</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>ATK +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td class="large">-</td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td class="large">-</td> 
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Muster Courage</td>
+                <td>24</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Grants the user 1.5x physical potency/recovery for 2 turns</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Shining Slash</td>
+                <td>111</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/TLong.png"><br>T (Long)</td>
+                <td>Deals major surehit Bang-type physical damage (280% potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Brave Blade</td>
+                <td>92</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/TwoHitAoE.png"><br>1-2</td>
+                <td>Deals major physical damage (300% potency) to 1 enemy in purple area and occasionally lowers Physical Res for 3 turns, deals minor physical damage (110% potency) to all enemies in orange area and occasionally lowers Physical Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/SCoupRedPhysical.png"></td>
+                <td>Light of Alefgard</td>
+                <td>120</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals huge unreflectable surehit Zap-type physical damage (650% potency) to 1 enemy, raises the user's Tension for 1 turn<br>Turns needed: 3 turns (Times usable: 2)</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>Zoom</td>
+                <td>40</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-5</td>
+                <td>Moves the user to selected space<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hero's Pride</td>
+                <td>Reduces damage taken by 50% from enemies at a range of 2 spaces or more</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Physical Potency/Recovery +2%</td>
+                <td>Raises physical potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Surging Strength</td>
+                <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, AGL, and WIS for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hero's Compassion</td>
+                <td>Action start:<br>Heals 15% of max HP and restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table  class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Character Builder</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zoom</td>
+                <td>Moves the user to selected space<br>(Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td>Victorious Follow-Up</td>
+                <td>When any other ally attacks:<br>Attacks with Winning Wallop if enemy is within 1-space range, up to 5 times per battle<br><div class="attackdesc">(Winning Wallop: Deals major physical damage (400% potency) to 1 enemy, raises the user's damage dealt for 3 turns)</div></td>
+            </tr>
+            <tr>
+                <td>Mark of Erdrick</td>
+                <td>Halves some status ailment resistances</td>
+            </tr>
+            <tr>
+                <td>DEF +50</td>
+                <td>Raises max DEF by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 0.5%</td>
+                <td>Reduces all damage taken by 0.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1.5%</td>
+                <td>Reduces all damage taken by 1.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 2%</td>
+                <td>Reduces all damage taken by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz resistance by 5</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack resistance by 5</td>
+            </tr>
+            <tr>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>Max HP & Max MP +30</td>
+                <td>Raises max HP and max MP by 30</td>
+            </tr>
+            <tr>
+                <td>Max MP +20</td>
+                <td>Raises max MP by 20</td>
+            </tr>
+            <tr>
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr>
+                <td>ATK & WIS +15</td>
+                <td>Raises max ATK and max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>DEF +10</td>
+                <td>Raises max DEF by 10</td>
+            </tr>
+            <tr>
+                <td>DEF & AGL +15</td>
+                <td>Raises max DEF and max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>Muster Courage MP Cost -5%</td>
+                <td>Lowers Muster Courage MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Muster Courage MP Cost -5%</td>
+                <td>Lowers Muster Courage MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Shining Slash potency +2%</td>
+                <td>Raises Shining Slash potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Shining Slash potency +3%</td>
+                <td>Raises Shining Slash potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Brave Blade potency +2%</td>
+                <td>Raises Brave Blade potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Brave Blade potency +3%</td>
+                <td>Raises Brave Blade potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Light of Alefgard potency +2%</td>
+                <td>Raises Light of Alefgard potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Light of Alefgard potency +3%</td>
+                <td>Raises Light of Alefgard potency by 3%</td>
+            </tr>
+        </tbody>    
+    </table>
+</body>
+</html>
