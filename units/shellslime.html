@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Shell Slime</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Shell Slime</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/ShellSlime.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>110</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>255</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>166</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>200</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>289</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>119</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>180</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>15</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/SpellLock.png"></td>    
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Blind.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CRedSpell.png"></td>
+                <td>Crack</td>
+                <td>4</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Deals minor Crack-type spell damage to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><img src="../images/AttackType/CGreenSpell.png"></td>
+                <td>Buff</td>
+                <td>16</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+                <td>Greatly raises 1 ally's DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>Water Drop</td>
+                <td>88</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Deals major Crack-type spell damage to 1 enemy, occasionally lowers Crack Res for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>80, 90, 100, 110</td>
+                <td>Crack potency +2%</td>
+                <td>Raises Crack potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>WIS +5</td>
+                <td>Raises max WIS by 5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Crack potency +5%</td>
+                <td>Raises Crack potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Water Drop potency +5%</td>
+                <td>Raises Water Drop potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Water Drop</td>
+                <td>Deals major Crack-type spell damage to 1 enemy, occasionally lowers Crack Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Shell Cover</td>
+                <td>Before HP hits 0:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>Shell Break</td>
+                <td>Action start:<br>Massively raises Move and spell potency/recovery if user's HP is 1% or less</td>
+            </tr>
+            <tr>
+                <td>Max MP +100</td>
+                <td>Raises max MP by 100</td>
+            </tr>
+            <tr>
+                <td>WIS +30</td>
+                <td>Raises max WIS by 30</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +15) x2</td>
+                <td>Raises max HP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x2</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Spell Potency +1.5%) x2</td>
+                <td>Raises Crack-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Crack-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Crack-type Spell MP Cost -10%</td>
+                <td>Lowers Crack-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Spell Potency +1%) x2</td>
+                <td>Raises spell potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Spell Brilliant +1%) x2</td>
+                <td>Raises spell brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Spell MP Cost -5%</td>
+                <td>Lowers spell MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap Res +5%</td>
+                <td>Raises Zap Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Physical Res +5%</td>
+                <td>Raises Zap-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Martial Res +5%</td>
+                <td>Raises Zap-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Spell Res +5%</td>
+                <td>Raises Zap-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Breath Res +5%</td>
+                <td>Raises Zap-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Sleep Res +5%) x2</td>
+                <td>Raises Sleep Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Spell Lock Res +5%) x2</td>
+                <td>Raises Spell Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Charm Res +5%</td>
+                <td>Raises Charm Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Curse Res +5%</td>
+                <td>Raises Curse Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

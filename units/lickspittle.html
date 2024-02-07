@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Lickspittle</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Lickspittle</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Lickspittle.png" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>105</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>421</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>128</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>182</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>167</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>112</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>92</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>10</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>    
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Curse.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CRedPhysical.png"></td>
+                <td>Scratch</td>
+                <td>4</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals minor physical damage (130% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><img src="../images/AttackType/CBlueBreath.png"></td>
+                <td>Poison Breath</td>
+                <td>11</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Occasionally poisons all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/BBlueBreath.png"></td>
+                <td>Venom Breath</td>
+                <td>23</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Occasionally envenomates all enemies in area of effect</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>75, 85, 95, 105</td>
+                <td>Scratch potency +2%</td>
+                <td>Raises Scratch potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +5</td>
+                <td>Raises max MP by 5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Scratch potency +5%</td>
+                <td>Raises Scratch potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Poison Success Rate +5%</td>
+                <td>Raises Poison success rate by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Venom Breath</td>
+                <td>Occasionally envenomates all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>Paralysing Breath</td>
+                <td>When making a breath attack:<br>Very rarely paralyses<br>This perk can be triggered by non-damage dealing abilities, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>Paralysis Success Rate +10%</td>
+                <td>Raises Paralysis success rate by 10%</td>  
+            </tr>         
+            <tr>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +15) x4</td>
+                <td>Raises max HP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x4</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>(DEF +15) x3</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>(AGL +10) x2</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Physical Res +5%</td>
+                <td>Raises Crack-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Martial Res +5%</td>
+                <td>Raises Crack-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Spell Res +5%</td>
+                <td>Raises Crack-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Breath Res +5%</td>
+                <td>Raises Crack-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Paralysis Res +5%) x2</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Breath Lock Res +5%) x2</td>
+                <td>Raises Breath Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Sleep Res +5%</td>
+                <td>Raises Sleep Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Confusion Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

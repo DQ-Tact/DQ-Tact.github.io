@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Muddy Hand</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Muddy Hand</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/MuddyHand.png" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>110</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>564</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>203</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>210</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>141</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>168</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>96</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>15</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>    
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Poison.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CRedPhysical.png"></td>
+                <td>Scratch</td>
+                <td>4</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals minor physical damage (130% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><img src="../images/AttackType/CBlueMartial.png"></td>
+                <td>Eagle Grip</td>
+                <td>12</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals minor martial damage (36 base potency) to 1 enemy, occasionally stuns</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Sliding Punch</td>
+                <td>24</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front1.png"><br>Front</td>
+                <td>Deals moderate martial damage (65 base potency) to the enemy and moves up to 2 spaces, only works if there are no enemies or obstacles between the user and target, occasionally stuns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>80, 90, 100, 110</td>
+                <td>Eagle Grip potency +2%</td>
+                <td>Raises Eagle Grip potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ATK +5</td>
+                <td>Raises max ATK by 5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Eagle Grip potency +5%</td>
+                <td>Raises Eagle Grip potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Sliding Punch potency +5%</td>
+                <td>Raises Sliding Punch potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sliding Punch</td>
+                <td>Deals moderate martial damage (65 base potency) to the enemy and moves up to 2 spaces, only works if there are no enemies or obstacles between the user and target, occasionally stuns</td>
+            </tr>
+            <tr>
+                <td>Glistening Body</td>
+                <td>When attacked by physical or martial enemy attack:<br>Occasionally binds</td>
+            </tr>
+            <tr>
+                <td>Stun Success Rate +10%</td>
+                <td>Raises Stun success rate by 10%</td>
+            </tr>
+            <tr>
+                <td>(HP +20) x2</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +15) x2</td>
+                <td>Raises max HP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x2</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Martial Potency +1%) x2</td>
+                <td>Raises martial potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Martial Brilliant +1%) x2</td>
+                <td>Raises martial brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Martial MP Cost -5%</td>
+                <td>Lowers martial MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang Res +5%</td>
+                <td>Raises Bang Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Physical Res +5%</td>
+                <td>Raises Bang-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Martial Res +5%</td>
+                <td>Raises Bang-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Spell Res +5%</td>
+                <td>Raises Bang-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Breath Res +5%</td>
+                <td>Raises Bang-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap Res +5%</td>
+                <td>Raises Zap Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Physical Res +5%</td>
+                <td>Raises Zap-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Martial Res +5%</td>
+                <td>Raises Zap-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Spell Res +5%</td>
+                <td>Raises Zap-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Breath Res +5%</td>
+                <td>Raises Zap-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Bind Res +5%) x2</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Paralysis Res +5%</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Martial Lock Res +5%</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

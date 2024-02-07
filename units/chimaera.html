@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Chimaera</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Chimaera</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Chimaera.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>110</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>439</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>242</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>141</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>152</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>176</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>15</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Poison.png"></td>    
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/BrthLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Bind.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Skills</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CRedBreath.png"></td>
+                <td>Fire Breath</td>
+                <td>9</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Deals minor Frizz-type breath damage (19 base potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><img src="../images/AttackType/CRedMartial.png"></td>
+                <td>Singe</td>
+                <td>7</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Radius1.png"><br>Radius 1</td>
+                <td>Deals minor Frizz-type martial damage (17 base potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/AGreenSpell.png"></td>
+                <td>Multiheal</td>
+                <td>70</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Heals a major amount of HP for all allies in area of effect</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Passives</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>80, 90, 100, 110</td>
+                <td>Singe potency +2%</td>
+                <td>Raises Singe potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakenings</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Singe potency +5%</td>
+                <td>Raises Singe potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Multiheal recovery +5%</td>
+                <td>Raises Multiheal recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Multiheal</td>
+                <td>Heals a major amount of HP for all allies in area of effect</td>
+            </tr>
+            <tr>
+                <td>Soar</td>
+                <td>Action start on even turns until turn 10:<br>Raises AGL and Move for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Chimaera Prayer</td>
+                <td>Action start on even turns until turn 10:<br>Occasionally grants x1.5 spell potency/recovery for 1 turn</td>
+            </tr>
+            <tr>
+                <td>(HP +20) x2</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +15) x2</td>
+                <td>Raises max HP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x2</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Martial Potency +1.5%) x2</td>
+                <td>Raises Frizz-type martial potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Martial Brilliant +1.5%) x2</td>
+                <td>Raises Frizz-type martial brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Frizz-type Martial MP Cost -10%</td>
+                <td>Lowers Frizz-type martial MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Healing Spell Recovery +1.5%) x3</td>
+                <td>Raises Healing Spell recovery by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Spell MP Cost -5%) x2</td>
+                <td>Lowers spell MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Physical Res +5%</td>
+                <td>Raises Crack-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Martial Res +5%</td>
+                <td>Raises Crack-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Spell Res +5%</td>
+                <td>Raises Crack-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Breath Res +5%</td>
+                <td>Raises Crack-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang Res +5%</td>
+                <td>Raises Bang Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Physical Res +5%</td>
+                <td>Raises Bang-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Martial Res +5%</td>
+                <td>Raises Bang-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Spell Res +5%</td>
+                <td>Raises Bang-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Breath Res +5%</td>
+                <td>Raises Bang-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Poison Res +5%) x2</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Sleep Res +5%) x2</td>
+                <td>Raises Sleep Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Paralysis Res +5%</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Breath Lock Res +5%</td>
+                <td>Raises Breath Lock Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
