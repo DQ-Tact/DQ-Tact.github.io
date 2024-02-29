@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Young Mia</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Young Mia</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/YoungMia.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1091</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>406</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>207</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>381</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>445</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>296</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Martial Potency +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Poison.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>号令：あつまれ！</td>
+                <td>36</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Pulls all allies in area of effect up to 2 spaces closer</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>貫通しびれ弾</td>
+                <td>32</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Occasionally paralyses 1 enemy<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>万能ぐすり弾</td>
+                <td>56</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Heals a major amount of HP and removes some status ailments for 1 ally</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>必中イオ弾</td>
+                <td>88</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major surehit Bang-type martial damage (268 base potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/AcoupRedMartial.png"></td>
+                <td>ロマンスナイプショット</td>
+                <td>100</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major martial damage (235 base potency) to 1 enemy 2 times<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness<br>Turns needed: 2 turns (Times usable: 2)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>チェインショット・イオ</td>
+                <td>When any other ally attacks:<br>Attacks with イオ弾 if enemy is within 2 to 4-space range, up to 5 times per battle<br><div class="attackdesc">(イオ弾: Deals major Bang-type martial damage (157 base potency) to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Bang-type potency +2%</td>
+                <td>Raises Bang-type potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>ロマンスナイプショット potency +2%</td>
+                <td>Raises ロマンスナイプショット potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>トンブーの加護</td>
+                <td>Battle start:<br>Greatly raises evasion rate and raises martial potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>チェインショット・ヒャド</td>
+                <td>When any other ally attacks:<br>Attacks with ヒャド弾 if enemy is within 2 to 4-space range, up to 3 times per battle<br><div class="attackdesc">(ヒャド弾: Deals major Crack-type martial damage (157 base potency) to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Bang-type potency +5%</td>
+                <td>Raises Bang-type potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>ロマンスナイプショット potency +5%</td>
+                <td>Raises ロマンスナイプショット potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Instant Damage Barrier</td>
+                <td>Battle start:<br>Grants a barrier that reduces damage taken by 15% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

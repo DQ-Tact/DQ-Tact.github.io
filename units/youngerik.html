@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Young Erik</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Young Erik</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/YoungErik.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1135</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>451</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>288</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>420</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>410</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>169</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Hero Martial Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Stun.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>号令：いけ！</td>
+                <td>30</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/StraightLine2.png"><br>Straight Line</td>
+                <td>Knocks all allies in area of effect back up to 2 spaces</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>貫通ラリホー弾</td>
+                <td>32</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Occasionally puts 1 enemy to sleep<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>トゲトゲショット弾</td>
+                <td>124</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
+                <td>Deals major surehit martial damage (287 base potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>強ギラ弾</td>
+                <td>83</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major Sizz-type martial damage (268 base potency) to 1 enemy, often lowers Sizz Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/AcoupRedMartial.png"></td>
+                <td>アースブレイカー</td>
+                <td>165</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/RhombusAoE.png"><br>2-4</td>
+                <td>Deals major martial damage (335 base potency) to all enemies in area of effect, generates spaces that greatly lower Move for both enemies and allies for 2 turns<br>Turns needed: 2 turns (Times usable: 2)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ダブルスリングショット</td>
+                <td>When attacking:<br>Attacks with ギラ弾 if enemy is within 2 to 4-space range, up to 5 times per battle<br><div class="attackdesc">(ギラ弾: Deals major Sizz-type martial damage (157 base potency) to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Sizz-type potency +2%</td>
+                <td>Raises Sizz-type potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>アースブレイカー potency +2%</td>
+                <td>Raises アースブレイカー potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ミューシャの加護</td>
+                <td>Action start on odd turns until turn 10:<br>Raises AGL, evasion rate, and martial potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>トレジャーハンターの覚悟</td>
+                <td>Heals 50% of max HP when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Sizz-type potency +5%</td>
+                <td>Raises Sizz-type potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>アースブレイカー potency +5%</td>
+                <td>Raises アースブレイカー potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Martial Tricks</td>
+                <td>Lowers martial ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

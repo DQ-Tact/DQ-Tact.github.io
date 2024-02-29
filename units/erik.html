@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Erik</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Erik</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Erik.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>937</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>349</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>483</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>290</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>431</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>195</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Crack-type Physical Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Blind.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Bind.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Dodgy Character</td>
+                <td>22</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Raises the user's evasion rate for 3 turns</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Edge of Death</td>
+                <td>46</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major physical damage (250% potency) to 1 enemy, often envenomates or paralyses</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Chillblaze</td>
+                <td>58</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Deals minor Crack-type physical damage (70% potency) to all enemies in area of effect 4 times</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td><img src="../images/AttackType/ACoupGreenMartial.png"></td>
+                <td>Criminal Genius</td>
+                <td>48</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Triples the user's physical potency/recovery for 1 turn<br>Turns needed: 2 (Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>デュアルダガーブレイク</td>
+                <td>85</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front5Close.png"><br>Front</td>
+                <td>Deals moderate physical damage (150% potency) to all enemies in area of effect 2 times, occasionally lowers DEF for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Physical Critical Hit Rate +10%</td>
+                <td>Raises physical critical hit rate by 10%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Chillblaze potency +2%</td>
+                <td>Raises Chillblaze potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Criminal Genius MP Cost -5%</td>
+                <td>Lowers Criminal Genius MP cost by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Padfoot</td>
+                <td>Battle start:<br>Greatly raises Move and evasion rate for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Death Follow-Up</td>
+                <td>When any ally (incl. self) paralyses or poisons enemy with an ability:<br>Attacks with Edge of Death if enemy is within 1 to 3-space range<br>This perk can be triggered by non-damage dealing abilities</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Chillblaze potency +5%</td>
+                <td>Raises Chillblaze potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Criminal Genius MP Cost -10%</td>
+                <td>Lowers Criminal Genius MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>デュアルダガーブレイク potency +5%</td>
+                <td>Raises デュアルダガーブレイク potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paralysis Success Rate +10%</td>
+                <td>Raises Paralysis success rate by 10%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Poison Success Rate +10%</td>
+                <td>Raises Poison success rate by 10%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>デュアルダガーブレイク</td>
+                <td>Deals moderate physical damage (150% potency) to all enemies in area of effect 2 times, occasionally lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>二刀の極意</td>
+                <td>When making a physical attack:<br>Occasionally activates a physical ability or Fight 2 times in succession<br>This perk can be triggered by non-damage dealing abilities</td>
+            </tr>
+            <tr>
+                <td>頼れる相棒</td>
+                <td>Battle start:<br>Raises ATK, AGL, and evasion rate for 3 turns</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr>
+                <td>Physical Critical Hit Rate +5%</td>
+                <td>Raises physical critical hit rate by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Physical Potency +1.5%) x2</td>
+                <td>Raises Crack-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Crack-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Crack-type Physical MP Cost -10%</td>
+                <td>Lowers Crack-type physical MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap Res +5%</td>
+                <td>Raises Zap Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Physical Res +5%</td>
+                <td>Raises Zap-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Martial Res +5%</td>
+                <td>Raises Zap-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Spell Res +5%</td>
+                <td>Raises Zap-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Breath Res +5%</td>
+                <td>Raises Zap-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Blind Res +5%) x2</td>
+                <td>Raises Blind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Martial Lock Res +5%) x2</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Bind Res +5%</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Poison Res +5%</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

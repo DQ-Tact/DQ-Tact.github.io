@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Veronica</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Veronica</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Veronica.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>935</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>441</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>230</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>290</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>358</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>406</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Bang-type Spell Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Bind.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueSpell.png"></td>
+                <td>Kablunt</td>
+                <td>14</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>3</td>
+                <td>Occasionally lowers the ATK of all enemies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Crystal Fall</td>
+                <td>88</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Deals major Crack-type spell damage to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Dual Kaboom</td>
+                <td>123</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/FrontPlusFar.png"><br>Front</td>
+                <td>Deals major Bang-type spell damage to all enemies in area of effect 2 times</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td><img src="../images/AttackType/ACoupGreenMartial.png"></td>
+                <td>Awakening Magic Seal</td>
+                <td>48</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Doubles the user's spell potency/recovery for 2 turns<br>Turns needed: 2 (Times usable: 2)</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>超連続ばくれつ魔弾</td>
+                <td>128</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Front6Far.png"><br>Front</td>
+                <td>Deals moderate Bang-type spell damage to random enemies in area of effect 8 times, rarely lowers Spell Res for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Runaway Magic Chance +10%</td>
+                <td>Raises Runaway Magic chance by 10%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Dual Kaboom potency +2%</td>
+                <td>Raises Dual Kaboom potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Awakening Magic Seal MP Cost -5%</td>
+                <td>Lowers Awakening Magic Seal MP cost by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Enchanting Echo</td>
+                <td>When casting:<br>Rarely unleashes the spell 2 times in succession, lowers damage/recovery of 2nd spell by 50%<br>This perk can be triggered by non-damage dealing abilities</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Enchanting Echo Chance +10%</td>
+                <td>Raises chance of Enchanting Echo by 10%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Dual Kaboom potency +5%</td>
+                <td>Raises Dual Kaboom potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Awakening Magic Seal MP Cost -10%</td>
+                <td>Lowers Awakening Magic Seal MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>超連続ばくれつ魔弾 potency +5%</td>
+                <td>Raises 超連続ばくれつ魔弾 potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>超連続ばくれつ魔弾</td>
+                <td>Deals moderate Bang-type spell damage to random enemies in area of effect 8 times, rarely lowers Spell Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>怖いもの知らずの天才少女</td>
+                <td>Action start on even turns until turn 10:<br>Restores 8% of max MP, raises DEF and WIS for 3 turns</td>
+            </tr>
+            <tr>
+                <td>ときどきメラゾーマの追撃</td>
+                <td>When any other ally attacks:<br>Occasionally attacks with Kafrizz if enemy is within 3-space range<br><div class="attackdesc">(Kafrizz: Deals major Frizz-type spell damage to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>Enchanting Echo Chance +10%</td>
+                <td>Raises chance of Enchanting Echo by 10%</td>
+            </tr>
+            <tr>
+                <td>Runaway Magic Chance +5%</td>
+                <td>Raises Runaway Magic chance by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Spell Potency +1.5%) x2</td>
+                <td>Raises Crack-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Crack-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Crack-type Spell MP Cost -10%</td>
+                <td>Lowers Crack-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Spell Potency +1.5%) x2</td>
+                <td>Raises Bang-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Bang-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Bang-type Spell MP Cost -10%</td>
+                <td>Lowers Bang-type spell MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap Res +5%</td>
+                <td>Raises Zap Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Physical Res +5%</td>
+                <td>Raises Zap-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Martial Res +5%</td>
+                <td>Raises Zap-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Spell Res +5%</td>
+                <td>Raises Zap-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Breath Res +5%</td>
+                <td>Raises Zap-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Curse Res +5%) x2</td>
+                <td>Raises Curse Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Bind Res +5%</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Spell Lock Res +5%</td>
+                <td>Raises Spell Lock Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

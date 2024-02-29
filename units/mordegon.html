@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Mordegon, Lord of Shadows</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Mordegon, Lord of Shadows</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Mordegon.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1157</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>319</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>486</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>377</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>291</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>190</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Zam-type Physical Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Bind.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Crimson Cloud</td>
+                <td>46</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FrontSquareFar.png"><br>Front</td>
+                <td>Occasionally greatly raises damage taken for all enemies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Silver Spark</td>
+                <td>91</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/FrontSquare.png"><br>Front</td>
+                <td>Deals major Zap-type physical damage (240% potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Negagash</td>
+                <td>64</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/FrontCross.png"><br>Front</td>
+                <td>Deals Zam-type physical damage (290% potency) to all enemies in area of effect, occasionally lowers Zam Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>カオスブレード</td>
+                <td>133</td>
+                <td><img src="../images/Element/Zap.png"><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/StraightLine4.png"><br>Straight Line</td>
+                <td>Deals major unreflectable Zap-type spell damage and major Zam-type spell damage proportional to ATK to all enemies in area of effect</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Spirit of Yggdrasil</td>
+                <td>When attacked by enemy:<br>Heals 10% of max HP and raises ATK for 2 turns</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Negagash potency +2%</td>
+                <td>Raises Negagash potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shaddowy Aura</td>
+                <td>Battle start:<br>Reduces damage taken by 50% up to 3 times for 99 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Latent Sword Power</td>
+                <td>Battle start:<br>Raises damage dealt for 3 turns</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Negagash potency +5%</td>
+                <td>Raises Negagash potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>カオスブレード potency +5%</td>
+                <td>Raises カオスブレード potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>True Latent Sword Power</td>
+                <td>Turn 3 action start:<br>Greatly raises damage dealt for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>カオスブレード</td>
+                <td>Deals major unreflectable Zap-type spell damage and major Zam-type spell damage proportional to ATK to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>万物の頂点</td>
+                <td>Battle start:<br>Greatly raises ATK, DEF, AGL, and WIS for 3 turns</td>
+            </tr>
+            <tr>
+                <td>勇者のチカラを奪った魔王</td>
+                <td>Heals 50% of max HP and grants x1.5 physical and spell potency/recovery for 1 turn when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>レッドオーブの力</td>
+                <td>Action start:<br>Triggers 恐怖のクリムゾンミスト if enemy is within large rhombus area, up to 3 times per battle<br><div class="attackdesc">(恐怖のクリムゾンミスト: Occasionally greatly raises damage taken for all enemies in area of effect for 3 turns)</div></td>
+            </tr>
+            <tr>
+                <td>HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>AGL +40</td>
+                <td>Raises max AGL by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Zam-type Spell Potency +1.5%) x2</td>
+                <td>Raises Zam-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Zam-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Zam-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Zam-type Spell MP Cost -10%</td>
+                <td>Lowers Zam-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Zap-type Physical Potency +1.5%) x2</td>
+                <td>Raises Zap-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Zap-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Zap-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Zap-type Physical MP Cost -10%</td>
+                <td>Lowers Zap-type physical MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz Res +5%</td>
+                <td>Raises Frizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Physical Res +5%</td>
+                <td>Raises Frizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Martial Res +5%</td>
+                <td>Raises Frizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Spell Res +5%</td>
+                <td>Raises Frizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Breath Res +5%</td>
+                <td>Raises Frizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Martial Lock Res +5%) x2</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Physical Lock Res +5%</td>
+                <td>Raises Physical Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Bind Res +5%</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

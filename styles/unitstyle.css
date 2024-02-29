@@ -139,8 +139,17 @@ h2{
     margin-bottom: 15px;
 }
 
+.equaltable{
+    table-layout: fixed;
+    width: 85%;
+}
+.equaltable th td{
+    width: 33.33%;
+}
+
+
 strong{
-    font-style: oblique
+    font-style: oblique;
 }
 
 .grey{

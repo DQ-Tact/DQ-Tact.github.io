@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Jessica</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Jessica</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Jessica.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>808</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>536</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>213</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>223</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>358</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>399</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Hero Spell Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Sexy Beam</td>
+                <td>42</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Deals moderate martial damage (85 base potency) to 1 enemy, occasionally charms</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Psyche Up</td>
+                <td>10</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Raises the user's Tension for 1 turn</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Crimson Fireball</td>
+                <td>88</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals moderate Frizz-type spell damage to 1 enemy 4 times</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Searing Kasizz</td>
+                <td>118</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Front5.png"><br>Front</td>
+                <td>Deals major Sizz-type spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/ACoupRedSpell.png"></td>
+                <td>Multi Masher</td>
+                <td>-</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Consumes all MP and deals unreflectable spell damage to 1 enemy<br>Turns needed: 4 (Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>Crimson Kasizz</td>
+                <td>125</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Deals major Sizz-type spell damage to all enemies in area of effect, rarely lowers Spell Res for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Feel the Burn</td>
+                <td>When attacked by enemy:<br>Often raises Tension for 1 turn</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Searing Kasizz potency +2%</td>
+                <td>Raises Searing Kasizz potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Multi Masher potency +2%</td>
+                <td>Raises Multi Masher potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sagely Stock</td>
+                <td>Action start every 3 turns:<br>Restores 25% of max MP</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rare Tension Up</td>
+                <td>Action Start:<br>Rarely raises Tension for 1 turn</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency +5%</td>
+                <td>Raises spell potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Crimson Kasizz potency +5%</td>
+                <td>Raises Crimson Kasizz potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max MP +50</td>
+                <td>Raises max MP by 50</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Crimson Kasizz</td>
+                <td>Deals major Sizz-type spell damage to all enemies in area of effect, rarely lowers Spell Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Famous Scioness</td>
+                <td>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
+            </tr>
+            <tr>
+                <td>Fatal Super High Tension</td>
+                <td>Turn 5 action start:<br>Raises Tension by 4 stages for 1 turn</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Spell Potency +1.5%) x2</td>
+                <td>Raises Frizz-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Frizz-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Frizz-type Spell MP Cost -10%</td>
+                <td>Lowers Frizz-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Spell Potency +1.5%) x2</td>
+                <td>Raises Sizz-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Sizz-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Sizz-type Spell MP Cost -10%</td>
+                <td>Lowers Sizz-type spell MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Physical Res +5%</td>
+                <td>Raises Crack-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Martial Res +5%</td>
+                <td>Raises Crack-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Spell Res +5%</td>
+                <td>Raises Crack-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Breath Res +5%</td>
+                <td>Raises Crack-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang Res +5%</td>
+                <td>Raises Bang Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Physical Res +5%</td>
+                <td>Raises Bang-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Martial Res +5%</td>
+                <td>Raises Bang-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Spell Res +5%</td>
+                <td>Raises Bang-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Breath Res +5%</td>
+                <td>Raises Bang-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Poison Res +5%) x2</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Paralysis Res +5%) x2</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Charm Res +5%</td>
+                <td>Raises Charm Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Spell Lock Res +5%</td>
+                <td>Raises Spell Lock Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

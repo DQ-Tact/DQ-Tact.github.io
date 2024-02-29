@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Wulfspade</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Wulfspade</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Wulfspade.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>825</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>275</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>337</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>276</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>320</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>260</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>35</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>DEF +10%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CBluePhysical.png"></td>
+                <td>Attack Attacker</td>
+                <td>12</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals minor physical damage (130% potency) to 1 enemy, occasionally lowers ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>B-Rank Ability Choice<br><div class="attackdesc">(Left)</div></td>
+                <td><img src="../images/AttackType/BRedPhysical.png"></td>
+                <td>Slide Screw</td>
+                <td>36</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front1Far.png"><br>Front</td>
+                <td>Deals moderate physical damage (190% potency) to 1 enemy, pulls them up to 1 space closer</td>
+            </tr>
+            <tr>
+                <td>B-Rank Ability Choice<br><div class="attackdesc">(Centre)</div></td>
+                <td><img src="../images/AttackType/BGreenSpell.png"></td>
+                <td>Wartime Midheal</td>
+                <td>38</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+                <td>Heals a moderate amount of HP and raises 1 ally's ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>B-Rank Ability Choice<br><div class="attackdesc">(Right)</div></td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Wulfspade Guard</td>
+                <td>34</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Raises Physical and Martial Res of all allies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>A-Rank Ability Choice<br><div class="attackdesc">(Left)</div></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Wulfspade Rush</td>
+                <td>59</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front6Close.png"><br>Front</td>
+                <td>Deals minor physical damage (60% potency) to random enemies in area of effect 5 times, rarely lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>A-Rank Ability Choice<br><div class="attackdesc">(Centre)</div></td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Wulfspade Burst</td>
+                <td>140</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-3</td>
+                <td>Deals major spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>A-Rank Ability Choice<br><div class="attackdesc">(Right)</div></td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Wulfspade Cry</td>
+                <td>96</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front3.png"><br>Front</td>
+                <td>Deals major martial damage (200 base potency) to all enemies in area of effect, occasionally paralyses</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>100, 110, 120, 130</td>
+                <td>Spell Potency/Recovery +2%</td>
+                <td>Raises spell potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>100, 110, 120, 130</td>
+                <td>Martial Potency/Recovery +2%</td>
+                <td>Raises martial potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>100, 110, 120, 130</td>
+                <td>Physical Potency +2%</td>
+                <td>Raises physical potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency +5%</td>
+                <td>Raises physical potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Auto HP/MP Regen (S)</td>
+                <td>Action start:<br>Heals 5% of max HP and restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table class="fintable equaltable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Character Builder</th>
+            </tr>
+            <tr>
+                <th colspan="3"><span style="font-weight:normal">Note: Only one ability/perk can be selected from each row</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>Slide Screw</strong><br>Deals moderate physical damage (190% potency) to 1 enemy, pulls them up to 1 space closer</td>
+                <td><strong>Wartime Midheal</strong><br>Heals a moderate amount of HP and raises 1 ally's ATK for 3 turns</td>
+                <td><strong>Wulfspade Guard</strong><br>Raises Physical and Martial Res of all allies in area of effect for 3 turns</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>Instant Partyboost</strong><br>Battle start:<br>Raises ATK for 3 turns</td>
+                <td><strong>Surging Magic</strong><br>Action start on even turns until turn 10:<br>Occasionally grants x1.5 spell potency/recovery for 1 turn</td>
+                <td><strong>Instant Damage Barrier</strong><br>Battle start:<br>Reduces damage taken by 15% for 3 turns</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>Wulfspade Rush</strong><br>Deals minor physical damage (60% potency) to random enemies in area of effect 5 times, rarely lowers DEF for 3 turns</td>
+                <td><strong>Wulfspade Burst</strong><br>Deals major spell damage to all enemies in area of effect</td>
+                <td><strong>Wulfspade Cry</strong><br>Deals major martial damage (200 base potency) to all enemies in area of effect, occasionally paralyses</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>Surging Might</strong><br>Action start on even turns until turn 6:<br>Raises ATK, DEF, AGL, and WIS for 3 turns</td>
+                <td><strong>Instant Bounce</strong><br>Battle start:<br>Grants a barrier that reflects spell attacks for 3 turns</td>
+                <td><strong>Frankenstein</strong><br>Heals the user to full HP when HP drops to 20% or less, 1 time per battle<br><span style="font-size:12px">This perk can be triggered when the attack is from an ally</span></td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>ATK +50</strong><br>Raises max ATK by 50</td>
+                <td><strong>HP +100</strong><br>Raises max HP by 100</td>
+                <td><strong>AGL +50</strong><br>Raises max AGL by 50</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>DEF +50</strong><br>Raises max DEF by 50</td>
+                <td><strong>MP +100</strong><br>Raises max MP by 100</td>
+                <td><strong>WIS +50</strong><br>Raises max WIS by 50</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

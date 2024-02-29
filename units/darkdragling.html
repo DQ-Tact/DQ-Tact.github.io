@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Dark Dragling</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Dark Dragling</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/DarkDragling.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>739</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>357</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>242</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>286</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>419</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>115</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>35</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Enemy Curse Res -25%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Bind.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/BrthLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Curse.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CBlueBreath.png"></td>
+                <td>Burning Breath</td>
+                <td>11</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Occasionally paralyses all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td><img src="../images/AttackType/BBlueBreath.png"></td>
+                <td>Mirage Breath</td>
+                <td>75</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/T.png"><br>T</td>
+                <td>Deals moderate breath damage (84 base potency) to all enemies in area of effect, occasionally blinds</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td><img src="../images/AttackType/ABlueBreath.png"></td>
+                <td>カースブレス</td>
+                <td>87</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Deals major Zam-type breath damage (200 base potency) to all enemies in area of effect, occasionally curses or envenomates</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>100, 110, 120, 130</td>
+                <td>カースブレス potency +2%</td>
+                <td>Raises カースブレス potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>小竜のまもり</td>
+                <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if user's HP is 50% or over</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>いたずらごころ</td>
+                <td>When user's ability paralyses, blinds, curses, or poisons enemy:<br>Grants the user x1.5 breath potency/recovery for 1 turn<br>This perk can be triggered by non-damage dealing abilities</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>カースブレス potency +5%</td>
+                <td>Raises カースブレス potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Auto HP Regen (S)</td>
+                <td>Action start:<br>Heals 5% of max HP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

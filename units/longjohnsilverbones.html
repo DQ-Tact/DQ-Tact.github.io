@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Long John Silverbones</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Long John Silverbones</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/LongJohnSilverbones.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>953</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>438</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>209</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>413</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>428</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>261</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Undead Martial Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>大親分の笑み</td>
+                <td>32</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Heals a major amount of HP and grants the user x1.5 martial potency/recovery for 1 turn</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>カリスマプレス</td>
+                <td>114</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FrontRingFar.png"><br>Front</td>
+                <td>Deals major martial damage (274 base potency) to all enemies in area of effect, moves up to 3 spaces, occasionally raises the user's martial potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>デッドウェーブ</td>
+                <td>71</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Deals major Zam-type martial damage (310 base potency) to 1 enemy</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>秘宝への執着</td>
+                <td>Battle start:<br>Enacts Auto Revive (50% of max HP) for 99 turns<br>Raises Move and martial potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>デッドウェーブ potency +2%</td>
+                <td>Raises デッドウェーブ potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>秘宝への執念</td>
+                <td>When revived:<br>Enacts Auto Revive (50% of max HP) for 99 turns, 1 time per battle<br><br>When revived:<br>Raises Move and martial potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>空賊団大親分の一撃</td>
+                <td>When attacked and KO'd by enemy:<br>Triggers 伝説の空賊 if enemy is within large rhombus area, up to 3 times per battle<br><div class="attackdesc">(伝説の空賊: Deals major Zam-type martial damage (206 base potency) to all enemies in area of effect)</div></td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>デッドウェーブ potency +5%</td>
+                <td>Raises デッドウェーブ potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Hellfire Prince Psaro</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Hellfire Prince Psaro</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/HellfirePrincePsaro.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1184</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>476</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>506</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>313</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>470</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>174</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>ATK +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/PhysLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Summer Force</td>
+                <td>40</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Raises the user's Tension for 1 turn, grants the user Frizzforce and Crackforce for 3 turns</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Dolphin Wave</td>
+                <td>123</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Deals major unreflectable Crack-type spell damage proportional to ATK to all enemies in area of effect, moves up to 4 spaces, and reduces damage taken by 50% 1 time only for 99 turns</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Rising Sun</td>
+                <td>88</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Deals major Frizz-type physical damage (410% potency) to 1 enemy, heals the user's HP by 30% of damage dealt</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>The Lord of Summer</td>
+                <td>Action start:<br>Attacks with Fleeting Summer if enemy is within large rhombus area, up to 3 times per battle<br><div class="attackdesc">(Fleeting Summer: Deals major physical damage (250% potency) to all enemies in area of effect)</div><br>Before HP hits 0:<br>Preserves HP at 1, up to 2 times per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Rising Sun potency +2%</td>
+                <td>Raises Rising Sun potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Monsterkind Summer</td>
+                <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, AGL, and evasion rate for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hot Summer Wrath</td>
+                <td>Battle start, action start, or when revived:<br>Grants the user x1.5 physical and spell potency/recovery, and removes some status ailments if the user's HP is 20% or less</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Rising Sun potency +5%</td>
+                <td>Raises Rising Sun potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Instant Insulate</td>
+                <td>Battle start:<br>Greatly raises Breath Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
