@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for mainpage -->
+<link rel="stylesheet" href="./styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Datatable information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./datatable.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>DQT Unit List</title>
+</head>
+
+<body>
+  <h1>Unit List</h1>
+  <p>Note: Stats shown below are the unit's stats at max level at awakening 0, without talent blossom/character builder</p>
+  
+  <div id="filter">
+    <form name="formrank">
+      <label>
+        <input type="radio" name="rank" value="S">
+        <img title="S" src="./images/Rank/RankS.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="A">
+        <img title="A" src="./images/Rank/RankA.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="B">
+        <img title="B" src="./images/Rank/RankB.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="C">
+        <img title="C" src="./images/Rank/RankC.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="D">
+        <img title="D" src="./images/Rank/RankD.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="E">
+        <img title="E" src="./images/Rank/RankE.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="F">
+        <img title="F" src="./images/Rank/RankF.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value checked="checked">
+        <img title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+
+    <form name="formfamily">
+      <label>
+        <input type="radio" name="family" value="Slime">
+        <img title="Slime" src="./images/Family/FamilySlime.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Drgaon">
+        <img title="Dragon" src="./images/Family/FamilyDragon.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Nature">
+        <img title="Nature" src="./images/Family/FamilyNature.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Beast">
+        <img title="Beast" src="./images/Family/FamilyBeast.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Inorganic">
+        <img title="Inorganic" src="./images/Family/FamilyInorganic.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Demon">
+        <img title="Demon" src="./images/Family/FamilyDemon.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Undead">
+        <img title="Undead" src="./images/Family/FamilyUndead.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Mystery">
+        <img title="Mystery" src="./images/Family/FamilyMystery.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Hero">
+        <img title="Hero" src="./images/Family/FamilyHero.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value checked="checked">
+        <img title="ALL" src="./images/Family/FilterAll.png">
+      </label> 
+    </form>
+
+    <form name="formTB">
+      <label>
+        <input type="checkbox" name="family" id="TalentBlossom" value="1"> Only show units with a talent blossom
+      </label>
+    </form>
+    <form name="formCB">
+      <label>
+        <input type="checkbox" name="family" id="CharBuilder" value="1"> Only show units with a character builder
+      </label>
+    </form>
+  </div>
+
+  <table id="myTable" class="display">
+    <thead>
+      <tr>
+<!-- Table headers: Icon, Rarity and Family cannot be sorted -->
+        <th scope="col">Almanac No.</th>
+        <th scope="col">Icon</th>
+        <th scope="col">Name</th>
+        <th scope="col">Rarity</th>
+        <th scope="col">Family</th>
+        <th scope="col">HP</th>
+        <th scope="col">MP</th>
+        <th scope="col">ATK</th>
+        <th scope="col">DEF</th>
+        <th scope="col">AGL</th>
+        <th scope="col">WIS</th>
+        <th scope="col">Move</th>
+        <th scope="col">Weight</th>
+        <th scope="col">FilterRarity</th>
+        <th scope="col">FilterFamily</th>
+        <th scope="col">FilterTB</th>
+        <th scope="col">FilterCB</th>
+      </tr>
+    </thead>
+    <tbody>
+<!-- Base Game F Ranks-->
+    <div>
+      <tr>
+        <td>001</td>
+        <td><img src="./images/Slime.png" class="icon"></td>
+        <td><a href='./units/slime.html'>Slime</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>282</td>
+        <td>124</td>
+        <td>139</td>
+        <td>116</td>
+        <td>128</td>
+        <td>87</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td><img src="./images/MischeviousMole.png" class="icon"></td>
+        <td><a href='./units/mischieviousmole.html'>Mischievious Mole</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>253</td>
+        <td>95</td>
+        <td>235</td>
+        <td>116</td>
+        <td>95</td>
+        <td>78</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td><img src="./images/Bunicorn.jpeg" class="icon"></td>
+        <td><a href='./units/bunicorn.html'>Bunicorn</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>373</td>
+        <td>83</td>
+        <td>162</td>
+        <td>116</td>
+        <td>139</td>
+        <td>87</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td><img src="./images/Hammerhood.jpeg" class="icon"></td>
+        <td><a href='./units/hammerhood.html'>Hammerhood</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>399</td>
+        <td>83</td>
+        <td>179</td>
+        <td>124</td>
+        <td>95</td>
+        <td>84</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td><img src="./images/CandyCat.jpeg" class="icon"></td>
+        <td><a href='./units/candycat.html'>Candy Cat</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>255</td>
+        <td>88</td>
+        <td>179</td>
+        <td>116</td>
+        <td>156</td>
+        <td>87</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>006</td>
+        <td><img src="./images/Platypunk.png" class="icon"></td>
+        <td><a href='./units/platypunk.html'>Platypunk</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>282</td>
+        <td>88</td>
+        <td>186</td>
+        <td>156</td>
+        <td>84</td>
+        <td>84</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td><img src="./images/Dracky.png" class="icon"></td>
+        <td><a href='./units/dracky.html'>Dracky</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>282</td>
+        <td>129</td>
+        <td>136</td>
+        <td>129</td>
+        <td>84</td>
+        <td>123</td>
+        <td>2</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>008</td>
+        <td><img src="./images/Ghost.png" class="icon"></td>
+        <td><a href='./units/ghost.html'>Ghost</a></td>
+        <td><img src="./images/Rank/RankF.png"></td>
+        <td><img src="./images/Family/FamilyUndead.png"></td>
+        <td>233</td>
+        <td>122</td>
+        <td>168</td>
+        <td>113</td>
+        <td>97</td>
+        <td>112</td>
+        <td>4</td>
+        <td>5</td>
+        <td>F</td>
+        <td>Undead</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+    </div>
+<!-- Base Game E Ranks-->    
+    <div>
+      <tr>
+        <td>009</td>
+        <td><img src="./images/SheSlime.jpeg" class="icon"></td>
+        <td><a href='./units/sheslime.html'>She Slime</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>399</td>
+        <td>100</td>
+        <td>198</td>
+        <td>181</td>
+        <td>131</td>
+        <td>90</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>010</td>
+        <td><img src="./images/BubbleSlime.jpeg" class="icon"></td>
+        <td><a href="./units/bubbleslime.html">Bubble Slime</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>541</td>
+        <td>133</td>
+        <td>189</td>
+        <td>125</td>
+        <td>83</td>
+        <td>93</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>011</td>
+        <td><img src="./images/Healslime.png" class="icon"></td>
+        <td><a href="./units/healslime.html">Healslime</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>399</td>
+        <td>179</td>
+        <td>143</td>
+        <td>158</td>
+        <td>125</td>
+        <td>111</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>012</td>
+        <td><img src="./images/Funghoul.png" class="icon"></td>
+        <td><a href="./units/funghoul.html">Funghoul</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>541</td>
+        <td>113</td>
+        <td>182</td>
+        <td>158</td>
+        <td>83</td>
+        <td>93</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>013</td>
+        <td><img src="./images/StumpChump.png" class="icon"></td>
+        <td><a href="./units/stumpchump.html">Stump Chump</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>514</td>
+        <td>161</td>
+        <td>148</td>
+        <td>141</td>
+        <td>95</td>
+        <td>103</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>014</td>
+        <td><img src="./images/Cactiball.jpeg" class="icon"></td>
+        <td><a href="./units/cactiball.html">Cactiball</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>407</td>
+        <td>100</td>
+        <td>240</td>
+        <td>167</td>
+        <td>112</td>
+        <td>83</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>016</td>
+        <td><img src="./images/Bullfinch.jpeg" class="icon"></td>
+        <td><a href="./units/bullfinch.html">Bullfinch</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>334</td>
+        <td>83</td>
+        <td>290</td>
+        <td>133</td>
+        <td>136</td>
+        <td>81</td>
+        <td>4</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>020</td>
+        <td><img src="./images/MechaMynah.png" class="icon"></td>
+        <td><a href="./units/mechamynah.html">Mecha-Mynah</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>399</td>
+        <td>100</td>
+        <td>188</td>
+        <td>181</td>
+        <td>131</td>
+        <td>92</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>  
+      <tr>
+        <td>021</td>
+        <td><img src="./images/LeeryLout.jpeg" class="icon"></td>
+        <td><a href="./units/leerylout.html">Leery Lout</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>294</td>
+        <td>148</td>
+        <td>143</td>
+        <td>285</td>
+        <td>83</td>
+        <td>83</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>023</td>
+        <td><img src="./images/TeenySanguini.png" class="icon"></td>
+        <td><a href="./units/teenysanguini.html">Teeny Sanguini</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>268</td>
+        <td>122</td>
+        <td>148</td>
+        <td>125</td>
+        <td>178</td>
+        <td>167</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>026</td>
+        <td><img src="./images/Lickspittle.png" class="icon"></td>
+        <td><a href="./units/lickspittle.html">Lickspittle</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyUndead.png"></td>
+        <td>421</td>
+        <td>128</td>
+        <td>182</td>
+        <td>167</td>
+        <td>112</td>
+        <td>92</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Undead</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>  
+    </div>
+    </tbody>
+  </table>
+</body>
+</html>
+
+<!-- Empty table row
+
+      <tr>
+        <td></td>
+        <td><img src="./images" class="icon"></td>
+        <td><a href="./units"></a></td>
+        <td><img src="./images/Rank"></td>
+        <td><img src="./images/Family"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr> 
+
+-->

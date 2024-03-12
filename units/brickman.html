@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/summonstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Brickman</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Brickman</h1>
+    <a href="./heroabel.html">Return to Prev. Unit</a>
+    <img src="../images/Brickman.png" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1290</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>332</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>366</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>578</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>359</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>127</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>--</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Bind.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/HeavySizz.png"></td>
+            <td><img src="../images/Element/HeavyCrack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Poison.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CGreenMartial.png"></td>
+                <td>Cover</td>
+                <td>11</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/AroundSelf.png"><br>Self</td>
+                <td>Take attacks for directly adjacent allies and reduces damage taken by 20% for the user for 1 turn<br><div class="attackdesc">(Note: Cover damage reduction can stack 2 times for 40% damage reduction)</div></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Meditation</td>
+                <td>21</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Heals a major amount of HP for the user</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>Stomp</td>
+                <td>55</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals major martial damage (187 base potency) to 1 enemy</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Brickman Defense</td>
+                <td>When summoned:<br>Raises DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>80, 90, 100, 110, 120, 130</td>
+                <td>Stomp potency +10%</td>
+                <td>Raises Stomp potency by 10%</td>
+            </tr>
+        </tbody>
+    </table>

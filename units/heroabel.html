@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Legendary Monster Wrangler Abel</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Legendary Monster Wrangler Abel</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/HeroAbel.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1028</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>451</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>359</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>433</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>389</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>243</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Non-??? Breath Potency +25%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/BrthLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueBreath.png"></td>
+                <td>Draconic Gust</td>
+                <td>50</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
+                <td>Deals moderate Woosh-type breath damage (90 base potency) to 1 enemy, occasionally puts to sleep</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ARedBreath.png"></td>
+                <td>Dragonic Gale</td>
+                <td>104</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/FrontSquare.png"><br>Front</td>
+                <td>Deals major Sizz-type breath damage (225 base potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedBreath.png"></td>
+                <td>Zenithian Zephyr</td>
+                <td>98</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major breath damage (267 base potency) to 1 enemy, ignores some Light Damage Res and cannot be negated by HP preserve effects</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/SCoupRedBreath.png"></td>
+                <td>Extreme Exhalation</td>
+                <td>107</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/TwoHitAoE.png"><br>3</td>
+                <td>Deals major Woosh-type breath damage (231 base potency) to 1 enemy in purple area, deals major Woosh-type breath damage (231 base potency) to all enemies in orange area<br>Turns needed: 3 turns (Times usable: 2)</td>
+            </tr>
+            <tr>
+                <td><img class="charbuilder" src="../images/Rank/TalentCharBuilder.png"></td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>Call Ally</td>
+                <td>107</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Summons 1 of <a href="./brickman.html" class="summon">Brickman</a>, <a href="./slimehopper.html" class="summon">Slimehopper</a>, or <a href="./kimmyra.html" class="summon">Kim Myra</a><br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Legendary Monster Wrangler</td>
+                <td>Battle start:<br>Reduces damage taken by 20% for 1 turn<br>Action start until turn 10:<br>Reduces damage taken by 20% for all allies in the surrounding large rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Breath Potency/Recovery +2%</td>
+                <td>Raises breath potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Plaisir de Fight</td>
+                <td>Action start on odd turns until turn 10:<br>Raises damage dealt, DEF, and AGL for 3 turns, removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>King of Gotha</td>
+                <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20% if user's HP is 50% or over</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Breath Potency/Recovery +5%</td>
+                <td>Raises breath potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table  class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Character Builder</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Call Ally</td>
+                <td>Summons 1 of Brickman, Slimehopper, or Kim Myra<br>(Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td>Fairy's Fortitude</td>
+                <td>When any other ally attacks:<br>Attacks with Fairy's Flurry if enemy is within 3-space range, up to 5 times per battle<br><div class="attackdesc">(Fairy's Flurry: Deals major Woosh-type breath damage (111 base potency) to 1 enemy, heals the user by 50% of the damage dealt)</div></td>
+            </tr>
+            <tr>
+                <td>Fairy's Fortune</td>
+                <td>Action start:<br>Heals 10% of max HP and restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>Max HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 0.5%</td>
+                <td>Reduces all damage taken by 0.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1.5%</td>
+                <td>Reduces all damage taken by 1.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 2%</td>
+                <td>Reduces all damage taken by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh resistance by 5</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam Res +5%</td>
+                <td>Raises Zam resistance by 5</td>
+            </tr>
+            <tr>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>Max HP & Max MP +30</td>
+                <td>Raises max HP and max MP by 30</td>
+            </tr>
+            <tr>
+                <td>Max MP +20</td>
+                <td>Raises max MP by 20</td>
+            </tr>
+            <tr>
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr>
+                <td>ATK & WIS +15</td>
+                <td>Raises max ATK and max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>DEF +10</td>
+                <td>Raises max DEF by 10</td>
+            </tr>
+            <tr>
+                <td>DEF & AGL +15</td>
+                <td>Raises max DEF and max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>Draconic Gust potency +2%</td>
+                <td>Raises Draconic Gust potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Draconic Gust potency +3%</td>
+                <td>Raises Draconic Gust potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Draconic Gale potency +2%</td>
+                <td>Raises Draconic Gale potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Draconic Gale potency +3%</td>
+                <td>Raises Draconic Gale potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zenithian Zephyr potency +2%</td>
+                <td>Raises Zenithian Zephyr potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zenithian Zephyr potency +3%</td>
+                <td>Raises Zenithian Zephyr potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Extreme Exhalation potency +2%</td>
+                <td>Raises Extreme Exhalation potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Extreme Exhalation potency +3%</td>
+                <td>Raises Extreme Exhalation potency by 3%</td>
+            </tr>
+        </tbody>    
+    </table>
+</body>
+</html>

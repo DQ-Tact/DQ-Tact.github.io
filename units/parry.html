@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Parry</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Parry</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Parry.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1135</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>344</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>419</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>385</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>372</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>237</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>ATK +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/PhysLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BRedSpell.png"></td>
+                <td>Spark of Courage</td>
+                <td>46</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>4</td>
+                <td>Deals moderate Zap-type spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Power Drill</td>
+                <td>66</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FrontRingFar.png"><br>Front</td>
+                <td>Deals major physical damage (280% potency) to all enemies in area of effect, moves up to 3 spaces</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Shining Slice</td>
+                <td>88</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Deals major Bang-type physical damage (410% potency) to 1 enemy, often raises damage taken for 3 turns</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/SCoupBlueSpell.png"></td>
+                <td>Zenithian Kazap</td>
+                <td>145</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Rhombus.png"><br>Rhombus</td>
+                <td>Deals major unreflectable Zap-type spell damage proportional to ATK to all enemies in area of effect, removes some status changes from enemy<br>Turns needed: 3 turns (Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td><img class="charbuilder" src="../images/Rank/TalentCharBuilder.png"></td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>Speical Psyche Up</td>
+                <td>28</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Greatly raises the user's Tension for 1 turn<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juinor Hero</td>
+                <td>When afflicted with a status ailment:<br>Removes some status ailments, and greatly raises Tension for 1 turn, up to 2 times per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Physical Potency/Recovery +2%</td>
+                <td>Raises physical potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Spell Potency/Recovery +2%</td>
+                <td>Raises spell potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Growth Spurt</td>
+                <td>Battle start:<br>Greatly raises ATK, DEF, AGL, and WIS for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Prince of Gotha</td>
+                <td>When attacking:<br>For number of attacked enemies only, occasionally raises Tension for 1 turn</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Auto HP/MP Regen (S)</td>
+                <td>Action start:<br>Heals 5% of max HP and restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table  class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Character Builder</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Speical Psyche Up</td>
+                <td>Greatly raises the user's Tension for 1 turn<br>(Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td>Zenithian Barrier</td>
+                <td>Battle start:<br>Nullifies damage taken 1 time only in 99 turns</td>
+            </tr>
+            <tr>
+                <td>Heart of Justice</td>
+                <td>When attacked by enemy:<br>Occasionally raises Tension for 1 turn</td>
+            </tr>
+            <tr>
+                <td>DEF +50</td>
+                <td>Raises max DEF by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 0.5%</td>
+                <td>Reduces all damage taken by 0.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1.5%</td>
+                <td>Reduces all damage taken by 1.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 2%</td>
+                <td>Reduces all damage taken by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz resistance by 5</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack resistance by 5</td>
+            </tr>
+            <tr>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>Max HP & Max MP +30</td>
+                <td>Raises max HP and max MP by 30</td>
+            </tr>
+            <tr>
+                <td>Max MP +20</td>
+                <td>Raises max MP by 20</td>
+            </tr>
+            <tr>
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr>
+                <td>ATK & WIS +15</td>
+                <td>Raises max ATK and max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>DEF +10</td>
+                <td>Raises max DEF by 10</td>
+            </tr>
+            <tr>
+                <td>DEF & AGL +15</td>
+                <td>Raises max DEF and max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>Spark of Courage potency +2%</td>
+                <td>Raises Spark of Courage potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Spark of Courage potency +3%</td>
+                <td>Raises Spark of Courage potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Power Drill potency +2%</td>
+                <td>Raises Power Drill potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Power Drill potency +3%</td>
+                <td>Raises Power Drill potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Shining Slice potency +2%</td>
+                <td>Raises Shining Slice potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Shining Slice potency +3%</td>
+                <td>Raises Shining Slice potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zenithian Kazap potency +2%</td>
+                <td>Raises Zenithian Kazap potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zenithian Kazap potency +3%</td>
+                <td>Raises Zenithian Kazap potency by 3%</td>
+            </tr>
+        </tbody>    
+    </table>
+</body>
+</html>

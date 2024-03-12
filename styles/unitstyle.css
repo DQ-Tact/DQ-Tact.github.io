@@ -105,6 +105,10 @@ img.metal{
     width: 18px;
 }
 
+.charbuilder{
+    width: 32px;
+}
+
 #level{
     position: absolute;
     left: 640px;

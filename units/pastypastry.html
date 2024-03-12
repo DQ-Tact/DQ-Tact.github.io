@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Pasty Pastry</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Pasty Pastry</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/PastyPastry.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1021</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>348</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>177</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>343</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>366</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>136</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>35</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Slime Crack-type Potency +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Poison.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CBlueBreath.png"></td>
+                <td>白い吐息</td>
+                <td>14</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Deals minor Crack-type breath damage (19 base damage) to all enemies in area of effect, rarely lowers AGL for 3 turns</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td><img src="../images/AttackType/BGreenSpell.png"></td>
+                <td>Crackforce</td>
+                <td>30</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3 (incl. self)</td>
+                <td>Grants 1 ally Crackforce for 3 turns</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>コロネのくさり</td>
+                <td>110</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Front3.png"><br>Front</td>
+                <td>Deals major Crack-type martial damage (205 base potency) to all enemies in area of effect, pulls them up to 2 spaces closer, occasionally charms</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>100, 110, 120, 130</td>
+                <td>コロネのくさり potency +2%</td>
+                <td>Raises コロネのくさり potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shell Cover</td>
+                <td>Before HP hits 0:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ラブリーコロネ</td>
+                <td>When attacked by spell or breath enemy attack:<br>Rarely charms</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>コロネのくさり potency +5%</td>
+                <td>Raises コロネのくさり potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Charm Success Rate +5%</td>
+                <td>Raises Charm success rate by 5%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>King Korol</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>King Korol</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/KingKorol.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>897</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>348</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>268</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>318</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>393</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>370</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Spell Potency +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Paralysis.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueSpell.png"></td>
+                <td>Sphere of Influence</td>
+                <td>48</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
+                <td>Deals moderate spell damage to 1 enemy, occasionally confuses</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td><img src="../images/AttackType/ABlueBreath.png"></td>
+                <td>Slowstorm</td>
+                <td>103</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Deals major Crack-type breath damage (190 base potency) to all enemies in area of effect, rarely lowers ATK and WIS for 3 turns</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Abra Kaboom</td>
+                <td>128</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-3</td>
+                <td>Deals major Bang-type spell damage to all enemies in area of effect</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Instant Bangforce</td>
+                <td>Battle start:<br>Enables Bangforce for 3 turns</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Abra Kaboom potency +2%</td>
+                <td>Raises Abra Kaboom potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Zugzwang Advantage</td>
+                <td>Battle start, action start, or when revived:<br>Raises damage dealt by 30% if the user's HP is 70% or over</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Max MP +50</td>
+                <td>Raises max MP by 50</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Abra Kaboom potency +5%</td>
+                <td>Raises Abra Kaboom potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Last Light</td>
+                <td>When attacked and KO'd by enemy:<br>Attacks with Last Light if enemy is within 1 to 3-space range, 1 time per battle<br><div class="attackdesc">(Last Light: Deals major Bang-type spell damage to all enemies in plus-shaped area of effect)</div></td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

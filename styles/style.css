@@ -3,7 +3,7 @@ thead{
 }
 
 body{
-    background-color: rgb(84, 72, 159);
+    background-color: rgb(89, 77, 167);
     font-family: Merriweather, 'Times New Roman';
     font-size: 0.92em;
     margin:0;
@@ -50,6 +50,43 @@ img{
 .icon{
     width: 64px;
     height: 80px;
+}
+
+#filter{
+    padding: 10px; 
+    background-color: darkslateblue;
+    text-align: center;
+}
+
+.form{
+    color: rgb(244, 242, 253);
+    font-size: 28px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.filterheader{
+    color: rgb(244, 242, 253);
+    font-size: 24px;
+}
+
+input[type=radio]{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.buttons{
+    width: 36px;
+    height: 36px;
+}
+
+input[type=radio]:checked+img{
+    background: url(../images/Rank/WhiteGlow.png) no-repeat;
+}
+
+label[for=checkbox]{
+    color: rgb(244, 242, 253);
 }
 
 a{

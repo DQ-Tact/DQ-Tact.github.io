@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Bishop Ladja</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Bishop Ladja</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/BishopLadja.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1070</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>394</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>209</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>301</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>372</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>426</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Frizz-type Potency +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Stun.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Kidnap</td>
+                <td>40</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front1Far.png"><br>Front</td>
+                <td>Pulls 1 enemy up to 3 spaces closer, often paralyses</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Psycho Scythe</td>
+                <td>130</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
+                <td>Deals major martial damage (330 base potency) to all enemies in area of effect, pulls them up to 1 space closer, and often greatly lowers Self HP Healing Effects for 3 turns</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Killer Kafrizz</td>
+                <td>124</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major Frizz-type spell damage to 1 enemy, ignores some Light Damage Res</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Wicked Obsession</td>
+                <td>Heals 50% of max HP and grants x1.5 spell and martial potency/recovery for 1 turn when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Killer Kafrizz potency +2%</td>
+                <td>Raises Killer Kafrizz potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Imperious Grin</td>
+                <td>Battle start:<br>Greatly raises AGL and evasion rate for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Grim Gardez</td>
+                <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if the user's HP is 50% or over</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Killer Kafrizz potency +5%</td>
+                <td>Raises Killer Kafrizz potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Wicked Bounce</td>
+                <td>Battle start:<br>Grants a barrier that reflects spell attacks for 2 turns</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

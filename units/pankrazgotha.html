@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Pankraz Gotha</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Pankraz Gotha</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Pankraz.png" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1112</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>288</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>437</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>426</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>342</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>174</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Hero DEF +30%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Poison.png"></td>
+        </tr>
+    </table>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenSpell.png"></td>
+                <td>Magnanimous Midheal</td>
+                <td>38</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3 (incl. self)</td>
+                <td>Heals a moderate amount of HP and grants minor regeneration to 1 ally for 3 turns</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Woosh Strike</td>
+                <td>58</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/FanS.png"><br>Fan (S)</td>
+                <td>Deals major Woosh-type physical damage (250% potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Leaping Edge</td>
+                <td>62</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Deals major physical damage (380% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/ACoupGreenMartial.png"></td>
+                <td>Immutable Stance</td>
+                <td>35</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/MontCover.png"><br>Self</td>
+                <td>Takes attacks for adjacent allies and reduces damage taken by 50% for the user for 1 turn<br>Turns needed: 2 turns (Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Parental Pride</td>
+                <td>Before HP hits 0:<br>Occasionally preserves HP at 1<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Leaping Edge potency +2%</td>
+                <td>Raises Leaping Edge potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Immutable Stance MP Cost -5%</td>
+                <td>Lowers Immutable Stance MP cost by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Physical Tricks</td>
+                <td>Lowers physical ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Leaping Edge potency +5%</td>
+                <td>Raises Leaping Edge potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Immutable Stance MP Cost -10%</td>
+                <td>Lowers Immutable Stance MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Role Model</td>
+                <td>When attacked and KO'd by enemy:<br>Triggers Role Model 1 time per battle<br><div class="attackdesc">(Role Model: Greatly raises ATK and WIS of all allies in large rhombus area for 3 turns)</div></td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

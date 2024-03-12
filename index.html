@@ -21,7 +21,103 @@
 
 <body>
   <h1>Unit List</h1>
+  
+  <div id="filter">
+    <label class="form">Filters:</label>
+    <form name="formrank">
+      <label class="filterheader">Rank:</label>
+      <label>
+        <input type="radio" name="rank" value="S">
+        <img class="buttons" title="S" src="./images/Rank/RankS.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="A">
+        <img class="buttons" title="A" src="./images/Rank/RankA.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="B">
+        <img class="buttons" title="B" src="./images/Rank/RankB.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="C">
+        <img class="buttons" title="C" src="./images/Rank/RankC.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="D">
+        <img class="buttons" title="D" src="./images/Rank/RankD.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="E">
+        <img class="buttons" title="E" src="./images/Rank/RankE.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="F">
+        <img class="buttons" title="F" src="./images/Rank/RankF.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+
+    <form name="formfamily">
+      <label class="filterheader">Family:</label>
+      <label>
+        <input type="radio" name="family" value="Slime">
+        <img class="buttons" title="Slime" src="./images/Family/FamilySlime.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Dragon">
+        <img class="buttons" title="Dragon" src="./images/Family/FamilyDragon.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Nature">
+        <img class="buttons" title="Nature" src="./images/Family/FamilyNature.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Beast">
+        <img class="buttons" title="Beast" src="./images/Family/FamilyBeast.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Inorganic">
+        <img class="buttons" title="Inorganic" src="./images/Family/FamilyInorganic.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Demon">
+        <img class="buttons" title="Demon" src="./images/Family/FamilyDemon.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Undead">
+        <img class="buttons" title="Undead" src="./images/Family/FamilyUndead.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Mystery">
+        <img class="buttons" title="Mystery" src="./images/Family/FamilyMystery.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value="Hero">
+        <img class="buttons" title="Hero" src="./images/Family/FamilyHero.png">
+      </label>
+      <label>
+        <input type="radio" name="family" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label> 
+    </form>
+
+    <form name="formTB">
+      <label>
+        <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Only show units with a talent blossom</label>
+      </label>
+    </form>
+    <form name="formCB">
+      <label>
+        <input type="checkbox" name="family" id="CharBuilder" value="1"><label for="checkbox">  Only show units with a character builder</label>
+      </label>
+    </form>
+  </div>
+
   <p>Note: Stats shown below are the unit's stats at max level at awakening 0, without talent blossom/character builder</p>
+
   <table id="myTable" class="display">
     <thead>
       <tr>
@@ -39,6 +135,10 @@
         <th scope="col">WIS</th>
         <th scope="col">Move</th>
         <th scope="col">Weight</th>
+        <th scope="col">FilterRarity</th>
+        <th scope="col">FilterFamily</th>
+        <th scope="col">FilterTB</th>
+        <th scope="col">FilterCB</th>
       </tr>
     </thead>
     <tbody>
@@ -58,6 +158,10 @@
         <td>87</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>002</td>
@@ -73,6 +177,10 @@
         <td>78</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>003</td>
@@ -88,6 +196,10 @@
         <td>87</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>004</td>
@@ -103,6 +215,10 @@
         <td>84</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>005</td>
@@ -118,6 +234,10 @@
         <td>87</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>006</td>
@@ -133,6 +253,10 @@
         <td>84</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>007</td>
@@ -148,6 +272,10 @@
         <td>123</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>008</td>
@@ -163,6 +291,10 @@
         <td>112</td>
         <td>4</td>
         <td>5</td>
+        <td>F</td>
+        <td>Undead</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- Base Game E Ranks-->    
@@ -181,6 +313,10 @@
         <td>90</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>010</td>
@@ -196,6 +332,10 @@
         <td>93</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>011</td>
@@ -211,6 +351,10 @@
         <td>111</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>012</td>
@@ -226,6 +370,10 @@
         <td>93</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>013</td>
@@ -241,6 +389,10 @@
         <td>103</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>014</td>
@@ -256,6 +408,10 @@
         <td>83</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>016</td>
@@ -271,6 +427,10 @@
         <td>81</td>
         <td>4</td>
         <td>10</td>
+        <td>E</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>020</td>
@@ -286,6 +446,10 @@
         <td>92</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>021</td>
@@ -301,6 +465,10 @@
         <td>83</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>023</td>
@@ -316,6 +484,10 @@
         <td>167</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>026</td>
@@ -331,6 +503,10 @@
         <td>92</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Undead</td>
+        <td>1</td>
+        <td>0</td>
       </tr>  
     </div>
 <!-- Base Game D Ranks -->
@@ -349,6 +525,10 @@
         <td>180</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>029</td>
@@ -364,6 +544,10 @@
         <td>118</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>030</td>
@@ -379,6 +563,10 @@
         <td>106</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Dragon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>031</td>
@@ -394,6 +582,10 @@
         <td>176</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>036</td>
@@ -409,6 +601,10 @@
         <td>84</td>
         <td>4</td>
         <td>15</td>
+        <td>D</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>038</td>
@@ -424,6 +620,10 @@
         <td>96</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Beast</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>040</td>
@@ -439,6 +639,10 @@
         <td>107</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>043</td>
@@ -454,6 +658,10 @@
         <td>96</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>044</td>
@@ -469,6 +677,10 @@
         <td>104</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>045</td>
@@ -484,6 +696,10 @@
         <td>96</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>047</td>
@@ -499,6 +715,10 @@
         <td>188</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- Base Game C Ranks -->
@@ -517,6 +737,10 @@
         <td>106</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>054</td>
@@ -532,6 +756,10 @@
         <td>102</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Dragon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>056</td>
@@ -547,6 +775,10 @@
         <td>106</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Dragon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>057</td>
@@ -562,6 +794,10 @@
         <td>201</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>059</td>
@@ -577,6 +813,10 @@
         <td>150</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
       </tr>   
       <tr>
         <td>065</td>
@@ -592,6 +832,10 @@
         <td>150</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>066</td>
@@ -607,6 +851,10 @@
         <td>150</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>070</td>
@@ -622,6 +870,10 @@
         <td>130</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>071</td>
@@ -637,6 +889,10 @@
         <td>192</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr>        
     </div>
 <!-- Base Game B Ranks -->
@@ -655,6 +911,10 @@
         <td>201</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>96</td>
@@ -670,6 +930,10 @@
         <td>168</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>              
     </div>
 <!-- Base Game A Ranks -->
@@ -688,6 +952,10 @@
         <td>255</td>
         <td>4</td>
         <td>35</td>
+        <td>A</td>
+        <td>Undead</td>
+        <td>1</td>
+        <td>0</td>
       </tr>               
     </div>
 <!-- Base Game S Ranks -->
@@ -718,6 +986,10 @@
         <td>238</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Slime</td>
+        <td>1</td>
+        <td>0</td>
       </tr>     
     </div>
 <!-- DQ III Event -->
@@ -736,6 +1008,10 @@
         <td>78</td>
         <td>2</td>
         <td>5</td>
+        <td>F</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>152</td>
@@ -751,6 +1027,10 @@
         <td>180</td>
         <td>4</td>
         <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>154</td>
@@ -766,6 +1046,10 @@
         <td>375</td>
         <td>2</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>157</td>
@@ -781,6 +1065,10 @@
         <td>405</td>
         <td>2</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr>               
     </div>
 <!-- Yr1 Halloween Event & Troll -->
@@ -799,6 +1087,10 @@
         <td>136</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
       </tr>               
     </div>
 <!-- DQ IV Event & Halberdsaurus -->
@@ -833,6 +1125,10 @@
         <td>188</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr>      
     </div>
 <!-- Yr1 Valentines Event -->
@@ -860,6 +1156,10 @@
         <td>106</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>278</td>
@@ -875,6 +1175,10 @@
         <td>213</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
     </div> 
 <!-- Yr2 Summer Event -->
@@ -895,6 +1199,10 @@
         <td>162</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>309</td>
@@ -910,6 +1218,10 @@
         <td>399</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>310</td>
@@ -925,6 +1237,10 @@
         <td>197</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>312</td>
@@ -940,6 +1256,10 @@
         <td>207</td>
         <td>3</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>321</td>
@@ -955,6 +1275,10 @@
         <td>187</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- DQ: Adventures of Dai Crossover Event -->
@@ -975,6 +1299,10 @@
         <td>406</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>351</td>
@@ -990,6 +1318,10 @@
         <td>195</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>355</td>
@@ -1005,6 +1337,10 @@
         <td>190</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- DQM Event -->
@@ -1023,6 +1359,10 @@
         <td>178</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- DQ IX Event -->
@@ -1041,6 +1381,10 @@
         <td>169</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Dragon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>373</td>
@@ -1056,6 +1400,10 @@
         <td>160</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Dragon</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>379</td>
@@ -1071,6 +1419,10 @@
         <td>239</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Undead</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>384</td>
@@ -1086,6 +1438,10 @@
         <td>407</td>
         <td>2</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- Story Update Chapter 3 Part 2 & Rhapthorne -->
@@ -1104,6 +1460,10 @@
         <td>101</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- DQ X Event -->
@@ -1122,6 +1482,10 @@
         <td>406</td>
         <td>2</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>397</td>
@@ -1137,6 +1501,10 @@
         <td>392</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>403</td>
@@ -1152,9 +1520,300 @@
         <td>190</td>
         <td>2</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- DQ VI Dream Event -->
+    <div>
+      <tr>
+        <td>407</td>
+        <td><img src="./images/Wimp.jpeg" class="icon"></td>
+        <td><a href="./units/wimp.html">Wimp</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>278</td>
+        <td>117</td>
+        <td>145</td>
+        <td>122</td>
+        <td>178</td>
+        <td>177</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>408</td>
+        <td><img src="./images/DemonCloud.jpeg" class="icon"></td>
+        <td><a href="./units/demoncloud.html">Demon Cloud</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>752</td>
+        <td>257</td>
+        <td>186</td>
+        <td>281</td>
+        <td>350</td>
+        <td>110</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>409</td>
+        <td><img src="./images/PeskyJester.jpeg" class="icon"></td>
+        <td><a href="./units/peskyjester.html">Pesky Jester</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>630</td>
+        <td>190</td>
+        <td>384</td>
+        <td>222</td>
+        <td>322</td>
+        <td>89</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>410</td>
+        <td><img src="./images/Belleau.jpeg" class="icon"></td>
+        <td><a href="./units/belleau.html">Belleau</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>982</td>
+        <td>248</td>
+        <td>377</td>
+        <td>385</td>
+        <td>301</td>
+        <td>86</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>411</td>
+        <td><img src="./images/PricklyPrankster.jpeg" class="icon"></td>
+        <td><a href="./units/pricklyprankster.html">Prickly Prankster</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>840</td>
+        <td>256</td>
+        <td>441</td>
+        <td>178</td>
+        <td>404</td>
+        <td>106</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>412</td>
+        <td><img src="./images/Cabot.jpeg" class="icon"></td>
+        <td><a href="./units/cabot.html">Cabot</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>864</td>
+        <td>256</td>
+        <td>432</td>
+        <td>330</td>
+        <td>302</td>
+        <td>86</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>413</td>
+        <td><img src="./images/Murdaw.jpeg" class="icon"></td>
+        <td><a href="./units/murdaw.html">Murdaw</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyMystery.png"></td>
+        <td>953</td>
+        <td>385</td>
+        <td>209</td>
+        <td>359</td>
+        <td>379</td>
+        <td>408</td>
+        <td>2</td>
+        <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>414</td>
+        <td><img src="./images/SpikedClub.jpeg" class="icon"></td>
+        <td><a href="./units/spikedclub.html">Spiked Club</a></td>
+        <td><img src="./images/Rank/RankC.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>586</td>
+        <td>177</td>
+        <td>298</td>
+        <td>240</td>
+        <td>245</td>
+        <td>86</td>
+        <td>2</td>
+        <td>20</td>
+        <td>C</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>415</td>
+        <td><img src="./images/GlacialGolem.jpeg" class="icon"></td>
+        <td><a href="./units/glacialgolem.html">Glacial Golem</a></td>
+        <td><img src="./images/Rank/RankC.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>606</td>
+        <td>192</td>
+        <td>248</td>
+        <td>298</td>
+        <td>186</td>
+        <td>92</td>
+        <td>2</td>
+        <td>20</td>
+        <td>C</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>416</td>
+        <td><img src="./images/ArcticDracky.jpeg" class="icon"></td>
+        <td><a href="./units/arcticdracky.html">Arctic Dracky</a></td>
+        <td><img src="./images/Rank/RankC.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>450</td>
+        <td>224</td>
+        <td>169</td>
+        <td>186</td>
+        <td>224</td>
+        <td>226</td>
+        <td>2</td>
+        <td>20</td>
+        <td>C</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>417</td>
+        <td><img src="./images/Mythsteed.jpeg" class="icon"></td>
+        <td><a href="./units/mythsteed.html">Mythsteed</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>700</td>
+        <td>270</td>
+        <td>213</td>
+        <td>160</td>
+        <td>365</td>
+        <td>341</td>
+        <td>4</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>418</td>
+        <td><img src="./images/Sintaur.jpeg" class="icon"></td>
+        <td><a href="./units/sintaur.html">Sintaur</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>700</td>
+        <td>261</td>
+        <td>438</td>
+        <td>276</td>
+        <td>380</td>
+        <td>106</td>
+        <td>4</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>419</td>
+        <td><img src="./images/Jamirus.jpeg" class="icon"></td>
+        <td><a href="./units/jamirus.html">Jamirus</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>870</td>
+        <td>397</td>
+        <td>261</td>
+        <td>345</td>
+        <td>445</td>
+        <td>174</td>
+        <td>4</td>
+        <td>50</td>
+        <td>S</td>
+        <td>Nature</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>420</td>
+        <td><img src="./images/JackalRipper.jpeg" class="icon"></td>
+        <td><a href="./units/jackalripper.html">Jackal Ripper</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>864</td>
+        <td>241</td>
+        <td>449</td>
+        <td>248</td>
+        <td>354</td>
+        <td>90</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>421</td>
+        <td><img src="./images/Dhuran.jpeg" class="icon"></td>
+        <td><a href="./units/dhuran.html">Dhuran</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>1073</td>
+        <td>315</td>
+        <td>474</td>
+        <td>405</td>
+        <td>384</td>
+        <td>118</td>
+        <td>3</td>
+        <td>50</td>
+        <td>S</td>
+        <td>Demon</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+    </div>
 <!-- Yr2 Gold Week Event -->
     <div>
       <tr>
@@ -1171,6 +1830,10 @@
         <td>106</td>
         <td>3</td>
         <td>50</td>
+        <td>S</td>
+        <td>Inorganic</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- True DQ III Event & 2 Year Anniversary -->
@@ -1189,6 +1852,10 @@
         <td>213</td>
         <td>4</td>
         <td>50</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- Yr3 Summer Event -->
@@ -1210,6 +1877,10 @@
         <td>411</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr>      
     </div>
 <!-- DQM:J Event -->
@@ -1228,6 +1899,10 @@
         <td>260</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>1</td>
       </tr>     
     </div>
 <!-- Yr3 Christmas Event -->
@@ -1246,6 +1921,10 @@
         <td>268</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>1</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- True DQ IV Event & 2.5 Year Anniversary & Lawson -->
@@ -1270,7 +1949,49 @@
         <td>93</td>
         <td>2</td>
         <td>20</td>
-      </tr>     
+        <td>C</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>    
+      <tr>
+        <td>535</td>
+        <td><img src="./images/FireBall.jpeg" class="icon"></td>
+        <td><a href="./units/fireball.html">Fire Ball</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>794</td>
+        <td>268</td>
+        <td>198</td>
+        <td>250</td>
+        <td>302</td>
+        <td>102</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>536</td>
+        <td><img src="./images/SlickSlime.jpeg" class="icon"></td>
+        <td><a href="./units/slickslime.html">Slick Slime</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>994</td>
+        <td>348</td>
+        <td>177</td>
+        <td>424</td>
+        <td>394</td>
+        <td>102</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
       <tr>
         <td>537</td>
         <td><img src="./images/MindiniHunter.jpeg" class="icon"></td>
@@ -1285,6 +2006,10 @@
         <td>93</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>538</td>
@@ -1300,6 +2025,86 @@
         <td>113</td>
         <td>3</td>
         <td>50</td>
+        <td>S</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>539</td>
+        <td><img src="./images/StumpGrump.jpeg" class="icon"></td>
+        <td><a href="./units/stumpgrump.html">Stump Grump</a></td>
+        <td><img src="./images/Rank/RankC.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>610</td>
+        <td>210</td>
+        <td>222</td>
+        <td>200</td>
+        <td>201</td>
+        <td>150</td>
+        <td>2</td>
+        <td>20</td>
+        <td>C</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>540</td>
+        <td><img src="./images/DeadMansSoul.jpeg" class="icon"></td>
+        <td><a href="./units/deadmanssoul.html">Dead Man's Soul</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyUndead.png"></td>
+        <td>630</td>
+        <td>236</td>
+        <td>204</td>
+        <td>210</td>
+        <td>218</td>
+        <td>284</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>541</td>
+        <td><img src="./images/Kisser.jpeg" class="icon"></td>
+        <td><a href="./units/kisser.html">Kisser</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>948</td>
+        <td>389</td>
+        <td>221</td>
+        <td>246</td>
+        <td>381</td>
+        <td>146</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>542</td>
+        <td><img src="./images/VisorKaiser.jpeg" class="icon"></td>
+        <td><a href="./units/visorkaiser.html">Visor Kaiser</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>1069</td>
+        <td>258</td>
+        <td>213</td>
+        <td>478</td>
+        <td>310</td>
+        <td>102</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>543</td>
@@ -1315,6 +2120,10 @@
         <td>130</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>      
     </div>
 <!-- Yr3 Gold Week Event -->
@@ -1334,6 +2143,276 @@
         <td>94</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>555</td>
+        <td><img src="./images/Draggoof.jpeg" class="icon"></td>
+        <td><a href="./units/draggoof.html">Drag-goof</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyDragon.png"></td>
+        <td>769</td>
+        <td>174</td>
+        <td>409</td>
+        <td>176</td>
+        <td>286</td>
+        <td>90</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>556</td>
+        <td><img src="./images/Warhog.jpeg" class="icon"></td>
+        <td><a href="./units/warhog.html">Warhog</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>745</td>
+        <td>190</td>
+        <td>374</td>
+        <td>240</td>
+        <td>293</td>
+        <td>102</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>557</td>
+        <td><img src="./images/Hyperanemon.jpeg" class="icon"></td>
+        <td><a href="./units/hyperanemon.html">Hyperanemon</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>986</td>
+        <td>326</td>
+        <td>177</td>
+        <td>248</td>
+        <td>285</td>
+        <td>325</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>558</td>
+        <td><img src="./images/HeroAbel.jpeg" class="icon"></td>
+        <td><a href="./units/heroabel.html">Legendary Monster Wrangler Abel</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyHero.png"></td>
+        <td>1028</td>
+        <td>451</td>
+        <td>359</td>
+        <td>433</td>
+        <td>389</td>
+        <td>243</td>
+        <td>3</td>
+        <td>65</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>559</td>
+        <td><img src="./images/Pankraz.png" class="icon"></td>
+        <td><a href="./units/pankrazgotha.html">Pankraz Gotha</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyHero.png"></td>
+        <td>1112</td>
+        <td>288</td>
+        <td>437</td>
+        <td>426</td>
+        <td>342</td>
+        <td>174</td>
+        <td>2</td>
+        <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>560</td>
+        <td><img src="./images/Hypothermion.jpeg" class="icon"></td>
+        <td><a href="./units/hypothermion.html">Hypothermion</a></td>
+        <td><img src="./images/Rank/RankC.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>460</td>
+        <td>224</td>
+        <td>157</td>
+        <td>186</td>
+        <td>224</td>
+        <td>226</td>
+        <td>2</td>
+        <td>20</td>
+        <td>C</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>561</td>
+        <td><img src="./images/RevaultingHorse.jpeg" class="icon"></td>
+        <td><a href="./units/revaultinghorse.html">Revaulting Horse</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>622</td>
+        <td>284</td>
+        <td>198</td>
+        <td>153</td>
+        <td>278</td>
+        <td>252</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>562</td>
+        <td><img src="./images/Draggoon.jpeg" class="icon"></td>
+        <td><a href="./units/draggoon.html">Drag-goon</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDragon.png"></td>
+        <td>980</td>
+        <td>296</td>
+        <td>430</td>
+        <td>236</td>
+        <td>330</td>
+        <td>102</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>563</td>
+        <td><img src="./images/Purrcy.jpeg" class="icon"></td>
+        <td><a href="./units/purrcy.html">Purrcy</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyBeast.png"></td>
+        <td>774</td>
+        <td>257</td>
+        <td>394</td>
+        <td>222</td>
+        <td>392</td>
+        <td>106</td>
+        <td>4</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>564</td>
+        <td><img src="./images/Madchen.jpeg" class="icon"></td>
+        <td><a href="./units/madchen.html">Madchen</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyHero.png"></td>
+        <td>998</td>
+        <td>466</td>
+        <td>210</td>
+        <td>297</td>
+        <td>404</td>
+        <td>406</td>
+        <td>3</td>
+        <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>565</td>
+        <td><img src="./images/Parry.jpeg" class="icon"></td>
+        <td><a href="./units/parry.html">Parry</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyHero.png"></td>
+        <td>1135</td>
+        <td>344</td>
+        <td>419</td>
+        <td>385</td>
+        <td>372</td>
+        <td>237</td>
+        <td>3</td>
+        <td>65</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>566</td>
+        <td><img src="./images/MandrakeMarshal.jpeg" class="icon"></td>
+        <td><a href="./units/mandrakemarshal.html">Mandrake Marshal</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyDragon.png"></td>
+        <td>957</td>
+        <td>264</td>
+        <td>428</td>
+        <td>272</td>
+        <td>362</td>
+        <td>102</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>567</td>
+        <td><img src="./images/KingKorol.jpeg" class="icon"></td>
+        <td><a href="./units/kingkorol.html">King Korol</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyDemon.png"></td>
+        <td>897</td>
+        <td>348</td>
+        <td>268</td>
+        <td>318</td>
+        <td>393</td>
+        <td>370</td>
+        <td>2</td>
+        <td>50</td>
+        <td>S</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>568</td>
+        <td><img src="./images/BishopLadja.jpeg" class="icon"></td>
+        <td><a href="./units/bishopladja.html">Bishop Ladja</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyUndead.png"></td>
+        <td>1070</td>
+        <td>394</td>
+        <td>209</td>
+        <td>301</td>
+        <td>372</td>
+        <td>426</td>
+        <td>3</td>
+        <td>50</td>
+        <td>S</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- Yr4 Summer Event -->
@@ -1352,6 +2431,10 @@
         <td>331</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>570</td>
@@ -1367,6 +2450,10 @@
         <td>102</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>571</td>
@@ -1382,6 +2469,10 @@
         <td>174</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>572</td>
@@ -1397,6 +2488,10 @@
         <td>293</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr>   
       <tr>
         <td>573</td>
@@ -1412,6 +2507,10 @@
         <td>148</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>574</td>
@@ -1427,6 +2526,10 @@
         <td>221</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>     
     </div>
 <!-- Rank 9 Metal Event -->
@@ -1445,6 +2548,10 @@
         <td>149</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>576</td>
@@ -1460,6 +2567,10 @@
         <td>103</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>577</td>
@@ -1475,6 +2586,10 @@
         <td>381</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- Story Update Chapter 5 Part 1 -->
@@ -1493,6 +2608,10 @@
         <td>95</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>579</td>
@@ -1508,6 +2627,10 @@
         <td>317</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>580</td>
@@ -1523,6 +2646,10 @@
         <td>347</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>581</td>
@@ -1538,6 +2665,10 @@
         <td>404</td>
         <td>4</td>
         <td>50</td>
+        <td>S</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- True DQ I Event -->
@@ -1556,6 +2687,10 @@
         <td>228</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>583</td>
@@ -1571,6 +2706,10 @@
         <td>145</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>584</td>
@@ -1586,6 +2725,10 @@
         <td>139</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>585</td>
@@ -1601,6 +2744,10 @@
         <td>107</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>586</td>
@@ -1616,6 +2763,10 @@
         <td>223</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>587</td>
@@ -1631,6 +2782,10 @@
         <td>102</td>
         <td>2</td>
         <td>20</td>
+        <td>C</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>588</td>
@@ -1646,6 +2801,10 @@
         <td>329</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>589</td>
@@ -1661,6 +2820,10 @@
         <td>306</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>590</td>
@@ -1676,6 +2839,10 @@
         <td>263</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
       </tr>  
     </div>
 <!-- DQ Treasures Event -->
@@ -1694,6 +2861,10 @@
         <td>139</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr>  
       <tr>
         <td>592</td>
@@ -1709,6 +2880,10 @@
         <td>90</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>   
       <tr>
         <td>593</td>
@@ -1724,6 +2899,10 @@
         <td>95</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>594</td>
@@ -1739,6 +2918,10 @@
         <td>293</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>595</td>
@@ -1754,6 +2937,10 @@
         <td>115</td>
         <td>4</td>
         <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>596</td>
@@ -1769,6 +2956,10 @@
         <td>147</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>597</td>
@@ -1784,6 +2975,10 @@
         <td>169</td>
         <td>3</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>598</td>
@@ -1799,6 +2994,10 @@
         <td>238</td>
         <td>4</td>
         <td>25</td>
+        <td>B</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>599</td>
@@ -1814,6 +3013,10 @@
         <td>102</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>600</td>
@@ -1829,6 +3032,10 @@
         <td>103</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>601</td>
@@ -1844,6 +3051,10 @@
         <td>103</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>602</td>
@@ -1859,6 +3070,10 @@
         <td>296</td>
         <td>3</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>603</td>
@@ -1874,6 +3089,10 @@
         <td>284</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>604</td>
@@ -1889,6 +3108,10 @@
         <td>324</td>
         <td>4</td>
         <td>50</td>
+        <td>S</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>605</td>
@@ -1904,6 +3127,10 @@
         <td>261</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- DQ X Winter Event -->
@@ -1922,6 +3149,10 @@
         <td>343</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>607</td>
@@ -1937,6 +3168,10 @@
         <td>115</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>608</td>
@@ -1952,6 +3187,10 @@
         <td>175</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>609</td>
@@ -1967,6 +3206,10 @@
         <td>136</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>610</td>
@@ -1982,6 +3225,10 @@
         <td>164</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>611</td>
@@ -1997,6 +3244,10 @@
         <td>160</td>
         <td>3</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
     </div>
 <!-- True DQ VI Event & Watabou -->
@@ -2015,6 +3266,10 @@
         <td>142</td>
         <td>2</td>
         <td>10</td>
+        <td>E</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>613</td>
@@ -2030,6 +3285,10 @@
         <td>102</td>
         <td>4</td>
         <td>25</td>
+        <td>B</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>614</td>
@@ -2045,6 +3304,10 @@
         <td>102</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>615</td>
@@ -2060,6 +3323,10 @@
         <td>120</td>
         <td>4</td>
         <td>35</td>
+        <td>A</td>
+        <td>Undead</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>616</td>
@@ -2075,6 +3342,10 @@
         <td>404</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>617</td>
@@ -2090,6 +3361,10 @@
         <td>185</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>618</td>
@@ -2105,6 +3380,10 @@
         <td>139</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Dragon</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>619</td>
@@ -2120,6 +3399,10 @@
         <td>250</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>620</td>
@@ -2135,6 +3418,10 @@
         <td>420</td>
         <td>2</td>
         <td>60</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>621</td>
@@ -2150,6 +3437,10 @@
         <td>332</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>622</td>
@@ -2165,6 +3456,10 @@
         <td>236</td>
         <td>3</td>
         <td>65</td>
+        <td>S</td>
+        <td>Hero</td>
+        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>623</td>
@@ -2180,6 +3475,10 @@
         <td>90</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>624</td>
@@ -2195,6 +3494,10 @@
         <td>407</td>
         <td>2</td>
         <td>65</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>625</td>
@@ -2210,6 +3513,10 @@
         <td>321</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
     </div>
 <!-- Yr4 Valentines Event -->
@@ -2228,6 +3535,10 @@
         <td>166</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>627</td>
@@ -2243,6 +3554,10 @@
         <td>108</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Beast</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>628</td>
@@ -2258,6 +3573,10 @@
         <td>243</td>
         <td>4</td>
         <td>50</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr>      
     </div>
 <!-- Story Udpate Chapter 5 Part 2 -->
@@ -2276,6 +3595,10 @@
         <td>126</td>
         <td>2</td>
         <td>25</td>
+        <td>B</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>630</td>
@@ -2291,6 +3614,10 @@
         <td>334</td>
         <td>4</td>
         <td>35</td>
+        <td>A</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>631</td>
@@ -2306,6 +3633,10 @@
         <td>118</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>632</td>
@@ -2321,6 +3652,10 @@
         <td>151</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
       </tr>     
     </div>
 <!-- DQM: Dark Prince Event -->
@@ -2339,6 +3674,10 @@
         <td>210</td>
         <td>2</td>
         <td>15</td>
+        <td>D</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>634</td>
@@ -2354,6 +3693,10 @@
         <td>185</td>
         <td>4</td>
         <td>20</td>
+        <td>C</td>
+        <td>Demon</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>635</td>
@@ -2369,6 +3712,10 @@
         <td>306</td>
         <td>4</td>
         <td>35</td>
+        <td>A</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>636</td>
@@ -2384,6 +3731,10 @@
         <td>320</td>
         <td>2</td>
         <td>35</td>
+        <td>A</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>637</td>
@@ -2399,6 +3750,10 @@
         <td>283</td>
         <td>2</td>
         <td>50</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
       <tr>
         <td>638</td>
@@ -2414,7 +3769,106 @@
         <td>396</td>
         <td>2</td>
         <td>60</td>
-      </tr>     
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>  
+      <tr>
+        <td>639</td>
+        <td><img src="./images/GoonacheGoodie.jpeg" class="icon"></td>
+        <td><a href="./units/goonachegoodie.html">Goonache Goodie</a></td>
+        <td><img src="./images/Rank/RankE.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>398</td>
+        <td>128</td>
+        <td>148</td>
+        <td>141</td>
+        <td>142</td>
+        <td>142</td>
+        <td>2</td>
+        <td>10</td>
+        <td>E</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>640</td>
+        <td><img src="./images/BaleenMage.jpeg" class="icon"></td>
+        <td><a href="./units/baleenmage.html">Baleen Mage</a></td>
+        <td><img src="./images/Rank/RankB.png"></td>
+        <td><img src="./images/Family/FamilyNature.png"></td>
+        <td>752</td>
+        <td>273</td>
+        <td>170</td>
+        <td>174</td>
+        <td>250</td>
+        <td>262</td>
+        <td>2</td>
+        <td>25</td>
+        <td>B</td>
+        <td>Nature</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>641</td>
+        <td><img src="./images/PastyPastry.jpeg" class="icon"></td>
+        <td><a href="./units/pastypastry.html">Pasty Pastry</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilySlime.png"></td>
+        <td>1021</td>
+        <td>348</td>
+        <td>177</td>
+        <td>343</td>
+        <td>366</td>
+        <td>136</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Slime</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>642</td>
+        <td><img src="./images/Percival.jpeg" class="icon"></td>
+        <td><a href="./units/percival.html">Percival</a></td>
+        <td><img src="./images/Rank/RankA.png"></td>
+        <td><img src="./images/Family/FamilyInorganic.png"></td>
+        <td>977</td>
+        <td>294</td>
+        <td>410</td>
+        <td>317</td>
+        <td>320</td>
+        <td>103</td>
+        <td>2</td>
+        <td>35</td>
+        <td>A</td>
+        <td>Inorganic</td>
+        <td>0</td>
+        <td>0</td>
+      </tr> 
+      <tr>
+        <td>643</td>
+        <td><img src="./images/Ludo.jpeg" class="icon"></td>
+        <td><a href="./units/ludo.html">Ludo</a></td>
+        <td><img src="./images/Rank/RankS.png"></td>
+        <td><img src="./images/Family/FamilyMystery.png"></td>
+        <td>1040</td>
+        <td>446</td>
+        <td>362</td>
+        <td>333</td>
+        <td>362</td>
+        <td>244</td>
+        <td>2</td>
+        <td>50</td>
+        <td>S</td>
+        <td>Mystery</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>    
     </div>
     </tbody>
   </table>
@@ -2437,6 +3891,10 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
       </tr> 
 
 -->
