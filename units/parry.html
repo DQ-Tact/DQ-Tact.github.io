@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/parry.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,31 +29,31 @@
         </tr>
         <tr>
             <th scope="row">HP:</th>
-            <td>1135</td>
+            <td id="HP"></td>
         </tr>
         <tr>
             <th scope="row">MP:</th>
-            <td>344</td>
+            <td id="MP"></td>
         </tr>
         <tr>
             <th scope="row">ATK:</th>
-            <td>419</td>
+            <td id="ATK"></td>
         </tr>
         <tr>
             <th scope="row">DEF:</th>
-            <td>385</td>
+            <td id="DEF"></td>
         </tr>
         <tr>
             <th scope="row">AGL:</th>
-            <td>372</td>
+            <td id="AGL"></td>
         </tr>
         <tr>
             <th scope="row">WIS:</th>
-            <td>237</td>
+            <td id="WIS"></td>
         </tr>
         <tr>
             <th scope="row">Move:</th>
-            <td>3</td>
+            <td id="Move"></td>
         </tr>
         <tr>
             <th scope="row">Weight:</th>
@@ -80,6 +83,23 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
+
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
         <thead>
@@ -136,7 +156,7 @@
             <tr>
                 <td><img class="charbuilder" src="../images/Rank/TalentCharBuilder.png"></td>
                 <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>Speical Psyche Up</td>
+                <td>Special Psyche Up</td>
                 <td>28</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
@@ -252,7 +272,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>Speical Psyche Up</td>
+                <td>Special Psyche Up</td>
                 <td>Greatly raises the user's Tension for 1 turn<br>(Times usable: 1)</td>
             </tr>
             <tr>

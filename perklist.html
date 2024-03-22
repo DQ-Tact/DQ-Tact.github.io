@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for mainpage -->
+<link rel="stylesheet" href="./styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Datatable information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./perklist.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>DQT Perk List</title>
+</head>
+
+<body>
+  <h1>Perk List</h1>
+
+  <table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Alchemy Piggy -->
+        <tr>
+            <td><a href="./perks/reactiveheals.html#martialmidheal">アルケミストンヒール</a></td>
+            <td>When an ally is attacked by enemy:<br>アルケミストンヒール heals them if ally is within 1 to 2-space range, up to 3 times per battle<br><div class="attackdesc">(アルケミストンヒール: Heals a moderate amount of HP and raises 1 ally's martial potency/recovery for 3 turns)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/mpregen.html#AutoMPRegenS">Auto MP Regen (S)</a><br><div class="jap">自動MP回復(小)</div></td>
+            <td>Action start:<br>Restores 4% of max MP</td>
+        </tr>
+        <!-- Angelo -->
+        <tr>
+            <td><a href="./perks/tension.html#FeeltheBurn">Feel the Burn</a><br><div class="jap">テンションバーン</div></td>
+            <td>When attacked by enemy:<br>Often raises Tension for 1 turn</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/familystatbuffs.html#TheTemplars">The Templars</a><br><div class="jap">聖堂騎士団</div></td>
+            <td>Action start on even turns until turn 10:<br>Raises damage dealt for Hero units in the surrounding rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/tension.html#RareTensionUp">Rare Tension Up</a><br><div class="jap">まれにテンションアップ</div></td>
+            <td>Action Start:<br>Rarely raises Tension for 1 turn</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#TemplarsTemerity">Templar's Temerity</a><br><div class="jap">騎士道精神</div></td>
+            <td>Battle start:<br>Raises Martial and Spell Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#AutoHPRegen">Auto HP Regen</a><br><div class="jap">自動HP回復</div></td>
+            <td>Action start:<br>Heals 10% of max HP</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/reactiveheals.html#TemplarHealing">Templar Healing</a><br><div class="jap">聖堂騎士の癒し</div></td>
+            <td>When an ally is attacked by enemy:<br>Heals with Templar Healing if ally is within 1 to 2-space range<br><div class="attackdesc">(Templar Healing: Heals a minor amount of HP for 1 ally)</div></td>
+        </tr>
+        <!-- Anlucia1 -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#BlessedLight">Blessed Light</a><br><div class="jap">加護の光</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if the user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#SleepyLuminary">Sleepy Luminary</a><br><div class="jap">眠れる勇者</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, AGL, and WIS for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#SleepyLuminary2">Sleepy Luminary (Lv. 2)</a><br><div class="jap">眠れる勇者Lv2</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, AGL, and WIS for 3 turns, wakes the user up</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/tension.html#LuminarysHeart">Luminary's Heart</a><br><div class="jap">勇者の心</div></td>
+            <td>When attacked by enemy:<br>Occasionally raises tension for 1 turn</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#LuminaryHeal">覚醒の光</a></td>
+            <td>Heals 50% of max HP and raises physical and spell potency/recovery when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#LuminaryShield">堅陣のかまえ</a></td>
+            <td>When attacked by enemy:<br>Triggers Luminary's Shield, 1 time per battle<br><div class="attackdesc">(Luminary's Shield: Generates spaces in area of effect that reduce damage taken by 15% for 3 turns for allies on those spaces only)</div></td>
+        </tr>
+        <!-- Maluminary -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#WickedRobes">Wicked Robes</a><br><div class="jap">魔勇者のころも</div></td>
+            <td>Battle start:<br>Reduces damage taken by 15% and raises damage dealt by 15% for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#WickedRobes2">Wicked Robes (Lv. 2)</a><br><div class="jap">魔勇者のころもLv2</div></td>
+            <td>Battle start:<br>Reduces damage taken by 30% and raises damage dealt by 20% for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#WickedSpirit">Wicked Spirit</a><br><div class="jap">魔勇者の闘志</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, WIS, and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#WickedSpirit2">Wicked Spirit (Lv. 2)</a><br><div class="jap">魔勇者の闘志Lv2</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, WIS, and Move for 3 turns, cures Confusion for the user</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#WickedBenevolence">Wicked Benevolence</a><br><div class="jap">魔勇者の慈愛</div></td>
+            <td>When attacked by enemy:<br>Heals 15% of the user's max HP</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Maluminary">領域誘発のかまえ</a></td>
+            <td>When attacked by enemy:<br>Attacks with 創世の領域 if enemy is within 3 to 4-space range, 1 time per battle<br><div class="attackdesc">(創世の領域: Generates 1000-damage creation realm spaces that target enemies and allies in that area for 2 turns<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness)</div></td>
+        </tr>
+        <!-- Archfiend Mortamor -->
+        <tr>
+            <td><a href="./perks/actionstart.html#Hands">狭間の大魔王</a></td>
+            <td>Action start:<br>Summons the Archfiend's Right Hand and the Archfiend's Left Hand, 1 time per battle</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Mortamor">夢幻の眼光</a></td>
+            <td>When any other ally makes a martial or spell attack:<br>Attacks with 夢幻の眼光 if enemy is within 2 to 4-space range, up to 5 times per battle<br><div class="attackdesc">(夢幻の眼光: Deals major spell damage to 1 enemy, occasionally puts to sleep)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#TriShield">幻狭魔壁</a></td>
+            <td>Battle start:<br>Reduces damage taken by 50% up to 3 times for 99 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#StatusCleanse">不動のこころ</a></td>
+            <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#SpellTricks">Spell Tricks</a><br><div class="jap">呪文のコツ</div></td>
+            <td>Lowers spell ability MP cost by 10%, raises potency and recovery by 10%</td>
+        </tr>
+        <!-- Mortamor Left Hand -->
+        <tr>
+            <td><a href="./perks/familystatbuffs.html#MortLeft">左手の加護</a></td>
+            <td>Action start on odd turns until turn 10:<br>Raises martial potency/recovery for ??? units in the surrounding rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <!-- Mortamor Right Hand -->
+        <tr>
+            <td><a href="./perks/familystatbuffs.html#MortRight">右手の加護</a></td>
+            <td>Action start on odd turns until turn 10:<br>Raises spell potency/recovery for ??? units in the surrounding rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <!-- Arctic Dracky -->
+        <tr>
+            <td><a href="./perks/potency.html#CrackSpell5">Crack-type Spell Potency +5%</a><br><div class="jap">ヒャド属性呪文威力+5%</div></td>
+            <td>Raises Crack-type Spell potency by 5%</td>
+        </tr>
+        <!-- Baramos -->
+        <tr>
+            <td><a href="./perks/battlestart.html#WickedVeil">Wicked Veil</a><br><div class="jap">邪悪なベール</div></td>
+            <td>Battle start:<br>Raises Spell Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#Bangmeister">Bangmeister</a><br><div class="jap">イオ属性とくぎのコツ</div></td>
+            <td>Lowers Bang-type ability MP cost by 10%, raises potency and recovery by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Baramos">Archfiend of Chaos</a><br><div class="jap">混沌の魔王</div></td>
+            <td>When user's ability confuses enemy:<br>Attacks with Chaotic Compressed Kaboom if enemy is within 1 to 4-space range<br>This perk can be triggered by non-damage dealing abilities<br><div class="attackdesc">(Chaotic Compressed Kaboom: Deals major Bang-type spell damage to 1 enemy)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Confusion10">Confusion Success Rate +10%</a><br><div class="jap">混乱成功率+10%</div></td>
+            <td>Raises Confusion success rate by 10%</td>
+        </tr>
+        <!-- Barbarus -->
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#DarkDragon">Dark Dragon</a><br><div class="jap">闇竜</div></td>
+            <td>Action start on odd turns until turn 10:<br>Grants all allies Zamforce in a 5x5 area (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#DarkDragonWings">Dark Dragon's Wings</a><br><div class="jap">闇竜の翼</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#DarkDragonRevenge">Dark Dragon Revenge</a><br><div class="jap">闇竜の逆鱗</div></td>
+            <td>Heals a major amount of HP and greatly raises breath potency/recovery for 3 turns when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/mpregen.html#AutoMPRegen">Auto MP Regen</a><br><div class="jap">自動MP回復</div></td>
+            <td>Action start:<br>Restores 8% of max MP</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#DarkDragonAura">Dark Dragon Aura</a><br><div class="jap">闇竜のオーラ</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if the user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#ZamEssence">Zam Essence</a><br><div class="jap">ドルマ属性の極み</div></td>
+            <td>Raises Zam-type potency by 20%</td>
+        </tr>
+        <!-- Belleau -->
+        <tr>
+            <td><a href="./perks/cover.html#GuardTacticOdd">Guard Tactic Odd</a><br><div class="jap">ガード戦法・奇</div></td>
+            <td>Action start on odd turns until turn 6:<br>Enables Cover for 2 turns<br><div class="attackdesc">(Cover: Take attacks for directly adjacent allies and reduces damage taken by 20% for the user)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Stun5">Stun Success Rate +5%</a><br><div class="jap">休み成功率+5%</div></td>
+            <td>Raises Stun success rate by 5%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Belleau">Belleau Combo</a><br><div class="jap">ズイカク・コンボ</div></td>
+            <td>When an ally's ability binds enemy:<br>Often attacks with Massive Attack if enemy is within 1 to 3-space range<br><div class="attackdesc">(Massive Attack: Deals major physical damage (250% potency) to 1 enemy, rarely stuns)</div></td>
+        </tr>
+        <!-- Bewarewolf -->
+        <tr>
+            <td><a href="./perks/battlestart.html#InstantMusterStrength">Instant Muster Strength</a><br><div class="jap">いきなりちからため</div></td>
+            <td>Battle start:<br>Grants x1.5 physical potency/recovery for 1 turn</td>
+        </tr>
+        <!-- Ladja -->
+        <tr>
+            <td><a href="./perks/hpthreshold.html#WickedObsession">Wicked Obsession</a><br><div class="jap">邪教の執念</div></td>
+            <td>Heals 50% of max HP and grants x1.5 spell and martial potency/recovery for 1 turn when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#ImperiousGrin">Imperious Grin</a><br><div class="jap">不敵な笑い</div></td>
+            <td>Battle start:<br>Greatly raises AGL and evasion rate for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#GrimGardez">Grim Gardez</a><br><div class="jap">邪教の加護</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if the user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#WickedBounce">Wicked Bounce</a><br><div class="jap">邪教のマホカンタ</div></td>
+            <td>Battle start:<br>Grants a barrier that reflects spell attacks for 2 turns</td>
+        </tr>
+        <!-- Blackmar -->
+        <tr>
+            <td><a href="./perks/familystatbuffs.html#Blackmar">あくまの呼び声</a></td>
+            <td>Action start on even turns until turn 6:<br>Raises breath potency/recovery for Demon units in a 5x5 area (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpmpregen.html#AutoHPMPRegenS">Auto HP/MP Regen (S)</a><br><div class="jap">自動HP&MP回復(小)</div></td>
+            <td>Action start:<br>Heals 5% of max HP and restores 4% of max MP</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#TwoShield">牢獄の護り</a></td>
+            <td>Battle start:<br>Reduces damage taken by 50% up to 2 times for 99 turns</td>
+        </tr>
+        <!-- Blood Mage -->
+        <tr>
+            <td><a href="./perks/battlestart.html#InstantBounce">Instant Bounce</a><br><div class="jap">いきなりマホカンタ</div></td>
+            <td>Battle start:<br>Grants a barrier that reflects spell attacks for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#BloodBlessing">Blood Blessing</a><br><div class="jap">血の恩恵</div></td>
+            <td>When attacking:<br>For number of attacked enemies only, raises WIS for 1 turn</td>
+        </tr>
+        <!-- Blue Dragon -->
+        <tr>
+            <td><a href="./perks/potency.html#ColdTrail">Cold Trail</a><br><div class="jap">冷たい足跡</div></td>
+            <td>Raises Move by 1 and raises Crack-type breath potency by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#MightyAura">Mighty Aura</a><br><div class="jap">強者のオーラ</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 20% if the user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#HeatUp">Heat Up</a><br><div class="jap">ヒートアップ</div></td>
+            <td>When attacked by enemy:<br>Heals 5% of the user's max HP</td>
+        </tr>
+        <!-- Bodkin Fletcher -->
+        <tr>
+            <td><a href="./perks/potency.html#PhysPot5">Physical Potency +5%</a><br><div class="jap">物理威力+5%</div></td>
+            <td>Raises physical potency by 5%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Poison10">Poison Success Rate +10%</a><br><div class="jap">毒成功率+10%</div></td>
+            <td>Raises Poison success rate by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Intoxicant">Intoxicant</a><br><div class="jap">毒薬</div></td>
+            <td>When making a physical attack:<br>Rarely poisons<br>This perk can be triggered by non-damage dealing abilities, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+        </tr>
+        <!-- Bone Baron -->
+        <tr>
+            <td><a href="./perks/potency.html#ZamSpell10">Zam-type Spell Potency +10%</a><br><div class="jap">ドルマ属性呪文威力+10%</div></td>
+            <td>Raises Zam-type spell potency by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#InstantPing">Instant Ping</a><br><div class="jap">いきなりインテ</div></td>
+            <td>Battle start:<br>Greatly raises WIS for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#ZamSpellEssence">Zam-type Spell Essence</a><br><div class="jap">ドルマ属性呪文の極み</div></td>
+            <td>Raises Zam-type spell potency by 20%</td>
+        </tr>
+        <!-- Boreal Serpent -->
+        <tr>
+            <td><a href="./perks/actionstart.html#RareAttackPrep">Rare Attack Prep</a><br><div class="jap">まれに攻撃じゅんび</div></td>
+            <td>Action start:<br>Rarely greatly raises ATK for 2 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#DraconicWrath">Draconic Wrath</a><br><div class="jap">竜の逆鱗</div></td>
+            <td>When making a breath attack:<br>Massively raises ATK for 1 turn</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#CrackBreathTricks">Crack-type Breath Tricks</a><br><div class="jap">ヒャド属性息のコツ</div></td>
+            <td>Lowers Crack-type breath MP cost by 10%, raises potency and recovery by 10%</td>
+        </tr>
+        <!-- Brickman -->
+        <tr>
+            <td><a href="./perks/battlestart.html#BrickmanDefense">Brickman Defense</a><br><div class="jap">ゴレムスガード</div></td>
+            <td>When summoned:<br>Raises DEF for 3 turns</td>
+        </tr>
+        <!-- Bubble Slime -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#LateRain">Late Rain</a><br><div class="jap">最期の雨</div></td>
+            <td>When attacked and KO'd by enemy:<br>Triggers Scouring Bubbles if enemy is within 2 to 3-space range, 1 time per battle<br><div class="attackdesc">(Scouring Bubbles: Deals minor martial damage (12 base potency) to all enemies in area of effect 5 times, rarely poisons)</div></td>
+        </tr>
+        <!-- Bullfinch -->
+        <tr>
+            <td><a href="./perks/battlestart.html#BullishGuard">Bullish Guard</a><br><div class="jap">あばれガード</div></td>
+            <td>Battle start:<br>Raises Physical Res and Spell Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#MadRush">Mad Rush</a><br><div class="jap">猛走</div></td>
+            <td>When user's ability paralyses enemy:<br>Raises Move and martial potency/recovery for 3 turns<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <!-- Cabot -->
+        <tr>
+            <td><a href="./perks/cover.html#GuardTacticEven">Guard Tactic Even</a><br><div class="jap">ガード戦法・偶</div></td>
+            <td>Action start on even turns until turn 6:<br>Enables Cover for 2 turns<br><div class="attackdesc">(Cover: Take attacks for directly adjacent allies and reduces damage taken by 20% for the user)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Bind5">Bind Success Rate +5%</a><br><div class="jap">いどう封じ成功率+5%</div></td>
+            <td>Raises Bind success rate by 5%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Cabot">Cabot Combo</a><br><div class="jap">ショウカク・コンボ</div></td>
+            <td>When an ally's ability stuns enemy:<br>Often attacks with All-Out Strike if enemy is within 1 to 3-space range<br><div class="attackdesc">(All-Out Strike: Deals major physical damage (250% potency) to 1 enemy, rarely binds)</div></td>
+        </tr>
+        <!-- Cactiball -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#CactusCrackle">Cactus Crackle</a><br><div class="jap">サボテンスパーキング</div></td>
+            <td>When attacked and KO'd by enemy:<br>Triggers Cactus Crackle if enemy is within large rhombus area, 1 time per battle<br><div class="attackdesc">(Cactus Crackle: Generates 100-damage thorn spaces in area of effect that target enemies and allies for 2 turns)</div></td>
+        </tr>
+        <!-- Cannibox -->
+        <tr>
+            <td><a href="./perks/attackbased.html#UnforeseenBlow">Unforeseen Blow</a><br><div class="jap">不意の一撃</div></td>
+            <td>When user's ability puts enemy to sleep:<br>Massively raises ATK for 1 turn<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <!-- Captain Platypunk -->
+        <tr>
+            <td><a href="./perks/battlestart.html#FullSpeedAhead">Full Speed Ahead!</a><br><div class="jap">全速全身！</div></td>
+            <td>Battle start:<br>Raises ATK, DEF, and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#AutoHPRegenS">Auto HP Regen (S)</a><br><div class="jap">自動HP回復(小)</div></td>
+            <td>Action start:<br>Heals 5% of max HP</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#MoonlitBanquet">Moonlit Banquet</a><br><div class="jap">月夜のうたげ</div></td>
+            <td>When attacking:<br>Attacks with Moonlit Assault if enemy is within 1-space range, up to 3 times per battle<br><div class="attackdesc">(Moonlit Assault: Deals minor Zam-type physical damage (65% potency) to random enemies in area of effect 5 times)</div></td>
+        </tr>
+        <!-- Cetacean Sorcerer -->
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#WhaleCountdown">研ぎ澄まされる魔力</a></td>
+            <td>Turns 1/2 action start:<br>Raises Spell Boost for 2 turns<br>Turn 3 action start:<br>Greatly raises Spell Boost for 1 turn</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#InstantDamageBarrier">Instant Damage Barrier</a><br><div class="jap">いきなりダメージバリア</div></td>
+            <td>Battle start:<br>Grants a barrier that reduces damage taken by 15% for 3 turns</td>
+        </tr>
+        <!-- Chimaera -->
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#Soar">Soar</a><br><div class="jap">かっくう</div></td>
+            <td>Action start on even turns until turn 10:<br>Raises AGL and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/actionstart.html#ChimaeraPrayer">Chimaera Prayer</a><br><div class="jap">キメラの祈り</div></td>
+            <td>Action start on even turns until turn 10:<br>Occasionally grants x1.5 spell potency/recovery for 1 turn</td>
+        </tr>
+        <!-- Cloud Surfer -->
+        <tr>
+            <td><a href="./perks/potency.html#WooshAbilityTricks">Woosh-type Ability Tricks</a><br><div class="jap">バギ属性とくぎのコツ</div></td>
+            <td>Lowers Woosh-type ability MP cost by 10%, raises potency and recovery by 10%</td>
+        </tr>
+        <!-- Corvus -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#AngelicReason">Angelic Reason</a><br><div class="jap">天使の理</div></td>
+            <td>Battle start:<br>Nullifies damage taken up to 30% of own max HP for 10 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#AdvancedAngelMight">Advanced Angel Might</a><br><div class="jap">上級天使の力</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises DEF, Move, and Spell Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#UnendingHate">Unending Hate</a><br><div class="jap">尽きぬ憎悪</div></td>
+            <td>Action start on even turns until turn 10:<br>Raises spell potency/recovery for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#TragicAngel">Tragic Angel</a><br><div class="jap">悲劇の天使</div></td>
+            <td>Heals 50% of max HP when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#StatusCleanseCorvus">Once and Former Guardian Angel</a><br><div class="jap">かつて守護天使だったもの</div></td>
+            <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/immortal.html#IndomitableSpirit">Indomitable Spirit</a><br><div class="jap">不屈の闘志</div></td>
+            <td>Before HP hits 0:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+        </tr>
+        <!-- Crankiid -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#BlockShield">Block Shield</a><br><div class="jap">ブロックシールド</div></td>
+            <td>Battle start:<br>Reduces damage taken by 50% up to 2 times for 99 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Crankiid">Squid Ink Spurt Fierce Counterattack</a><br><div class="jap">イカスミ大噴射の猛反撃</div></td>
+            <td>When attacked by enemy:<br>Attacks with Squid Ink Spurt if enemy is within long fan-shaped area, 1 time per battle<br><div class="attackdesc">(Squid Ink Spurt: Deals major breath damage (175 base potency) to all enemies in area of effect, often blinds)</div></td>
+        </tr>
+        <!-- Creation Illusia -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#Illusia">光の神装</a></td>
+            <td>Battle start:<br>Grants a barrier that reflects physical attacks, reduces damage taken by 20% for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#HiddenPower">Hidden Power</a><br><div class="jap">秘めたるチカラ</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, AGL, and WIS for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#IllusiaDamageDealt">神気の奔流</a></td>
+            <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20% if the user's HP is 50% or over</td>
+        </tr>
+        <!-- Cursed Rock -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#CursedSelfDestruct">呪いのじばく</a></td>
+            <td>When attacked and KO'd by enemy:<br>Triggers 呪いのじばく if enemy is within rhombus shaped area, 1 time per battle<br><div class="attackdesc">(呪いのじばく: Deals major martial damage (165 base potency) to all enemies in area of effect, curses)</div></td>
+        </tr>
+        <!-- Dancing Flame -->
+        <tr>
+            <td><a href="./perks/hpthreshold.html#RagingRage">Raging Rage</a><br><div class="jap">もえさかる怒り</div></td>
+            <td>Massively raises ATK for 3 turns when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <!-- Dark Dragling -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#DarkDragling">小竜のまもり</a></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#DarkDragling">いたずらごころ</a></td>
+            <td>When user's ability paralyses, blinds, curses, or poisons enemy:<br>Grants the user x1.5 breath potency/recovery for 1 turn<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <!-- Death Scorpion -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#ScorpionArmour">Scorpion Armour</a><br><div class="jap">さそりのよろい</div></td>
+            <td>Reduces damage taken by 30% from enemies at a range of 2 spaces or more</td>
+        </tr>
+        <!-- Demon Cloud -->
+        <tr>
+            <td><a href="./perks/potency.html#BreathPot5">Breath Potency +5%</a><br><div class="jap">息威力+5%</div></td>
+            <td>Raises breath potency by 5%</td>
+        </tr>
+        <!-- Demonrider -->
+        <tr>
+            <td><a href="./perks/battlestart.html#Demonrider">フルドライブ</a></td>
+            <td>Battle start:<br>Greatly raises AGL and physical potency/recovery for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#InstantOomph">Instant Oomph</a><br><div class="jap">いきなりバイキルト</div></td>
+            <td>Battle start:<br>Greatly raises ATK for 3 turns</td>
+        </tr>
+        <!-- Demon Steward -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#DemonSteward">デーモンガード</a></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Sleep5">Sleep Success Rate +5%</a><br><div class="jap">眠り成功率+5%</div></td>
+            <td>Raises Sleep success rate by 5%</td>
+        </tr>
+        <!-- Dhuran -->
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#ClearMind">Clear Mind</a><br><div class="jap">心頭滅却</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK and AGL for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Finaliser">Finaliser</a><br><div class="jap">決闘</div></td>
+            <td>When attacked by enemy:<br>Occasionally attacks with Flurry Strike if enemy is within 2 to 4-space range<br><div class="attackdesc">(Flurry Strike: Deals minor physical damage (70% potency) to 1 enemy 3 times)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#PhysCrit5">Physical Critical Hit Rate +5%</a><br><div class="jap">物理会心率+5%</div></td>
+            <td>Raises physical critical hit rate by 5%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Finaliser2">決闘者</a></td>
+            <td>When attacked by enemy:<br>Attacks with Flurry Strike if enemy is within 2 to 4-space range<br><div class="attackdesc">(Flurry Strike: Deals minor physical damage (70% potency) to 1 enemy 3 times)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/immortal.html#IndomitableSpirit2">Indomitable Spirit (Lv. 2)</a><br><div class="jap">不屈の闘志Lv2</div></td>
+            <td>Before HP hits 0:<br>Preserves HP at 1, up to 2 times per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+        </tr>
+        <!-- Dilligent Mole -->
+        <tr>
+            <td><a href="./perks/status.html#CharmCleanse">真実の愛</a></td>
+            <td>When afflicted with Charm:<br>Removes Charm, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#DilligentMole">愛の追撃</a></td>
+            <td>When any other ally makes a physical or martial attack:<br>Attacks with 猛烈アピール if enemy is within 3-space range, up to 5 times per battle<br><div class="attackdesc">(猛烈アピール: Deals moderate Sizz-type martial damage (80 base potency) to 1 enemy, raises the user's Martial Boost for 1 turn)</div></td>
+        </tr>
+        <!-- Dracky -->
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#DevilsWisdom">Devil's Wisdom</a><br><div class="jap">悪魔の知識</div></td>
+            <td>Action start on even turns until turn 10:<br>Raises WIS for 3 turns</td>
+        </tr>
+        <!-- Drackyma -->
+        <tr>
+            <td><a href="./perks/potency.html#BangSpellCost5">Bang-type Spell MP Cost -5%</a><br><div class="jap">イオ属性呪文消費MP-5%</div></td>
+            <td>Lowers Bang-type spell MP cost by 5%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#BangSpell15">Bang-type Spell Potency +15%</a><br><div class="jap">イオ属性呪文威力+15%</div></td>
+            <td>Raises Bang-type spell potency by 15%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Sleep10">Sleep Success Rate +10%</a><br><div class="jap">眠り成功率+10%</div></td>
+            <td>Raises Sleep success rate by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#SoothingSpells">Soothing Spells</a><br><div class="jap">まどろみの呪文</div></td>
+            <td>When making a spell attack:<br>Very rarely puts to sleep<br>This perk can be triggered by non-damage dealing abilities, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+        </tr>
+        <!-- Draggoon -->
+        <tr>
+            <td><a href="./perks/attackbased.html#SacralSand">Sacral Sand</a><br><div class="jap">神秘の砂</div></td>
+            <td>When user's ability blinds enemy:<br>Heals 50% of max HP, raises Move, and massively raises ATK and physical potency/recovery for 3 turns<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <!-- Drohl Diabolist -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#DesperateDirtyBeam">Desperate Dirty Beam</a><br><div class="jap">どとうのダーティビーム</div></td>
+            <td>When attacking:<br>Attacks with Dirty Beam if enemy is within 4-space straight line, up to 3 times per battle<br><div class="attackdesc">(Dirty Beam: Deals major Zam-type spell damage to all enemies in area of effect, occasionally poisons or curses)</div></td>
+        </tr>
+        <!-- Elf Rose -->
+        <tr>
+            <td><a href="./perks/reactiveheals.html#ElfHealing">エルフの献身</a></td>
+            <td>When an ally (incl. self) is attacked by enemy:<br>エルフの献身 heals them if ally is within 1-space range (incl. self), up to 3 times per battle<br><div class="attackdesc">(エルフの献身: Heals a major amount of HP for 1 ally)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#RoseDebuff">平和への願い</a></td>
+            <td>When attacked by enemy:<br>Triggers 平和への願い if enemy is within 1 to 3-space range<br><div class="attackdesc">(平和への願い: Occasionally lowers 1 enemy's physical and spell potency/recovery for 3 turns)</div></td>
+        </tr>
+        <!-- Elysian Dragling -->
+        <tr>
+            <td><a href="./perks/hpthreshold.html#Elysian">神の竜の加護</a></td>
+            <td>Heals 30% of max HP when the user's HP drops to 1% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#Elysian">幼き神の竜</a></td>
+            <td>When attacking:<br>For number of attacked enemies only, raises breath potency/recovery for 1 turn</td>
+        </tr>
+        <!-- Emerald King Slime -->
+        <tr>
+            <td><a href="./perks/battlestart.html#Emerald">ぷにぷにボディ</a></td>
+            <td>Battle start:<br>Greatly raises Physical Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#100Bounce">ミラーボディ</a></td>
+            <td>Battle start, action start, or when revived:<br>Grants a barrier that reflects spell attacks when the user's HP is 100%</td>
+        </tr>
+        <!-- Erik -->
+        <tr>
+            <td><a href="./perks/potency.html#PhysCrit10">Physical Critical Hit Rate +10%</a><br><div class="jap">物理会心率+10%</div></td>
+            <td>Raises physical critical hit rate by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#Padfoot">Padfoot</a><br><div class="jap">しのびあし</div></td>
+            <td>Battle start:<br>Greatly raises Move and evasion rate for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#EdgeDeath">Death Follow-Up</a><br><div class="jap">死神の追撃</div></td>
+            <td>When any ally (incl. self) paralyses or poisons enemy with an ability:<br>Attacks with Edge of Death if enemy is within 1 to 3-space range<br>This perk can be triggered by non-damage dealing abilities<br><div class="attackdesc">(Edge of Death: Deals major physical damage (250% potency) to 1 enemy, often envenomates or paralyses)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Paralysis10">Paralysis Success Rate +10%</a><br><div class="jap">マヒ成功率+10%</div></td>
+            <td>Raises Paralysis success rate by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#40PhysEcho">Dually Deadly</a><br><div class="jap">二刀の極意</div></td>
+            <td>When making a physical attack:<br>Occasionally activates a physical ability or Fight 2 times in succession<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#Erik">頼れる相棒</a></td>
+            <td>Battle start:<br>Raises ATK, AGL, and evasion rate for 3 turns</td>
+        </tr>
+        <!-- Estark -->
+        <tr>
+            <td><a href="./perks/attackbased.html#LordUnderworld">Lord of the Underworld</a><br><div class="jap">地獄の帝王</div></td>
+            <td>When attacked by enemy:<br>Raises ATK for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#ImperialAuthority">Imperial Authority</a><br><div class="jap">帝王の権能</div></td>
+            <td>Heals a major amount of HP when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#LordMalevolence">Lord of Malevolence</a><br><div class="jap">邪悪なる帝王</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises DEF, AGL, physical potency/recovery, and enables Zamforce for 3 turns, removes some status ailments</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#TheLordAwakens">The Lord Awakens</a><br><div class="jap">目覚める帝王</div></td>
+            <td>Heals 100% of max HP, greatly raises Move for 3 turns, and reduces damage taken by 50% 1 time only for 99 turns when the user's HP drops to 20% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <!-- Extreme Killing Machine -->
+        <tr>
+            <td><a href="./perks/battlestart.html#HeavySlayer">Heavy Slayer</a><br><div class="jap">ヘビーキラー</div></td>
+            <td>Battle start:<br>Greatly raises ATK for 2 turns, reduces damage taken by 50% 1 time only for 99 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#BangBooster">Bang Booster</a><br><div class="jap">イオブースター</div></td>
+            <td>Raises Move by 1 and raises Bang-type physical potency by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#PullOption">Pull Option</a><br><div class="jap">引き寄せオプション</div></td>
+            <td>When attacked by enemy:<br>Triggers Suction Screw if enemy is within 4-space straight line<br><div class="attackdesc">(Suction Screw: Pulls all enemies in area of effect up to 3 spaces closer)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#TurboOption">Turbo Option</a><br><div class="jap">ターボオプション</div></td>
+            <td>Battle start:<br>Greatly raises AGL for 2 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#AGLArrow">失速オプション</a></td>
+            <td>When attacked by enemy:<br>Attacks with ブレーキショット if enemy is within 1 to 3-space range, up to 3 times per battle<br><div class="attackdesc">(ブレーキショット: Deals major physical damage (250% potency) to 1 enemy, generates a space that lowers AGL for enemies only for 3 turns)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#HeavySlayer2">Heavy Slayer (Lv. 2)</a><br><div class="jap">ヘビーキラーLv2</div></td>
+            <td>Battle start:<br>Massively raises ATK for 3 turns, reduces damage taken by 50% up to 2 times for 99 turns</td>
+        </tr>
+        <!-- Geothaum -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#SporadicDarkWaveFollowUp">Sporadic Dark Wave Follow-Up</a><br><div class="jap">ときどきやみのはどうの追撃</div></td>
+            <td>When any other ally attacks:<br>Occasionally triggers Dark Wave if enemy is within 1 to 3-space range, up to 5 times per battle<br><div class="attackdesc">(Dark Wave: Occasionally lowers 1 enemy's ATK, DEF, WIS, and AGL for 3 turns)</div></td>
+        </tr>
+        <!-- Ghost -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#ZamFollowUp">Zam Follow-Up</a><br><div class="jap">ドルマの追撃</div></td>
+            <td>When any other ally attacks:<br>Attacks with Zam if enemy is within 3-space range<br><div class="attackdesc">(Zam: Deals minor Zam-type spell damage to 1 enemy)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#StunningSpells">Stunning Spells</a><br><div class="jap">休みの呪文</div></td>
+            <td>When making a spell attack:<br>Very rarely stuns</td>
+        </tr>
+        <!-- Glacial Golem -->
+        <tr>
+            <td><a href="./perks/potency.html#MrtlCost5">Martial MP Cost -5%</a><br><div class="jap">体技消費MP-5%</div></td>
+            <td>Lowers martial MP cost by 5%</td>
+        </tr>
+        <!-- Golem -->
+        <tr>
+            <td><a href="./perks/actionstart.html#SporadicMusterStrength">Sporadic Muster Strength</a><br><div class="jap">ときどきちからため</div></td>
+            <td>Action start:<br>Occasionally grants x1.5 physical potency/recovery for 1 turn</td>
+        </tr>
+        <!-- Goomulonimbus -->
+        <tr>
+            <td><a href="./perks/battlestart.html#InstantEvasion">風来坊</a></td>
+            <td>Battle start:<br>Raises evasion rate for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#Goomulonimbus">らいじんモード</a></td>
+            <td>Heals 50% of max HP and enables Wooshforce and Zapforce for 3 turns when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <!-- Goonache Goodie -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Goonache">コロネの息吹</a></td>
+            <td>When attacked and KO'd by enemy:<br>Triggers コロネの息吹 1 time per battle<br><div class="attackdesc">(コロネの息吹: Raises WIS of all allies in plus-shaped area for 3 turns)</div></td>
+        </tr>
+        <!-- Goregoyle -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#SpellConfuse">まどいの風の追撃</a></td>
+            <td>When any other ally attacks:<br>Attacks with まどいの風 if enemy is within 1 to 3-space range, up to 3 times per battle<br><div class="attackdesc">(まどいの風: Deals major Woosh-type spell damage to 1 enemy, occasionally confuses)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Confusion5">Confusion Success Rate +5%</a><br><div class="jap">混乱成功率+5%</div></td>
+            <td>Raises Confusion success rate by 5%</td>
+        </tr>
+        <!-- Great Keeper -->
+        <tr>
+            <td><a href="./perks/cover.html#InstantForbearance">Instant Forbearance</a><br><div class="jap">いきなりにおうだち</div></td>
+            <td>Battle start:<br>Enables Forbearance for 3 turns<br><div class="attackdesc">(Forbearance: Take attacks for all allies in area of effect and reduces damage taken by 40% for the user)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#InorgDragonScale">黄金の輝き</a></td>
+            <td>When attacked by enemy:<br>Heals 10% of the user's max HP</td>
+        </tr>
+        <!-- Greygnarl -->
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#HeavensHero">Hero of the Heavens</a><br><div class="jap">空の英雄</div></td>
+            <td>Action start on odd turns until turn 10:<br>Grants all allies Zapforce in a 5x5 area (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#BerserkerBlood">Blood of the Berserker</a><br><div class="jap">若き血潮</div></td>
+            <td>Raises Move by 1 and raises breath potency by 20%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/mpregen.html#FireWater">Fire Water</a><br><div class="jap">竜の火酒</div></td>
+            <td>Turn 3 action start:<br>Restores 30% of max MP and greatly raises breath potency/recovery for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#DragonScale">Dragon Scale</a><br><div class="jap">ドラゴンスケイル</div></td>
+            <td>When attacked by enemy:<br>Heals 10% of the user's max HP</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/cover.html#DragonShield">The Dragon that Protects Upover</a><br><div class="jap">ドミールの里を守る竜</div></td>
+            <td>Triggers Dragon's Shield when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally<br><div class="attackdesc">(Dragon's Shield: Take attacks for directly adjacent allies and reduces damage taken by 20% for the user for 2 turns)</div></td>
+        </tr>
+        <!-- Gyldygga -->
+        <tr>
+            <td><a href="./perks/status.html#GoldFever">Gold Fever's Curse</a><br><div class="jap">黄金病の呪い</div></td>
+            <td>When attacked by spell or breath enemy attack:<br>Occasionally stuns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/familystatbuffs.html#Despot">Despot</a><br><div class="jap">鉄鬼軍王</div></td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK and DEF for Inorganic units in the surrounding rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#20PhysEcho">Rare Successive Attack</a><br><div class="jap">まれに連続攻撃</div></td>
+            <td>When making a physical attack:<br>Rarely activates a physical ability or Fight 2 times in succession<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#Stun10">Stun Success Rate +10%</a><br><div class="jap">休み成功率+10%</div></td>
+            <td>Raises Stun success rate by 10%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#Gyldygga">金色のはどう</a></td>
+            <td>When attacked and KO'd by enemy:<br>Triggers 金色のはどう if enemy is within 1 to 4-space range, 1 time per battle<br><div class="attackdesc">(金色のはどう: Raises damage taken for 3 turns, stuns)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#Gyldygga">アクセルギア</a></td>
+            <td>When attacking:<br>Raises ATK and AGL for 1 turn</td>
+        </tr>
+        <!-- Halloween Dora-in-Grey -->
+        <tr>
+            <td>Halloween Beautification</td>
+            <td>Battle start:<br>Massively raises Martial Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td>Halloween Maiden</td>
+            <td>Turn 3 action start:<br>Raises Martial Res for 5 turns</td>
+        </tr>
+        <tr>
+            <td>Desperate Halloween Bomb</td>
+            <td>When attacking:<br>Attacks with Halloween Bomb if enemy is within Halloween Bomb-shaped area up to 3 times per battle<br><div class="attackdesc">(Halloween Bomb: Deals major Zam-type martial damage (210 base potency) to all enemies in area of effect, heals the user's HP by 20% of damage dealt)</div></td>
+        </tr>
+        <tr>
+            <td>Halloween Barrier</td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 20% if the user's HP is 30% or over</td>
+        </tr>
+        <!-- Halloween Veronica -->
+        <tr>
+            <td>Halloween Surprise</td>
+            <td>When any ally (incl. self) inflicts Sleep, Stun, Paralysis, Charm, Confusion, Blind, Poison, Curse, Bind, Physical Lock, Martial Lock, Spell Lock, or Breath Lock on an enemy with an ability:<br>Raises evasion rate by 100% for 1 turn (2 turns if activated by an ally's ability), up to 3 times per battle<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <tr>
+            <td>Hoppin' Halloween</td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if the user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td>One More Lantern</td>
+            <td>When any ally (incl. self) stuns or confuses an enemy with an ability:<br>Attacks with Dark-O'-Lantern if enemy is within 1 to 4-space range<br><div class="attackdesc">(Dark-O'-Lantern: Deals major Zam-type spell damage to 1 enemy)</div></td>
+        </tr>
+        <tr>
+            <td>Spell Master</td>
+            <td>Lowers spell ability MP cost by 15%, raises potency and recovery by 15%</td>
+        </tr>
+        <tr>
+            <td>Halloween Surprise (Lv. 2)</td>
+            <td>When any ally (incl. self) inflicts Sleep, Stun, Paralysis, Charm, Confusion, Blind, Poison, Curse, Bind, Physical Lock, Martial Lock, Spell Lock, or Breath Lock on an enemy with an ability:<br>Raises WIS, AGL, and Move for 3 turns (4 turns if activated by an ally's ability), raises evasion rate by 100% for 3 turns (4 turns if activated by an ally's ability), up to 3 times per battle<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <!-- Hammerhood -->
+        <tr>
+            <td>Rush Job</td>
+            <td>Battle start:<br>Raises ATK, AGL and Move for 2 turns</td>
+        </tr>
+        <!-- Healslime -->
+        <tr>
+            <td>Rare MP Regen</td>
+            <td>Action start:<br>Rarely restores 8% of max MP</td>
+        </tr>
+        <tr>
+            <td>Healing Spell Recovery +15%</td>
+            <td>Raises healing spell recovery by 15%</td>
+        </tr>
+        <!-- Summer Psaro -->
+        <tr>
+            <td>The Lord of Summer</td>
+            <td>Action start:<br>Attacks with Fleeting Summer if enemy is within large rhombus area, up to 3 times per battle<br><div class="attackdesc">(Fleeting Summer: Deals major physical damage (250% potency) to all enemies in area of effect)</div><br>Before HP hits 0:<br>Preserves HP at 1, up to 2 times per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+        </tr>
+        <tr>
+            <td>Monsterkind Summer</td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, AGL, and evasion rate for 3 turns</td>
+        </tr>
+        <tr>
+            <td>Hot Summer Wrath</td>
+            <td>Battle start, action start, or when revived:<br>Grants the user x1.5 physical and spell potency/recovery, and removes some status ailments if the user's HP is 20% or less</td>
+        </tr>
+        <tr>
+            <td>Instant Insulate</td>
+            <td>Battle start:<br>Greatly raises Breath Res for 3 turns</td>
+        </tr>
+        <!-- Hero Abel -->
+        <tr>
+            <td>Legendary Monster Wrangler</td>
+            <td>Battle start:<br>Reduces damage taken by 20% for 1 turn<br>Action start until turn 10:<br>Reduces damage taken by 20% for all allies in the surrounding large rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td>Plaisir de Fight</td>
+            <td>Action start on odd turns until turn 10:<br>Raises damage dealt, DEF, and AGL for 3 turns, removes some status ailments</td>
+        </tr>
+        <tr>
+            <td>King of Gotha</td>
+            <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20% if user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td>Fairy's Fortitude</td>
+            <td>When any other ally attacks:<br>Attacks with Fairy's Flurry if enemy is within 3-space range, up to 5 times per battle<br><div class="attackdesc">(Fairy's Flurry: Deals major Woosh-type breath damage (111 base potency) to 1 enemy, heals the user by 50% of the damage dealt)</div></td>
+        </tr>
+        <tr>
+            <td>Fairy's Fortune</td>
+            <td>Action start:<br>Heals 10% of max HP and restores 4% of max MP</td>
+        </tr>
+        <!-- Hero Alef -->
+        <tr>
+            <td>Hero's Pride</td>
+            <td>Reduces damage taken by 50% from enemies at a range of 2 spaces or more</td>
+        </tr>
+        <tr>
+            <td>Surging Strength</td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, AGL, and WIS for 3 turns</td>
+        </tr>
+        <tr>
+            <td>Hero's Compassion</td>
+            <td>Action start:<br>Heals 15% of max HP and restores 4% of max MP</td>
+        </tr>
+        <tr>
+            <td>Victorious Follow-Up</td>
+            <td>When any other ally attacks:<br>Attacks with Winning Wallop if enemy is within 1-space range, up to 5 times per battle<br><div class="attackdesc">(Winning Wallop: Deals major physical damage (400% potency) to 1 enemy, raises the user's damage dealt for 3 turns)</div></td>
+        </tr>
+        <tr>
+            <td>Mark of Erdrick</td>
+            <td>Halves some status ailment resistances</td>
+        </tr>
+        <!-- Hero Rek -->
+        <tr>
+            <td>目覚めし勇者</td>
+            <td>Battle start:<br>Massively raises Typeless Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td>みなぎる心気</td>
+            <td>Action start on odd turns until turn 10:<br>Raises ATK, DEF, and AGL for 3 turns, removes some status ailments</td>
+        </tr>
+        <tr>
+            <td>精霊の守護</td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if user's HP is 50% or over</td>
+        </tr>
+        <tr>
+            <td>真実の姿</td>
+            <td>Heals 20% of max HP and grants the user Stylish for 3 turns when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td>天啓の祝福</td>
+            <td>Action start: Heals 10% of max HP and restores 4% of max MP</td>
+        </tr>
+        <!-- High Djinks -->
+        <tr>
+            <td>Two Wishes</td>
+            <td>Battle start:<br>Grants a barrier that reflects breath attacks for 3 turns, reduces damage taken by 50% 1 time only for 99 turns</td>
+        </tr>
+        <tr>
+            <td>Healing Incense</td>
+            <td>Action start until turn 3:<br>Heals with Healing Incense<br><div class="attackdesc">(Healing Incense: Heals a moderate amount of HP for all allies in the surrounding large rhombus (incl. self))</div></td>
+        </tr>
+        <tr>
+            <td>Perfectly Flawless</td>
+            <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20% if the user's HP is 50% or over</td>
+        </tr>
+        <!-- Hyperanemon -->
+        <tr>
+            <td>Hyper Barrier</td>
+            <td>Battle start:<br>Reduces damage taken by 50% up to 2 times per battle for 99 turns</td>
+        </tr>
+        <tr>
+            <td>Runaway Magic Chance +10%</td>
+            <td>Raises Runaway Magic chance by 10%</td>
+        </tr>
+        <!-- Imp -->
+        <tr>
+            <td>Waxing Magical Might</td>
+            <td>Lowers Kaboom MP cost by 50%</td>
+        </tr>
+        <!-- Jackal Ripper -->
+        <tr>
+            <td>Infighting</td>
+            <td>Battle start:<br>Raises ATK and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td>Restless Heart</td>
+            <td>Before HP hits 0:<br>Rarely preserves HP at 1<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+        </tr>
+        <tr>
+            <td>Restless Heart Chance +10%</td>
+            <td>Raises chance of Restless Heart by 10%</td>
+        </tr>
+        <!-- Jamirus -->
+        <tr>
+            <td>Sacrificial Altar</td>
+            <td>When enemy or any other ally is KO'd:<br>For number of KO'd enemies or allies only, raises breath potency/recovery for 2 turns (3 turns when KO attack is by character other than self)<br>This perk can be triggered by an ally or user's attack on an ally</td>
+        </tr>
+        <tr>
+            <td>Stormy Oration</td>
+            <td>Action start on odd turns until turn 10:<br>Grants all allies Wooshforce in a 5x5 area (incl. self) for 3 turns (self: 4 turns)</td>
+        </tr>
+        <tr>
+            <td>Cunning Plan</td>
+            <td>When enemy or any other ally is KO'd:<br>For number of KO'd enemies or allies only, restores 200 HP and 50 MP to the user<br>This perk can be triggered by an ally or user's attack on an ally</td>
+        </tr>
+        <tr>
+            <td>熱狂の嵐</td>
+            <td>When enemy or any other ally is KO'd:<br>For number of KO'd enemies or allies only, raises AGL and Martial Res for 2 turns (3 turns when KO attack is by character other than self)<br>This perk can be triggered by an ally or user's attack on an ally</td>
+        </tr>
+        <tr>
+            <td>陽炎</td>
+            <td>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
+        </tr>
+    </tbody>
+</body>
+</html>

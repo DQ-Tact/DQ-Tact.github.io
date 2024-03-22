@@ -96,3 +96,12 @@ a{
 a:hover{
     color: rgb(102, 205, 223);
 }
+
+.attackdesc{
+    color: rgb(151, 122, 214);
+}
+
+.jap{
+    color: rgb(128, 166, 224);
+    font-size: 12px;
+}

@@ -1,0 +1,111 @@
+body{
+    background-color: darkslateblue;
+    font-family: Merriweather, 'Times New Roman';
+    margin:0;
+    padding:0;
+}
+
+h1{
+    background-color: slateblue;
+    color: rgb(244, 242, 253);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h3{
+    background-color: slateblue;
+    color: rgb(244, 242, 253);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.return{
+    color: lightsteelblue;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    padding: 5px;
+    border: 1.5px solid darkslateblue;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(244, 242, 253);
+}
+
+table{
+    background-color: rgb(166, 160, 194);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 85%;
+}
+
+thead{
+    background-color: rgb(196, 187, 232);
+    height: 4em; 
+}
+
+tbody{
+    background-color: rgb(244, 242, 253);
+}
+
+td{
+    height: 1.5em;
+}
+
+.flat td{
+    height: 1em;
+}
+
+.bigheader{
+    text-align: center;
+    background-color: rgb(151, 122, 214);
+}
+
+.group{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.border{
+    background-color: rgb(244, 242, 253);
+    padding: 16px;
+    width:80px;
+    height: 102px;
+    border-radius: 5px;
+}
+
+.fintable{
+    margin-bottom: 15px;
+}
+
+img[src*="AttackType"]{
+    width: 100px;
+}
+
+img[src*="AttackRange"]{
+    width: 70px;
+}
+
+.attackdesc{
+    color: rgb(151, 122, 214);
+}
+
+.perktitle{
+    background-color: rgb(137, 123, 229);
+    color: rgb(244, 242, 253);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

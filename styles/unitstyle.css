@@ -122,6 +122,54 @@ img.metal{
     top: 250px;
 }
 
+#statfilter{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 628px;
+    height: 29px;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
+#statfilterblossom{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 628px;
+    height: 59px;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
+#statfiltermindini{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 628px;
+    height: 69px;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
+#statfilterwulfspade{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 628px;
+    height: 89px;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
 h2{
     background-color: rgb(244, 242, 253);
     text-align: center;
@@ -136,7 +184,7 @@ h2{
 }
 
 .skills{
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 .fintable{

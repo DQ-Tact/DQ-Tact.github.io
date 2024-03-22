@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for mainpage -->
+<link rel="stylesheet" href="./styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Datatable information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./abilitytable.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>DQT Ability List</title>
+</head>
+
+<body>
+  <h1>Ability List</h1>
+
+  <div id="filter">
+    <label class="form">Filters:</label>
+    <form name="formrank">
+      <label class="filterheader">Rank:</label>
+      <label>
+        <input type="radio" name="rank" value="S">
+        <img class="buttons" title="S" src="./images/Rank/RankS.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="A">
+        <img class="buttons" title="A" src="./images/Rank/RankA.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="B">
+        <img class="buttons" title="B" src="./images/Rank/RankB.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="C">
+        <img class="buttons" title="C" src="./images/Rank/RankC.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+
+    <form name="formcolour">
+      <label class="filterheader">Ability Colour:</label>
+      <label>
+        <input type="radio" name="colour" value="Red">
+        <img class="buttons" title="Red" src="./images/AttackType/FilterRed.png">
+      </label>
+      <label>
+        <input type="radio" name="colour" value="Blue">
+        <img class="buttons" title="Blue" src="./images/AttackType/FilterBlue.png">
+      </label>
+      <label>
+        <input type="radio" name="colour" value="Green">
+        <img class="buttons" title="Green" src="./images/AttackType/FilterGreen.png">
+      </label>
+      <label>
+        <input type="radio" name="colour" value="Purple">
+        <img class="buttons" title="Purple" src="./images/AttackType/FilterPurple.png">
+      </label>
+      <label>
+        <input type="radio" name="colour" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label> 
+    </form>
+
+    <form name="formtype">
+      <label class="filterheader">Ability Type:</label>
+      <label>
+        <input type="radio" name="type" value="Physical">
+        <img class="buttons" title="Physical" src="./images/AttackType/FilterPhysical.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="Martial">
+        <img class="buttons" title="Martial" src="./images/AttackType/FilterMartial.png">
+      </label>  
+      <label>
+        <input type="radio" name="type" value="Spell">
+        <img class="buttons" title="Spell" src="./images/AttackType/FilterSpell.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="Breath">
+        <img class="buttons" title="Breath" src="./images/AttackType/FilterBreath.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label> 
+    </form>
+
+    <form name="formelement">
+      <label class="filterheader">Element:</label>
+      <label>
+        <input type="radio" name="element" value="Frizz">
+        <img class="buttons" title="Frizz" src="./images/Element/Frizz.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Sizz">
+        <img class="buttons" title="Sizz" src="./images/Element/Sizz.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Crack">
+        <img class="buttons" title="Crack" src="./images/Element/Crack.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Woosh">
+        <img class="buttons" title="Woosh" src="./images/Element/Woosh.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Bang">
+        <img class="buttons" title="Bang" src="./images/Element/Bang.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Zap">
+        <img class="buttons" title="Zap" src="./images/Element/Zap.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Zam">
+        <img class="buttons" title="Zam" src="./images/Element/Zam.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value="Typeless">
+        <img class="buttons" title="Typeless" src="./images/Element/Typeless.png">
+      </label>
+      <label>
+        <input type="radio" name="element" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+  </div>
+
+  <table id="myTable" class="display">
+    <thead>
+      <tr>
+<!-- Table headers: Icon, Rarity and Family cannot be sorted -->
+        <th scope="col">Type</th>
+        <th scope="col">MP</th>
+        <th scope="col">Name</th>
+        <th scope="col">Element</th>
+        <th scope="col">Range</th>
+        <th scope="col" width="20px">Potency (Physical)</th>
+        <th scope="col" width="25px">Base Potency (Martial/Breath)</th>
+        <th scope="col">Filter Rank</th>
+        <th scope="col">Filter Colour</th>
+        <th scope="col">Filter Type</th>
+        <th scope="col">Filter Element</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+<!-- Main C Rank Spells -->
+    <div>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>4</td>
+        <td><a href="./abilities/frizz.html">Frizz</a><br><div class="jap">メラ</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Frizz</td>
+        <td>Deals minor Frizz-type spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>6</td>
+        <td><a href="./abilities/sizz.html">Sizz</a><br><div class="jap">ギラ</div></td>
+        <td><img src="./images/Element/Sizz.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Sizz</td>
+        <td>Deals minor Sizz-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>4</td>
+        <td><a href="./abilities/crack.html">Crack</a><br><div class="jap">ヒャド</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Crack</td>
+        <td>Deals minor Crack-type spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>6</td>
+        <td>Woosh<br><div class="jap">バギ</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Woosh</td>
+        <td>Deals minor Woosh-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>8</td>
+        <td>Bang<br><div class="jap">イオ</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>2</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Bang</td>
+        <td>Deals minor Bang-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>4</td>
+        <td>Zap<br><div class="jap">デイン</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zap</td>
+        <td>Deals minor Zap-type spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CRedSpell.png"></td>
+        <td>4</td>
+        <td>Zam<br><div class="jap">ドルマ</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zam</td>
+        <td>Deals minor Zam-type spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CGreenSpell.png"></td>
+        <td>7</td>
+        <td>Heal<br><div class="jap">ホイミ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green Spell</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Heals a minor amount of HP for 1 ally</td>
+      </tr>
+    </div>
+      <tr>
+        <td><img src="./images/AttackType/CRedMartial.png"></td>
+        <td>4</td>
+        <td>Body Slam<br><div class="jap">たいあたり</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> - </td>
+        <td>24</td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals minor martial damage (24 base potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBluePhysical.png"></td>
+        <td>28</td>
+        <td>Mince<br><div class="jap">メッタ斬り</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td>180%</td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (60% potency) to 1 enemy 3 times, occasionally lowers DEF for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedBreath.png"></td>
+        <td>27</td>
+        <td>Chilly Breath<br><div class="jap">こおりの息</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td>44</td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Breath</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type breath damage (44 base potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/Purple.png"></td>
+        <td>76</td>
+        <td>Frigid Wave<br><div class="jap">いてつくはどう</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/RhombusL.png"><br>Rhombus (L)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Purple</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Removes some status changes for all enemies in area of effect, effect cannot be reflected<br>(Times usable: 1)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CBlueMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/ミストンスクリュー.html">ミストンスクリュー</td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front1.png"><br>Front</td>
+        <td> - </td>
+        <td> 26 </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals minor martial damage (26 base potency) to 1 enemy, pulls them up to 1 space closer, occasionally lowers ATK for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>60</td>
+        <td><a href="./abilities/トンブラスト.html">トンブラスト</td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> 80 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Bang</td>
+        <td>Deals moderate Bang-type martial damage (80 base potency) to all enemies in area of effect, occasionally lowers Martial Res for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>74</td>
+        <td><a href="./abilities/アルケミストンのいやし.html">アルケミストンのいやし</td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP for all allies in area of effect, generates spaces in area of effect that raise martial potency/recovery for 3 turns for allies on those spaces only</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>10</td>
+        <td><a href="./abilities/psycheup.html">Psyche Up</a><br><div class="jap">ためる</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises the user's Tension for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>18</td>
+        <td><a href="./abilities/boldsmile.html">Bold Smile</a><br><div class="jap">不敵な笑み</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally lowers the DEF of all enemies in area of effect for 3 turns, rarely lowers Physical Res for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>80</td>
+        <td><a href="./abilities/freezingbow.html">Freezing Bow</a><br><div class="jap">フリージングボウ</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/T.png"><br>T</td>
+        <td> 250% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals minor Crack-type physical damage (125% potency) to all enemies in area of effect 2 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>63</td>
+        <td><a href="./abilities/shiningshot.html">Shining Shot</a><br><div class="jap">シャイニングボウ</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> 296% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Bang</td>
+        <td>Deals minor Bang-type physical damage (37% potency) to 1 enemy 8 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupRedPhysical.png"></td>
+        <td>105</td>
+        <td><a href="./abilities/heavensrain.html">Heaven's Rain</a><br><div class="jap">ヘブンズレイン</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/FrontPlusFar2.png"><br>Front</td>
+        <td> 410% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (205% potency) to all enemies in area of effect 2 times, heals the user's HP by 20% of damage dealt<br>Turns needed: 4 (Times usable: 1)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>51</td>
+        <td><a href="./abilities/timbreloftension.html">Timbrel of Tension</a><br><div class="jap">ふしぎなタンバリン</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/SelfRhombus.png"><br>Rhombus (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises physical and spell potency/recovery of all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>45</td>
+        <td><a href="./abilities/luminarysshield.html">Luminary's Shield</a><br><div class="jap">勇者の盾</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/SelfRhombusL.png"><br>Rhombus (L) (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Generates spaces in area of effect that reduce damage taken by 15% for 3 turns for allies on those spaces only</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>22</td>
+        <td><a href="./abilities/luminaryslight.html">Luminary's Light</a><br><div class="jap">勇者の光</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally stuns all enemies in area of effect, occasionally raises damage taken for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>118</td>
+        <td><a href="./abilities/luminarylightning.html">Luminary Lightning</a><br><div class="jap">勇者の雷光</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zap</td>
+        <td>Deals major Zap-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/ultimasword.html">Ultima Sword</a><br><div class="jap">アルテマソード</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> 380% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major surehit physical damage (380% potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupRedPhysical.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/twinlightningedge.html">Twin Lightning Edge</a><br><div class="jap">双雷刃</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 480% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Zap</td>
+        <td>Deals major Zap-type physical damage (240% potency) to 1 enemy 2 times<br>Turns needed: 2 (Times usable: 3)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/アルテマスラッシュ.html">アルテマスラッシュ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine4.png"><br>Straight Line</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major surehit physical damage (300% potency) to all enemies in area of effect</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+<!-- Empty table row
+
+       <tr>
+        <td><img src="./images/AttackType/"></td>
+        <td></td>
+        <td><a href="./abilities/"></a></td>
+        <td><img src="./images/Element/"></td>
+        <td><img src="./images/AttackRange/"><br></td>
+        <td> - </td>
+        <td> - </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+-->

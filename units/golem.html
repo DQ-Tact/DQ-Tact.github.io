@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/golem.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,31 +29,31 @@
         </tr>
         <tr>
             <th scope="row">HP:</th>
-            <td>580</td>
+            <td id="HP"></td>
         </tr>
         <tr>
             <th scope="row">MP:</th>
-            <td>106</td>
+            <td id="MP"></td>
         </tr>
         <tr>
             <th scope="row">ATK:</th>
-            <td>200</td>
+            <td id="ATK"></td>
         </tr>
         <tr>
             <th scope="row">DEF:</th>
-            <td>289</td>
+            <td id="DEF"></td>
         </tr>
         <tr>
             <th scope="row">AGL:</th>
-            <td>90</td>
+            <td id="AGL"></td>
         </tr>
         <tr>
             <th scope="row">WIS:</th>
-            <td>107</td>
+            <td id="WIS"></td>
         </tr>
         <tr>
             <th scope="row">Move:</th>
-            <td>2</td>
+            <td id="Move"></td>
         </tr>
         <tr>
             <th scope="row">Weight:</th>
@@ -80,6 +83,23 @@
             <td><img src="../images/Status/Poison.png"></td>
         </tr>
     </table>
+
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
         <thead>

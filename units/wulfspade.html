@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/wulfspade.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,31 +29,31 @@
         </tr>
         <tr>
             <th scope="row">HP:</th>
-            <td>825</td>
+            <td id="HP"></td>
         </tr>
         <tr>
             <th scope="row">MP:</th>
-            <td>275</td>
+            <td id="MP"></td>
         </tr>
         <tr>
             <th scope="row">ATK:</th>
-            <td>337</td>
+            <td id="ATK"></td>
         </tr>
         <tr>
             <th scope="row">DEF:</th>
-            <td>276</td>
+            <td id="DEF"></td>
         </tr>
         <tr>
             <th scope="row">AGL:</th>
-            <td>320</td>
+            <td id="AGL"></td>
         </tr>
         <tr>
             <th scope="row">WIS:</th>
-            <td>260</td>
+            <td id="WIS"></td>
         </tr>
         <tr>
             <th scope="row">Move:</th>
-            <td>2</td>
+            <td id="Move"></td>
         </tr>
         <tr>
             <th scope="row">Weight:</th>
@@ -80,6 +83,61 @@
             <td><img src="../images/Status/Stun.png"></td>
         </tr>
     </table>
+
+    <div id="statfilterwulfspade">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include small stat nodes from Character Builder</label>
+            </label>
+        </form>
+        <form name="formNode1">
+            <label class="filterheader">Large stat node choice no. 1:</label>
+            <label>
+              <input type="radio" name="stat" value="ATK">
+              <label for="ATK">ATK +50</label>
+            </label>
+            <label>
+                <input type="radio" name="stat" value="HP">
+                <label for="HP">HP +100</label>
+              </label>
+            <label>
+              <input type="radio" name="stat" value="AGL">
+              <label for="AGL">AGL +50</label>
+            </label>
+            <label>
+                <input type="radio" name="stat" value="NONE" value checked="checked">
+                <label for="NONE">None</label>
+            </label>
+        </form>
+        <form name="formNode2">
+            <label class="filterheader">Large stat node choice no. 2:</label>
+            <label>
+              <input type="radio" name="stat" value="DEF">
+              <label for="DEF">DEF +50</label>
+            </label>
+            <label>
+                <input type="radio" name="stat" value="MP">
+                <label for="MP">MP +100</label>
+              </label>
+            <label>
+              <input type="radio" name="stat" value="WIS">
+              <label for="WIS">WIS +50</label>
+            </label>
+            <label>
+                <input type="radio" name="stat" value="NONE2" value checked="checked">
+                <label for="NONE2">None</label>
+            </label>
+        </form>
+    </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
         <thead>
@@ -494,6 +552,11 @@
                 <td><strong>DEF +50</strong><br>Raises max DEF by 50</td>
                 <td><strong>MP +100</strong><br>Raises max MP by 100</td>
                 <td><strong>WIS +50</strong><br>Raises max WIS by 50</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div class="attackdesc">(HP, MP, ATK, DEF, WIS, & AGL +1) x5</div></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
