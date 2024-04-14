@@ -26,14 +26,32 @@ h3{
 }
 
 .return{
-    color: lightsteelblue;
+    color: rgb(241, 239, 255);
+    background-image: url(../images/Rank/TexturedButton.jpg);
+    background-size: cover;
+    background-color: slateblue;
+    box-shadow: 0 3px darkslateblue;
+    transform: translateY(2px);
+    font-family: Merriweather, 'Times New Roman';
     position: absolute;
-    top: 15px;
+    top: 13px;
     left: 5px;
     padding: 5px;
     border: 1.5px solid darkslateblue;
     border-radius: 4px;
     text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.return:hover{
+    color: rgb(254, 254, 255);
+    background-image: url(../images/Rank/TexturedButtonHover.jpg);
+    background-size: cover;
+    background-color: darkslateblue;
+    border: 1.5px solid lightsteelblue;
+    box-shadow: 0 3px lightsteelblue;
+    transform: translateY(2px);
+    border-radius: 4px;
 }
 
 a:hover{

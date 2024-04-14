@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/claria.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Claria</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Claria</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Claria.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>35</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Healing Ability Recovery +5%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Stun.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>    
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CBlueSpell.png"></td>
+                <td>Decelerate</td>
+                <td>9</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
+                <td>Occasionally greatly lowers 1 enemy's AGL for 3 turns</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td><img src="../images/AttackType/BGreenSpell.png"></td>
+                <td>Serene Breeze</td>
+                <td>60</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Heals a moderate amount of HP for all allies in area of effect</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Kacrack</td>
+                <td>92</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Front3.png"><br>Front</td>
+                <td>Deals major Crack-type spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>ハーピースペル</td>
+                <td>108</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major Crack-type spell damage to 1 enemy, often greatly lowers ATK for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +10</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>100, 110, 120, 130</td>
+                <td>Kacrack potency +2%</td>
+                <td>Raises Kacrack potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rare MP Regen</td>
+                <td>Action start:<br>Rarely restores 8% of max MP</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Kacrack potency +5%</td>
+                <td>Raises Kacrack potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>ハーピースペル potency +5%</td>
+                <td>Raises ハーピースペル potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ハーピースペル</td>
+                <td>Deals major Crack-type spell damage to 1 enemy, often greatly lowers ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>風詠の翼</td>
+                <td>Battle start:<br>Massively raises evasion rate for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Enchanting Echo</td>
+                <td>When casting:<br>Rarely unleashes the spell 2 times in succession, lowers damage/recovery of 2nd spell by 50%<br>This perk can be triggered by non-damage dealing abilities</td>
+            </tr>
+            <tr>
+                <td>(Stats Up) x5</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +20) x2</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x2</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Spell Potency +1.5%) x2</td>
+                <td>Raises Crack-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Crack-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Crack-type Spell MP Cost -10%</td>
+                <td>Lowers Crack-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Spell Potency +1%) x2</td>
+                <td>Raises spell potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Spell Brilliant +1%) x2</td>
+                <td>Raises spell brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Spell MP Cost -5%</td>
+                <td>Lowers spell MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Physical Res +5%</td>
+                <td>Raises Frizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Martial Res +5%</td>
+                <td>Raises Frizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Spell Res +5%</td>
+                <td>Raises Frizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Breath Res +5%</td>
+                <td>Raises Frizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Physical Res +5%</td>
+                <td>Raises Zam-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Martial Res +5%</td>
+                <td>Raises Zam-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Spell Res +5%</td>
+                <td>Raises Zam-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Breath Res +5%</td>
+                <td>Raises Zam-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Curse Res +5%) x2</td>
+                <td>Raises Curse Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Confusion Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Curse Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Spell Lock Res +5%</td>
+                <td>Raises Spell Lock Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
