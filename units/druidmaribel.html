@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/druidmaribel.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Druid Maribel</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Druid Maribel</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/DruidMaribel.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Hero Spell Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+
+    <div id="statfilter">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>天地のベール</td>
+                <td>34</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Raises Spell and Breath Res of all allies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>幻魔の術：れんごく火炎</td>
+                <td>133</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Front6Far.png"><br>Front</td>
+                <td>Deals major Frizz-type spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>幻魔の術：ビッグバン</td>
+                <td>158</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Front10.png"><br>Front</td>
+                <td>Deals major unreflectable Bang-type spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>幻魔の術：ジゴスパーク</td>
+                <td>154</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/StraightLine5.png"><br>Straight Line</td>
+                <td>Deals major Zap-type spell damage to all enemies in area of effect, occasionally paralyses<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/ACoupGreenSpell.png"></td>
+                <td>天地のいかり</td>
+                <td>52</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Grants the user x1.5 spell potency/recovery for 3 turns, raises Spell Boost for 2 turns<br>Turns needed: 2 turns (Times usable: 2)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>天地鳴動：業炎</td>
+                <td>When any ally (incl. self) is attacked by enemy:<br>Attacks with 業炎 if enemy is within 1 to 3-space range, up to 3 times per battle<br><div class="attackdesc">(業炎: Deals major unreflectable Frizz-type spell damage to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>天地鳴動：爆砕</td>
+                <td>When any ally (incl. self) is attacked by enemy:<br>Attacks with 爆砕 if enemy is within 2 to 4-space range, up to 3 times per battle<br><div class="attackdesc">(爆砕: Deals major unreflectable Bang-type spell damage to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>天地鳴動：雷鳴</td>
+                <td>When any ally (incl. self) is attacked by enemy:<br>Attacks with 雷鳴 if enemy is within 3-space range, up to 3 times per battle<br><div class="attackdesc">(雷鳴: Deals major unreflectable Zap-type spell damage to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Spell Potency/Recovery +2%</td>
+                <td>Raises spell potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>天地のいかり MP Cost -5%</td>
+                <td>Lowers 天地のいかり MP cost by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Druid</td>
+                <td>Action start until turn 5:<br>Restores 8% of max MP and raises Spell Boost for 2 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>天地の加護</td>
+                <td>Heals 50% of max HP when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>天地のいかり MP Cost -10%</td>
+                <td>Lowers 天地のいかり MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Instant Damage Barrier</td>
+                <td>Battle start:<br>Grants a barrier that reduces damage taken by 15% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
