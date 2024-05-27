@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/nevan.js"></script>
+    <script src="../unitscripts/thealmighty.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Nevan</title>
+    <title>The Almighty</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Nevan</h1>
+    <h1>The Almighty</h1>
     <a href="../index.html">Return to Unit List</a>
-    <img src="../images/Nevan.jpeg" class="border">
+    <img src="../images/TheAlmighty.png" class="border">
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
@@ -57,34 +57,34 @@
         </tr>
         <tr>
             <th scope="row">Weight:</th>
-            <td>60</td>
+            <td>65</td>
         </tr>
     </table>
-    <h2><strong>Leader Perk:</strong> <br>Healing Recovery +20%</h2>
+    <h2><strong>Leader Perk:</strong> <br>??? Spell & Martial Potency +20%</h2>
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Crack.png"></td>
-            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/Poison.png"></td> 
-            <td><img src="../images/Status/Stun.png"></td>   
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/SpellLock.png"></td> 
-            <td><img src="../images/Status/Paralysis.png"></td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Charm.png"></td>
+            <td><img src="../images/Status/Stun.png"></td>
         </tr>
     </table>
 
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -94,6 +94,11 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include max HP increase from base perk</label>
+            </label>
+          </form>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -114,39 +119,39 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/BGreenSpell.png"></td>
-                <td>大地の加護</td>
-                <td>34</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>天界の守り</td>
+                <td>24</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
-                <td>Raises DEF and Spell Res of all allies in area of effect for 3 turns</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Reduces damage taken for 1 ally by 50% for 1 turn<br>(Times usable: 1)</td>
             </tr>
             <tr>
-                <td>31</td>
-                <td><img src="../images/AttackType/AGreenSpell.png"></td>
-                <td>闘神の祝福</td>
-                <td>51</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>1-2 (incl. self)</td>
-                <td>Raises physical and spell potency/recovery of all allies in area of effect for 3 turns</td>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>天罰</td>
+                <td>133</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
+                <td>Deals major Zap-type spell damage to 1 enemy, depletes 150 MP from enemy</td>
             </tr>
             <tr>
-                <td>50</td>
-                <td><img src="../images/AttackType/AGreenSpell.png"></td>
-                <td>神聖なる結界</td>
-                <td>90</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Plus.png"><br>1-3 (incl. self)</td>
-                <td>Heals a major amount of HP and grants moderate regeneration to all allies in area of effect for 2 turns</td>
+                <td>54</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>ステテコストリーム</td>
+                <td>147</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/Front10.png"><br>Front</td>
+                <td>Deals major surehit Woosh-type martial damage (314 base potency) to all enemies in area of effect, often stuns</td>
             </tr>
             <tr>
-                <td>78</td>
-                <td><img src="../images/AttackType/ACoupGreenSpell.png"></td>
-                <td>ゲント族の秘術</td>
-                <td>120</td>
+                <td>82</td>
+                <td><img src="../images/AttackType/SGreenSpell.png"></td>
+                <td>Omniheal</td><!--ベホマズン-->
+                <td>200</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (empty spaces only)</td>
-                <td>Revives a fallen ally to 100% of their max HP and raises ATK, DEF, AGL, and WIS for 3 turns<br>Turns needed: 2 turns (Times usable: 1)</td>
+                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>1-3 (incl. self)</td>
+                <td>Heals a huge amount of HP for all allies in area of effect<br>(Times usable: 2)</td>
             </tr>
         </tbody>
     </table>
@@ -165,28 +170,28 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>WIS +15</td>
-                <td>Raises max WIS by 15</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>AGL +20</td>
-                <td>Raises max AGL by 20</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>ゲント族</td>
-                <td>Battle start:<br>Raises AGL and Move for 3 turns<br><br>Action start:<br>Restores 4% of max MP</td>
+                <td>神のめぐみ</td>
+                <td>Raises max HP by 500<br>Raises max HP of all allies (incl. self) by 100</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>神聖なる結界 recovery +2%</td>
-                <td>Raises 神聖なる結界 recovery by 2%</td>
+                <td>Spell Potency/Recovery +2%</td>
+                <td>Raises spell potency/recovery by 2%</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>ゲント族の秘術 MP cost -5%</td>
-                <td>Lowers ゲント族の秘術 MP cost by 5%</td>
+                <td>Martial Potency/Recovery +2%</td>
+                <td>Raises martial potency/recovery by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -205,38 +210,38 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>ゲントの杖</td>
-                <td>When an ally is attacked by enemy:<br>ゲントの杖 heals them if ally is within 1 to 3-space range<br><div class="attackdesc">(ゲントの杖: Heals a minor amount of HP for 1 ally)</div></td>
+                <td>神のチカラ</td>
+                <td>Battle start:<br>Grants a barrier that reduces damage taken by 20% for 3 turns<br><br>Action start on odd turns until turn 10:<br>Raises DEF, AGL, and damage dealt for 3 turns</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Woosh Res +25</td>
-                <td>Raises Woosh resistance by 25</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>ゲントの導き</td>
-                <td>When any other ally makes a physical or spell attack:<br>Triggers ゲントの導き if ally is within 1 to 3-space range<br><div class="attackdesc">(ゲントの導き: Raises the ATK and WIS of 1 ally for 3 turns)</div></td>
+                <td>不動のこころ</td>
+                <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>神聖なる結界 recovery +5%</td>
-                <td>Raises 神聖なる結界 recovery by 5%</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>ゲント族の秘術 MP cost -10%</td>
-                <td>Lowers ゲント族の秘術 MP cost by 10%</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Zam Res +25</td>
-                <td>Raises Zam resistance by 25</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>ゲントの杖 recovery +30%</td>
-                <td>Raises ゲントの杖 recovery by 30%</td>
+                <td>天界の加護</td>
+                <td>When attacked by enemy:<br>Heals 10% of the user's max HP</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
