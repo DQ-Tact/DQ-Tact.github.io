@@ -44,6 +44,19 @@ a:hover{
     border-radius: 4px;
 }
 
+a:active{
+    color: rgb(254, 254, 255);
+    background-image: url(../images/Rank/TexturedButtonSummonHover.jpg);
+    background-size: cover;
+    background-color: rgb(30, 106, 50);
+    box-shadow: 0 0 0;
+    position: absolute;
+    top: 16px;
+    border: 1.5px solid rgb(186, 228, 197);
+    border-radius: 4px;
+    transition-duration: 0s;
+}
+
 table{
     background-color: rgb(143, 184, 149);
     text-align: center;

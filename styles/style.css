@@ -20,6 +20,12 @@ h1{
     padding-top: 10px;
 }
 
+#menu{
+    background-color: slateblue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 p{
     color: rgb(244, 242, 253);
     text-align: center;
@@ -134,10 +140,11 @@ a:hover{
     box-shadow: 0 3px darkslateblue;
     transform: translateY(2px);
     font-family: Merriweather, 'Times New Roman';
-    position: absolute;
-    top: 13px;
-    left: 8px;
-    padding: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 1.5px solid darkslateblue;
     border-radius: 4px;
     text-decoration: none;
@@ -155,17 +162,30 @@ a:hover{
     border-radius: 4px;
 }
 
-.switchpage2{
+.switchpage:active{
+    color: rgb(254, 254, 255);
+    background-image: url(../images/Rank/TexturedButtonHover.jpg);
+    background-size: cover;
+    background-color: darkslateblue;
+    box-shadow: 0 0 0;
+    position: relative;
+    top: 3px;
+    border: 1.5px solid lightsteelblue;
+    border-radius: 4px;
+    transition-duration: 0s;
+}
+
+.currentpage{
     color: rgb(241, 239, 255);
     background-image: url(../images/Rank/TexturedButton.jpg);
     background-size: cover;
     background-color: slateblue;
-    box-shadow: 0 3px darkslateblue;
-    transform: translateY(2px);
     font-family: Merriweather, 'Times New Roman';
-    position: absolute;
-    top: 13px;
-    right: 8px;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    margin-left: 5px;
+    top: 3px;
     padding: 5px;
     border: 1.5px solid darkslateblue;
     border-radius: 4px;
@@ -173,13 +193,6 @@ a:hover{
     transition-duration: 0.3s;
 }
 
-.switchpage2:hover{
-    color: rgb(254, 254, 255);
-    background-image: url(../images/Rank/TexturedButtonHover.jpg);
-    background-size: cover;
-    background-color: darkslateblue;
-    border: 1.5px solid lightsteelblue;
-    box-shadow: 0 3px lightsteelblue;
-    transform: translateY(2px);
-    border-radius: 4px;
+.currentpage:hover{
+    color: rgb(241, 239, 255);
 }

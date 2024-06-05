@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/ultraslime.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Ultra Slime</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Ultra Slime</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/UltraSlime.jpeg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>55</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Slime DEF +30%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+
+    <div id="statfiltermindini">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include small stat nodes from Character Builder</label>
+            </label>
+        </form>
+        <form name="formNode1">
+            <label class="filterheader">Large stat node choice:</label>
+            <label>
+              <input type="radio" name="stat" value="ATK">
+              <label for="ATK">ATK +50</label>
+            </label>
+            <label>
+                <input type="radio" name="stat" value="HP">
+                <label for="HP">HP +100</label>
+              </label>
+            <label>
+              <input type="radio" name="stat" value="AGL">
+              <label for="AGL">AGL +50</label>
+            </label>
+            <label>
+                <input type="radio" name="stat" value="NONE" value checked="checked">
+                <label for="NONE">None</label>
+            </label>
+        </form>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BRedPhysical.png"></td>
+                <td>スライダパンチ</td>
+                <td>34</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals minor physical damage (70% potency) to 1 enemy 3 times</td>
+            </tr>
+            <tr>
+                <td>1st A-Rank Ability Choice<br><div class="attackdesc">(Left)</div></td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>スライダーガード</td>
+                <td>32</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
+                <td>Reduces damage taken by 20% for all allies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1st A-Rank Ability Choice<br><div class="attackdesc">(Centre)</div></td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>スライダーエール</td>
+                <td>32</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
+                <td>Raises ATK of all allies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1st A-Rank Ability Choice<br><div class="attackdesc">(Right)</div></td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>スライダーヒール</td>
+                <td>70</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
+                <td>Heals a major amount of HP for all allies in area of effect</td>
+            </tr>
+            <tr>
+                <td>2nd A-Rank Ability Choice<br><div class="attackdesc">(Left)</div></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>必殺スライダーキック</td>
+                <td>75</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major physical damage (600% potency) to ??? units, and deals major physical damage (300% potency) to all other units, occasionally lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2nd A-Rank Ability Choice<br><div class="attackdesc">(Centre)</div></td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>必殺スライダークロス</td>
+                <td>70</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/FrontCross.png"><br>Front</td>
+                <td>Deals major surehit Zap-type physical damage (300% potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>2nd A-Rank Ability Choice<br><div class="attackdesc">(Right)</div></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>必殺スライダーラッシュ</td>
+                <td>72</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
+                <td>Deals minor physical damage (45% potency) to random enemies in area of effect 8 times, very rarely paralyses</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>クールなヒーロー</td>
+                <td>When user's ability KO's enemy:<br>Grants the user Stylish for 3 turns<br><div class="attackdesc">When a unit is in the Stylish state, the unit's ATK, DEF, AGL, and WIS are all raised by 20%</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Physical Potency/Recovery +2%</td>
+                <td>Raises physical potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Auto HP Regen</td>
+                <td>Action start:<br>Heals 10% of max HP</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Auto MP Regen</td>
+                <td>Action start:<br>Restores 8% of max HP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table class="fintable equaltable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Character Builder</th>
+            </tr>
+            <tr>
+                <th colspan="3"><span style="font-weight:normal">Note: Only one ability/perk can be selected from each row</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>スライダーガード</strong><br>Reduces damage taken by 20% for all allies in area of effect for 3 turns</td>
+                <td><strong>スライダーエール</strong><br>Raises ATK of all allies in area of effect for 3 turns</td>
+                <td><strong>スライダーヒール</strong><br>Heals a major amount of HP for all allies in area of effect</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>連撃ヒーロー</strong><br>Lowers physical ability MP cost by 10%, raises potency and recovery by 10%<br><br>When making a physical attack:<br>Rarely activates a physical ability or Fight 2 times in succession<br><span style="font-size:12px">This perk can be triggered by non-damage dealing abilities</span></td>
+                <td><strong>勇敢ヒーロー</strong><br>Action start on even turns until turn 6:<br>Raises ATK, DEF, and AGL for 3 turns</td>
+                <td><strong>軽快ヒーロー</strong><br>Battle start:<br>Greatly raises ATK and evasion rate for 3 turns</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>必殺スライダーキック</strong><br>Deals major physical damage (600% potency) to ??? units, and deals major physical damage (300% potency) to all other units, occasionally lowers DEF for 3 turns</td>
+                <td><strong>必殺スライダークロス</strong><br>Deals major surehit Zap-type physical damage (300% potency) to all enemies in area of effect</td>
+                <td><strong>必殺スライダーラッシュ</strong><br>Deals minor physical damage (45% potency) to random enemies in area of effect 8 times, very rarely paralyses</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>不沈のヒーロー</strong><br>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
+                <td><strong>不屈のヒーロー</strong><br>Before HP hits 0:<br>Occasionally preserves HP at 1<br><span style="font-size:12px">This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</span></td>
+                <td><strong>不動のヒーロー</strong><br>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br><span style="font-size:12px">This perk can be triggered by non-damage dealing abilities or attacks by allies</span></td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>ATK +50</strong><br>Raises max ATK by 50</td>
+                <td><strong>HP +100</strong><br>Raises max HP by 100</td>
+                <td><strong>AGL +50</strong><br>Raises max AGL by 50</td>
+            </tr>
+            <div>
+                <tr>
+                    <td></td>
+                    <td>HP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MP +5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ATK +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>DEF +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>WIS +3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>AGL +3</td>
+                    <td></td>
+                </tr>
+            </div>
+            <tr>
+                <td><strong>Physical MP Cost -5%</strong><br>Lowers physical MP cost by 5%</td>
+                <td><strong>All Damage Down 3%</strong><br>Reduces all damage taken by 3%</td>
+                <td><strong>Critical Hit Rate +1%</strong><br>Raises critical hit rate by 1%</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div class="attackdesc">(HP, MP, ATK, DEF, WIS, & AGL +1) x5</div></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

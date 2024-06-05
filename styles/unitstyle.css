@@ -44,6 +44,19 @@ a:hover{
     border-radius: 4px;
 }
 
+a:active{
+    color: rgb(254, 254, 255);
+    background-image: url(../images/Rank/TexturedButtonHover.jpg);
+    background-size: cover;
+    background-color: darkslateblue;
+    box-shadow: 0 0 0;
+    position: absolute;
+    top: 16px;
+    border: 1.5px solid lightsteelblue;
+    border-radius: 4px;
+    transition-duration: 0s;
+}
+
 .summon{
     position:relative;
     top: 0;
@@ -64,6 +77,16 @@ a:hover{
     background-color: rgb(244, 242, 253);
     box-shadow: none;
     border: none;
+}
+
+.summon:active{
+    color: rgb(102, 205, 223);
+    background-image: none;
+    background-color: rgb(244, 242, 253);
+    box-shadow: none;
+    border: none;
+    position: relative;
+    top: 0;
 }
 
 table{

@@ -21,8 +21,12 @@
 
 <body>
   <h1>Perk List</h1>
-  <a href="./index.html" class="switchpage">Go to Unit List</a>
-
+  <div id="menu">
+    <a href="./index.html" class="switchpage">Unit List</a>
+    <a href="./abilitylist.html" class="switchpage">Ability List</a>
+    <a class="currentpage">Perk List</a>
+  </div>
+  
   <table id="myTable" class="display">
     <thead>
         <tr>
@@ -1523,11 +1527,11 @@
         </tr>
         <tr>
             <td><a href="./perks/hpmpregen.html#Randolfo">古今無双の帝王</a></td>
-            <td>Action start on odd turns until turn 10:<br>Heals 15% of max HP and restores 8% of max MP, removes some status ailments, and greatly raises damage dealt for 3 turns<br><br>Action start:<br>Triggers 古今無双の帝王 if enemy is within large rhombus area, up to 3 times per battle<br><div class="attackdesc">(古今無双の帝王: Rarely locks physical and spell abilities for all enemies in area of effect)</div></td>
+            <td>Action start on odd turns until turn 10:<br>Heals 15% of max HP and restores 8% of max MP, removes some status ailments, and greatly raises damage dealt for 3 turns<br><br>Action start:<br>Triggers 古今無双の帝王 if enemy is within large rhombus area, up to 3 times per battle<br><div class="attackdesc">(古今無双の帝王: Rarely locks physical and spell attacks for all enemies in area of effect)</div></td>
         </tr>
         <tr>
             <td><a href="./perks/attacktriggering.html#Randolfo">大帝のチカラ</a></td>
-            <td>When attacked by physical or spell enemy attack:<br>Triggers Globo Oscuro if enemy is within 2 to 4-space range, up to 3 times per battle<br><div class="attackdesc">(Globo Oscuro: Locks 1 enemy's physical and spell abilities)</div></td>
+            <td>When attacked by physical or spell enemy attack:<br>Triggers Globo Oscuro if enemy is within 2 to 4-space range, up to 3 times per battle<br><div class="attackdesc">(Globo Oscuro: Locks 1 enemy's physical and spell attacks)</div></td>
         </tr>
         <tr>
             <td><a href="./perks/status.html#PhysLock10">Physical Lock Success Rate +10%</a><br><div class="jap">物理封じ成功率+10%</div></td>
@@ -1650,7 +1654,7 @@
         </tr>
         <tr>
             <td><a href="./perks/status.html#PhysicalLockPhysical">Physical-Lock Physical</a><br><div class="jap">物理封じの物理</div></td>
-            <td>When making a physical attack:<br>Very rarely locks physical abilities</td>
+            <td>When making a physical attack:<br>Very rarely locks physical attacks</td>
         </tr>
         <!-- Skelegon -->
         <tr>
@@ -1925,8 +1929,8 @@
             <td>Lowers Woosh-type spell MP cost by 10%, raises potency and recovery by 10%</td>
         </tr>
         <tr>
-            <td><a href="./perks/attacktriggering.html#VisMager">ときどき魔界の暴風の追撃</a></td>
-            <td>When any other ally attacks:<br>Occasionally attacks with 魔界の暴風 if enemy is within 2 to 4-space range<br><div class="attackdesc">(魔界の暴風: Deals major Woosh-type spell damage to 1 enemy, occasionally lowers Woosh Res for 3 turns)</div></td>
+            <td><a href="./perks/attacktriggering.html#VisMager">Sporadic Nadirian Gale Follow-Up</a><br><div class="jap">ときどき魔界の暴風の追撃</div></td>
+            <td>When any other ally attacks:<br>Occasionally attacks with Nadirian Gale if enemy is within 2 to 4-space range<br><div class="attackdesc">(Nadirian Gale: Deals major Woosh-type spell damage to 1 enemy, occasionally lowers Woosh Res for 3 turns)</div></td>
         </tr>
         <!-- Gracos -->
         <tr>
@@ -2292,6 +2296,120 @@
         <tr>
             <td><a href="./perks/hpregen.html#TheAlmighty">天界の加護</a></td>
             <td>When attacked by enemy:<br>Heals 10% of the user's max HP</td>
+        </tr>
+        <!-- Gold Angel Slime -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#AngelBallAmbush">Angel Ball Ambush</a><br><div class="jap">エンゼルボールの不意打ち</div></td>
+            <td>When any other ally is attacked by enemy:<br>Often attacks with Angel Ball if enemy is within 1 to 3-space range<br><div class="attackdesc">(Angel Ball: Deals moderate spell damage to 1 enemy, occasionally stuns)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#AngelFeather">Angel Feather</a><br><div class="jap">エンゼルフェザー</div></td>
+            <td>Action start:<br>Heals 100 HP for all allies in the surrounding rhombus (incl. self)</td>
+        </tr>
+        <!-- Penny Pincher -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#FeverRush">Fever Rush!</a><br><div class="jap">連続フィーバー！</div></td>
+            <td>When making a martial attack:<br>Occasionally attacks with Fever Attack if enemy is within 1 to 3-space range<br><div class="attackdesc">(Fever Attack: Deals minor martial damage (35 base potency) to 1 enemy 5 times)</div></td>
+        </tr>
+        <!-- Jinxed Jade -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#ReVamp">Re-Vamp</a><br><div class="jap">デビルモード</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 30% if the user's HP is 50% or over, raises martial potency/recovery by 30% if the user's HP is 50% or less</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#DevilStep">Devil Step</a><br><div class="jap">デビルステップ</div></td>
+            <td>Battle start:<br>Greatly raises AGL and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#SexyBunnyBody">Sexy Bunny Body</a><br><div class="jap">セクシーバニーボディ</div></td>
+            <td>When attacked by physical or martial enemy attack:<br>Occasionally charms</td>
+        </tr>
+        <!-- Gold Slime -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#LightMetalBody">Light Metal Body</a><br><div class="jap">ライトメタルボディ</div></td>
+            <td>Reduces damage taken by 15% and raises ability MP cost by 10%</td>
+        </tr>
+        <!-- Token Taker -->
+        <tr>
+            <td><a href="./perks/attackbased.html#20MrtlEcho">Replay</a><br><div class="jap">リプレイ</div></td>
+            <td>When using a martial ability:<br>Rarely triggers martial ability 2 times in succession, lowers damage/recovery of 2nd martial ability by 50%<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attackbased.html#10MrtlEchoChance">Replay Chance +10%</a><br><div class="jap">リプレイ発動率+10%</div></td>
+            <td>Raises chance of Replay by 10%</td>
+        </tr>
+        <!-- Demonic Knight -->
+        <tr>
+            <td><a href="./perks/battlestart.html#GoldenAssault">Golden Assault</a><br><div class="jap">黄金の進撃</div></td>
+            <td>Battle start:<br>Raises ATK and Move for 3 turns, greatly raises DEF for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#MusterStrengthStance">Muster Strength Stance</a><br><div class="jap">ちからための構え</div></td>
+            <td>When attacked by physical enemy attack:<br>Triggers Muster Strength, up to 3 times per battle<br><div class="attackdesc">(Muster Strength: Grants the user x1.5 physical potency/recovery for 1 turn)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#DefenceStance">Defence Stance</a><br><div class="jap">ぼうぎょの構え</div></td>
+            <td>When attacked by physical enemy attack:<br>Triggers Defence, up to 3 times per battle<br><div class="attackdesc">(Defence: Reduces damage taken by 50% for the user for 1 turn)</div></td>
+        </tr>
+        <!-- Booga -->
+        <tr>
+            <td><a href="./perks/damagereduction.html#KingofMonsters">King of Monsters</a><br><div class="jap">キング・オブ・モンスター</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 50% if the user's HP is 100%</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpthreshold.html#BoogaObsession">Booga Obsession</a><br><div class="jap">妖魔の執念</div></td>
+            <td>Heals 50% of max HP and grants x1.5 breath potency/recovery for 1 turn when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/hpregen.html#AutoHPRegenL">Auto HP Regen (L)</a><br><div class="jap">自動HP回復(大)</div></td>
+            <td>Action start:<br>Heals 15% of max HP</td>
+        </tr>
+        <!-- Evil Cloud -->
+        <tr>
+            <td><a href="./perks/attacktriggering.html#EvilCloud">曇天の息の追撃</a></td>
+            <td>When attacking:<br>Attacks with 曇天の息 if enemy is within 3-space range, up to 3 times per battle<br><div class="attackdesc">(曇天の息: Deals moderate Woosh-type breath damage (??? base potency) to 1 enemy, occasionally lowers Martial and Breath Res for 3 turns)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#InstantDodgyDance">Instant Dodgy Dance</a><br><div class="jap">いきなりみかわしきゃく</div></td>
+            <td>Battle start:<br>Raises evasion rate for 3 turns</td>
+        </tr>
+        <!-- Slider Girl -->
+        <tr>
+            <td><a href="./perks/battlestart.html#SliderGirl">高速ヒーロー</a></td>
+            <td>Battle start:<br>Greatly raises AGL and Move for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/attacktriggering.html#SliderGirl">追撃ヒーロー</a></td>
+            <td>When any other ally makes a physical or martial attack:<br>Attacks with スライダーブロウ if enemy is within 1 to 3-space range, up to 4 times per battle<br><div class="attackdesc">(スライダーブロウ: Deals major Woosh-type martial damage (289 base potency) to 1 enemy, raises the user's Martial Boost for 1 turn)</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/status.html#SlimeRangers">不動のヒーロー</a></td>
+            <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+        </tr>
+        <!-- Ultra Slime -->
+        <tr>
+            <td><a href="./perks/attackbased.html#UltraSlime">クールなヒーロー</a></td>
+            <td>When user's ability KO's enemy:<br>Grants the user Stylish for 3 turns<br><div class="attackdesc">When a unit is in the Stylish state, the unit's ATK, DEF, AGL, and WIS are all raised by 20%</div></td>
+        </tr>
+        <tr>
+            <td><a href="./perks/potency.html#UltraSlime">連撃ヒーロー</a></td>
+            <td>Lowers physical ability MP cost by 10%, raises potency and recovery by 10%<br><br>When making a physical attack:<br>Rarely activates a physical ability or Fight 2 times in succession<br>This perk can be triggered by non-damage dealing abilities</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/multiturnbuffs.html#UltraSlime">勇敢ヒーロー</a></td>
+            <td>Action start on even turns until turn 6:<br>Raises ATK, DEF, and AGL for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/battlestart.html#UltraSlime">軽快ヒーロー</a></td>
+            <td>Battle start:<br>Greatly raises ATK and evasion rate for 3 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/damagereduction.html#UltraSlime">不沈のヒーロー</a></td>
+            <td>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
+        </tr>
+        <tr>
+            <td><a href="./perks/immortal.html#UltraSlime">不屈のヒーロー</a></td>
+            <td>Before HP hits 0:<br>Occasionally preserves HP at 1<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
         </tr>
     </tbody>
 </body>

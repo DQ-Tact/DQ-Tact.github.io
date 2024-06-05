@@ -21,9 +21,12 @@
 
 <body>
   <h1>Ability List</h1>
-  <a href="./index.html" class="switchpage">Go to Unit List</a>
-  <a href="./perklist.html" class="switchpage2">Go to Perk List</a>
-
+  <div id="menu">
+    <a href="./index.html" class="switchpage">Unit List</a>
+    <a class="currentpage">Ability List</a>
+    <a href="./perklist.html" class="switchpage">Perk List</a>
+  </div>
+  
   <div id="filter">
     <label class="form">Filters:</label>
     <form name="formrank">
@@ -138,14 +141,14 @@
       </label>
     </form>
   </div>
-
+  <p></p>
   <table id="myTable" class="display">
     <thead>
       <tr>
 <!-- Table headers: Icon, Rarity and Family cannot be sorted -->
         <th scope="col">Type</th>
         <th scope="col">MP</th>
-        <th scope="col">Name</th>
+        <th scope="col" width="100px">Name</th>
         <th scope="col">Element</th>
         <th scope="col">Range</th>
         <th scope="col" width="20px">Potency (Physical)</th>
@@ -233,7 +236,7 @@
       <tr>
         <td><img src="./images/AttackType/CRedSpell.png"></td>
         <td>4</td>
-        <td>Zap<br><div class="jap">デイン</div></td>
+        <td><a href="./abilities/zap.html">Zap</a><br><div class="jap">デイン</div></td>
         <td><img src="./images/Element/Zap.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>3</td>
         <td> - </td>
@@ -290,7 +293,7 @@
       <tr>
         <td><img src="./images/AttackType/BBluePhysical.png"></td>
         <td>28</td>
-        <td>Mince<br><div class="jap">メッタ斬り</div></td>
+        <td><a href="./abilities/mince.html">Mince</a><br><div class="jap">メッタ斬り</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1</td>
         <td>180%</td>
@@ -304,7 +307,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedBreath.png"></td>
         <td>27</td>
-        <td>Chilly Breath<br><div class="jap">こおりの息</div></td>
+        <td><a href="./abilities/chillybreath.html">Chilly Breath</a><br><div class="jap">こおりの息</div></td>
         <td><img src="./images/Element/Crack.png"></td>
         <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
         <td> - </td>
@@ -318,7 +321,7 @@
       <tr>
         <td><img src="./images/AttackType/Purple.png"></td>
         <td>76</td>
-        <td>Frigid Wave<br><div class="jap">いてつくはどう</div></td>
+        <td><a href="./abilities/frigidwave.html">Frigid Wave</a><br><div class="jap">いてつくはどう</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/RhombusL.png"><br>Rhombus (L)</td>
         <td> - </td>
@@ -641,7 +644,7 @@
         <td>Blue</td>
         <td>Martial</td>
         <td>Typeless</td>
-        <td>Locks 1 enemy's physical and spell abilities<br>(Times usable: 1)</td>
+        <td>Locks 1 enemy's physical and spell attacks<br>(Times usable: 1)</td>
       </tr>
       <tr>
         <td><img src="./images/AttackType/ABlueBreath.png"></td>
@@ -655,7 +658,7 @@
         <td>Blue</td>
         <td>Breath</td>
         <td>Frizz Zam</td>
-        <td>Deals major Frizz-type breath damage (142 base potency) to all enemies in area of effect and often locks phsyical and spell abilities, deals major Zam-type breath damage (142 base potency) to all enemies in area of effect and often locks phsyical and spell abilities</td>
+        <td>Deals major Frizz-type breath damage (142 base potency) to all enemies in area of effect and often locks phsyical and spell attacks, deals major Zam-type breath damage (142 base potency) to all enemies in area of effect and often locks phsyical and spell attacks</td>
       </tr>
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
@@ -917,7 +920,7 @@
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
         <td>103</td>
-        <td><a href="./abilities/魔界の暴風.html">魔界の暴風</a></td>
+        <td><a href="./abilities/nadiriangale.html">Nadirian Gale</a><br><div class="jap">魔界の暴風</div></td>
         <td><img src="./images/Element/Woosh.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
         <td> - </td>
@@ -3968,7 +3971,7 @@
         <td>Blue</td>
         <td>Physical</td>
         <td>Zam</td>
-        <td>Deals major Zam-type physical damage (250% potency) to all enemies in area of effect, moves up to 4 spaces, often lowers Self HP Healing Effect for 3 turns</td>
+        <td>Deals major Zam-type physical damage (250% potency) to all enemies in area of effect, moves up to 4 spaces, often lowers Self HP Healing Effects for 3 turns</td>
       </tr>
       <!-- Glacial Golem -->
       <tr>
@@ -4066,7 +4069,7 @@
         <td><img src="./images/AttackRange/AreaOfEffect.png"><br>3</td>
         <td> - </td>
         <td> - </td>
-        <td>A</td>
+        <td>B</td>
         <td>Blue</td>
         <td>Spell</td>
         <td>Typeless</td>
@@ -4162,7 +4165,7 @@
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
         <td>102</td>
-        <td><a href="./abilities/破魔のバギクロス.html">破魔のバギクロス</a></td>
+        <td><a href="./abilities/exorcismkaswoosh.html">Exorcism Kaswoosh</a><br><div class="jap">破魔のバギクロス</div></td>
         <td><img src="./images/Element/Woosh.png"></td>
         <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
         <td> - </td>
@@ -4486,7 +4489,7 @@
         <td>Blue</td>
         <td>Spell</td>
         <td>Typeless</td>
-        <td>Deals major spell damage to all enemies in area of effect, very rarely puts to sleep, stuns, paralyses, charms, confuses, blinds, poisons, curses, binds; or locks enemy's physcial, martial, spell, and breath abilities<br>Turns needed: 3 (Times usable: 1)</td>
+        <td>Deals major spell damage to all enemies in area of effect, very rarely puts to sleep, stuns, paralyses, charms, confuses, blinds, poisons, curses, binds; or locks enemy's physcial, martial, spell, and breath attacks<br>Turns needed: 3 (Times usable: 1)</td>
       </tr>
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
@@ -6144,7 +6147,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedPhysical.png"></td>
         <td>26</td>
-        <td><a href="./abilities/lightning.html">Lightning</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/lightning.html">Lightning</a><br><div class="jap">いなずま</div></td>
         <td><img src="./images/Element/Zap.png"></td>
         <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
         <td> - </td>
@@ -6158,7 +6161,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueMartial.png"></td>
         <td>64</td>
-        <td><a href="./abilities/lightningsurge.html">Lightning Surge</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/lightningsurge.html">Lightning Surge</a><br><div class="jap">ほとばしるいなずま</div></td>
         <td><img src="./images/Element/Zap.png"></td>
         <td><img src="./images/AttackRange/Rhombus.png"><br>Rhombus</td>
         <td> - </td>
@@ -6173,7 +6176,7 @@
       <tr>
         <td><img src="./images/AttackType/CRedPhysical.png"></td>
         <td>6</td>
-        <td><a href="./abilities/spinningbeatdown.html">Spinning Beatdown</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/spinningbeatdown.html">Spinning Beatdown</a><br><div class="jap">回転たたき</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
         <td> 105% </td>
@@ -6187,7 +6190,7 @@
       <tr>
         <td><img src="./images/AttackType/BBluePhysical.png"></td>
         <td>30</td>
-        <td><a href="./abilities/clutchshot.html">Clutch Shot</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/clutchshot.html">Clutch Shot</a><br><div class="jap">クラッチシュート</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>3</td>
         <td> 185% </td>
@@ -6202,7 +6205,7 @@
       <tr>
         <td><img src="./images/AttackType/ABlueBreath.png"></td>
         <td>101</td>
-        <td><a href="./abilities/galeforceorb.html">Galeforce Orb</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/galeforceorb.html">Galeforce Orb</a><br><div class="jap">暴風球</div></td>
         <td><img src="./images/Element/Woosh.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
         <td> - </td>
@@ -6216,7 +6219,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedMartial.png"></td>
         <td>114</td>
-        <td><a href="./abilities/magneticmissile.html">Magnetic Missile</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/magneticmissile.html">Magnetic Missile</a><br><div class="jap">電磁ミサイル</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Plus.png"><br>1-3</td>
         <td> - </td>
@@ -6231,7 +6234,7 @@
       <tr>
         <td><img src="./images/AttackType/BGreenSpell.png"></td>
         <td>28</td>
-        <td><a href="./abilities/midheal.html">Midheal</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/midheal.html">Midheal</a><br><div class="jap">ベホイミ</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
         <td> - </td>
@@ -6245,7 +6248,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedMartial.png"></td>
         <td>13</td>
-        <td><a href="./abilities/knucklesandwich.html">Knuckle Sandwich</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/knucklesandwich.html">Knuckle Sandwich</a><br><div class="jap">せいけんづき</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1</td>
         <td> - </td>
@@ -6259,7 +6262,7 @@
       <tr>
         <td><img src="./images/AttackType/BGreenSpell.png"></td>
         <td>46</td>
-        <td><a href="./abilities/shieldingmidheal.html">Shielding Midheal</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/shieldingmidheal.html">Shielding Midheal</a><br><div class="jap">まもりのベホイミ</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
         <td> - </td>
@@ -6274,7 +6277,7 @@
       <tr>
         <td><img src="./images/AttackType/CBlueSpell.png"></td>
         <td>12</td>
-        <td><a href="./abilities/snoozefreeze.html">Snooze Freeze</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/snoozefreeze.html">Snooze Freeze</a><br><div class="jap">スリープアイス</div></td>
         <td><img src="./images/Element/Crack.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
         <td> - </td>
@@ -6288,7 +6291,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedSpell.png"></td>
         <td>36</td>
-        <td><a href="./abilities/icefloe.html">Ice Floe</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/icefloe.html">Ice Floe</a><br><div class="jap">流氷</div></td>
         <td><img src="./images/Element/Crack.png"></td>
         <td><img src="./images/AttackRange/Rhombus.png"><br>Rhombus</td>
         <td> - </td>
@@ -6302,7 +6305,7 @@
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
         <td>139</td>
-        <td><a href="./abilities/venomousiceberg.html">Venomous Iceberg</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/venomousiceberg.html">Venomous Iceberg</a><br><div class="jap">もうどくの氷山</div></td>
         <td><img src="./images/Element/Crack.png"></td>
         <td><img src="./images/AttackRange/FrontSquare.png"><br>Front</td>
         <td> - </td>
@@ -6317,7 +6320,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueBreath.png"></td>
         <td>45</td>
-        <td><a href="./abilities/blastwavefireball.html">Blastwave Fireball</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/blastwavefireball.html">Blastwave Fireball</a><br><div class="jap">衝撃火炎球</div></td>
         <td><img src="./images/Element/Frizz.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
         <td> - </td>
@@ -6331,7 +6334,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedBreath.png"></td>
         <td>84</td>
-        <td><a href="./abilities/auroraexhale.html">Aurora Exhale</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/auroraexhale.html">Aurora Exhale</a><br><div class="jap">オーロラの息</div></td>
         <td><div class="dualdiv"><img class="dual" src="./images/Element/Frizz.png"><img class="dual" src="./images/Element/Crack.png"></div></td>
         <td><img src="./images/AttackRange/T.png"><br>T</td>
         <td> - </td>
@@ -6346,7 +6349,7 @@
       <tr>
         <td><img src="./images/AttackType/BGreenMartial.png"></td>
         <td>0</td>
-        <td><a href="./abilities/emperorsawakening.html">Emperor's Awakening</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/emperorsawakening.html">Emperor's Awakening</a><br><div class="jap">皇帝の目覚め</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
         <td> - </td>
@@ -6360,7 +6363,7 @@
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
         <td>95</td>
-        <td><a href="./abilities/silverspear.html">Silver Spear</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/silverspear.html">Silver Spear</a><br><div class="jap">白銀の槍</div></td>
         <td><img src="./images/Element/Crack.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
         <td> - </td>
@@ -6374,7 +6377,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedSpell.png"></td>
         <td>117</td>
-        <td><a href="./abilities/kaisercannon.html">Kaiser Cannon</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/kaisercannon.html">Kaiser Cannon</a><br><div class="jap">カイザーキャノン</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
         <td> - </td>
@@ -6389,7 +6392,7 @@
       <tr>
         <td><img src="./images/AttackType/CBluePhysical.png"></td>
         <td>12</td>
-        <td><a href="./abilities/heartbreaker.html">Heart Breaker</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/heartbreaker.html">Heart Breaker</a><br><div class="jap">ハートブレイク</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1</td>
         <td> 130% </td>
@@ -6403,7 +6406,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedPhysical.png"></td>
         <td>48</td>
-        <td><a href="./abilities/tomahawkrending.html">Tomahawk Rending</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/tomahawkrending.html">Tomahawk Rending</a><br><div class="jap">トマホーク無双</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
         <td> 280% </td>
@@ -6475,7 +6478,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedPhysical.png"></td>
         <td>35</td>
-        <td><a href="./abilities/flameattack.html">Flame Attack</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/flameattack.html">Flame Attack</a><br><div class="jap">フレイムアタック</div></td>
         <td><img src="./images/Element/Frizz.png"></td>
         <td><img src="./images/AttackRange/FanS.png"><br>Fan (S)</td>
         <td> 190% </td>
@@ -6489,7 +6492,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueBreath.png"></td>
         <td>87</td>
-        <td><a href="./abilities/miragevoice.html">Mirage Voice</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/miragevoice.html">Mirage Voice</a><br><div class="jap">ミラージュボイス</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
         <td> - </td>
@@ -6503,7 +6506,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueMartial.png"></td>
         <td>50</td>
-        <td><a href="./abilities/mindsnipe.html">Mind Snipe</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/mindsnipe.html">Mind Snipe</a><br><div class="jap">マインドスナイプ</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
         <td> - </td>
@@ -6517,7 +6520,7 @@
       <tr>
         <td><img src="./images/AttackType/ABluePhysical.png"></td>
         <td>52</td>
-        <td><a href="./abilities/shockingarrow.html">Shocking Arrow</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/shockingarrow.html">Shocking Arrow</a><br><div class="jap">ショッキングアロー</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
         <td> 280% </td>
@@ -6531,7 +6534,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedPhysical.png"></td>
         <td>93</td>
-        <td><a href="./abilities/twintornadoshot.html">Twin Tornado Shot</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/twintornadoshot.html">Twin Tornado Shot</a><br><div class="jap">ツイントルネードショット</div></td>
         <td><img src="./images/Element/Woosh.png"></td>
         <td><img src="./images/AttackRange/FanL.png"><br>Fan (L)</td>
         <td> 240% </td>
@@ -6545,7 +6548,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedPhysical.png"></td>
         <td>64</td>
-        <td><a href="./abilities/scrapsword.html">Scrap Sword</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/scrapsword.html">Scrap Sword</a><br><div class="jap">スクラップソード</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
         <td> 480% </td>
@@ -6560,7 +6563,7 @@
       <tr>
         <td><img src="./images/AttackType/CRedPhysical.png"></td>
         <td>3</td>
-        <td><a href="./abilities/bombslash.html">Bomb Slash</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/bombslash.html">Bomb Slash</a><br><div class="jap">れっぱ斬り</div></td>
         <td><img src="./images/Element/Bang.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1</td>
         <td> 120% </td>
@@ -6604,7 +6607,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueMartial.png"></td>
         <td>46</td>
-        <td><a href="./abilities/crimsoncloud.html">Crimson Cloud</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/crimsoncloud.html">Crimson Cloud</a><br><div class="jap">クリムゾンミスト</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/FrontSquareFar.png"><br>Front</td>
         <td> - </td>
@@ -6618,7 +6621,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedPhysical.png"></td>
         <td>91</td>
-        <td><a href="./abilities/silverspark.html">Silver Spark</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/silverspark.html">Silver Spark</a><br><div class="jap">シルバースパーク</div></td>
         <td><img src="./images/Element/Zap.png"></td>
         <td><img src="./images/AttackRange/FrontSquare.png"><br>Front</td>
         <td> 240% </td>
@@ -6632,7 +6635,7 @@
       <tr>
         <td><img src="./images/AttackType/ABluePhysical.png"></td>
         <td>64</td>
-        <td><a href="./abilities/negagash.html">Negagash</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/negagash.html">Negagash</a><br><div class="jap">ダークブレイク</div></td>
         <td><img src="./images/Element/Zam.png"></td>
         <td><img src="./images/AttackRange/FrontCross.png"><br>Front</td>
         <td> 290% </td>
@@ -6661,7 +6664,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueMartial.png"></td>
         <td>24</td>
-        <td><a href="./abilities/slidingpunch.html">Sliding Punch</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/slidingpunch.html">Sliding Punch</a><br><div class="jap">スライドパンチ</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Front1.png"><br>Front</td>
         <td> - </td>
@@ -6676,7 +6679,7 @@
       <tr>
         <td><img src="./images/AttackType/BGreenMartial.png"></td>
         <td>32</td>
-        <td><a href="./abilities/royalawakening.html">Royal Awakening</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/royalawakening.html">Royal Awakening</a><br><div class="jap">王の覚醒</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
         <td> - </td>
@@ -6690,7 +6693,7 @@
       <tr>
         <td><img src="./images/AttackType/ABlueSpell.png"></td>
         <td>134</td>
-        <td><a href="./abilities/worldofdreams.html">World of Dreams</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/worldofdreams.html">World of Dreams</a><br><div class="jap">夢幻の世界</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
         <td> - </td>
@@ -6704,7 +6707,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedSpell.png"></td>
         <td>92</td>
-        <td><a href="./abilities/dualkafrizz.html">Dual Kafrizz</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/dualkafrizz.html">Dual Kafrizz</a><br><div class="jap">デュアルメラゾーマ</div></td>
         <td><img src="./images/Element/Frizz.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>3</td>
         <td> - </td>
@@ -6733,7 +6736,7 @@
       <tr>
         <td><img src="./images/AttackType/BBlueBreath.png"></td>
         <td>23</td>
-        <td><a href="./abilities/mushroomgasp.html">Mushroom Gasp</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/mushroomgasp.html">Mushroom Gasp</a><br><div class="jap">キノコの吐息</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
         <td> - </td>
@@ -6748,7 +6751,7 @@
       <tr>
         <td><img src="./images/AttackType/BGreenSpell.png"></td>
         <td>56</td>
-        <td><a href="./abilities/benevolentbeam.html">Benevolent Beam</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/benevolentbeam.html">Benevolent Beam</a><br><div class="jap">慈愛の光</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
         <td> - </td>
@@ -6762,7 +6765,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedSpell.png"></td>
         <td>81</td>
-        <td><a href="./abilities/thunderhorn.html">Thunder Horn</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/thunderhorn.html">Thunder Horn</a><br><div class="jap">サンダーホーン</div></td>
         <td><img src="./images/Element/Zap.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>3</td>
         <td> - </td>
@@ -6891,7 +6894,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedPhysical.png"></td>
         <td>30</td>
-        <td><a href="./abilities/miasmapellet.html">Miasma Pellet</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/miasmapellet.html">Miasma Pellet</a><br><div class="jap">魔瘴弾</div></td>
         <td><img src="./images/Element/Zam.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>4</td>
         <td> 185% </td>
@@ -6905,7 +6908,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedPhysical.png"></td>
         <td>97</td>
-        <td><a href="./abilities/dreadfirescythe.html">Dread Firescythe</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/dreadfirescythe.html">Dread Firescythe</a><br><div class="jap">冥王の獄炎鎌</div></td>
         <td><img src="./images/Element/Frizz.png"></td>
         <td><img src="./images/AttackRange/FanL.png"><br>Fan (L)</td>
         <td> 250% </td>
@@ -6919,7 +6922,7 @@
       <tr>
         <td><img src="./images/AttackType/ABluePhysical.png"></td>
         <td>74</td>
-        <td><a href="./abilities/dreadsizzlescythe.html">Dread Sizzlescythe</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/dreadsizzlescythe.html">Dread Sizzlescythe</a><br><div class="jap">冥王の閃熱鎌</div></td>
         <td><img src="./images/Element/Sizz.png"></td>
         <td><img src="./images/AttackRange/StraightLine4.png"><br>Straight Line</td>
         <td> 280% </td>
@@ -7020,7 +7023,7 @@
       <tr>
         <td><img src="./images/AttackType/BRedPhysical.png"></td>
         <td>30</td>
-        <td><a href="./abilities/jetblackflash.html">Jet-Black Flash</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/jetblackflash.html">Jet-Black Flash</a><br><div class="jap">漆黒の剣閃</div></td>
         <td><img src="./images/Element/Zam.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>3</td>
         <td> 195% </td>
@@ -7034,7 +7037,7 @@
       <tr>
         <td><img src="./images/AttackType/ARedPhysical.png"></td>
         <td>60</td>
-        <td><a href="./abilities/pearlygates.html">Pearly Gates</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/pearlygates.html">Pearly Gates</a><br><div class="jap">グランドクロス</div></td>
         <td><img src="./images/Element/Woosh.png"></td>
         <td><img src="./images/AttackRange/FrontPlus.png"><br>Front</td>
         <td> 250% </td>
@@ -7048,7 +7051,7 @@
       <tr>
         <td><img src="./images/AttackType/ABluePhysical.png"></td>
         <td>80</td>
-        <td><a href="./abilities/devilfinesse.html">Devil Finesse</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/devilfinesse.html">Devil Finesse</a><br><div class="jap">魔神の絶技</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/RectangleAoE.png"><br>1</td>
         <td> 375% </td>
@@ -7076,7 +7079,7 @@
       <tr>
         <td><img src="./images/AttackType/ABluePhysical.png"></td>
         <td>86</td>
-        <td><a href="./abilities/truedevilfinesse.html">True Devil Finesse</a><br><div class="jap"></div></td>
+        <td><a href="./abilities/truedevilfinesse.html">True Devil Finesse</a><br><div class="jap">真・魔神の絶技</div></td>
         <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
         <td> 400% </td>
@@ -7106,15 +7109,15 @@
         <td><img src="./images/AttackType/ARedSpell.png"></td>
         <td>133</td>
         <td><a href="./abilities/天罰.html">天罰</a></td>
-        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/Element/Typeless.png"></td>
         <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
         <td> - </td>
         <td> - </td>
         <td>A</td>
         <td>Red</td>
         <td>Spell</td>
-        <td>Zap</td>
-        <td>Deals major Zap-type spell damage to 1 enemy, depletes 150 MP from enemy</td>
+        <td>Typeless</td>
+        <td>Deals major spell damage to 1 enemy, depletes 150 MP from enemy</td>
       </tr>
       <tr>
         <td><img src="./images/AttackType/ABlueMartial.png"></td>
@@ -7143,6 +7146,2597 @@
         <td>Spell</td>
         <td>Typeless</td>
         <td>Heals a huge amount of HP for all allies in area of effect<br>(Times usable: 2)</td>
+      </tr>
+      <!-- Pankraz -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenSpell.png"></td>
+        <td>38</td>
+        <td><a href="./abilities/magnanimousmidheal.html">Magnanimous Midheal</a><br><div class="jap">慈愛のベホイミ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP and grants minor regeneration to 1 ally for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>58</td>
+        <td><a href="./abilities/wooshstrike.html">Woosh Strike</a><br><div class="jap">バギ・ストライク</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/FanS.png"><br>Fan (S)</td>
+        <td> 250% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type physical damage (250% potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>62</td>
+        <td><a href="./abilities/leapingedge.html">Leaping Edge</a><br><div class="jap">飛翔剣</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> 380% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (380% potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupGreenMartial.png"></td>
+        <td>35</td>
+        <td><a href="./abilities/immutablestance.html">Immutable Stance</a><br><div class="jap">不動のかまえ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/MontCover.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Takes attacks for adjacent allies and reduces damage taken by 50% for the user for 1 turn<br>Turns needed: 2 turns (Times usable: 1)</td>
+      </tr>
+      <!-- Parry -->
+      <tr>
+        <td><img src="./images/AttackType/BRedSpell.png"></td>
+        <td>46</td>
+        <td><a href="./abilities/sparkofcourage.html">Spark of Courage</a><br><div class="jap">勇気のいかづち</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>4</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zap</td>
+        <td>Deals moderate Zap-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>66</td>
+        <td><a href="./abilities/powerdrill.html">Power Drill</a><br><div class="jap">スクリュードライブ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/FrontRingFar.png"><br>Front</td>
+        <td> 280% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (280% potency) to all enemies in area of effect, moves up to 3 spaces</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>88</td>
+        <td><a href="./abilities/shiningslice.html">Shining Slice</a><br><div class="jap">シャイニングソード</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> 410% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Bang</td>
+        <td>Deals major Bang-type physical damage (410% potency) to 1 enemy, often raises damage taken for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/SCoupBlueSpell.png"></td>
+        <td>145</td>
+        <td><a href="./abilities/zenithiankazap.html">Zenithian Kazap</a><br><div class="jap">天空のギガデイン</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Rhombus.png"><br>Rhombus</td>
+        <td> - </td>
+        <td> - </td>
+        <td>S</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Zap</td>
+        <td>Deals major unreflectable Zap-type spell damage proportional to ATK to all enemies in area of effect, removes some status changes from enemy<br>Turns needed: 2 turns (Times usable: 1)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>28</td>
+        <td><a href="./abilities/specialpsycheup.html">Special Psyche Up</a><br><div class="jap">もっとためる</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Greatly raises the user's Tension for 1 turn<br>(Times usable: 1)</td>
+      </tr>
+      <!-- Pasty Pastry -->
+      <tr>
+        <td><img src="./images/AttackType/CBlueBreath.png"></td>
+        <td>14</td>
+        <td><a href="./abilities/白い吐息.html">白い吐息</a></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> 19 </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Crack</td>
+        <td>Deals minor Crack-type breath damage (19 base damage) to all enemies in area of effect, rarely lowers AGL for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueMartial.png"></td>
+        <td>110</td>
+        <td><a href="./abilities/コロネのくさり.html">コロネのくさり</a></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> 205 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Crack</td>
+        <td>Deals major Crack-type martial damage (205 base potency) to all enemies in area of effect, pulls them up to 2 spaces closer, occasionally charms</td>
+      </tr>
+      <!-- Percival -->
+      <tr>
+        <td><img src="./images/AttackType/CRedPhysical.png"></td>
+        <td>6</td>
+        <td><a href="./abilities/剣閃.html">剣閃</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>4</td>
+        <td> 100% </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (100% potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>24</td>
+        <td><a href="./abilities/miracleslash.html">Miracle Slash</a><br><div class="jap">ミラクルソード</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 195% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (195% potency) to 1 enemy, heals the user's HP by 50% of damage dealt</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>60</td>
+        <td><a href="./abilities/airslash.html">Air Slash</a><br><div class="jap">空裂斬</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type physical damage (300% potency) to 1 enemy</td>
+      </tr>
+      <!-- Pesky Jester -->
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>23</td>
+        <td><a href="./abilities/falconslash.html">Falcon Slash</a><br><div class="jap">はやぶさ斬り</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 200% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (100% potency) to 1 enemy 2 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>21</td>
+        <td><a href="./abilities/squallslash.html">Squall Slash</a><br><div class="jap">烈風斬</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Front1.png"><br>Front</td>
+        <td> 180% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals moderate Woosh-type physical damage (180% potency) to 1 enemy</td>
+      </tr>
+      <!-- Phantom Swordsman -->
+      <tr>
+        <td><img src="./images/AttackType/CRedMartial.png"></td>
+        <td>7</td>
+        <td><a href="./abilities/spark.html">Spark</a><br><div class="jap">ほうでん</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> 17 </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Zap</td>
+        <td>Deals minor Zap-type martial damage (17 base potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>26</td>
+        <td><a href="./abilities/thinair.html">Thin Air</a><br><div class="jap">しんくうは</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> 40 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Woosh</td>
+        <td>Deals moderate Woosh-type martial damage (40 base potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>30</td>
+        <td><a href="./abilities/doomlightning.html">Doom Lightning</a><br><div class="jap">滅びのいなずま</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> 40 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Zap</td>
+        <td>Deals moderate Zap-type martial damage (40 base potency) to all enemies in area of effect, rarely lowers Martial Res for 3 turns</td>
+      </tr>
+      <!-- Platypunk -->
+      <tr>
+        <td><img src="./images/AttackType/CRedPhysical.png"></td>
+        <td>4</td>
+        <td><a href="./abilities/swipestorm.html">Swipestorm</a><br><div class="jap">ひっかきのあらし</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 112% </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (28% potency) to 1 enemy 4 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>40</td>
+        <td><a href="./abilities/platypunkdance.html">Platypunk Dance</a><br><div class="jap">ももんじゃダンス</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/SelfAoE.png"><br>1 AoE (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Rarely raises the ATK, DEF, AGL and WIS of all allies in area of effect for 3 turns, very rarely raises damage taken of all allies in area of effect for 3 turns</td>
+      </tr>
+      <!-- Prestidigitator -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/channelanger.html">Channel Anger</a><br><div class="jap">魔力かくせい</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Grants the user x1.5 spell potency/recovery for 1 turn</td>
+      </tr>
+      <!-- Prickly Prankster -->
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>52</td>
+        <td><a href="./abilities/jugglingthrills.html">Juggling Thrills</a><br><div class="jap">シビれるジャグリング</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 280% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (35% potency) to 1 enemy 8 times, very rarely paralyses</td>
+      </tr>
+      <!-- Princess Gwaelin -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>28</td>
+        <td><a href="./abilities/hurrah.html">Hurrah</a><br><div class="jap">声援</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises physical and breath potency/recovery for 1 ally for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>78</td>
+        <td><a href="./abilities/headoverheals.html">Head over Heals</a><br><div class="jap">プリンセスヒール</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP and raises AGL for all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueBreath.png"></td>
+        <td>121</td>
+        <td><a href="./abilities/deadlydragonbreath.html">Deadly Dragon Breath</a><br><div class="jap">立ちはだかるドラゴンの息</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/FanLong.png"><br>Fan (Long)</td>
+        <td> - </td>
+        <td> 226 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Frizz</td>
+        <td>Deals major Frizz-type breath damage (226 base potency) to all enemies in area of effect, occasionally lowers AGL for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupGreenMartial.png"></td>
+        <td>85</td>
+        <td><a href="./abilities/princessspledge.html">Princess's Pledge</a><br><div class="jap">王女の愛</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP for 1 ally, enacts Auto Revive (100% of max HP) for 99 turns<br>Turns needed: 3 turns (Times usable: 1)</td>
+      </tr>
+      <!-- Purrcy -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>64</td>
+        <td><a href="./abilities/wildlightning.html">Wild Lightning</a><br><div class="jap">野生のいなずま</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Rhombus.png"><br>Rhombus</td>
+        <td> - </td>
+        <td> 80 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Zap</td>
+        <td>Deals moderate Zap-type martial damage (80 base potency) to all enemies in area of effect, rarely paralyses</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>64</td>
+        <td><a href="./abilities/mercurialclaws.html">Mercurial Claws</a><br><div class="jap">しっぷうのツメ</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 380% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type physical damage (380% potency) to 1 enemy</td>
+      </tr>
+      <!-- Ramia -->
+      <tr>
+        <td><img src="./images/AttackType/BRedBreath.png"></td>
+        <td>50</td>
+        <td><a href="./abilities/suction.html">Suction</a><br><div class="jap">サクション</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 120 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Breath</td>
+        <td>Typeless</td>
+        <td>Deals minor breath damage (30 base potency) to 1 enemy 4 times and heals the user's HP by 100% of damage dealt</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedBreath.png"></td>
+        <td>78</td>
+        <td><a href="./abilities/heavenlylightning.html">Heavenly Lightning</a><br><div class="jap">天雷球</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 250 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Breath</td>
+        <td>Zap</td>
+        <td>Deals major Zap-type breath damage (250 base potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenBreath.png"></td>
+        <td>80</td>
+        <td><a href="./abilities/phoenixexhale.html">Phoenix Exhale</a><br><div class="jap">不死鳥の息吹</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Breath</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP for all allies in area of effect</td>
+      </tr>
+      <!-- Remote -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>15</td>
+        <td><a href="./abilities/groomfur.html">Groom Fur</a><br><div class="jap">けなみをととのえる</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a minor amount of HP and raises the user's DEF for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueBreath.png"></td>
+        <td>108</td>
+        <td><a href="./abilities/モテモテサイクロン.html">モテモテサイクロン</a></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
+        <td> - </td>
+        <td> 200 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type breath damage (200 base potency) to all enemies in area of effect, rarely charms</td>
+      </tr>
+      <!-- Restless Armour -->
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>17</td>
+        <td><a href="./abilities/blastslash.html">Blast Slash</a><br><div class="jap">ばくれん斬り</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 180% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Bang</td>
+        <td>Deals moderate Bang-type physical damage (180% potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>42</td>
+        <td><a href="./abilities/unbridledblade.html">Unbridled Blade</a><br><div class="jap">全身全霊斬り</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 290% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (290% potency) to 1 enemy</td>
+      </tr>
+      <!-- Rhapthorne -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>24</td>
+        <td><a href="./abilities/lullabeye.html">Lullab-Eye</a><br><div class="jap">あやしいひとみ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Often puts 1 enemy to sleep</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>114</td>
+        <td><a href="./abilities/roaringtempest.html">Roaring Tempest</a><br><div class="jap">轟嵐</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>102</td>
+        <td><a href="./abilities/pitchdark.html">Pitch Dark</a><br><div class="jap">暗黒</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zam</td>
+        <td>Deals major Zam-type spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>143</td>
+        <td><a href="./abilities/滅嵐.html">滅嵐</a></td>
+        <td><div class="dualdiv"><img class="dual" src="./images/Element/Woosh.png"><img class="dual" src="./images/Element/Zam.png"></div></td>
+        <td><img src="./images/AttackRange/FanLong.png"><br>Fan (Long)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Woosh Zam</td>
+        <td>Deals major Woosh-type spell damage and major Zam-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <!-- Rockbomb -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/invigorate.html">Invigorate</a><br><div class="jap">練気</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Grants the user x1.5 martial potency/recovery for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>42</td>
+        <td><a href="./abilities/rollover.html">Roll Over</a><br><div class="jap">ころがる</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> 70 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals moderate martial damage (70 base potency) to all enemies in area of effect, moves up to 4 spaces</td>
+      </tr>
+      <!-- Rotten Cotton -->
+      <tr>
+        <td><img src="./images/AttackType/CRedMartial.png"></td>
+        <td>7</td>
+        <td><a href="./abilities/freeze.html">Freeze</a><br><div class="jap">ひょうけつ</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> 17 </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Crack</td>
+        <td>Deals minor Crack-type martial damage (17 base potency) to all enemies in area of effect</td>
+      </tr>
+      <!-- Schleiman Tank -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>42</td>
+        <td><a href="./abilities/smokegrenade.html">Smoke Grenade</a><br><div class="jap">スモークグレネード</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> 70 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals moderate martial damage (70 base potency) to all enemies in area of effect, occasionally blinds</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/fusillade.html">Fusillade</a><br><div class="jap">長距離砲撃</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> 220 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (220 base potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueMartial.png"></td>
+        <td>82</td>
+        <td><a href="./abilities/slimecannon.html">Slimecannon</a><br><div class="jap">スラ・キャノン</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/FrontPlusFar.png"><br>Front</td>
+        <td> - </td>
+        <td> 200 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Bang</td>
+        <td>Deals major Bang-type martial damage (200 base potency) to all enemies in area of effect, occasionally lowers Martial Res for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>30</td>
+        <td><a href="./abilities/勇車の笛.html">勇車の笛</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Reduces damage taken by 50% and grants the user x1.5 martial potency/recovery for 1 turn<br>(Times usable: 3)</td>
+      </tr>
+      <!-- Schoolgal Stella -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>40</td>
+        <td><a href="./abilities/お気に入りの手鏡.html">お気に入りの手鏡</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Grants a barrier that reflects spell attacks for 3 turns, raises the user's Tension for 1 turn<br>(Times usable: 1)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>78</td>
+        <td><a href="./abilities/アオハルじょうねつハート.html">アオハルじょうねつハート</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP and raises Tension for all allies in area of effect for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>91</td>
+        <td><a href="./abilities/らぶぎゃるショット.html">らぶぎゃるショット</a></td>
+        <td><img src="./images/Element/Sizz.png"></td>
+        <td><img src="./images/AttackRange/StraightLine4.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> 267 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Sizz</td>
+        <td>Deals major Sizz-type martial damage (267 base potency) to all enemies in area of effect, moves backward up to 2 spaces, occasionally raises the user's Tension for 1 turn</td>
+      </tr>
+      <!-- Seaside Sprite Rose -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>40</td>
+        <td><a href="./abilities/solarbind.html">Solar Bind</a><br><div class="jap">ソーラーバインド</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Often stuns 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>78</td>
+        <td><a href="./abilities/venusheal.html">Venus Heal</a><br><div class="jap">ヴィーナスヒール</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP and raises Tension for all allies in area of effect for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>91</td>
+        <td><a href="./abilities/summerbanga.html">Summer Banga</a><br><div class="jap">真夏のビッグバン</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/FrontSquare.png"><br>Front</td>
+        <td> - </td>
+        <td> 220 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Bang</td>
+        <td>Deals major Bang-type martial damage (110 base potency) to all enemies in area of effect 2 times, occasionally raises the user's martial potency/recovery for 3 turns</td>
+      </tr>
+      <!-- Shadow -->
+      <tr>
+        <td><img src="./images/AttackType/BRedBreath.png"></td>
+        <td>27</td>
+        <td><a href="./abilities/blackbreath.html">Black Breath</a><br><div class="jap">やみのブレス</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> 44 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Breath</td>
+        <td>Zam</td>
+        <td>Deals moderate Zam-type breath damage (44 base potency) to all enemies in area of effect</td>
+      </tr>
+      <!-- Shaka -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/炎帝のチカラ.html">炎帝のチカラ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises the user's Tension for 1 turn, grants the user Frizzforce for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/盾穿つ一撃.html">盾穿つ一撃</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> 390% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (390% potency) to 1 enemy, ignores some Light Damage Res</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>98</td>
+        <td><a href="./abilities/火炎鳥の羽ばたき.html">火炎鳥の羽ばたき</a></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/FanL.png"><br>Fan (L)</td>
+        <td> 280% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Frizz</td>
+        <td>Deals moderate unreflectable Frizz-type physical damage (140% potency) to all enemies in area of effect 2 times, occasionally lowers Frizz Res for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>97</td>
+        <td><a href="./abilities/煉獄神威.html">煉獄神威</a></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 444% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Frizz</td>
+        <td>Deals major surehit Frizz-type physical damage (444% potency) to 1 enemy<br>Can be used when user's HP is 70% or less</td>
+      </tr>
+      <!-- Shellie's Mother -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueBreath.png"></td>
+        <td>45</td>
+        <td><a href="./abilities/hypnosquallorb.html">Hypno Squall Orb</a><br><div class="jap">催眠烈風球</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 80 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Woosh</td>
+        <td>Deals moderate Woosh-type breath damage (80 base potency) to 1 enemy, occasionally puts to sleep</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>123</td>
+        <td><a href="./abilities/zapwave.html">Zap Wave</a><br><div class="jap">デインウェーブ</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Front5.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zap</td>
+        <td>Deals major Zap-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <!-- Shell Slime -->
+      <tr>
+        <td><img src="./images/AttackType/ABlueSpell.png"></td>
+        <td>88</td>
+        <td><a href="./abilities/waterdrop.html">Water Drop</a><br><div class="jap">ウォータードロップ</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Crack</td>
+        <td>Deals major Crack-type spell damage to 1 enemy, occasionally lowers Crack Res for 3 turns</td>
+      </tr>
+      <!-- She Slime -->
+      <tr>
+        <td><img src="./images/AttackType/CBlueSpell.png"></td>
+        <td>9</td>
+        <td><a href="./abilities/blunt.html">Blunt</a><br><div class="jap">ヘナトス</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Occasionally greatly lowers 1 enemy's ATK for 3 turns</td>
+      </tr>
+      <!-- Sinisculpture -->
+      <tr>
+        <td><img src="./images/AttackType/CBluePhysical.png"></td>
+        <td>15</td>
+        <td><a href="./abilities/icyarmourhammer.html">Icy Armour Hammer</a><br><div class="jap">氷結よろいくだき</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 120% </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals minor Crack-type physical damage (120% potency) to 1 enemy, occasionally lowers DEF for 3 turns</td>
+      </tr>
+      <!-- Sintaur -->
+      <tr>
+        <td><img src="./images/AttackType/CRedPhysical.png"></td>
+        <td>5</td>
+        <td><a href="./abilities/doublesmash.html">Double Smash</a><br><div class="jap">ダブルスマッシュ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 140% </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (70% potency) to 1 enemy 2 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBluePhysical.png"></td>
+        <td>36</td>
+        <td><a href="./abilities/deceleratleblade.html">Deceleratle Blade</a><br><div class="jap">ボミオスブレード</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front3Close.png"><br>Front</td>
+        <td> 175% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (175% potency) to all enemies in area of effect, rarely lowers AGL for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>45</td>
+        <td><a href="./abilities/blackwildslash.html">Black Wild Slash</a><br><div class="jap">漆黒みだれ斬り</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 280% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Zam</td>
+        <td>Deals minor Zam-type physical damage (70% potency) to 1 enemy 4 times</td>
+      </tr>
+      <!-- Skelegon -->
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>26</td>
+        <td><a href="./abilities/glacier.html">Glacier</a><br><div class="jap">ひょうが</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> 40 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type martial damage (40 base potency) to all enemies in area of effect</td>
+      </tr>
+      <!-- Skeleton Scrapper -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>46</td>
+        <td><a href="./abilities/skulltoss.html">Skull Toss</a><br><div class="jap">スカルスロー</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 85 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals moderate martial damage (85 base potency) to 1 enemy, occasionally lowers AGL for 3 turns</td>
+      </tr>
+      <!-- Skullrider -->
+      <tr>
+        <td><img src="./images/AttackType/CBlueMartial.png"></td>
+        <td>10</td>
+        <td><a href="./abilities/あしばらい.html">あしばらい</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally stuns 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>20</td>
+        <td><a href="./abilities/sizzlingmultislash.html">Sizzling Multislash</a><br><div class="jap">閃熱さみだれ斬り</div></td>
+        <td><img src="./images/Element/Sizz.png"></td>
+        <td><img src="./images/AttackRange/HorizontalRange1.png"><br>1</td>
+        <td> 220% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Sizz</td>
+        <td>Deals minor Sizz-type physical damage (55% potency) to random enemies in area of effect 4 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>30</td>
+        <td><a href="./abilities/frizzstrike.html">Frizz Strike</a><br><div class="jap">メラストライク</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/FanS.png"><br>Fan (S)</td>
+        <td> 165% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Frizz</td>
+        <td>Deals moderate Frizz-type physical damage (165% potency) to all enemies in area of effect</td>
+      </tr>
+      <!-- Slick Slime -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/oilcharge.html">Oil Charge</a><br><div class="jap">オイルチャージ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Grants the user x1.5 martial potency/recovery for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>55</td>
+        <td><a href="./abilities/desperateignition.html">Desperate Ignition</a><br><div class="jap">どとうの発火</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/Front6Far.png"><br>Front</td>
+        <td> - </td>
+        <td> 88 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Frizz</td>
+        <td>Deals minor Frizz-type martial damage (11 base potency) to all enemies in area of effect 8 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>104</td>
+        <td><a href="./abilities/tarsplash.html">Tar Splash</a><br><div class="jap">ぶちまけタール</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-3</td>
+        <td> - </td>
+        <td> 205 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Frizz</td>
+        <td>Deals major Frizz-type martial damage (205 base potency) to all enemies in area of effect and generates spaces that lower Frizz Res for enemies only for 2 turns</td>
+      </tr>
+      <!-- Slime -->
+      <tr>
+        <td><img src="./images/AttackType/ARedBreath.png"></td>
+        <td>58</td>
+        <td><a href="./abilities/scorch.html">Scorch</a><br><div class="jap">しゃくねつ</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> 100 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Breath</td>
+        <td>Frizz</td>
+        <td>Deals major Frizz-type breath damage (100 base potency) to all enemies in area of effect</td>
+      </tr>
+      <!-- Slimehopper -->
+      <tr>
+        <td><img src="./images/AttackType/BBluePhysical.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/zephyrblade.html">Zephyr Blade</a><br><div class="jap">風の刃</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/FanS.png"><br>Fan (S)</td>
+        <td> 160% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals minor Woosh-type damage (80% potency) to all enemies in area of effect 2 times, rarely lowers Woosh Res for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>49</td>
+        <td><a href="./abilities/blizzardblade.html">Blizzard Blade</a><br><div class="jap">ふぶきのつるぎ</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals minor Crack-type damage (75% potency) to 1 enemy 4 times</td>
+      </tr>
+      <!-- Slime Knight -->
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>38</td>
+        <td><a href="./abilities/kacrackleslash.html">Kacrackle Slash</a><br><div class="jap">マヒャド斬り</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 270% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals major Crack-type physical damage (270% potency) to 1 enemy</td>
+      </tr>
+      <!-- Slionheart -->
+      <tr>
+        <td><img src="./images/AttackType/BBluePhysical.png"></td>
+        <td>26</td>
+        <td><a href="./abilities/slimeslash.html">Slime Slash</a><br><div class="jap">スラ・スラッシュ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine2.png"><br>Straight Line</td>
+        <td> 175% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (175% potency) to all enemies in area of effect, rarely stuns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>22</td>
+        <td><a href="./abilities/lightningmultislash.html">Lightning Multislash</a><br><div class="jap">雷光さみだれ斬り</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/HorizontalRange1.png"><br>1</td>
+        <td> 220% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Zap</td>
+        <td>Deals minor Zap-type physical damage (55% potency) to random enemies in area of effect 4 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>52</td>
+        <td><a href="./abilities/windysliceanddice.html">Windy Slice and Dice</a><br><div class="jap">風神メッタメタ斬り</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 280% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals minor Woosh-type physical damage (70% potency) to 1 enemy 4 times, rarely lowers DEF for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>71</td>
+        <td><a href="./abilities/deaddragondivvyanddice.html">Dead Dragon Divvy and Dice</a><br><div class="jap">滅竜メッタメタメタ斬り</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 600% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (120% potency) to Dragon units 5 times, deals minor physical damage (60% potency) to all other units 5 times, rarely lowers DEF for 3 turns</td>
+      </tr>
+      <!-- Snowy Sanguini -->
+      <tr>
+        <td><img src="./images/AttackType/CBlueMartial.png"></td>
+        <td>14</td>
+        <td><a href="./abilities/warcry.html">War Cry</a><br><div class="jap">おたけび</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally stuns 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>45</td>
+        <td><a href="./abilities/healingwave.html">Healing Wave</a><br><div class="jap">いやしのはどう</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP for all allies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>79</td>
+        <td><a href="./abilities/ブラッドホール.html">ブラッドホール</a></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
+        <td> - </td>
+        <td> 170 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Zam</td>
+        <td>Deals major Zam-type martial damage (170 base potency) to 1 enemy, heals the user's HP by 100% of damage dealt</td>
+      </tr>
+      <!-- Spiked Club -->
+      <tr>
+        <td><img src="./images/AttackType/BBluePhysical.png"></td>
+        <td>36</td>
+        <td><a href="./abilities/crushstomp.html">Crush Stomp</a><br><div class="jap">クラッシュスタンプ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/FanS.png"><br>Fan (S)</td>
+        <td> 175%</td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (175% potency) to all enemies in area of effect, rarely lowers DEF for 3 turns</td>
+      </tr>
+      <!-- Stark Raven -->
+      <tr>
+        <td><img src="./images/AttackType/CRedPhysical.png"></td>
+        <td>5</td>
+        <td><a href="./abilities/skeletoss.html">Skeletoss</a><br><div class="jap">がいこつ投げ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2</td>
+        <td> 100% </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (100% potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueBreath.png"></td>
+        <td>20</td>
+        <td><a href="./abilities/crowsbreath.html">Crow's Breath</a><br><div class="jap">からすの息</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> 55 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Typeless</td>
+        <td>Deals moderate breath damage (55 base potency) to 1 enemy, very rarely paralyses or curses</td>
+      </tr>
+      <!-- Starry Knight Ashlynn -->
+      <tr>
+        <td><img src="./images/AttackType/BBluePhysical.png"></td>
+        <td>46</td>
+        <td><a href="./abilities/freezeshot.html">Freeze Shot</a><br><div class="jap">フリーズショット</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
+        <td> 180% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type physical damage (180% potency) to 1 enemy, occasionally paralyses</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>44</td>
+        <td><a href="./abilities/holynightmiracle.html">Holy Night Miracle</a><br><div class="jap">聖夜のきせき</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises ATK and reduces damage by 20% for all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>106</td>
+        <td><a href="./abilities/stellarang.html">Stellarang</a><br><div class="jap">スーパーノヴァ</div></td>
+        <td><div class="dualdiv"><img class="dual" src="./images/Element/Crack.png"><img class="dual" src="./images/Element/Sizz.png"></div></td>
+        <td><img src="./images/AttackRange/FanL.png"><br>Fan (L)</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Sizz Crack</td>
+        <td>Deals moderate Crack-type physical damage (150% potency) and moderate Sizz-type physical damage (150% potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupRedPhysical.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/shootingstar.html">Shooting Star</a><br><div class="jap">シューティングスター</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 480% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (120% potency) to 1 enemy 4 times, heals the user's HP by 100% of damage dealt<br>Turns needed: 2 (Times usable: 2)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>94</td>
+        <td><a href="./abilities/スターライトウィップ.html">スターライトウィップ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine4.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP for all allies in area of effect, pulls them up to 3 spaces closer, and enables Cover for the user for 1 turn</td>
+      </tr>
+      <!-- Stump Chump -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>7</td>
+        <td><a href="./abilities/medicinalherb.html">Medicinal Herb</a><br><div class="jap">やくそう</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a minor amount of HP for 1 ally</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/CBlueSpell.png"></td>
+        <td>8</td>
+        <td><a href="./abilities/fizzle.html">Fizzle</a><br><div class="jap">マホトム</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Occasionally locks 1 enemy's spell attacks</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueBreath.png"></td>
+        <td>22</td>
+        <td><a href="./abilities/sealingbreath.html">Sealing Breath</a><br><div class="jap">封印の息</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Typeless</td>
+        <td>Occasionally locks physical and spell attacks for all enemies in area of effect</td>
+      </tr>
+      <!-- Stump Grump -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>20</td>
+        <td><a href="./abilities/specialmedicine.html">Special Medicine</a><br><div class="jap">特やくそう</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP for 1 ally</td>
+      </tr>
+      <!-- Styx Raptor -->
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>46</td>
+        <td><a href="./abilities/inaflap.html">In a Flap</a><br><div class="jap">コンドルロケット</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Front1.png"><br>Front</td>
+        <td> - </td>
+        <td> 90 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Woosh</td>
+        <td>Deals moderate Woosh-type martial damage (90 base potency) to 1 enemy, moves up to 2 spaces, only works if there are no enemies or obstacles between the user and target</td>
+      </tr>
+      <!-- Tila -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>0</td>
+        <td><a href="./abilities/クラムベリーパイ.html">クラムベリーパイ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP and raises 1 ally's ATK for 3 turns<br>(Times usable: 3)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>42</td>
+        <td><a href="./abilities/フライパンでたたく！.html">フライパンでたたく！</a></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
+        <td> 150% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type physical damage (150% potency) to all enemies in area of effect and generates spaces that lower Crack Res for enemies only for 2 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>54</td>
+        <td><a href="./abilities/フライパン連斬.html">フライパン連斬</a></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type physical damage (150% potency) to 1 enemy 2 times, rarely lowers Crack Res for 3 turns</td>
+      </tr>
+      <!-- Trauminator -->
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>66</td>
+        <td><a href="./abilities/dualburst.html">Dual Burst</a><br><div class="jap">デュアルバースト</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 360% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Bang</td>
+        <td>Deals moderate Bang-type physical damage (180% potency) to 1 enemy 2 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>72</td>
+        <td><a href="./abilities/darkcrossbreak.html">Dark Cross Break</a><br><div class="jap">ダーククロスブレイク</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/TwoHitCross.png"><br>3</td>
+        <td> 350% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Zam</td>
+        <td>Deals moderate Zam-type physical damage (175% potency) to all enemies in purple area, deals moderate Zam-type physical damage (175% potency) to all enemies in orange area</td>
+      </tr>
+      <!-- Treeface -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenSpell.png"></td>
+        <td>24</td>
+        <td><a href="./abilities/magicveil.html">Magic Veil</a><br><div class="jap">マジックベール</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/AreaOfEffect.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Raises Spell Res of all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenSpell.png"></td>
+        <td>38</td>
+        <td><a href="./abilities/enlighteningmidheal.html">Enlightening Midheal</a><br><div class="jap">さとりのベホイミ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP and raises 1 ally's WIS for 3 turns</td>
+      </tr>
+      <!-- Tricksy -->
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>28</td>
+        <td><a href="./abilities/breakthroughattack.html">Breakthrough Attack</a><br><div class="jap">突攻</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front1.png"><br>Front</td>
+        <td> 200% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (200% potency) to 1 enemy, moves up to 2 spaces, only works if there are no enemies or obstacles between the user and target</td>
+      </tr>
+      <!-- Veronica -->
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>88</td>
+        <td><a href="./abilities/crystalfall.html">Crystal Fall</a><br><div class="jap">クリスタルフォール</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Crack</td>
+        <td>Deals major Crack-type spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>123</td>
+        <td><a href="./abilities/dualkaboom.html">Dual Kaboom</a><br><div class="jap">デュアルイオナズン</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/FrontPlusFar.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Bang</td>
+        <td>Deals major Bang-type spell damage to all enemies in area of effect 2 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupGreenMartial.png"></td>
+        <td>48</td>
+        <td><a href="./abilities/awakeningmagicseal.html">Awakening Magic Seal</a><br><div class="jap">覚醒魔法陣</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Doubles the user's spell potency/recovery for 2 turns<br>Turns needed: 2 (Times usable: 2)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueSpell.png"></td>
+        <td>128</td>
+        <td><a href="./abilities/超連続ばくれつ魔弾.html">超連続ばくれつ魔弾</a></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Front6Far.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Bang</td>
+        <td>Deals moderate Bang-type spell damage to random enemies in area of effect 8 times, rarely lowers Spell Res for 3 turns</td>
+      </tr>
+      <!-- Visor Kaiser -->
+      <tr>
+        <td><img src="./images/AttackType/ABlueBreath.png"></td>
+        <td>92</td>
+        <td><a href="./abilities/genocidedarkness.html">Genocide Darkness</a><br><div class="jap">ジェノサイドダーク</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/T.png"><br>T</td>
+        <td> - </td>
+        <td> 195 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Zam</td>
+        <td>Deals major Zam-type breath damage (195 base potency) to all enemies in area of effect, occasionally curses or envenomates</td>
+      </tr>
+      <!-- Warhog -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenSpell.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/partyboost.html">Partyboost</a><br><div class="jap">バイシオン</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Raises 1 ally's ATK for 3 turns</td>
+      </tr>
+      <!-- Fluffy Watabou -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>60</td>
+        <td><a href="./abilities/mpathy.html">M-Pathy</a><br><div class="jap">MPパサー</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Restores a minor amount of MP for 1 ally other than self</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>36</td>
+        <td><a href="./abilities/星のきせき.html">星のきせき</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises 1 ally's ATK, DEF, AGL, and WIS for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/精霊の守り.html">精霊の守り</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>+ (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Reduces damage taken for all allies in area of effect by 30% for 3 turns</td>
+      </tr>
+      <!-- White Imp -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueSpell.png"></td>
+        <td>37</td>
+        <td><a href="./abilities/magicice.html">Magic Ice</a><br><div class="jap">マジックアイス</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type spell damage to 1 enemy, occasionally lowers Spell Res for 3 turns</td>
+      </tr>
+      <!-- Wimp -->
+      <tr>
+        <td><img src="./images/AttackType/CRedBreath.png"></td>
+        <td>9</td>
+        <td><a href="./abilities/darksphere.html">Dark Sphere</a><br><div class="jap">暗黒球</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> 30 </td>
+        <td>C</td>
+        <td>Red</td>
+        <td>Breath</td>
+        <td>Zam</td>
+        <td>Deals minor Zam-type breath damage (30 base potency) to 1 enemy</td>
+      </tr>
+      <!-- Wulfspade -->
+      <tr>
+        <td><img src="./images/AttackType/CBluePhysical.png"></td>
+        <td>12</td>
+        <td><a href="./abilities/attackattacker.html">Attack Attacker</a><br><div class="jap">やいばくだき</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 130% </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (130% potency) to 1 enemy, occasionally lowers ATK for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>36</td>
+        <td><a href="./abilities/slidescrew.html">Slide Screw</a><br><div class="jap">スライドスクリュー</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front1Far.png"><br>Front</td>
+        <td> 190% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals moderate physical damage (190% potency) to 1 enemy, pulls them up to 1 space closer</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenSpell.png"></td>
+        <td>38</td>
+        <td><a href="./abilities/wartimemidheal.html">Wartime Midheal</a><br><div class="jap">たたかいのベホイミ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP and raises 1 ally's ATK for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>34</td>
+        <td><a href="./abilities/wulfspadeguard.html">Wulfspade Guard</a><br><div class="jap">スペディオガード</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises Physical and Martial Res of all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>59</td>
+        <td><a href="./abilities/wulfspaderush.html">Wulfspade Rush</a><br><div class="jap">スペディオラッシュ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front6Close.png"><br>Front</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (60% potency) to random enemies in area of effect 5 times, rarely lowers DEF for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>140</td>
+        <td><a href="./abilities/wulfspadeburst.html">Wulfspade Burst</a><br><div class="jap">スペディオバースト</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Deals major spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueMartial.png"></td>
+        <td>96</td>
+        <td><a href="./abilities/wulfspadecry.html">Wulfspade Cry</a><br><div class="jap">スペディオクライ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> 200</td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (200 base potency) to all enemies in area of effect, occasionally paralyses</td>
+      </tr>
+      <!-- Yangus -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>20</td>
+        <td><a href="./abilities/banditsroar.html">Bandit's Roar</a><br><div class="jap">山賊のおたけび</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally stuns all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>46</td>
+        <td><a href="./abilities/roughup.html">Rough Up</a><br><div class="jap">カチコミ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine2.png"><br>Straight Line</td>
+        <td> 240% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (80% potency) to all enemies in area of effect 3 times and moves up to 3 spaces</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>56</td>
+        <td><a href="./abilities/axesofevil.html">Axes of Evil</a><br><div class="jap">オノむそう</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Radius1.png"><br>Radius 1</td>
+        <td> 260% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (260% potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ACoupBluePhysical.png"></td>
+        <td>72</td>
+        <td><a href="./abilities/uberparallax.html">Über Parallax</a><br><div class="jap">蒼天魔斬・極</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> 380% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals physical damage (380% potency) to all enemies in area of effect, occasionally paralyses<br>Turns needed: 3 (Times usable: 1)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>60</td>
+        <td><a href="./abilities/axesmash.html">Axe Smash</a><br><div class="jap">オノスマッシュ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1</td>
+        <td> 400% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (400% potency) to 1 enemy</td>
+      </tr>
+      <!-- Young Erik -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>30</td>
+        <td><a href="./abilities/ordergogogo.html">Order: Go, Go, Go!</a><br><div class="jap">号令：いけ！</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine2.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Knocks all allies in area of effect back up to 2 spaces</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/貫通ラリホー弾.html">貫通ラリホー弾</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally puts 1 enemy to sleep<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>124</td>
+        <td><a href="./abilities/トゲトゲショット弾.html">トゲトゲショット弾</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
+        <td> - </td>
+        <td> 287 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major surehit martial damage (287 base potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueMartial.png"></td>
+        <td>83</td>
+        <td><a href="./abilities/sizzbomb.html">Sizz Bomb</a><br><div class="jap">強ギラ弾</div></td>
+        <td><img src="./images/Element/Sizz.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> 268 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Sizz</td>
+        <td>Deals major Sizz-type martial damage (268 base potency) to 1 enemy, often lowers Sizz Res for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AcoupRedMartial.png"></td>
+        <td>165</td>
+        <td><a href="./abilities/groundslam.html">Ground Slam</a><br><div class="jap">アースブレイカー</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/RhombusAoE.png"><br>2-4</td>
+        <td> - </td>
+        <td> 335 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (335 base potency) to all enemies in area of effect, generates spaces that greatly lower Move for both enemies and allies for 2 turns<br>Turns needed: 2 turns (Times usable: 2)</td>
+      </tr>
+      <!-- Young Mia -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>36</td>
+        <td><a href="./abilities/ordergatherround.html">Order: Gather Round!</a><br><div class="jap">号令：あつまれ！</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Pulls all allies in area of effect up to 2 spaces closer</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/貫通しびれ弾.html">貫通しびれ弾</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Occasionally paralyses 1 enemy<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>56</td>
+        <td><a href="./abilities/panaceapellet.html">Panacea Pellet</a><br><div class="jap">万能ぐすり弾</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP and removes some status ailments for 1 ally</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>88</td>
+        <td><a href="./abilities/必中イオ弾.html">必中イオ弾</a></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> 268 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Bang</td>
+        <td>Deals major surehit Bang-type martial damage (268 base potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AcoupRedMartial.png"></td>
+        <td>100</td>
+        <td><a href="./abilities/ロマンスナイプショット.html">ロマンスナイプショット</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>2-4</td>
+        <td> - </td>
+        <td> 470 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (235 base potency) to 1 enemy 2 times<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness<br>Turns needed: 2 turns (Times usable: 2)</td>
+      </tr>
+      <!-- Zamtasm -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/restless.html">Restless</a><br><div class="jap">さまよう</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Greatly raises the user's move for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueSpell.png"></td>
+        <td>48</td>
+        <td><a href="./abilities/ballofmalice.html">Ball of Malice</a><br><div class="jap">おんねんだま</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Zam</td>
+        <td>Deals moderate Zam-type spell damage to 1 enemy, often curses</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>125</td>
+        <td><a href="./abilities/zamurta.html">Zamurta</a><br><div class="jap">ドルマータ</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Front6Far.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Zam</td>
+        <td>Deals moderate Zam-type spell damage to random enemies in area of effect 8 times</td>
+      </tr>
+      <!-- Zoma -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueBreath.png"></td>
+        <td>57</td>
+        <td><a href="./abilities/frigidbreath.html">Frigid Breath</a><br><div class="jap">魔氷の息</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/StraightLine.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> 68 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Crack</td>
+        <td>Deals moderate Crack-type breath damage (68 base potency) to all enemies in area of effect, rarely stuns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>85</td>
+        <td><a href="./abilities/psycannon.html">Psycannon</a><br><div class="jap">サイコキャノン</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Deals major spell damage to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>101</td>
+        <td><a href="./abilities/glacialdoom.html">Glacial Doom</a><br><div class="jap">滅びの氷塊</div></td>
+        <td><img src="./images/Element/Crack.png"></td>
+        <td><img src="./images/AttackRange/Front3.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Crack</td>
+        <td>Deals major Crack-type spell damage to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedSpell.png"></td>
+        <td>135</td>
+        <td><a href="./abilities/psychorequiem.html">Psycho Requiem</a><br><div class="jap">サイコレクイエム</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front6Far.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Deals major spell damage to all enemies in area of effect</td>
+      </tr>
+      <!-- Hood -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/thuggishpose.html">Thuggish Pose</a><br><div class="jap">ごろつきポーズ</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises the user's ATK and Move for 3 turns, lowers DEF and AGL for 3 turns</td>
+      </tr>
+      <!-- Gem Jamboree -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueSpell.png"></td>
+        <td>36</td>
+        <td><a href="./abilities/antimagicburst.html">Antimagic Burst</a><br><div class="jap">まふうじの炎弾</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/RectangleAoE.png"><br>2</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Frizz</td>
+        <td>Deals minor Frizz-type spell damage to random enemies in area of effect 4 times, very rarely locks spell attacks</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>60</td>
+        <td><a href="./abilities/goldrush.html">Gold Rush</a><br><div class="jap">ゴールドシャワー</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/FrontPlusFar.png"><br>Front</td>
+        <td> - </td>
+        <td>80 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals moderate martial damage (80 base potency) to all enemies in area of effect, occasionally lowers AGL for 3 turns</td>
+      </tr>
+      <!-- Gold Angel Slime -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueSpell.png"></td>
+        <td>44</td>
+        <td><a href="./abilities/angelball.html">Angel Ball</a><br><div class="jap">エンゼルボール</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Deals moderate spell damage to 1 enemy, occasionally stuns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenSpell.png"></td>
+        <td>82</td>
+        <td><a href="./abilities/angelcharm.html">Angel Charm</a><br><div class="jap">天使のおまじない</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Plus.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Spell</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP and grants moderate regeneration to all allies in area of effect for 2 turns</td>
+      </tr>
+      <!-- Penny Pincher -->
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>30</td>
+        <td><a href="./abilities/demoniclure.html">Demonic Lure</a><br><div class="jap">悪魔の誘い</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front1Far.png"><br>Front</td>
+        <td> - </td>
+        <td> 36 </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals minor martial damage (36 base potency) to 1 enemy, pulls them up to 1 space closer</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>72</td>
+        <td><a href="./abilities/feverattack.html">Fever Attack</a><br><div class="jap">フィーバーアタック</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 175 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals minor martial damage (35 base potency) to 1 enemy 5 times</td>
+      </tr>
+      <!-- Jinxed Jade -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>26</td>
+        <td><a href="./abilities/sexycharm.html">Sexy Charm</a><br><div class="jap">セクシーチャーム</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Often charms 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/rerevamp.html">Re-Re-Vamp</a><br><div class="jap">サタンモード</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Greatly raises the user's AGL, martial potency/recovery, and nullifies some status ailments for 3 turns<br>(Times usable: 1)</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueMartial.png"></td>
+        <td>98</td>
+        <td><a href="./abilities/femmefatale.html">Femme Fatale</a><br><div class="jap">サキュバスウィンク</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front6Close.png"><br>Front</td>
+        <td> - </td>
+        <td> 253</td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (253 base potency) to all enemies in area of effect, often puts to sleep</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>73</td>
+        <td><a href="./abilities/devilhammer.html">Devil Hammer</a><br><div class="jap">デビルハンマー</div></td>
+        <td><img src="./images/Element/Zam.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-2</td>
+        <td> - </td>
+        <td> 333 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Zam</td>
+        <td>Deals major Zam-type martial damage (111 base potency) to 1 enemy 3 times</td>
+      </tr>
+      <!-- Mimic -->
+      <tr>
+        <td><img src="./images/AttackType/BRedSpell.png"></td>
+        <td>40</td>
+        <td><a href="./abilities/foolingflames.html">Fooling Flames</a><br><div class="jap">だましの火炎</div></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Spell</td>
+        <td>Frizz</td>
+        <td>Deals moderate Frizz-type spell damage proportional to ATK to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>42</td>
+        <td><a href="./abilities/multislashhatchet.html">Multislash Hatchet</a><br><div class="jap">さみだれ魔神斬り</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/RectangleAoE.png"><br>1</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (75% potency) to random enemies in area of effect 4 times, always results in a critical hit, but often misses</td>
+      </tr>
+      <!-- Token Taker -->
+      <tr>
+        <td><img src="./images/AttackType/CGreenMartial.png"></td>
+        <td>16</td>
+        <td><a href="./abilities/highspeedspin.html">High Speed Spin</a><br><div class="jap">高速回転</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>C</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Greatly raises the user's Move for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>44</td>
+        <td><a href="./abilities/bonusheal.html">Bonus Heal</a><br><div class="jap">ボーナスヒール</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3 (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a moderate amount of HP for 1 ally, occasionally raises physical, martial, spell, and breath potency/recovery for 3 turns, very rarely raises Tension for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueMartial.png"></td>
+        <td>83</td>
+        <td><a href="./abilities/bonusattack.html">Bonus Attack</a><br><div class="jap">ボーナスアタック</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 190 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (190 base potency) to 1 enemy, occasionally lowers Physical, Martial, Spell, and Breath Res for 3 turns, very rarely raises damage taken for 3 turns</td>
+      </tr>
+      <!-- Demonic Knight -->
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>25</td>
+        <td><a href="./abilities/sunderboltslash.html">Sunderbolt Slash</a><br><div class="jap">雷鳴斬</div></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 180% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Zap</td>
+        <td>Deals moderate Zap-type physical damage (180% potency) to 1 enemy</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>58</td>
+        <td><a href="./abilities/stormblast.html">Storm Blast</a><br><div class="jap">暴風撃</div></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/FanS.png"><br>Fan (S)</td>
+        <td> 250% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type physical damage (250% potency) to all enemies in area of effect</td>
+      </tr>
+      <!-- Booga -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueMartial.png"></td>
+        <td>40</td>
+        <td><a href="./abilities/darstardlyscheme.html">Darstardly Scheme</a><br><div class="jap">ひれつなさくせん</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front1Far.png"><br>Front</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Pulls 1 enemy up to 3 spaces closer, enables Enemy Selflessness for 3 turns<br>(Times usable: 1)<br><div class="attackdesc">When a unit is in the Enemy Selflessness state, it will take attacks for directly adjacent enemies (the unit cannot hit itself in this state; this state does not reduce incoming damage)</div></td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueBreath.png"></td>
+        <td>118</td>
+        <td><a href="./abilities/boobreath.html">Boo Breath</a><br><div class="jap">妖魔の吐息</div></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Fan.png"><br>Fan</td>
+        <td> - </td>
+        <td> 240 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Typeless</td>
+        <td>Deals major breath damage (240 base potency) to all enemies in area of effect, often greatly lowers ATK for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueBreath.png"></td>
+        <td>101</td>
+        <td><a href="./abilities/boogiewoogiebreath.html">Boogie Woogie Breath</a><br><div class="jap">ブギウギブレス</div></td>
+        <td><img src="./images/Element/Bang.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-4</td>
+        <td> - </td>
+        <td> 245 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Bang</td>
+        <td>Deals moderate breath damage (49 base potency) to 1 enemy 5 times, rarely binds</td>
+      </tr>
+      <!-- Fiery Dragling -->
+      <tr>
+        <td><img src="./images/AttackType/BBlueBreath.png"></td>
+        <td>45</td>
+        <td><a href="./abilities/睡眠火炎球.html">睡眠火炎球</a></td>
+        <td><img src="./images/Element/Frizz.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 80 </td>
+        <td>B</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Frizz</td>
+        <td>Deals moderate Frizz-type breath damage (80 base potency) to 1 enemy, occasionally puts to sleep</td>
+      </tr>
+      <!-- Evil Cloud -->
+      <tr>
+        <td><img src="./images/AttackType/BGreenMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/くもがくれ.html">くもがくれ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>Self</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises the user's evasion rate and breath potency/recovery for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABlueBreath.png"></td>
+        <td>76</td>
+        <td><a href="./abilities/ブレイクウインド.html">ブレイクウインド</a></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>3</td>
+        <td> - </td>
+        <td> 210 </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Breath</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type breath damage (210 base potency) to 1 enemy, occasionally lowers ATK and DEF for 3 turns</td>
+      </tr>
+      <!-- Slider Girl -->
+      <tr>
+        <td><img src="./images/AttackType/BRedMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/スライダーキャッチ.html">スライダーキャッチ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/StraightLine4.png"><br>Straight Line</td>
+        <td> - </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Pulls all enemies in area of effect up to 3 spaces closer</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>81</td>
+        <td><a href="./abilities/スライダーブロウ.html">スライダーブロウ</a></td>
+        <td><img src="./images/Element/Woosh.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> - </td>
+        <td> 289 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Woosh</td>
+        <td>Deals major Woosh-type martial damage (289 base potency) to 1 enemy, raises the user's Martial Boost for 1 turn</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedMartial.png"></td>
+        <td>99</td>
+        <td><a href="./abilities/必殺スライダーアクセル.html">必殺スライダーアクセル</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/T.png"><br>T</td>
+        <td> - </td>
+        <td> 303 </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Deals major martial damage (101 base potency) to all enemies in area of effect 3 times, moves up to 4 spaces, and raises the user's evasion rate for 3 turns</td>
+      </tr>
+      <!-- Ultra Slime -->
+      <tr>
+        <td><img src="./images/AttackType/BRedPhysical.png"></td>
+        <td>34</td>
+        <td><a href="./abilities/スライダパンチ.html">スライダパンチ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 210% </td>
+        <td> - </td>
+        <td>B</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (70% potency) to 1 enemy 3 times</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/スライダーガード.html">スライダーガード</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Reduces damage taken by 20% for all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>32</td>
+        <td><a href="./abilities/スライダーエール.html">スライダーエール</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Raises ATK of all allies in area of effect for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/AGreenMartial.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/スライダーヒール.html">スライダーヒール</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
+        <td> - </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Green</td>
+        <td>Martial</td>
+        <td>Typeless</td>
+        <td>Heals a major amount of HP for all allies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>75</td>
+        <td><a href="./abilities/必殺スライダーキック.html">必殺スライダーキック</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Range1.png"><br>1-3</td>
+        <td> 600% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals major physical damage (600% potency) to ??? units, and deals major physical damage (300% potency) to all other units, occasionally lowers DEF for 3 turns</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ARedPhysical.png"></td>
+        <td>70</td>
+        <td><a href="./abilities/必殺スライダークロス.html">必殺スライダークロス</a></td>
+        <td><img src="./images/Element/Zap.png"></td>
+        <td><img src="./images/AttackRange/FrontCross.png"><br>Front</td>
+        <td> 300% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Red</td>
+        <td>Physical</td>
+        <td>Zap</td>
+        <td>Deals major surehit Zap-type physical damage (300% potency) to all enemies in area of effect</td>
+      </tr>
+      <tr>
+        <td><img src="./images/AttackType/ABluePhysical.png"></td>
+        <td>72</td>
+        <td><a href="./abilities/必殺スライダーラッシュ.html">必殺スライダーラッシュ</a></td>
+        <td><img src="./images/Element/Typeless.png"></td>
+        <td><img src="./images/AttackRange/Front6.png"><br>Front</td>
+        <td> 360% </td>
+        <td> - </td>
+        <td>A</td>
+        <td>Blue</td>
+        <td>Physical</td>
+        <td>Typeless</td>
+        <td>Deals minor physical damage (45% potency) to random enemies in area of effect 8 times, very rarely paralyses</td>
       </tr>
     </tbody>
   </table>
