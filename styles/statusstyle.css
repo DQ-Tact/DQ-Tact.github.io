@@ -95,6 +95,7 @@ table{
     margin-top: 15px;
     table-layout: fixed;
     width: 96%;
+    margin-bottom: 15px;
 }
 
 table th td{
@@ -103,7 +104,7 @@ table th td{
 
 tbody{
     background-color: rgb(255, 255, 255);
-    font-size: 0.85em;
+    font-size: 0.84em;
 }
 
 img[src*="Buffs"]{
@@ -112,4 +113,33 @@ img[src*="Buffs"]{
 
 .smalltext{
     font-size: 0.75em;
+}
+
+.summon{
+    position:relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    color: rgb(74, 59, 171);
+    background-image: none;
+    box-shadow: none;
+    text-decoration: underline;
+    transition-duration: 0s;
+}
+.summon:hover{
+    color: rgb(102, 205, 223);
+    background-image: none;
+    box-shadow: none;
+    border: none;
+}
+
+.summon:active{
+    color: rgb(102, 205, 223);
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    top: 0;
 }

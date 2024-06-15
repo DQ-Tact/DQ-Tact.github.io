@@ -67,10 +67,6 @@ h3{
     transition-duration: 0s;
 }
 
-a:hover{
-    color: rgb(244, 242, 253);
-}
-
 table{
     background-color: rgb(166, 160, 194);
     text-align: center;
@@ -102,9 +98,34 @@ td{
     background-color: rgb(151, 122, 214);
 }
 
+.padding td{
+    padding: 20px
+}
+
+#largegroup{
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#largegroup img{
+    width: 72px;
+    height: 92px;
+    padding: 13px;
+}
+
+#largegroup .percent{
+    background-color: rgb(244, 242, 253);
+    padding: 12px;
+    width: 74px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
 .group{
     text-align: center;
     margin-bottom: 15px;
+    display: block;
 }
 
 .border{
@@ -113,6 +134,38 @@ td{
     width:80px;
     height: 102px;
     border-radius: 5px;
+}
+
+.percentgroup{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.percent{    
+    background-color: rgb(244, 242, 253);
+    padding: 12px;
+    width:88px;
+    border-radius: 5px;
+}
+
+.smallpercent{
+    background-color: rgb(244, 242, 253);
+    padding: 12px;
+    width:88px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.percent:hover{
+    color: rgb(102, 205, 223);
+}
+
+.smallpercent:hover{
+    color: rgb(102, 205, 223);
 }
 
 .fintable{
@@ -139,4 +192,39 @@ img[src*="AttackRange"]{
     margin: 0;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.white{
+    background-color: rgb(255, 255, 255);
+}
+
+img[src*="Buffs"]{
+    width: 36px;
+}
+
+.buffdesc{
+    color: rgb(151, 122, 214);
+    word-spacing: 10px;
+}
+
+.none{
+    background-color: rgb(244, 242, 253);
+    padding: 16px;
+    width:160px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.extra{
+    color: rgb(122, 74, 154);
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.extra img{
+    width: 20px;
+    position: relative;
+    top: 5px;
 }

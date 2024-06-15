@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/estelle.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Estelle</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Estelle</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <img src="../images/Estelle.jpg" class="border">
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Dragon Spell Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/SpellLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+
+    <div id="statfilter">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>M-Pathy</td>
+                <td>60</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Restores a minor amount of MP for 1 ally other than self</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/AGreenSpell.png"></td>
+                <td>Fighting Formation</td>
+                <td>70</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Heals a major amount of HP for all allies in area of effect, generates spaces in area of effect that raise WIS for 3 turns for allies on those spaces only</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>Draconic Detonation</td>
+                <td>131</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-3</td>
+                <td>Deals major Frizz-type spell damage to all enemies in area of effect, rarely lowers Frizz Res for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Abbess of the Nadraga</td>
+                <td>Heals 50% of max HP and greatly raises WIS for 3 turns when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Draconic Detonation potency +2%</td>
+                <td>Raises Draconic Detonation potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Instant Frizzforce</td>
+                <td>Battle start:<br>Enables Frizzforce for 3 turns</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Draconic Detonation potency +5%</td>
+                <td>Raises Draconic Detonation potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sacred Bird's Prayer</td>
+                <td>Action start:<br>Heals 100 HP for all allies in the surrounding large rhombus (incl. self)</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
