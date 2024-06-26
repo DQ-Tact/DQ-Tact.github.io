@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Stylesheet for mainpage -->
-<link rel="stylesheet" href="./styles/statusstyle.css">
+<link rel="stylesheet" href="./styles/newstatusstyle.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Datatable information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./datatable2.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,109 +28,760 @@
     <a class="currentpage">Status Changes List</a>
   </div>
 
-  <table>
-    <tbody>
+  <p>Select a status change from either the table on the right, or select its icon from the selection on the left</p> 
+
+<div class="partone">
+    <table class="flat">
         <tr>
-            <td><a class="summon" href="./buffs/atk.html"><img src="./images/Buffs/ATKup.png"><br><img src="./images/Buffs/ATKdown.png"><br>ATK</a></td>
-            <td><a class="summon" href="./buffs/def.html"><img src="./images/Buffs/DEFup.png"><br><img src="./images/Buffs/DEFdown.png"><br>DEF</a></td>
-            <td><a class="summon" href="./buffs/agl.html"><img src="./images/Buffs/AGLup.png"><br><img src="./images/Buffs/AGLdown.png"><br>AGL</a></td>
-            <td><a class="summon" href="./buffs/wis.html"><img src="./images/Buffs/WISup.png"><br><img src="./images/Buffs/WISdown.png"><br>WIS</a></td>
-            <td><a class="summon" href="./buffs/move.html"><img src="./images/Buffs/Moveup.png"><br><img src="./images/Buffs/Movedown.png"><br>Move</a></td>
-            <td><a class="summon" href="./buffs/frizzres.html"><img src="./images/Buffs/FrizzResup.png"><br><img src="./images/Buffs/FrizzResdown.png"><br>Frizz Res</a></td>
-            <td><a class="summon" href="./buffs/sizzres.html"><img src="./images/Buffs/SizzResup.png"><br><img src="./images/Buffs/SizzResdown.png"><br>Sizz Res</a></td>
-            <td><a class="summon" href="./buffs/crackres.html"><img src="./images/Buffs/CrackResup.png"><br><img src="./images/Buffs/CrackResdown.png"><br>Crack Res</a></td>
-            <td><a class="summon" href="./buffs/wooshres.html"><img src="./images/Buffs/WooshResup.png"><br><img src="./images/Buffs/WooshResdown.png"><br>Woosh Res</a></td>
-            <td><a class="summon" href="./buffs/bangres.html"><img src="./images/Buffs/BangResup.png"><br><img src="./images/Buffs/BangResdown.png"><br>Bang Res</a></td>
-            <td><a class="summon" href="./buffs/zapres.html"><img src="./images/Buffs/ZapResup.png"><br><img src="./images/Buffs/ZapResdown.png"><br>Zap Res</a></td>
-            <td><a class="summon" href="./buffs/zamres.html"><img src="./images/Buffs/ZamResup.png"><br><img src="./images/Buffs/ZamResdown.png"><br>Zam Res</a></td>
+            <td><a class="summon" href="./buffs/atk.html"><img src="./images/Buffs/ATKup.png"></a></td>
+            <td><a class="summon" href="./buffs/def.html"><img src="./images/Buffs/DEFup.png"></a></td>
+            <td><a class="summon" href="./buffs/agl.html"><img src="./images/Buffs/AGLup.png"></a></td>
+            <td><a class="summon" href="./buffs/wis.html"><img src="./images/Buffs/WISup.png"></a></td>
+            <td><a class="summon" href="./buffs/move.html"><img src="./images/Buffs/Moveup.png"></a></td>
         </tr>
         <tr>
-            <td><a class="summon" href="./buffs/physicalres.html"><img src="./images/Buffs/PhysResup.png"><br><img src="./images/Buffs/PhysResdown.png"><br>Physical Res</a></td>
-            <td><a class="summon" href="./buffs/martialres.html"><img src="./images/Buffs/MartialResup.png"><br><img src="./images/Buffs/MartialResdown.png"><br>Martial Res</a></td>
-            <td><a class="summon" href="./buffs/spellres.html"><img src="./images/Buffs/SpellResup.png"><br><img src="./images/Buffs/SpellResdown.png"><br>Spell Res</a></td>
-            <td><a class="summon" href="./buffs/breathres.html"><img src="./images/Buffs/BreathResup.png"><br><img src="./images/Buffs/BreathResdown.png"><br>Breath Res</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/physicalpotency.html"><img src="./images/Buffs/PhysPotencyup.png"><br><img src="./images/Buffs/PhysPotencydown.png"><br>Physical Potency/Recovery</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/martialpotency.html"><img src="./images/Buffs/MartialPotencyup.png"><br><img src="./images/Buffs/MartialPotencydown.png"><br>Martial Potency/Recovery</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/spellpotency.html"><img src="./images/Buffs/SpellPotencyup.png"><br><img src="./images/Buffs/SpellPotencydown.png"><br>Spell Potency/Recovery</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/breathpotency.html"><img src="./images/Buffs/BreathPotencyup.png"><br><img src="./images/Buffs/BreathPotencydown.png"><br>Breath Potency/Recovery</a></td>
-            <td><a class="summon" href="./buffs/damagedealt.html"><img src="./images/Buffs/DMGDealtup.png"><br><img src="./images/Buffs/DMGDealtdown.png"><br>Damage Dealt</a></td>
-            <td><a class="summon" href="./buffs/damagetaken.html"><img src="./images/Buffs/DMGReduced.png"><br><img src="./images/Buffs/DMGTaken.png"><br>Damage Taken</a></td>
-            <td><a class="summon" href="./buffs/damagenullified.html"><img src="./images/Buffs/DMGNullified.png"><br>Damage Taken Nullified</a></td>
-            <td><a class="summon" href="./buffs/typelessres.html"><img src="./images/Buffs/TypelessRes.png"><br>Typeless Res Up</a></td>    
+            <td><a class="summon" href="./buffs/atk.html#Down"><img src="./images/Buffs/ATKdown.png"></a></td>
+            <td><a class="summon" href="./buffs/def.html#Down"><img src="./images/Buffs/DEFdown.png"></a></td>
+            <td><a class="summon" href="./buffs/agl.html#Down"><img src="./images/Buffs/AGLdown.png"></a></td>
+            <td><a class="summon" href="./buffs/wis.html#Down"><img src="./images/Buffs/WISdown.png"></a></td>
+            <td><a class="summon" href="./buffs/move.html#Down"><img src="./images/Buffs/Movedown.png"></a></td>
         </tr>
         <tr>
-            <td><a class="summon" href="./buffs/physicalreflect.html"><img src="./images/Buffs/ReflectPhys.png"><br>Physical Reflect</a></td>
-            <td><a class="summon" href="./buffs/martialreflect.html"><img src="./images/Buffs/ReflectMartial.png"><br>Martial Reflect</a></td>
-            <td><a class="summon" href="./buffs/spellreflect.html"><img src="./images/Buffs/ReflectSpell.png"><br>Spell Reflect</a></td>
-            <td><a class="summon" href="./buffs/breathreflect.html"><img src="./images/Buffs/ReflectBreath.png"><br>Breath Reflect</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/bigphysicalpotency.html"><img src="./images/Buffs/BigPhysPotency.png"><br>Physical Potency/Recovery</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/bigmartialpotency.html"><img src="./images/Buffs/BigMartialPotency.png"><br>Martial Potency/Recovery</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/bigspellpotency.html"><img src="./images/Buffs/BigSpellPotency.png"><br>Spell Potency/Recovery</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/bigbreathpotency.html"><img src="./images/Buffs/BigBreathPotency.png"><br>Breath Potency/Recovery</a></td>
-            <td><a class="summon" href="./buffs/damagedealthp.html"><img src="./images/Buffs/DMGDealt.png"><br><div class="smalltext">Damage Dealt Up<br>(HP Threshold)</div></a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/damagetakenhp.html"><img src="./images/Buffs/SpecialBuff.png"><br>Damage Taken Reduced<br>(HP Threshold)</a></td>
-            <td class="smallishtext"><a class="summon" href="./buffs/physicalcritrate.html"><img src="images/Buffs/PhysCritUp.png"><br>Physical Critical Hit Rate Up</a></td>
-            <td><a class="summon" href="./buffs/darkrobes.html"><img src="./images/Buffs/DarkRobes.png"><br>Dark Robes</a></td>
+            <td><a class="summon" href="./buffs/physicalres.html"><img src="./images/Buffs/PhysResup.png"></a></td>
+            <td><a class="summon" href="./buffs/martialres.html"><img src="./images/Buffs/MartialResup.png"></a></td>
+            <td><a class="summon" href="./buffs/spellres.html"><img src="./images/Buffs/SpellResup.png"></a></td>
+            <td><a class="summon" href="./buffs/breathres.html"><img src="./images/Buffs/BreathResup.png"></a></td>
+            <td><a class="summon" href="./buffs/physicalpotency.html"><img src="./images/Buffs/PhysPotencyup.png"></a></td>
+            <td><a class="summon" href="./buffs/martialpotency.html"><img src="./images/Buffs/MartialPotencyup.png"></a></td>
+            <td><a class="summon" href="./buffs/spellpotency.html"><img src="./images/Buffs/SpellPotencyup.png"></a></td>
+            <td><a class="summon" href="./buffs/breathpotency.html"><img src="./images/Buffs/BreathPotencyup.png"></a></td>
         </tr>
         <tr>
-            <td><a class="summon" href="./buffs/statusailmentsnullified.html"><img src="./images/Buffs/AilmentNullify.png"><br>Status Ailments Nullifed</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/damagenullifythreshold.html"><img src="./images/Buffs/HPDMGNullify.png"><br>Damage Under HP Threshold Nullified</a></td>
-            <td><a class="summon" href="./buffs/spellnullify.html"><img src="./images/Buffs/SpellNullify.png"><br>Spell Nullify</a></td>
-            <td><a class="summon" href="./buffs/breathnullify.html"><img src="./images/Buffs/BreathNullify.png"><br>Breath Nullify</a></td>
-            <td><a class="summon" href="./buffs/evasionrate.html"><img src="./images/Buffs/Evasion.png"><br>Evasion Rate Up</a></td>
-            <td><a class="summon" href="./buffs/100evasion.html"><img src="./images/Buffs/100Evasion.png"><br>100% Evasion Rate</a></td>
-            <td><a class="summon" href="./buffs/100spellevasion.html"><img src="./images/Buffs/100EvasionSpell.png"><br>100% Spell Evasion Rate</a></td>
-            <td><a class="summon" href="./buffs/100breathevasion.html"><img src="./images/Buffs/100EvasionBreath.png"><br>100% Breath Evasion Rate</a></td>
-            <td><a class="summon" href="./buffs/regeneration.html"><img src="./images/Buffs/Regeneration.png"><br>Regeneration</a></td>
-            <td><a class="summon" href="./buffs/selfhphealingeffects.html"><img src="./images/Buffs/SelfHPHealingup.png"><br><img src="./images/Buffs/SelfHPHealingdown.png"><br>Self HP Healing Effects</a></td>
-            <td class="smallishtext"><a class="summon" href="./buffs/selfhphealingnullified.html"><img src="./images/Buffs/NullifiedSelfHPHealing.png"><br>Self HP Healing Effects Nullified</a></td>
-            <td><a class="summon" href="./buffs/stateswitch.html"><img src="./images/Buffs/StateSwitch.png"><br>State Switch</a></td>
+            <td><a class="summon" href="./buffs/physicalres.html#Down"><img src="./images/Buffs/PhysResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/martialres.html#Down"><img src="./images/Buffs/MartialResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/spellres.html#Down"><img src="./images/Buffs/SpellResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/breathres.html#Down"><img src="./images/Buffs/BreathResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/physicalpotency.html#Down"><img src="./images/Buffs/PhysPotencydown.png"></a></td>
+            <td><a class="summon" href="./buffs/martialpotency.html#Down"><img src="./images/Buffs/MartialPotencydown.png"></a></td>
+            <td><a class="summon" href="./buffs/spellpotency.html#Down"><img src="./images/Buffs/SpellPotencydown.png"></a></td>
+            <td><a class="summon" href="./buffs/breathpotency.html#Down"><img src="./images/Buffs/BreathPotencydown.png"></a></td>
         </tr>
         <tr>
-            <td><a class="summon" href="./buffs/selflessness.html"><img src="./images/Buffs/Selflessness.png"><br>Selflessness</a></td>
-            <td><a class="summon" href="./buffs/enemyselflessness.html"><img src="./images/Buffs/EnemySelflessness.png"><br>Enemy Selflessness</a></td>
-            <td><a class="summon" href="./buffs/watersigil.html"><img src="./images/Buffs/SpecialBuff.png"><br>Water Sigil</a></td>
-            <td class="smallishtext"><a class="summon" href="./buffs/legendaryhero.html"><img src="./images/Buffs/SpecialBuff.png"><br>Legendary Hero</a></td>
-            <td><a class="summon" href="./buffs/stylish.html"><img src="./images/Buffs/Stylish.png"><br>Stylish</a></td>
-            <td><a class="summon" href="./buffs/frizzforce.html"><img src="./images/Buffs/Frizzforce.png"><br>Frizzforce</a></td>
-            <td><a class="summon" href="./buffs/sizzforce.html"><img src="./images/Buffs/Sizzforce.png"><br>Sizzforce</a></td>
-            <td><a class="summon" href="./buffs/crackforce.html"><img src="./images/Buffs/Crackforce.png"><br>Crackforce</a></td>
-            <td><a class="summon" href="./buffs/wooshforce.html"><img src="./images/Buffs/Wooshforce.png"><br>Wooshforce</a></td>
-            <td><a class="summon" href="./buffs/bangforce.html"><img src="./images/Buffs/Bangforce.png"><br>Bangforce</a></td>
-            <td><a class="summon" href="./buffs/zapforce.html"><img src="./images/Buffs/Zapforce.png"><br>Zapforce</a></td>
-            <td><a class="summon" href="./buffs/zamforce.html"><img src="./images/Buffs/Zamforce.png"><br>Zamforce</a></td>
+            <td><a class="summon" href="./buffs/physicalreflect.html"><img src="./images/Buffs/ReflectPhys.png"></a></td>
+            <td><a class="summon" href="./buffs/martialreflect.html"><img src="./images/Buffs/ReflectMartial.png"></a></td>
+            <td><a class="summon" href="./buffs/spellreflect.html"><img src="./images/Buffs/ReflectSpell.png"></a></td>
+            <td><a class="summon" href="./buffs/breathreflect.html"><img src="./images/Buffs/ReflectBreath.png"></a></td>
+            <td><a class="summon" href="./buffs/bigphysicalpotency.html"><img src="./images/Buffs/BigPhysPotency.png"></a></td>
+            <td><a class="summon" href="./buffs/bigmartialpotency.html"><img src="./images/Buffs/BigMartialPotency.png"></a></td>
+            <td><a class="summon" href="./buffs/bigspellpotency.html"><img src="./images/Buffs/BigSpellPotency.png"></a></td>
+            <td><a class="summon" href="./buffs/bigbreathpotency.html"><img src="./images/Buffs/BigBreathPotency.png"></a></td>
+
         </tr>
         <tr>
-            <td><a class="summon" href="./buffs/physicalboost.html"><img src="./images/Buffs/PhysBoost.png"><br>Physical Boost</a></td>
-            <td><a class="summon" href="./buffs/martialboost.html"><img src="./images/Buffs/MartialBoost.png"><br>Martial Boost</a></td>
-            <td><a class="summon" href="./buffs/spellboost.html"><img src="./images/Buffs/SpellBoost.png"><br>Spell Boost</a></td>
-            <td><a class="summon" href="./buffs/tension.html"><img src="./images/Buffs/PsycheUp.png"><br>Tension</a></td>
-            <td><a class="summon" href="./buffs/autorevive.html"><img src="./images/Buffs/AutoRevive.png"><br>Auto Revive</td>
-            <td><a class="summon" href="./buffs/sleepres.html"><img src="./images/Buffs/SleepResdown.png"><br>Sleep Res Down</td>
-            <td><a class="summon" href="./buffs/kaclang.html"><img src="./images/Buffs/Kaclang.png"><br>Kaclang</a></td>
-            <td><a class="summon" href="./buffs/lockedon.html"><img src="./images/Buffs/LockedOn.png"><br>Locked-On</td>
-            <td><a class="summon" href="./buffs/cracktypepotency.html"><img src="./images/Buffs/CrackPotencyup.png"><br>Crack-type Potency Up</td>
-            <td><a class="summon" href="./buffs/marinetentacles.html"><img src="./images/Buffs/SpecialBuff.png"><br>Marine Tentacles</a></td>
-            <td><a class="summon" href="./buffs/shellbreak.html"><img src="./images/Buffs/SpecialBuff.png"><br>Shell Break</a></td>
-            <td><a class="summon" href="./buffs/lovelylady.html"><img src="./images/Buffs/SpecialBuff.png"><br><div class="smalltext">Spell Potency/Recovery<br>(Lovely Lady)</div></a></td>
+            <td><a class="summon" href="./buffs/damagedealt.html"><img src="./images/Buffs/DMGDealtup.png"></a></td>
+            <td><a class="summon" href="./buffs/damagetaken.html#Down"><img src="./images/Buffs/DMGReduced.png"></a></td>
+            <td><a class="summon" href="./buffs/damagenullified.html"><img src="./images/Buffs/DMGNullified.png"></a></td>
+            <td><a class="summon" href="./buffs/damagenullifythreshold.html"><img src="./images/Buffs/HPDMGNullify.png"></a></td>
+            <td><a class="summon" href="./buffs/statusailmentsnullified.html"><img src="./images/Buffs/AilmentNullify.png"></a></td>
+            <td><a class="summon" href="./buffs/darkrobes.html"><img src="./images/Buffs/DarkRobes.png"></a></td>
         </tr>
         <tr>
-            <td><a class="summon" href="./buffs/atkspaces.html"><img src="./images/Buffs/ATKTileup.png"><br><img src="./images/Buffs/ATKTiledown.png"><br>ATK Spaces</a></td>
-            <td><a class="summon" href="./buffs/defspaces.html"><img src="./images/Buffs/DEFTiledown.png"><br>DEF Down Spaces</a></td>
-            <td><a class="summon" href="./buffs/aglspaces.html"><img src="./images/Buffs/AGLTiledown.png"><br>AGL Down Spaces</a></td>
-            <td><a class="summon" href="./buffs/wisspaces.html"><img src="./images/Buffs/WISTileup.png"><br><img src="./images/Buffs/WISTiledown.png"><br>WIS Spaces</a></td>
-            <td><a class="summon" href="./buffs/movespaces.html"><img src="./images/Buffs/MoveTiledown.png"><br>Move Down Spaces</a></td>
-            <td class="smalltext"><a class="summon" href="./buffs/martialpotencyspaces.html"><img src="./images/Buffs/MartialPotencyTileup.png"><br>Martial Potency/Recovery Up Spaces</a></td>
-            <td><a class="summon" href="./buffs/damagedealtspaces.html"><img src="./images/Buffs/DMGDealtTileup.png"><br>Damage Dealt Up Spaces</a></td>
-            <td><a class="summon" href="./buffs/damagetakenspaces.html"><img src="./images/Buffs/DMGReducedTile.png"><br>Damage Taken Reduced Spaces</a></td>
-            <td><a class="summon" href="./buffs/frizzresspaces.html"><img src="./images/Buffs/FrizzResTiledown.png"><br>Frizz Res Down Spaces</a></td>
-            <td><a class="summon" href="./buffs/crackresspaces.html"><img src="./images/Buffs/CrackResTiledown.png"><br>Crack Res Down Spaces</a></td>
-            <td><a class="summon" href="./buffs/wooshresspaces.html"><img src="./images/Buffs/WooshResTiledown.png"><br>Woosh Res Down Spaces</a></td>
-            <td><a class="summon" href="./buffs/abbeysvow.html"><img src="./images/Buffs/SpecialBuff.png"><br>Abbey's Vow</a></td>
+            <td><a class="summon" href="./buffs/damagedealt.html#Down"><img src="./images/Buffs/DMGDealtdown.png"></a></td>
+            <td><a class="summon" href="./buffs/damagetaken.html"><img src="./images/Buffs/DMGTaken.png"></a></td>
+            <td><a class="summon" href="./buffs/spellnullify.html"><img src="./images/Buffs/SpellNullify.png"></a></td>
+            <td><a class="summon" href="./buffs/breathnullify.html"><img src="./images/Buffs/BreathNullify.png"></a></td>
+            <td><a class="summon" href="./buffs/selflessness.html"><img src="./images/Buffs/Selflessness.png"></a></td>
+            <td><a class="summon" href="./buffs/enemyselflessness.html"><img src="./images/Buffs/EnemySelflessness.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/evasionrate.html"><img src="./images/Buffs/Evasion.png"></a></td>
+            <td><a class="summon" href="./buffs/spellevasionrate.html"><img src="./images/Buffs/SpellEvasion.png"></a></td>
+            <td><a class="summon" href="./buffs/breathevasionrate.html"><img src="./images/Buffs/BreathEvasion.png"></a></td>
+            <td><a class="summon" href="./buffs/100evasion.html"><img src="./images/Buffs/100Evasion.png"></a></td>
+            <td><a class="summon" href="./buffs/100spellevasion.html"><img src="./images/Buffs/100EvasionSpell.png"></a></td>
+            <td><a class="summon" href="./buffs/100breathevasion.html"><img src="./images/Buffs/100EvasionBreath.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/physicalboost.html"><img src="./images/Buffs/PhysBoost.png"></a></td>
+            <td><a class="summon" href="./buffs/martialboost.html"><img src="./images/Buffs/MartialBoost.png"></a></td>
+            <td><a class="summon" href="./buffs/spellboost.html"><img src="./images/Buffs/SpellBoost.png"></a></td>
+            <td><a class="summon" href="./buffs/tension.html"><img src="./images/Buffs/PsycheUp.png"></a></td>
+            <td><a class="summon" href="./buffs/selfhphealingeffects.html"><img src="./images/Buffs/SelfHPHealingup.png"></a></td>
+            <td><a class="summon" href="./buffs/regeneration.html"><img src="./images/Buffs/Regeneration.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/stylish.html"><img src="./images/Buffs/Stylish.png"></a></td>
+            <td><a class="summon" href="./buffs/physicalcritrate.html"><img src="./images/Buffs/PhysCritUp.png"></a></td>
+            <td><a class="summon" href="./buffs/autorevive.html"><img src="./images/Buffs/AutoRevive.png"></a></td>
+            <td><a class="summon" href="./buffs/kaclang.html"><img src="./images/Buffs/Kaclang.png"></a></td>
+            <td><a class="summon" href="./buffs/selfhphealingeffects.html#Down"><img src="./images/Buffs/SelfHPHealingdown.png"></a></td>
+            <td><a class="summon" href="./buffs/selfhphealingnullified.html"><img src="./images/Buffs/NullifiedSelfHPHealing.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/frizzres.html"><img src="./images/Buffs/FrizzResup.png"></a></td>
+            <td><a class="summon" href="./buffs/sizzres.html"><img src="./images/Buffs/SizzResup.png"></a></td>
+            <td><a class="summon" href="./buffs/crackres.html"><img src="./images/Buffs/CrackResup.png"></a></td>
+            <td><a class="summon" href="./buffs/wooshres.html"><img src="./images/Buffs/WooshResup.png"></a></td>
+            <td><a class="summon" href="./buffs/bangres.html"><img src="./images/Buffs/BangResup.png"></a></td>
+            <td><a class="summon" href="./buffs/zapres.html"><img src="./images/Buffs/ZapResup.png"></a></td>
+            <td><a class="summon" href="./buffs/zamres.html"><img src="./images/Buffs/ZamResup.png"></a></td>
+            <td><a class="summon" href="./buffs/typelessres.html"><img src="./images/Buffs/TypelessRes.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/frizzres.html#Down"><img src="./images/Buffs/FrizzResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/sizzres.html#Down"><img src="./images/Buffs/SizzResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/crackres.html#Down"><img src="./images/Buffs/CrackResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/wooshres.html#Down"><img src="./images/Buffs/WooshResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/bangres.html#Down"><img src="./images/Buffs/BangResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/zapres.html#Down"><img src="./images/Buffs/ZapResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/zamres.html#Down"><img src="./images/Buffs/ZamResdown.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/frizzforce.html"><img src="./images/Buffs/Frizzforce.png"></a></td>
+            <td><a class="summon" href="./buffs/sizzforce.html"><img src="./images/Buffs/Sizzforce.png"></a></td>
+            <td><a class="summon" href="./buffs/crackforce.html"><img src="./images/Buffs/Crackforce.png"></a></td>
+            <td><a class="summon" href="./buffs/wooshforce.html"><img src="./images/Buffs/Wooshforce.png"></a></td>
+            <td><a class="summon" href="./buffs/bangforce.html"><img src="./images/Buffs/Bangforce.png"></a></td>
+            <td><a class="summon" href="./buffs/zapforce.html"><img src="./images/Buffs/Zapforce.png"></a></td>
+            <td><a class="summon" href="./buffs/zamforce.html"><img src="./images/Buffs/Zamforce.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/sleepres.html"><img src="./images/Buffs/SleepResdown.png"></a></td>
+            <td><a class="summon" href="./buffs/stateswitch.html"><img src="./images/Buffs/StateSwitch.png"></a></td>
+            <td><a class="summon" href="./buffs/cracktypepotency.html"><img src="./images/Buffs/CrackPotencyup.png"></a></td>
+            <td><a class="summon" href="./buffs/wooshtypepotency.html"><img src="./images/Buffs/WooshPotencyup.png"></a></td>
+            <td><a class="summon" href="./buffs/lockedon.html"><img src="./images/Buffs/LockedOn.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/atkspaces.html"><img src="./images/Buffs/ATKTileup.png"></a></td>
+            <td><a class="summon" href="./buffs/damagedealtspaces.html"><img src="./images/Buffs/DMGDealtTileup.png"></a></td>
+            <td><a class="summon" href="./buffs/damagetakenspaces.html"><img src="./images/Buffs/DMGReducedTile.png"></a></td>
+            <td><a class="summon" href="./buffs/wisspaces.html"><img src="./images/Buffs/WISTileup.png"></a></td>
+            <td><a class="summon" href="./buffs/martialpotencyspaces.html"><img src="./images/Buffs/MartialPotencyTileup.png"></a></td>
+        </tr>
+        <tr>
+            <td><a class="summon" href="./buffs/atkspaces.html#Down"><img src="./images/Buffs/ATKTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/defspaces.html"><img src="./images/Buffs/DEFTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/aglspaces.html"><img src="./images/Buffs/AGLTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/wisspaces.html#Down"><img src="./images/Buffs/WISTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/movespaces.html"><img src="./images/Buffs/MoveTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/frizzresspaces.html"><img src="./images/Buffs/FrizzResTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/crackresspaces.html"><img src="./images/Buffs/CrackResTiledown.png"></a></td>
+            <td><a class="summon" href="./buffs/wooshresspaces.html"><img src="./images/Buffs/WooshResTiledown.png"></a></td>
+        </tr>
+    </table>
+</div>
+
+<div class="parttwo">
+  <table id="myTable" class="display">
+    <thead>
+      <tr>        
+        <th scope="col">Icon</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody id="white">
+        <!-- ATK Based -->
+        <tr>
+            <td><img src="./images/Buffs/ATKup.png"></td>
+            <td><a class="summon" href="./buffs/atk.html">ATK Up</a></td>
+            <td>Raises the unit's ATK stat by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ATKdown.png"></td>
+            <td><a class="summon" href="./buffs/atk.html#Down">ATK Down</a></td>
+            <td>Lowers the unit's ATK stat by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ATKTileup.png"></td>
+            <td><a class="summon" href="./buffs/atkspaces.html">ATK Up Space</a></td>
+            <td>Raises the unit's ATK stat by the percentage specified in the ability/perk while they are on an ATK up space</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ATKTiledown.png"></td>
+            <td><a class="summon" href="./buffs/atkspaces.html#Down">ATK Down Space</a></td>
+            <td>Lowers the unit's ATK stat by the percentage specified in the ability/perk while they are on an ATK down space</td>
+        </tr>
+        <!-- DEF Based -->
+        <tr>
+            <td><img src="./images/Buffs/DEFup.png"></td>
+            <td><a class="summon" href="./buffs/def.html">DEF Up</a></td>
+            <td>Raises the unit's DEF stat by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DEFdown.png"></td>
+            <td><a class="summon" href="./buffs/def.html#Down">DEF Down</a></td>
+            <td>Lowers the unit's DEF stat by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DEFTiledown.png"></td>
+            <td><a class="summon" href="./buffs/defspaces.html">DEF Down Space</a></td>
+            <td>Lowers the unit's DEF stat by the percentage specified in the ability/perk while they are on an ATK down space</td>
+        </tr>
+        <!-- AGL Based -->
+        <tr>
+            <td><img src="./images/Buffs/AGLup.png"></td>
+            <td><a class="summon" href="./buffs/agl.html">AGL Up</a></td>
+            <td>Raises the unit's AGL stat by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/AGLdown.png"></td>
+            <td><a class="summon" href="./buffs/agl.html#Down">AGL Down</a></td>
+            <td>Lowers the unit's AGL stat by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/AGLTiledown.png"></td>
+            <td><a class="summon" href="./buffs/aglspaces.html">AGL Down Space</a></td>
+            <td>Lowers the unit's AGL stat by the percentage specified in the ability/perk while they are on an ATK down space</td>
+        </tr>
+        <!-- WIS Based -->
+        <tr>
+            <td><img src="./images/Buffs/WISup.png"></td>
+            <td><a class="summon" href="./buffs/wis.html">WIS Up</a></td>
+            <td>Raises the unit's WIS stat by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/WISdown.png"></td>
+            <td><a class="summon" href="./buffs/wis.html#Down">WIS Down</a></td>
+            <td>Lowers the unit's WIS stat by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/WISTileup.png"></td>
+            <td><a class="summon" href="./buffs/wisspaces.html">WIS Up Space</a></td>
+            <td>Raises the unit's WIS stat by the percentage specified in the ability/perk while they are on a WIS up space</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/WISTiledown.png"></td>
+            <td><a class="summon" href="./buffs/wisspaces.html#Down">WIS Down Space</a></td>
+            <td>Lowers the unit's WIS stat by the percentage specified in the ability/perk while they are on a WIS down space</td>
+        </tr>
+        <!-- Move Based -->
+        <tr>
+            <td><img src="./images/Buffs/Moveup.png"></td>
+            <td><a class="summon" href="./buffs/move.html">Move Up</a></td>
+            <td>Raises the unit's Move by:<br><div class="buffdesc">Lv.1: 1<br>Lv.2: 2<br>Lv.3: 3</div></td>
+            </tr>
+        <tr>
+            <td><img src="./images/Buffs/Movedown.png"></td>
+            <td><a class="summon" href="./buffs/move.html#Down">Move Down</a></td>
+            <td>Lowers the unit's Move by:<br><div class="buffdesc">Lv.1: 1<br>Lv.2: 2<br>Lv.3: 3</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/MoveTiledown.png"></td>
+            <td><a class="summon" href="./buffs/movespaces.html">Move Down Space</a></td>
+            <td>Lowers the unit's Move stat by the amount specified in the ability/perk while they are on a Move down space</td>
+        </tr>
+        <!-- Frizz Based -->
+        <tr>
+            <td><img src="./images/Buffs/FrizzResup.png"></td>
+            <td><a class="summon" href="./buffs/frizzres.html">Frizz Res Up</a></td>
+            <td>Raises the unit's resistance to Frizz-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/FrizzResdown.png"></td>
+            <td><a class="summon" href="./buffs/frizzres.html#Down">Frizz Res Down</a></td>
+            <td>Lowers the unit's resistance to Frizz-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Frizzforce.png"></td>
+            <td><a class="summon" href="./buffs/frizzforce.html">Frizzforce</a></td>
+            <td>Raises the unit's Frizz-type potency by 20%, and reduces the damage taken from all Frizz-type attacks by 20%</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/FrizzResTiledown.png"></td>
+            <td><a class="summon" href="./buffs/frizzresspaces.html">Frizz Res Down Space</a></td>
+            <td>Lowers the unit's resistance to Frizz-type attacks by the percentage specified in the ability/perk</td>
+        </tr>
+        <!-- Sizz Based -->
+        <tr>
+            <td><img src="./images/Buffs/SizzResup.png"></td>
+            <td><a class="summon" href="./buffs/sizzres.html">Sizz Res Up</a></td>
+            <td>Raises the unit's resistance to Sizz-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SizzResdown.png"></td>
+            <td><a class="summon" href="./buffs/sizzres.html#Down">Sizz Res Down</a></td>
+            <td>Lowers the unit's resistance to Sizz-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Sizzforce.png"></td>
+            <td><a class="summon" href="./buffs/sizzforce.html">Sizzforce</a></td>
+            <td>Raises the unit's Sizz-type potency by 20%, and reduces the damage taken from all Sizz-type attacks by 20%</td>
+        </tr>
+        <!-- Crack Based -->
+        <tr>
+            <td><img src="./images/Buffs/CrackResup.png"></td>
+            <td><a class="summon" href="./buffs/crackres.html">Crack Res Up</a></td>
+            <td>Raises the unit's resistance to Crack-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/CrackResdown.png"></td>
+            <td><a class="summon" href="./buffs/crackres.html#Down">Crack Res Down</a></td>
+            <td>Lowers the unit's resistance to Crack-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/Crackforce.png"></td>
+            <td><a class="summon" href="./buffs/crackforce.html">Crackforce</a></td>
+            <td>Raises the unit's Crack-type potency by 20%, and reduces the damage taken from all Crack-type attacks by 20%</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/CrackResTiledown.png"></td>
+            <td><a class="summon" href="./buffs/crackresspaces.html">Crack Res Down Space</a></td>
+            <td>Lowers the unit's resistance to Crack-type attacks by the percentage specified in the ability/perk</td>
+            </tr>
+        <tr>
+            <td><img src="./images/Buffs/CrackPotencyup.png"></td>
+            <td><a class="summon" href="./buffs/cracktypepotency.html">Crack-type Potency Up</a></td>
+            <td>Raises the damage a unit's Crack-type attack deals by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <!-- Woosh Based -->
+        <tr>
+            <td><img src="./images/Buffs/WooshResup.png"></td>
+            <td><a class="summon" href="./buffs/wooshres.html">Woosh Res Up</a></td>
+            <td>Raises the unit's resistance to Woosh-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/WooshResdown.png"></td>
+            <td><a class="summon" href="./buffs/wooshres.html#Down">Woosh Res Down</a></td>
+            <td>Lowers the unit's resistance to Woosh-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Wooshforce.png"></td>
+            <td><a class="summon" href="./buffs/wooshforce.html">Wooshforce</a></td>
+            <td>Raises the unit's Woosh-type potency by 20%, and reduces the damage taken from all Woosh-type attacks by 20%</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/WooshResTiledown.png"></td>
+            <td><a class="summon" href="./buffs/wooshresspaces.html">Woosh Res Down Space</a></td>
+            <td>Lowers the unit's resistance to Woosh-type attacks by the percentage specified in the ability/perk</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/WooshPotencyup.png"></td>
+            <td><a class="summon" href="./buffs/wooshtypepotency.html">Woosh-type Potency Up</a></td>
+            <td>Raises the damage a unit's Woosh-type attack deals by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <!-- Bang Based -->
+        <tr>
+            <td><img src="./images/Buffs/BangResup.png"></td>
+            <td><a class="summon" href="./buffs/bangres.html">Bang Res Up</a></td>
+            <td>Raises the unit's resistance to Bang-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BangResdown.png"></td>
+            <td><a class="summon" href="./buffs/bangres.html#Down">Bang Res Down</a></td>
+            <td>Lowers the unit's resistance to Bang-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Bangforce.png"></td>
+            <td><a class="summon" href="./buffs/bangforce.html">Bangforce</a></td>
+            <td>Raises the unit's Bang-type potency by 20%, and reduces the damage taken from all Bang-type attacks by 20%</td>
+        </tr>
+        <!-- Zap Based -->
+        <tr>
+            <td><img src="./images/Buffs/ZapResup.png"></td>
+            <td><a class="summon" href="./buffs/zapres.html">Zap Res Up</a></td>
+            <td>Raises the unit's resistance to Zap-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ZapResdown.png"></td>
+            <td><a class="summon" href="./buffs/zapres.html#Down">Zap Res Down</a></td>
+            <td>Lowers the unit's resistance to Zap-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Zapforce.png"></td>
+            <td><a class="summon" href="./buffs/zapforce.html">Zapforce</a></td>
+            <td>Raises the unit's Zap-type potency by 20%, and reduces the damage taken from all Zap-type attacks by 20%</td>
+        </tr>
+        <!-- Zam Based -->
+        <tr>
+            <td><img src="./images/Buffs/ZamResup.png"></td>
+            <td><a class="summon" href="./buffs/zamres.html">Zam Res Up</a></td>
+            <td>Raises the unit's resistance to Zam-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ZamResdown.png"></td>
+            <td><a class="summon" href="./buffs/zamres.html#Down">Zam Res Down</a></td>
+            <td>Lowers the unit's resistance to Zam-type attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Zamforce.png"></td>
+            <td><a class="summon" href="./buffs/zamforce.html">Zamforce</a></td>
+            <td>Raises the unit's Zam-type potency by 20%, and reduces the damage taken from all Zam-type attacks by 20%</td>
+        </tr>
+        <!-- Typeless Based-->
+        <tr>
+            <td><img src="./images/Buffs/TypelessRes.png"></td>
+            <td><a class="summon" href="./buffs/typelessres.html">Typeless Res</a></td>
+            <td>Raises the unit's resistance to Typeless attacks by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <!-- Physical Based -->
+        <tr>
+            <td><img src="./images/Buffs/PhysPotencyup.png"></td>
+            <td><a class="summon" href="./buffs/physicalpotency.html">Physical Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's physical attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/PhysPotencydown.png"></td>
+            <td><a class="summon" href="./buffs/physicalpotency.html#Down">Physical Potency/Recovery Down</a></td>
+            <td>Lowers the damage/healing a unit's physical attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/PhysResup.png"></td>
+            <td><a class="summon" href="./buffs/physicalres.html">Physical Res Up</a></td>
+            <td>Reduces the damage a unit takes from physical attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/PhysResdown.png"></td>
+            <td><a class="summon" href="./buffs/physicalres.html#Down">Physical Res Down</a></td>
+            <td>Raises the damage a unit takes from physical attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BigPhysPotency.png"></td>
+            <td><a class="summon" href="./buffs/bigphysicalpotency.html">Physical Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's physical attacks deal by the multiplier specified in the ability/perk</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ReflectPhys.png"></td>
+            <td><a class="summon" href="./buffs/physicalreflect.html">Physical Reflect</a></td>
+            <td>When the unit is attacked by a phsyical attack, the attack will not hit them, and will instead target the unit that initiated the attack</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/PhysBoost.png"></td>
+            <td><a class="summon" href="./buffs/physicalboost.html">Physical Boost</a></td>
+            <td>Raises the damage a unit's physical attacks deal by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%<br>Lv.4: 100%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/PhysCritUp.png"></td>
+            <td><a class="summon" href="./buffs/physicalcritrate.html">Physical Critical Hit Rate Up</a></td>
+            <td>Raises the chance of a unit's physical attacks resulting in a critical hit by:<br><div class="buffdesc">Lv.1: 10%<br>Lv.2: 20%<br>Lv.3: 30%</div></td>
+        </tr>
+        <!-- Martial Based -->
+        <tr>
+            <td><img src="./images/Buffs/MartialPotencyup.png"></td>
+            <td><a class="summon" href="./buffs/martialpotency.html">Martial Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's martial attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/MartialPotencydown.png"></td>
+            <td><a class="summon" href="./buffs/martialpotency.html#Down">Martial Potency/Recovery Down</a></td>
+            <td>Lowers the damage/healing a unit's martial attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/MartialResup.png"></td>
+            <td><a class="summon" href="./buffs/martialres.html">Martial Res Up</a></td>
+            <td>Reduces the damage a unit takes from martial attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/MartialResdown.png"></td>
+            <td><a class="summon" href="./buffs/martialres.html#Down">Martial Res Down</a></td>
+            <td>Raises the damage a unit takes from martial attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BigMartialPotency.png"></td>
+            <td><a class="summon" href="./buffs/bigmartialpotency.html">Martial Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's martial attacks deal by the multiplier specified in the ability/perk</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ReflectMartial.png"></td>
+            <td><a class="summon" href="./buffs/martialreflect.html">Martial Reflect</a></td>
+            <td>When the unit is attacked by a martial attack, the attack will not hit them, and will instead target the unit that initiated the attack</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/MartialBoost.png"></td>
+            <td><a class="summon" href="./buffs/martialboost.html">Martial Boost</a></td>
+            <td>Raises the damage a unit's martial attacks deal by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%<br>Lv.4: 100%</div></td>
+            </tr>
+        <tr>
+            <td><img src="./images/Buffs/MartialPotencyTileup.png"></td>
+            <td><a class="summon" href="./buffs/martialpotencyspaces.html">Martial Potency/Recovery Up Space</a></td>
+            <td>Raises the damage/healing a unit's martial attacks deal by the percentage specified in the ability/perk while they are on a martial potency/recovery up space</td>
+        </tr>
+        <!-- Spell Based -->
+        <tr>
+            <td><img src="./images/Buffs/SpellPotencyup.png"></td>
+            <td><a class="summon" href="./buffs/spellpotency.html">Spell Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's spell attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpellPotencydown.png"></td>
+            <td><a class="summon" href="./buffs/spellpotency.html#Down">Spell Potency/Recovery Down</a></td>
+            <td>Lowers the damage/healing a unit's spell attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpellResup.png"></td>
+            <td><a class="summon" href="./buffs/spellres.html">Spell Res Up</a></td>
+            <td>Reduces the damage a unit takes from spell attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpellResdown.png"></td>
+            <td><a class="summon" href="./buffs/spellres.html#Down">Spell Res Down</a></td>
+            <td>Raises the damage a unit takes from spell attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BigSpellPotency.png"></td>
+            <td><a class="summon" href="./buffs/bigspellpotency.html">Spell Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's spell attacks deal by the multiplier specified in the ability/perk</td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/ReflectSpell.png"></td>
+            <td><a class="summon" href="./buffs/spellreflect.html">Spell Reflect</a></td>
+            <td>When the unit is attacked by a spell attack, the attack will not hit them, and will instead target the unit that initiated the attack</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpellBoost.png"></td>
+            <td><a class="summon" href="./buffs/spellboost.html">Spell Boost</a></td>
+            <td>Raises the damage a unit's spell attacks deal by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%<br>Lv.4: 100%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpellNullify.png"></td>
+            <td><a class="summon" href="./buffs/spellnullify.html">Spell Nullify</a></td>
+            <td>Nullifies all damage dealt by spell attacks to the unit</td>
+        </tr>
+        <!-- Breath Based -->
+        <tr>
+            <td><img src="./images/Buffs/BreathPotencyup.png"></td>
+            <td><a class="summon" href="./buffs/breathpotency.html">Breath Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's breath attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BreathPotencydown.png"></td>
+            <td><a class="summon" href="./buffs/breathpotency.html#Down">Breath Potency/Recovery Down</a></td>
+            <td>Lowers the damage/healing a unit's breath attacks deal by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BreathResup.png"></td>
+            <td><a class="summon" href="./buffs/breathres.html">Breath Res Up</a></td>
+            <td>Reduces the damage a unit takes from breath attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BreathResdown.png"></td>
+            <td><a class="summon" href="./buffs/breathres.html#Down">Breath Res Down</a></td>
+            <td>Raises the damage a unit takes from breath attacks by:<br><div class="buffdesc">Lv.1: 15%<br>Lv.2: 30%<br>Lv.3: 45%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BigBreathPotency.png"></td>
+            <td><a class="summon" href="./buffs/bigbreathpotency.html">Breath Potency/Recovery Up</a></td>
+            <td>Raises the damage/healing a unit's breath attacks deal by the multiplier specified in the ability/perk</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/ReflectBreath.png"></td>
+            <td><a class="summon" href="./buffs/breathreflect.html">Breath Reflect</a></td>
+            <td>When the unit is attacked by a breath attack, the attack will not hit them, and will instead target the unit that initiated the attack</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BreathNullify.png"></td>
+            <td><a class="summon" href="./buffs/breathnullify.html">Breath Nullify</a></td>
+            <td>Nullifies all damage dealt by breath attacks to the unit</td>
+        </tr>
+        <!-- Damage Dealt -->
+        <tr>
+            <td><img src="./images/Buffs/DMGDealtup.png"></td>
+            <td><a class="summon" href="./buffs/damagedealt.html">Damage Dealt Up</a></td>
+            <td>Raises the damage a unit's attack deals by:<br><div class="buffdesc">Lv.1: 10%<br>Lv.2: 20%<br>Lv.3: 30%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DMGDealtdown.png"></td>
+            <td><a class="summon" href="./buffs/damagedealt.html#Down">Damage Dealt Down</a></td>
+            <td>Lowers the damage a unit's attack deals by:<br><div class="buffdesc">Lv.1: 10%<br>Lv.2: 20%<br>Lv.3: 30%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DMGDealtTileup.png"></td>
+            <td><a class="summon" href="./buffs/damagedealtspaces.html">Damage Dealt Up Space</a></td>
+            <td>Raises the damage a unit's attacks deal by the percentage specified in the ability/perk</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DMGDealt.png"></td>
+            <td><a class="summon" href="./buffs/damagedealthp.html">Damage Dealt Up (HP Threshold)</a></td>
+            <td>Raises the damage a unit's attack deals by the percentage specified in the perk</td>
+        </tr> 
+        <!-- Damage Taken -->
+        <tr>
+            <td><img src="./images/Buffs/DMGTaken.png"></td>
+            <td><a class="summon" href="./buffs/damagetaken.html">Damage Taken Up</a></td>
+            <td>Raises all damage dealt to the unit by:<br><div class="buffdesc">Lv.1: 10%<br>Lv.2: 20%<br>Lv.3: 30%</div></td>
+            </tr>
+        <tr>
+            <td><img src="./images/Buffs/DMGReduced.png"></td>
+            <td><a class="summon" href="./buffs/damagetaken.html#Down">Damage Taken Reduced</a></td>
+            <td>Lowers all damage dealt to the unit by the percentage specified in the ability/perk</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DMGNullified.png"></td>
+            <td><a class="summon" href="./buffs/damagenullified.html">Damage Taken Nullified</a></td>
+            <td>Nullifies all damage dealt to the unit</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/DMGReducedTile.png"></td>
+            <td><a class="summon" href="./buffs/damagetakenspaces.html">Damage Taken Reduced Space</a></td>
+            <td>Raises the damage/healing a unit's martial attacks deal by the percentage specified in the ability/perk while they are on a martial potency/recovery up space</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/damagetakenhp.html">Damage Taken Reduced (HP Threshold)</a></td>
+            <td>Lowers all damage dealt to the unit by the percentage specified in the perk</td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/DarkRobes.png"></td>
+            <td><a class="summon" href="./buffs/darkrobes.html">Dark Robes</a></td>
+            <td>Dark Robes: Lowers all damage dealt to the unit by 20% for 3 turns<br>Pitch Dark Robes: Lowers all damage dealt to the unit by 30% for 10 turns</td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/HPDMGNullify.png"></td>
+            <td><a class="summon" href="./buffs/damagenullifythreshold.html">Damage Under HP Threshold Nullified</a></td>
+            <td>If any incoming attacks deal less than the specified percentage of the unit's max HP, the damage dealt will be nullified</td>
+        </tr>
+        <!-- Evasion Rate -->
+        <tr>
+            <td><img src="./images/Buffs/Evasion.png"></td>
+            <td><a class="summon" href="./buffs/evasionrate.html">Evasion Rate Up</a></td>
+            <td>Raises the chance that all non-surehit physical and martial attacks will miss the unit by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpellEvasion.png"></td>
+            <td><a class="summon" href="./buffs/spellevasionrate.html">Spell Evasion Rate Up</a></td>
+            <td>Raises the chance that all non-surehit spell attacks will miss the unit by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/BreathEvasion.png"></td>
+            <td><a class="summon" href="./buffs/breathevasionrate.html">Breath Evasion Rate Up</a></td>
+            <td>Raises the chance that all non-surehit breath attacks will miss the unit by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/100Evasion.png"></td>
+            <td><a class="summon" href="./buffs/100evasion.html">100% Evasion Rate</a></td>
+            <td>All non-surehit physical and martial attacks will miss the unit</td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/100EvasionSpell.png"></td>
+            <td><a class="summon" href="./buffs/100spellevasion.html">100% Spell Evasion Rate</a></td>
+            <td>All non-surehit spell attacks will miss the unit</td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/100EvasionBreath.png"></td>
+            <td><a class="summon" href="./buffs/100breathevasion.html">100% Breath Evasion Rate</a></td>
+            <td>All non-surehit breath attacks will miss the unit</td>
+        </tr> 
+        <!-- Ailment Resistance -->
+        <tr>
+            <td><img src="./images/Buffs/AilmentNullify.png"></td>
+            <td><a class="summon" href="./buffs/statusailmentsnullified.html">Status Ailments Nullified</a></td>
+            <td>Prevents the unit from being afflicted with status ailments</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SleepResdown.png"></td>
+            <td><a class="summon" href="./buffs/sleepres.html">Sleep Res Down</a></td>
+            <td>Lowers the unit's resistance to the Sleep status ailment by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <!-- HP Healing Effects -->
+        <tr>
+            <td><img src="./images/Buffs/SelfHPHealingup.png"></td>
+            <td><a class="summon" href="./buffs/selfhphealingeffects.html">Self HP Healing Effects Up</a></td>
+            <td>Raises the amount of HP/MP a unit is healed by when a healing ability/perk is used on it by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SelfHPHealingdown.png"></td>
+            <td><a class="summon" href="./buffs/selfhphealingeffects.html#Down">Self HP Healing Effects Down</a></td>
+            <td>Lowers the amount of HP/MP a unit is healed by when a healing ability/perk is used on it by:<br><div class="buffdesc">Lv.1: 25%<br>Lv.2: 50%<br>Lv.3: 75%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/NullifiedSelfHPHealing.png"></td>
+            <td><a class="summon" href="./buffs/selfhphealingnullified.html">Self HP Healing Effects Nullified</a></td>
+            <td>Nullifies all HP/MP healing a unit would have been healed by when a healing ability/perk is used on it</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Regeneration.png"></td>
+            <td><a class="summon" href="./buffs/regeneration.html">Regeneration</a></td>
+            <td>Heals some of the unit's HP at the end of its turn</td>
+        </tr>
+        <!-- State Based-->
+        <tr>
+            <td><img src="./images/Buffs/StateSwitch.png"></td>
+            <td><a class="summon" href="./buffs/stateswitch.html">State Switch</a></td>
+            <td>The unit switches into a different state, changing the abilities it can use and potentially activating state-exclusive perks</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/watersigil.html">Water Sigil</a></td>
+            <td>When a unit is in the Water Sigil state, the unit's Crack-type potency is increased by 20% (due to Water Sigil base perk), and the use of the ability ハイドロソード is enabled</td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/legendaryhero.html">Legendary Hero</a></td>
+            <td>When a unit is in the Legendary Hero state, the unit's ATK, DEF, AGL, and WIS are all raised by 50%</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/Stylish.png"></td>
+            <td><a class="summon" href="./buffs/stylish.html">Stylish</a></td>
+            <td>When a unit is in the Stylish state, the unit's ATK, DEF, AGL, and WIS are all raised by 20%</td>
+        </tr> 
+        <!-- Selflessness -->
+        <tr>
+            <td><img src="./images/Buffs/Selflessness.png"></td>
+            <td><a class="summon" href="./buffs/selflessness.html">Selflessness</a></td>
+            <td>Redirects attacks targeted at allies in area of effect onto the unit, and reduces all damage taken by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%</div></td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/EnemySelflessness.png"></td>
+            <td><a class="summon" href="./buffs/enemyselflessness.html">Enemy Selflessness</a></td>
+            <td>When a unit is in the Enemy Selflessness state, it will take attacks for directly adjacent enemies</td>
+        </tr> 
+        <!-- Auto Revive -->
+        <tr>
+            <td><img src="./images/Buffs/AutoRevive.png"></td>
+            <td><a class="summon" href="./buffs/autorevive.html">Auto Revive</a></td>
+            <td>When the unit is KO'd, they will be revived with a percentage of their max HP, with this percentage being mentioned in the ability/perk</td>
+        </tr>
+        <!-- Kaclang -->
+        <tr>
+            <td><img src="./images/Buffs/Kaclang.png"></td>
+            <td><a class="summon" href="./buffs/kaclang.html">Kaclang</a></td>
+            <td>Removes all status changes/status aliments from the unit when applied, nullifies all damage taken and prevents status changes/status ailments from affecting the unit until it's next action</td>
+        </tr>
+        <!-- Tension -->
+        <tr>
+            <td><img src="./images/Buffs/PsycheUp.png"></td>
+            <td><a class="summon" href="./buffs/tension.html">Tension</a></td>
+            <td>Raises the damage a unit's attacks deal by:<br><div class="buffdesc">Lv.1: 20%<br>Lv.2: 40%<br>Lv.3: 60%<br>Lv.4: 100%</div></td>
+        </tr>
+        <!-- Locked On -->
+        <tr>
+            <td><img src="./images/Buffs/LockedOn.png"></td>
+            <td><a class="summon" href="./buffs/lockedon.html">Locked-On</a></td>
+            <td>When a unit is in the Locked-On state, damage taken is raised by 20%, and all incoming physical and martial attacks (including Fight) are guaranteed to hit</td>
+        </tr>
+        <!-- Special Buffs -->
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/marinetentacles.html">Marine Tentacles</a></td>
+            <td>Raises the unit's Move by 2 when the unit's HP is 100%</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/shellbreak.html">Shell Break</a></td>
+            <td>Raises the unit's Move by 3 and raises the unit's spell potency/recovery by 45% when the unit's HP is 1% or lower</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/lovelylady.html">Spell Potency/Recovery (Lovely Lady)</a></td>
+            <td>Raises the damage/healing a unit's spell attacks deal by:<br><div class="buffdesc">Lv.1: 10%<br>Lv.2: 20%<br>Lv.3: 30%</div></td>
+        </tr> 
+        <tr>
+            <td><img src="./images/Buffs/SpecialBuff.png"></td>
+            <td><a class="summon" href="./buffs/abbeysvow.html">Abbey's Vow</a></td>
+            <td>Raises the damage a unit's attack deals by 30%</td>
         </tr>
     </tbody>
-    <!-- <td><img src="./images/Buffs/"><br></td> -->
-    <!-- <a class="summon" href="./buffs/"> -->
-  </table>
+   </table>
+</div>
 </body>
+
+<!-- 
+<tr>
+    <td><img src="./images/Buffs/"></td>
+    <td><a class="summon" href="./buffs/"></a></td>
+    <td></td>
+</tr> 
+-->
+
 </html>

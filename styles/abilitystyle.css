@@ -158,6 +158,7 @@ td{
 
 a{
     text-decoration: none;
+    color: rgb(74, 59, 171);
 }
 
 .percent:hover{
@@ -209,6 +210,7 @@ img[src*="Buffs"]{
 
 .none{
     background-color: rgb(244, 242, 253);
+    color: black;
     padding: 16px;
     width:160px;
     height: 32px;

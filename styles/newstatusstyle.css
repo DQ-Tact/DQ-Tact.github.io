@@ -1,0 +1,259 @@
+thead{
+    background-color: rgb(196, 187, 232);
+}
+
+body{
+    background-color: rgb(89, 77, 167);
+    font-family: Merriweather, 'Times New Roman';
+    font-size: 0.92em;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    background-color: slateblue;
+    color: rgb(244, 242, 253);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#menu{
+    background-color: slateblue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p{
+    color: rgb(244, 242, 253);
+    text-align: center;
+}
+
+.subtext{
+        color: rgb(244, 242, 253);
+        text-align: center;
+        font-size: 0.92em;
+        margin-top: 0;
+}
+
+table{
+    background-color: rgb(244, 242, 253);
+}
+
+#myTable_wrapper{
+    background-color: rgb(164, 150, 223);
+    padding: 10px;
+}
+
+div.dataTables_filter > label > input{
+    border: 1.5px solid rgb(89, 67, 135) !important;
+    margin-bottom: 5px !important;
+}
+.dataTables_wrapper .dataTables_length select {
+    border: 1.5px solid rgb(89, 67, 135) !important;
+}
+
+img{
+    width:50px;
+    height: 50px;
+}
+
+.dualdiv{
+    margin-left: 8px;
+}
+
+.dual{
+    width:36px;
+    height: 36px;
+}
+
+.icon{
+    width: 64px;
+    height: 80px;
+}
+
+#filter{
+    padding: 10px; 
+    background-color: darkslateblue;
+    text-align: center;
+}
+
+.form{
+    color: rgb(244, 242, 253);
+    font-size: 28px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.filterheader{
+    color: rgb(244, 242, 253);
+    font-size: 24px;
+}
+
+input[type=radio]{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.buttons{
+    width: 36px;
+    height: 36px;
+}
+
+input[type=radio]:checked+img{
+    background: url(../images/Rank/WhiteGlow.png) no-repeat;
+}
+
+label[for=checkbox]{
+    color: rgb(244, 242, 253);
+}
+
+a{
+    color: rgb(74, 59, 171);
+}
+
+a:hover{
+    color: rgb(102, 205, 223);
+}
+
+.white{
+    color: rgb(244, 242, 253);
+}
+
+.attackdesc{
+    color: rgb(151, 122, 214);
+}
+
+.jap{
+    color: rgb(128, 166, 224);
+    font-size: 12px;
+}
+
+.switchpage{
+    color: rgb(241, 239, 255);
+    background-image: url(../images/Rank/TexturedButton.jpg);
+    background-size: cover;
+    background-color: slateblue;
+    box-shadow: 0 3px darkslateblue;
+    transform: translateY(2px);
+    font-family: Merriweather, 'Times New Roman';
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1.5px solid darkslateblue;
+    border-radius: 4px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.switchpage:hover{
+    color: rgb(254, 254, 255);
+    background-image: url(../images/Rank/TexturedButtonHover.jpg);
+    background-size: cover;
+    background-color: darkslateblue;
+    border: 1.5px solid lightsteelblue;
+    box-shadow: 0 3px lightsteelblue;
+    transform: translateY(2px);
+    border-radius: 4px;
+}
+
+.switchpage:active{
+    color: rgb(254, 254, 255);
+    background-image: url(../images/Rank/TexturedButtonHover.jpg);
+    background-size: cover;
+    background-color: darkslateblue;
+    box-shadow: 0 0 0;
+    position: relative;
+    top: 3px;
+    border: 1.5px solid lightsteelblue;
+    border-radius: 4px;
+    transition-duration: 0s;
+}
+
+.currentpage{
+    color: rgb(241, 239, 255);
+    background-image: url(../images/Rank/TexturedButton.jpg);
+    background-size: cover;
+    background-color: slateblue;
+    font-family: Merriweather, 'Times New Roman';
+    width: 36px;
+    height: 36px;
+    position: relative;
+    margin-left: 5px;
+    top: 3px;
+    padding: 5px;
+    border: 1.5px solid darkslateblue;
+    border-radius: 4px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.currentpage:hover{
+    color: rgb(241, 239, 255);
+}
+
+#white{
+    background-color: white !important;
+}
+
+.buffdesc{
+    color: rgb(151, 122, 214);
+    word-spacing: 10px;
+    font-size: 0.82em;
+}
+
+.extra{
+    color: rgb(122, 74, 154);
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.extra img{
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+
+img[src*="Buffs"]{
+    width: 36px;
+    height: 36px;
+}
+
+.partone{
+    float: left;
+    width: 22%;
+}
+
+.parttwo{
+    float: right;
+    width: calc(100% - 22%);
+}
+
+.flat{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px; 
+    margin-left: 5px; 
+    margin-right: 5px; 
+}
+
+.flat tr{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+  @media screen and (max-width:400px) {
+    td{width:100%;}
+  }
+
+.flat img[src*="Buffs"]{
+    width: 28px;
+    height: 28px;
+}
