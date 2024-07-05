@@ -96,6 +96,11 @@ td{
     border-radius: 5px;
 }
 
+.centred{
+    text-align: center;
+    display: block;
+}
+
 .border{
     background-color: rgb(242, 253, 245);
     padding: 16px;
@@ -103,7 +108,7 @@ td{
     height: 102px;
     border-radius: 5px;
     position: relative;
-    left: 250px;
+    right: 250px;
     top:50px;
 }
 
@@ -120,16 +125,42 @@ img.metal{
 }
 
 #level{
-    position: absolute;
-    left: 640px;
-    top: 95px;
+    position: relative;
+    left: 187px;
+    bottom: 103px;
     height: 346px;
+    width: 227px;
 }
 
 #weakres{
-    position: absolute;
-    left: 250px;
-    top: 250px;
+    position: relative;
+    right: 120px;
+    bottom: 467px;
+    height: 190px;
+    width: 370px;
+    margin-bottom: -580px;
+}
+
+.unofficial{
+    color: rgb(242, 253, 245);
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 110px;
+    margin-bottom: -20px;
+}
+
+.jap{
+    color: rgb(103, 183, 150);
+    font-size: 12px;
+}
+
+img[src*="Element"]{
+    width: 40px;
+}
+
+img[src*="Status"]{
+    width: 40px;
 }
 
 h2{
@@ -140,9 +171,9 @@ h2{
     font-size: 24px;
     padding: 8px;
     border-radius: 5px;
+    margin-left: calc(50% - 182px);
     position: relative;
-    left: 380px;
-    bottom: 108px;
+    bottom: 469px;
 }
 
 .skills{

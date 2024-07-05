@@ -95,7 +95,7 @@ table{
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    width: 85%;
+    width: 88%;
 }
 
 thead{
@@ -128,6 +128,11 @@ td{
     border-radius: 5px;
 }
 
+.centred{
+    text-align: center;
+    display: block;
+}
+
 .border{
     background-color: rgb(244, 242, 253);
     padding: 16px;
@@ -135,7 +140,7 @@ td{
     height: 102px;
     border-radius: 5px;
     position: relative;
-    left: 250px;
+    right: 250px;
     top:50px;
 }
 
@@ -143,77 +148,32 @@ td{
     font-size: 40px;
 }
 
+.herores{
+    font-size: 13px;
+}
+
 .metal{
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.heavymetal{
+    font-size: 12px;
+}
+
+.metallarge{
+    font-size: 22px;
 }
 
 img.metal{
-    width: 18px;
+    width: 28px !important;
+}
+
+img.heavymetal{
+    width: 24px !important;
 }
 
 .charbuilder{
     width: 32px;
-}
-
-#level{
-    position: absolute;
-    left: 640px;
-    top: 95px;
-    height: 346px;
-}
-
-#weakres{
-    position: absolute;
-    left: 250px;
-    top: 250px;
-}
-
-#statfilter{
-    text-align: center;
-    background-color: rgb(244, 242, 253);
-    width: 628px;
-    height: 29px;
-    padding: 8px;
-    border-radius: 5px;
-    position: relative;
-    left: 250px;
-    top: 100px;
-}
-
-#statfilterblossom{
-    text-align: center;
-    background-color: rgb(244, 242, 253);
-    width: 628px;
-    height: 59px;
-    padding: 8px;
-    border-radius: 5px;
-    position: relative;
-    left: 250px;
-    top: 100px;
-}
-
-#statfiltermindini{
-    text-align: center;
-    background-color: rgb(244, 242, 253);
-    width: 628px;
-    height: 69px;
-    padding: 8px;
-    border-radius: 5px;
-    position: relative;
-    left: 250px;
-    top: 100px;
-}
-
-#statfilterwulfspade{
-    text-align: center;
-    background-color: rgb(244, 242, 253);
-    width: 628px;
-    height: 89px;
-    padding: 8px;
-    border-radius: 5px;
-    position: relative;
-    left: 250px;
-    top: 100px;
 }
 
 h2{
@@ -224,13 +184,105 @@ h2{
     font-size: 24px;
     padding: 8px;
     border-radius: 5px;
+    margin-left: calc(50% - 182px);
     position: relative;
-    left: 380px;
-    bottom: 108px;
+    bottom: 469px;
+}
+
+#level{
+    position: relative;
+    left: 187px;
+    bottom: 103px;
+    height: 346px;
+    width: 227px;
+}
+
+#weakres{
+    position: relative;
+    right: 120px;
+    bottom: 477px;
+    height: 200px;
+    width: 370px;
+}
+
+img[src*="Element"]{
+    width: 44px;
+}
+
+img[src*="Status"]{
+    width: 44px;
+}
+
+.unofficial{
+    color: rgb(244, 242, 253);
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 90px;
+    margin-bottom: -20px;
+}
+
+.jap{
+    color: rgb(128, 166, 224);
+    font-size: 12px;
+}
+
+#statfilter{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 588px;
+    height: 29px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: calc(50% - 306px);
+    margin-bottom: -560px;
+    position: relative;
+    bottom: 465px;
+}
+
+#statfilterblossom{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 588px;
+    height: 59px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: calc(50% - 306px);
+    margin-bottom: -560px;
+    position: relative;
+    bottom: 465px;
+}
+
+#statfiltermindini{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 588px;
+    height: 69px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: calc(50% - 306px);
+    margin-bottom: -560px;
+    position: relative;
+    bottom: 465px;
+}
+
+#statfilterwulfspade{
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(244, 242, 253);
+    width: 588px;
+    height: 89px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: calc(50% - 306px);
+    margin-bottom: -560px;
+    position: relative;
+    bottom: 465px;
 }
 
 .skills{
     margin-top: 120px;
+    position: relative;
 }
 
 .fintable{

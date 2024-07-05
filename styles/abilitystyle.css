@@ -225,6 +225,11 @@ img[src*="Buffs"]{
     margin-bottom: 5px;
 }
 
+.jap{
+    color: rgb(128, 166, 224);
+    font-size: 12px;
+}
+
 .extra img{
     width: 20px;
     position: relative;

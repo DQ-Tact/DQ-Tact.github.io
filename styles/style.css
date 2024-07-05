@@ -132,6 +132,10 @@ a:hover{
     font-size: 12px;
 }
 
+.note{
+    font-size: 13px;
+}
+
 .switchpage{
     color: rgb(241, 239, 255);
     background-image: url(../images/Rank/TexturedButton.jpg);
