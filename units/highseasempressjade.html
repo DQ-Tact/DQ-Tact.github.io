@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/highseasempressjade.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>High Seas Empress Jade</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>High Seas Empress Jade</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/HighSeasEmpressJade.jpg" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Martial Potency +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/MrtlLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+    </table>
+
+    <div id="statfilter">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Running Orders*<br><div class="jap">疾走の号令</div></td>
+                <td>24</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Raises AGL of all allies in area of effect for 3 turns</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Captain Cyclone*<br><div class="jap">キャプテンサイクロン</div></td>
+                <td>106</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
+                <td>Deals major Woosh-type martial damage (233 base potency) to all enemies in area of effect, often charms</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>Burning Attack*<br><div class="jap">バーニングアタック</div></td>
+                <td>91</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major surehit Sizz-type martial damage (152 base potency) to 1 enemy 2 times</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/ACoupRedMartial.png"></td>
+                <td>Pirate Scramble*<br><div class="jap">パイレーツスクランブル</div></td>
+                <td>109</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
+                <td>Deals major Frizz-type martial damage (126 base potency) to 1 enemy 3 times, ignores some Light Damage Res<br>Turns needed: 2 turns (Times usable: 3)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Solitary Comeback*<br><div class="jap">孤軍奮闘</div></td>
+                <td>Before HP hits 0:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks<br><br>When there are 3 remaining allies (incl. self):<br>Raises martial potency/recovery by 30% and reduces damage taken by 30%<br>When there are 2 remaining allies (incl. self):<br>Raises martial potency/recovery by 50% and reduces damage taken by 40%<br>When there is 1 remaining ally (incl. self):<br>Raises martial potency/recovery by 100% and reduces damage taken by 50%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Burning Attack* potency +2%</td>
+                <td>Raises Burning Attack* potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Pirate Scramble* potency +2%</td>
+                <td>Raises Pirate Scramble* potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pirate Empress*<br><div class="jap">気高き女海賊</div></td>
+                <td>Action start on odd turns until turn 10:<br>Raises AGL, Move, and martial potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Counterattack Signal*<br><div class="jap">逆襲の狼煙</div></td>
+                <td>When any other ally is KO'd:<br>Raises AGL for 3 turns and removes some status ailments<br>If the user has not acted this turn, then the user will be the next unit to act, regardless of original turn order<br>(Perk activates 1 time per battle)<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Burning Attack* potency +5%</td>
+                <td>Raises Burning Attack* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Pirate Scramble* potency +5%</td>
+                <td>Raises Pirate Scramble* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pirate's Pride*<br><div class="jap">海賊の意地</div></td>
+                <td>Heals 30% of max HP when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
