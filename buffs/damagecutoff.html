@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Damage Limit</title>
+    <title>Damage Cutoff</title>
 </head>
 <body>
     <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Damage Limit</h1>
+    <h1>Damage Cutoff</h1>
     <a class="return" href="../statuschanges.html">Return to Status Change List</a>
         
     <table class="fintable">
@@ -29,11 +29,11 @@
                 <th scope="col">Description</th>                
             </tr>
         </thead>
-        <tbody  class="white">
-            <tr>
+        <tbody>
+            <tr class="padding">
                 <td><img src="../images/Buffs/DamageCutoff.png"></td>
-                <td>Damage Limit</td>
-                <td>Prevents incoming attacks from dealing over a certain amount of the unit's max HP, with the amount being specified in the perk<br><br><div class="extra">Note: Attacks that "ignore some light damage res" will still be affected by this status change</div></td>
+                <td>Damage Cutoff</td>
+                <td>If any incoming attacks deal less than the specified percentage of the unit's max HP, the damage dealt will be nullified</td>
             </tr>
         </tbody>
     </table>
@@ -45,7 +45,7 @@
 
     <h3>Units which have perks with this status change:</h3>
     <div class="group">
-        <a href="../units/calasmos.html"><img src="../images/Calasmos.jpeg" class="border"></a>
+        <a href="../units/corvus.html"><img src="../images/Corvus.png" class="border"></a>
     </div>
 </body>
 </html>

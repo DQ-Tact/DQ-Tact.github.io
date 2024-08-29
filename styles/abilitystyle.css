@@ -102,6 +102,10 @@ td{
     padding: 20px
 }
 
+.smallpadding td{
+    padding: 10px
+}
+
 #largergroup{
     text-align: center;
     margin-bottom: 15px;

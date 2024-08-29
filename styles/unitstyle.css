@@ -227,6 +227,18 @@ img[src*="Status"]{
     font-size: 12px;
 }
 
+#details{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 603px;
+    height: 29px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: calc(50% - 306px);
+    position: relative;
+    bottom: 480px;
+}
+
 #statfilter{
     text-align: center;
     background-color: rgb(244, 242, 253);
