@@ -205,6 +205,10 @@ img[src*="AttackRange"]{
     width: 70px;
 }
 
+img.twohit{
+    width: 53px;
+}
+
 .attackdesc{
     color: rgb(151, 122, 214);
 }
