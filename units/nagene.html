@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Charm.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -106,18 +131,18 @@
             <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
-                <th scope="col">Name</th>
+                <th scope="col" style="min-width:100px">Name</th>
                 <th scope="col">MP</th>
                 <th scope="col">Element</th>
                 <th scope="col">Range</th>
-                <th scope="col">Description</th>                
+                <th scope="col" style="min-width:400px">Description</th>                
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>盾となるかまえ</td>
+                <td>Shielding Stance*<br><div class="jap">盾となるかまえ</div></td>
                 <td>20</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/MontCover.png"><br>Self</td>
@@ -126,7 +151,7 @@
             <tr>
                 <td>33</td>
                 <td><img src="../images/AttackType/ABluePhysical.png"></td>
-                <td>ネクロデア流剣技・凪</td>
+                <td>Serene Necrodea Blade*<br><div class="jap">ネクロデア流剣技・凪</div></td>
                 <td>86</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/T.png"><br>T</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>54</td>
                 <td><img src="../images/AttackType/ARedSpell.png"></td>
-                <td>火炎鳥の抱擁</td>
+                <td>Firebird's Embrace*<br><div class="jap">火炎鳥の抱擁</div></td>
                 <td>127</td>
                 <td><img src="../images/Element/Frizz.png"></td>
                 <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
@@ -144,7 +169,7 @@
             <tr>
                 <td>82</td>
                 <td><img src="../images/AttackType/ABluePhysical.png"></td>
-                <td>ネクロデア流剣技・絶</td>
+                <td>Ultimate Necrodea Blade*<br><div class="jap">ネクロデア流剣技・絶</div></td>
                 <td>105</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Rhombus.png"><br>Rhombus</td>
@@ -177,18 +202,18 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>血の契約を受けし者</td>
-                <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20%, reduces damage taken by 30%, and enables the use of ネクロデア流剣技・絶 if the user's HP is 50% or less</td>
+                <td>Blood Pact Recipient*<br><div class="jap">血の契約を受けし者</div></td>
+                <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20%, reduces damage taken by 30%, and enables the use of Ultimate Necrodea Blade* if the user's HP is 50% or less</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>火炎鳥の抱擁 potency +2%</td>
-                <td>Raises 火炎鳥の抱擁 potency by 2%</td>
+                <td>Firebird's Embrace* potency +2%</td>
+                <td>Raises Firebird's Embrace* potency by 2%</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>ネクロデア流剣技・絶 potency +2%</td>
-                <td>Raises ネクロデア流剣技・絶 potency by 2%</td>
+                <td>Ultimate Necrodea Blade* potency +2%</td>
+                <td>Raises Ultimate Necrodea Blade* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -217,18 +242,18 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>鉄壁の忠義</td>
+                <td>Ironclad Loyalty*<br><div class="jap">鉄壁の忠義</div></td>
                 <td>Battle start:<br>Raises Physical and Spell Res for 3 turns</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>火炎鳥の抱擁 potency +5%</td>
-                <td>Raises 火炎鳥の抱擁 potency by 5%</td>
+                <td>Firebird's Embrace* potency +5%</td>
+                <td>Raises Firebird's Embrace* potency by 5%</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>ネクロデア流剣技・絶 potency +5%</td>
-                <td>Raises ネクロデア流剣技・絶 potency by 5%</td>
+                <td>Ultimate Necrodea Blade* potency +5%</td>
+                <td>Raises Ultimate Necrodea Blade* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -237,7 +262,7 @@
             </tr>
             <tr>
                 <td>5</td>
-                <td>不屈の魂</td>
+                <td>Indomitable Soul*<br><div class="jap">不屈の魂</div></td>
                 <td>Lowers physical and spell ability MP cost by 10%, raises potency and recovery by 10%</td>
             </tr>
             <tr>

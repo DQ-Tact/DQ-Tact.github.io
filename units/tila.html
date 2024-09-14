@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -106,18 +131,18 @@
             <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
-                <th scope="col">Name</th>
+                <th scope="col" style="min-width:100px">Name</th>
                 <th scope="col">MP</th>
                 <th scope="col">Element</th>
                 <th scope="col">Range</th>
-                <th scope="col">Description</th>                
+                <th scope="col" style="min-width:400px">Description</th>                
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/CGreenMartial.png"></td>
-                <td>クラムベリーパイ</td>
+                <td>Cranberry Pie*<br><div class="jap">クラムベリーパイ</div></td>
                 <td>0</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
@@ -126,7 +151,7 @@
             <tr>
                 <td>22</td>
                 <td><img src="../images/AttackType/BRedPhysical.png"></td>
-                <td>フライパンでたたく！</td>
+                <td>Smack 'em with a Frying Pan!*<br><div class="jap">フライパンでたたく！</div></td>
                 <td>42</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>42</td>
                 <td><img src="../images/AttackType/ABluePhysical.png"></td>
-                <td>フライパン連斬</td>
+                <td>Frying Pan Flurry*<br><div class="jap">フライパン連斬</div></td>
                 <td>54</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
@@ -168,13 +193,13 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>ねこかぶり</td>
+                <td>Wolf in Sheep's Clothing*<br><div class="jap">ねこかぶり</div></td>
                 <td>Action start on odd turns until turn 10:<br>Raises ATK and DEF for 3 turns</td>
             </tr>
             <tr>
                 <td>100, 110, 120, 130</td>
-                <td>フライパン連斬 potency +2%</td>
-                <td>Raises フライパン連斬 potency by 2%</td>
+                <td>Frying Pan Flurry* potency +2%</td>
+                <td>Raises Frying Pan Flurry* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -203,13 +228,13 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>フライパンでガード！</td>
+                <td>Block it with a Frying Pan!*<br><div class="jap">フライパンでガード！</div></td>
                 <td>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>フライパン連斬 potency +5%</td>
-                <td>Raises フライパン連斬 potency by 5%</td>
+                <td>Frying Pan Flurry* potency +5%</td>
+                <td>Raises Frying Pan Flurry* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -218,7 +243,7 @@
             </tr>
             <tr>
                 <td>5</td>
-                <td>許さない！</td>
+                <td>Unforgivable!*<br><div class="jap">許さない！</div></td>
                 <td>Battle start, action start, or when revived:<br>Raises damage dealt by 20% if the user's HP is 50% or over</td>
             </tr>
             <tr>

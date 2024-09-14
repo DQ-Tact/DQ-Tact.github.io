@@ -209,6 +209,10 @@ img.twohit{
     width: 53px;
 }
 
+img.twohittype{
+    width: 35px;
+}
+
 .attackdesc{
     color: rgb(151, 122, 214);
 }
@@ -245,6 +249,21 @@ img[src*="Buffs"]{
     border-radius: 5px;
     text-align: center;
     display: inline-block;
+}
+
+.perkattack{
+    background-color: rgb(244, 242, 253);
+    color: rgb(74, 59, 171);
+    padding: 16px;
+    width:160px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.perkattack:hover{
+    color: rgb(102, 205, 223);
 }
 
 .extra{

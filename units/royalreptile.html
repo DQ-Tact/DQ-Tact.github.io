@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/royalreptile.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Royal Reptile</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Royal Reptile</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/RoyalReptile.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Dragon DEF +30%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/BrthLock.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyDragon.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZapType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col" style="min-width:400px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BRedPhysical.png"></td>
+                <td>Tempest Slash</td>
+                <td>17</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals moderate Zap-type physical damage (180% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/BRedPhysical.png"></td>
+                <td>Blast Slash</td>
+                <td>17</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals moderate Bang-type physical damage (180% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Thunder Slash</td>
+                <td>38</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals major Zap-type physical damage (270% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Thunder Break</td>
+                <td>64</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/FrontCross.png"><br>Front</td>
+                <td>Deals major Zap-type physical damage (290% potency) to all enemies in area of effect, occasionally lowers Zap Res for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Thunder Slash potency +2%</td>
+                <td>Raises Thunder Slash potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Thunder Slash potency +5%</td>
+                <td>Raises Thunder Slash potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Thunder Break potency +5%</td>
+                <td>Raises Thunder Break potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thunder Break</td>
+                <td>Deals major Zap-type physical damage (290% potency) to all enemies in area of effect, occasionally lowers Zap Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Dragon Rage</td>
+                <td>Heals a major amount of HP and greatly raises ATK for 3 turns when the user's HP drops to 75% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>Physical Teachings</td>
+                <td>Raises physical potency/recovery by 15%</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Zap-type Physical Potency +1.5%) x2</td>
+                <td>Raises Zap-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Zap-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Zap-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Zap-type Physical MP Cost -10%</td>
+                <td>Lowers Zap-type physical MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Physical Potency +1.5%) x2</td>
+                <td>Raises Bang-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Bang-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Bang-type Physical MP Cost -10%</td>
+                <td>Lowers Bang-type physical MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam Res +5%</td>
+                <td>Raises Zam Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Physical Res +5%</td>
+                <td>Raises Zam-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Martial Res +5%</td>
+                <td>Raises Zam-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Spell Res +5%</td>
+                <td>Raises Zam-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Breath Res +5%</td>
+                <td>Raises Zam-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Charm Res +5%) x2</td>
+                <td>Raises Charm Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Poison Res +5%) x2</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Physical Lock Res +5%</td>
+                <td>Raises Physical Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Paralysis Res +5%</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

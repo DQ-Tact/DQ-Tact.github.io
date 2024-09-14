@@ -532,4 +532,221 @@ img[src*="AttackRange"]{
         color: rgb(128, 166, 224);
         font-size: 10px;
     }
+
+    table.skills{
+        table-layout: fixed;
+        max-width: 93%;
+        overflow-x: scroll;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    a[href*="index"]{
+        display: none;
+    }
+
+    .flat{
+        font-size: 13px;
+    }  
+
+    .border{
+        background-color: rgb(244, 242, 253);
+        padding: 8px;
+        width:49px;
+        height: 63px;
+        border-radius: 4px;
+        position: relative;
+        right: 137px;
+        top:4.5px;
+    }
+
+    h2{
+        background-color: rgb(244, 242, 253);
+        text-align: center;
+        width: 128px;
+        height: 67px;
+        font-size: 15px;
+        padding: 6px;
+        border-radius: 4px;
+        margin-left: calc(50% - 99px);
+        position: relative;
+        bottom: 305px;
+    }
+    
+    #level{
+        position: relative;
+        left: 109px;
+        bottom: 94px;
+        height: 195px;
+        width: 128px;
+    }
+
+    #weakres{
+        position: relative;
+        right: 64px;
+        bottom: 316px;
+        height: 115.5px;
+        width: 211px;
+    }
+
+    .large{
+        font-size: 20px;
+    }  
+    
+    .flat img[src*="Element"]{
+        width: 19px;
+    }
+    
+    img[src*="Status"]{
+        width: 19px;
+    }
+
+    img[src*="Rank"]{
+        width: 24px;
+    }
+
+    img[src*="AttackType"]{
+        width: 64px;
+    }
+
+    img[src*="AttackRange"]{
+        width: 48px;
+    }
+
+    img.metal{
+        width: 21px !important;
+    }
+    
+    img.heavymetal{
+        width: 18px !important;
+    }
+
+    #details{
+        text-align: center;
+        background-color: rgb(244, 242, 253);
+        width: 343px;
+        height: 22px;
+        padding: 6px;
+        border-radius: 4px;
+        margin-left: calc(50% - 306px);
+        position: relative;
+        left: 136px;
+        bottom: 327px;
+    }
+
+    select[class="formawk"]{
+        width: 90px;
+        height: 14px;
+        font-size: 11px;
+    }
+
+    select[class="formelement"]{
+        width: 110px;
+        height: 14px;
+        font-size: 11px;
+    }
+
+    input[type="radio"]{
+        width: 10px;
+        height: 10px;
+    }
+    
+    #statfilter{
+        text-align: center;
+        background-color: rgb(244, 242, 253);
+        width: 332px;
+        height: 19px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-left: calc(50% - 306px);
+        margin-bottom: -415px;
+        position: relative;
+        left: 134px;
+        bottom: 323px;
+    }
+    
+    #statfilterblossom{
+        text-align: center;
+        background-color: rgb(244, 242, 253);
+        width: 331.8px;
+        height: 53px;
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 4px;
+        margin-left: calc(50% - 306px);
+        margin-bottom: -415px;
+        position: relative;
+        left: 136px;
+        bottom: 323px;
+    }
+
+    #statfiltermindini{
+        text-align: center;
+        background-color: rgb(244, 242, 253);
+        width: 444px;
+        height: 69px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-left: calc(50% - 306px);
+        margin-bottom: -460px;
+        position: relative;
+        left: 69px;
+        bottom: 365px;
+    }
+    
+    #statfilterwulfspade{
+        text-align: center;
+        font-size: 15px;
+        background-color: rgb(244, 242, 253);
+        width: 444px;
+        height: 69px;
+        padding: 8px;
+        font-size: 11px;
+        border-radius: 5px;
+        margin-left: calc(50% - 306px);
+        margin-bottom: -460px;
+        position: relative;
+        left: 69px;
+        bottom: 365px;
+    }
+
+    table{
+        background-color: rgb(166, 160, 194);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 97%;
+        font-size: 14px;
+    }
+
+    .equaltable{
+        table-layout: fixed;
+        width: 97%;
+    }
+
+    .unofficial{
+        color: rgb(244, 242, 253);
+        text-align: center;
+        display: block;
+        position: relative;
+        top: 90px;
+        font-size: 13px;
+        margin-bottom: -20px;
+    }
+    
+    .jap{
+        color: rgb(128, 166, 224);
+        font-size: 10px;
+    }
+
+    table.skills{
+        table-layout: fixed;
+        max-width: 97%;
+        overflow-x: scroll;
+        display: block;
+    }
 }

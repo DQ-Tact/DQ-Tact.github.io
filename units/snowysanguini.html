@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Stun.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyDemon.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZamType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -106,11 +131,11 @@
             <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
-                <th scope="col">Name</th>
+                <th scope="col" style="min-width:100px">Name</th>
                 <th scope="col">MP</th>
                 <th scope="col">Element</th>
                 <th scope="col">Range</th>
-                <th scope="col">Description</th>                
+                <th scope="col" style="min-width:400px">Description</th>                
             </tr>
         </thead>
         <tbody>
@@ -135,7 +160,7 @@
             <tr>
                 <td>40</td>
                 <td><img src="../images/AttackType/ARedMartial.png"></td>
-                <td>ブラッドホール</td>
+                <td>Bloody Bite*<br><div class="jap">ブラッドホール</div></td>
                 <td>79</td>
                 <td><img src="../images/Element/Zam.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
@@ -168,8 +193,8 @@
             </tr>
             <tr>
                 <td>100, 110, 120, 130</td>
-                <td>ブラッドホール potency +2%</td>
-                <td>Raises ブラッドホール potency by 2%</td>
+                <td>Bloody Bite* potency +2%</td>
+                <td>Raises Bloody Bite* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -188,7 +213,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>スノーパワー</td>
+                <td>Snowy Power*<br><div class="jap">スノーパワー</div></td>
                 <td>Battle start, action start, or when revived:<br>Grants the user x1.5 martial potency/recovery if user's HP is 100%</td>
             </tr>
             <tr>
@@ -198,13 +223,13 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>まれにブラッドホールのかまえ</td>
-                <td>When attacked by enemy:<br>Rarely attacks with ブラッドホール if enemy is within 1 to 4-space range</td>
+                <td>Rare Bloody Bite Stance*<br><div class="jap">まれにブラッドホールのかまえ</div></td>
+                <td>When attacked by enemy:<br>Rarely attacks with Bloody Bite* if enemy is within 1 to 4-space range</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>ブラッドホール potency +5%</td>
-                <td>Raises ブラッドホール potency by 5%</td>
+                <td>Bloody Bite* potency +5%</td>
+                <td>Raises Bloody Bite* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>

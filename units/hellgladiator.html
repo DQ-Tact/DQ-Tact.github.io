@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/hellgladiator.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Hell Gladiator</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Hell Gladiator</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/HellGladiator.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Enemy Poison Res -50%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Blind.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Poison.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyUndead.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/DebuffType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col" style="min-width:400px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBluePhysical.png"></td>
+                <td>Mince</td>
+                <td>28</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals minor physical damage (60% potency) to 1 enemy 3 times, occasionally lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/BRedPhysical.png"></td>
+                <td>Aeolian Slash</td>
+                <td>17</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals moderate Woosh-type physical damage (180% potency) to 1 enemy</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Poison Slashes</td>
+                <td>60</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals minor physical damage (70% potency) to 1 enemy 4 times, occasionally poisons</td>
+            </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueBreath.png"></td>
+                <td>Poison Mist</td>
+                <td>99</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/T.png"><br>T</td>
+                <td>Deals major breath damage (195 base potency) to all enemies in area of effect, often envenomates</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Poison Slashes potency +2%</td>
+                <td>Raises Poison Slashes potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sporadic HP Regen</td>
+                <td>Action start:<br>Occasionally heals 10% of max HP</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Poison Slashes potency +5%</td>
+                <td>Raises Poison Slashes potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Poison Mist potency +5%</td>
+                <td>Raises Poison Mist potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Poison Mist</td>
+                <td>Deals major breath damage (195 base potency) to all enemies in area of effect, often envenomates</td>
+            </tr>
+            <tr>
+                <td>Poison Tempest</td>
+                <td>When attacked and KO'd by enemy:<br>Triggers Poison Tempest if enemy is within large rhombus area, 1 time per battle<br><div class="attackdesc">(Poison Tempest: Envenomates all enemies in area of effect)</div></td>
+            </tr>
+            <tr>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Breath Potency +1%) x2</td>
+                <td>Raises breath potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Breath Brilliant +1%) x2</td>
+                <td>Raises breath brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Breath MP Cost -5%</td>
+                <td>Lowers breath MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz Res +5%</td>
+                <td>Raises Frizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Physical Res +5%</td>
+                <td>Raises Frizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Martial Res +5%</td>
+                <td>Raises Frizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Spell Res +5%</td>
+                <td>Raises Frizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Breath Res +5%</td>
+                <td>Raises Frizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Blind Res +5%) x2</td>
+                <td>Raises Blind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Breath Lock Res +5%) x2</td>
+                <td>Raises Breath Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Sleep Res +5%</td>
+                <td>Raises Sleep Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Poison Res +5%</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
