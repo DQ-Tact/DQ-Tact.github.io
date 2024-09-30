@@ -86,7 +86,17 @@
         </tr>
     </table>
 
-    <div id="statfilter">
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -96,6 +106,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -141,6 +172,15 @@
                 <td><img src="../images/AttackRange/Front6Close.png"><br>Front</td>
                 <td>Deals minor physical damage (82% potency) to random enemies in area of effect 5 times, rarely lowers DEF for 3 turns</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Flaming Rampage*<br><div class="jap">フレイムスタンピード</div></td>
+                <td>90</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
+                <td>Deals minor Frizz-type physical damage (80% potency) to random enemies in area of effect 5 times, rarely lowers DEF for 3 turns</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -179,7 +219,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="fintable">
+    <table>
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -212,6 +252,21 @@
                 <td>Raises Tyrannical Tendencies potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Flaming Rampage* potency +5%</td>
+                <td>Raises Flaming Rampage* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Breath Potency/Recovery +5%</td>
+                <td>Raises breath potency/recovery by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Zap Res +25</td>
                 <td>Raises Zap resistance by 25</td>
@@ -228,5 +283,149 @@
             </tr>
         </tbody>
     </table>
+    <!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Flaming Rampage*<br><div class="jap">フレイムスタンピード</div></td>
+                <td>Deals minor Frizz-type physical damage (80% potency) to random enemies in area of effect 5 times, rarely lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Tyrannical Deity (Lv. 2)</td>
+                <td>Battle start:<br>Grants Spell Nullify, reduces damage taken by 30%, and raises Physical Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Tyrannical Stature*<br><div class="jap">タイラントフォーム</div></td>
+                <td>Lowers physical and breath ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>Storm Warning*<br><div class="jap">暴嵐の予兆</div></td>
+                <td>Action start:<br>Heals 15% of max HP and restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr>
+                <td>DEF +40</td>
+                <td>Raises max DEF by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Breath Potency +1.5%) x2</td>
+                <td>Raises Frizz-type breath potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Breath Brilliant +1.5%) x2</td>
+                <td>Raises Frizz-type breath brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Frizz-type Breath MP Cost -10%</td>
+                <td>Lowers Frizz-type breath MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Physical Potency +1.5%) x2</td>
+                <td>Raises Frizz-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Frizz-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Frizz-type Physical MP Cost -10%</td>
+                <td>Lowers Frizz-type physical MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Physical Res +5%</td>
+                <td>Raises Crack-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Martial Res +5%</td>
+                <td>Raises Crack-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Spell Res +5%</td>
+                <td>Raises Crack-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Breath Res +5%</td>
+                <td>Raises Crack-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Charm Res +5%) x2</td>
+                <td>Raises Charm Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Martial Lock Res +5%) x2</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Physical Lock Res +5%</td>
+                <td>Raises Physical Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Confusion Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
 </body>
 </html>

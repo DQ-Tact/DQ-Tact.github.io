@@ -256,7 +256,6 @@ img[src*="Buffs"]{
     color: rgb(74, 59, 171);
     padding: 16px;
     width:160px;
-    height: 32px;
     border-radius: 5px;
     text-align: center;
     display: inline-block;
