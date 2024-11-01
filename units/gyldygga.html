@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Confusion.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyInorganic.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/BangType.png"></td>
+        </tr>
+    </table>
     <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,11 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
         <form name="formTBCB">
             <label>
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -149,7 +174,7 @@
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
                 <td><img src="../images/AttackType/ARedPhysical.png"></td>
-                <td>黄金無双</td>
+                <td>Golden Rending*<br><div class="jap">黄金無双</div></td>
                 <td>96</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
@@ -227,8 +252,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>黄金無双 potency +5%</td>
-                <td>Raises 黄金無双 potency by 5%</td>
+                <td>Golden Rending* potency +5%</td>
+                <td>Raises Golden Rending* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -260,15 +285,15 @@
         </thead>
         <tbody>
             <tr>
-                <td>黄金無双</td>
+                <td>Golden Rending*<br><div class="jap">黄金無双</div></td>
                 <td>Deals minor physical damage (55% potency) to all enemies in area of effect 5 times, occasionally raises the user's physical potency/recovery for 3 turns</td>
             </tr>
             <tr>
-                <td>金色のはどう</td>
-                <td>When attacked and KO'd by enemy:<br>Triggers 金色のはどう if enemy is within 2 to 4-space range, 1 time per battle<br><div class="attackdesc">(金色のはどう: Raises damage taken for 3 turns, stuns)</div></td>
+                <td>Golden Wave*<br><div class="jap">金色のはどう</div></td>
+                <td>When attacked and KO'd by enemy:<br>Triggers Golden Wave* if enemy is within 2 to 4-space range, 1 time per battle<br><div class="attackdesc">(Golden Wave*: Raises damage taken for 3 turns, stuns)</div></td>
             </tr>
             <tr>
-                <td>アクセルギア</td>
+                <td>Accelerator Gear*<br><div class="jap">アクセルギア</div></td>
                 <td>When attacking:<br>Raises ATK and AGL for 1 turn</td>
             </tr>
             <tr>

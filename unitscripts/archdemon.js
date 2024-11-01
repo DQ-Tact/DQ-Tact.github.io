@@ -11,7 +11,7 @@ var AwkStatsUp =    {"5":{"code":null,"hp":1.25,"mp":1.25,"atk":1.25,"def":1.25,
 var ElementalStatsUp =    {"9":{"code":null,"hp":0.07,"mp":0.05,"atk":0,"def":0.05,"agl":0,"wis":0,"move":0,"stype":null},"8":{"code":null,"hp":0.04,"mp":0.04,"atk":0,"def":0.04,"agl":0,"wis":0,"move":0,"stype":null},"7":{"code":null,"hp":0.04,"mp":0.03,"atk":0,"def":0.03,"agl":0,"wis":0,"move":0,"stype":null},"6":{"code":null,"hp":0.03,"mp":0.03,"atk":0,"def":0.03,"agl":0,"wis":0,"move":0,"stype":null},"5":{"code":null,"hp":0.03,"mp":0.02,"atk":0,"def":0.02,"agl":0,"wis":0,"move":0,"stype":null},"4":{"code":null,"hp":0.02,"mp":0.02,"atk":0,"def":0.02,"agl":0,"wis":0,"move":0,"stype":null},"3":{"code":null,"hp":0.02,"mp":0.01,"atk":0,"def":0.01,"agl":0,"wis":0,"move":0,"stype":null},"2":{"code":null,"hp":0.01,"mp":0.01,"atk":0,"def":0.01,"agl":0,"wis":0,"move":0,"stype":null},"1":{"code":null,"hp":0.01,"mp":0,"atk":0,"def":0,"agl":0,"wis":0,"move":0,"stype":null},"0":{"code":null,"hp":0,"mp":0,"atk":0,"def":0,"agl":0,"wis":0,"move":0,"stype":null}}; 
 
 var TalentBlossomStats = {"code":null,"hp":150,"mp":30,"atk":15,"def":25,"agl":15,"wis":45,"move":0,"stype":null};
-var FullTalent = false;
+var FullTalent = false; 
 
 function applyStats() {
     $('#HP').text(Math.floor((764 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].hp : 0) + (FullTalent ? TalentBlossomStats.hp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].hp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].hp : 0))));
