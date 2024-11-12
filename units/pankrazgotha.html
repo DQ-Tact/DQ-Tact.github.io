@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Pankraz Gotha</title>
+    <title>Pankraz Gotha</title> 
 </head>
 
 <body>
@@ -85,8 +85,17 @@
             <td><img src="../images/Status/Poison.png"></td>
         </tr>
     </table>
-
-    <div id="statfilter">
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -96,6 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -150,6 +180,15 @@
                 <td><img src="../images/AttackRange/MontCover.png"><br>Self</td>
                 <td>Takes attacks for adjacent allies and reduces damage taken by 40% for the user for 1 turn<br>Grants a barrier that reduces damage taken by 50% for the user for 1 turn<br>Turns needed: 2 turns (Times usable: 1)</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Grand Storm*<br><div class="jap">グランストーム</div></td>
+                <td>100</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/FrontPlusL.png"><br>Front</td>
+                <td>Deals major Woosh-type physical damage (270% potency) to all enemies in area of effect</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -193,7 +232,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="fintable">
+    <table>
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -231,6 +270,11 @@
                 <td>Lowers Immutable Stance MP cost by 10%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Grand Storm* potency +5%</td>
+                <td>Raises Grand Storm* potency by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Zap Res +25</td>
                 <td>Raises Zap resistance by 25</td>
@@ -247,5 +291,147 @@
             </tr>
         </tbody>
     </table>
+<!-- Table showing all learnable talent blossoming skills -->
+<table class="fintable">
+    <thead>
+        <tr>
+            <th colspan="2" class="bigheader">Talent Blossom</th>
+        </tr>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Grand Storm*<br><div class="jap">グランストーム</div></td>
+            <td>Deals major Woosh-type physical damage (270% potency) to all enemies in area of effect</td>
+        </tr>
+        <tr>
+            <td>Surging Pride*<br><div class="jap">みなぎる誇り</div></td>
+            <td>Action start on odd turns until turn 10:<br>Restores 8% of max MP, raises ATK and DEF for 3 turns</td>
+        </tr>
+        <tr>
+            <td>Mada's Bond*<br><div class="jap">マーサの愛</div></td>
+            <td>Battle start, action start, or when revived:<br>Reduces damage taken by 20% if the user's HP is 30% or over</td>
+        </tr>
+        <tr>
+            <td>Role Model (Lv. 2)</td>
+            <td>When attacked and KO'd by enemy:<br>Triggers Great Role Model* <!--父の大きな背中--> 1 time per battle<br><div class="attackdesc">(Great Role Model*: Greatly raises ATK, WIS, and martial and breath potency/recovery of all allies in large rhombus area for 3 turns)</div></td>
+        </tr>
+        <tr>
+            <td>ATK +40</td>
+            <td>Raises max ATK by 40</td>
+        </tr>
+        <tr class="grey">
+            <td>(HP +25) x2</td>
+            <td>Raises max HP by 25</td>
+        </tr>
+        <tr class="grey">
+            <td>(MP +15) x2</td>
+            <td>Raises max MP by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>ATK +15</td>
+            <td>Raises max ATK by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>DEF +25</td>
+            <td>Raises max DEF by 25</td>
+        </tr>
+        <tr class="grey">
+            <td>AGL +15</td>
+            <td>Raises max AGL by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>WIS +15</td>
+            <td>Raises max WIS by 15</td>
+        </tr>
+        <tr>
+            <td>(Woosh-type Physical Potency +1.5%) x2</td>
+            <td>Raises Woosh-type physical potency by 1.5%</td>
+        </tr>
+        <tr>
+            <td>(Woosh-type Physical Brilliant +1.5%) x2</td>
+            <td>Raises Woosh-type physical brilliant by 1.5%</td>
+        </tr>
+        <tr>
+            <td>Woosh-type Physical MP Cost -10%</td>
+            <td>Lowers Woosh-type physical MP cost by 10%</td>
+        </tr>
+        <tr>
+            <td>(Physical Potency +1%) x2</td>
+            <td>Raises physical potency by 1%</td>
+        </tr>
+        <tr>
+            <td>(Physical Brilliant +1%) x2</td>
+            <td>Raises physical brilliant by 1%</td>
+        </tr>
+        <tr>
+            <td>Physical MP Cost -5%</td>
+            <td>Lowers physical MP cost by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>All Damage Down 1%</td>
+            <td>Reduces all damage taken by 1%</td>
+        </tr>
+        <tr class="grey">
+            <td>Frizz Res +5%</td>
+            <td>Raises Frizz Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Frizz-type Physical Res +5%</td>
+            <td>Raises Frizz-type Physical Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Frizz-type Martial Res +5%</td>
+            <td>Raises Frizz-type Martial Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Frizz-type Spell Res +5%</td>
+            <td>Raises Frizz-type Spell Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Frizz-type Breath Res +5%</td>
+            <td>Raises Frizz-type Breath Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Sizz Res +5%</td>
+            <td>Raises Sizz Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Sizz-type Physical Res +5%</td>
+            <td>Raises Sizz-type Physical Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Sizz-type Martial Res +5%</td>
+            <td>Raises Sizz-type Martial Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Sizz-type Spell Res +5%</td>
+            <td>Raises Sizz-type Spell Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Sizz-type Breath Res +5%</td>
+            <td>Raises Sizz-type Breath Res by 5%</td>
+        </tr>
+        <tr>
+            <td>(Bind Res +5%) x2</td>
+            <td>Raises Bind Res by 5%</td>
+        </tr>
+        <tr>
+            <td>(Confusion Res +5%) x2</td>
+            <td>Raises Confusion Res by 5%</td>
+        </tr>
+        <tr>
+            <td>Physical Lock Res +5%</td>
+            <td>Raises Physical Lock Res by 5%</td>
+        </tr>
+        <tr>
+            <td>Charm Res +5%</td>
+            <td>Raises Charm Res by 5%</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
