@@ -29,4 +29,12 @@ $(document).ready( function () {
         $('#myTable').DataTable().columns(10).search(this.value).draw();
     });
 
+    $('#TalentBlossom').change(function() {
+      if ($(this).is(':checked')) {
+        $('#myTable').DataTable().columns(3).search("&").draw();
+      } else {
+        $('#myTable').DataTable().columns(3).search("").draw();
+      }
+    });
+
 } );

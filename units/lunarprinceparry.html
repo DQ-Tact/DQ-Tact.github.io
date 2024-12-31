@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/lunarprinceparry.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Lunar Prince Parry</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Lunar Prince Parry</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/LunarPrinceParry.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>ATK +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Blind.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/PhysLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZapType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col" style="min-width:400px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBluePhysical.png"></td>
+                <td>Holy Night Flash*<br><div class="jap">聖夜の剣閃</div></td>
+                <td>48</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
+                <td>Deals moderate physical damage (200% potency) to 1 enemy, occasionally lowers DEF and Spell Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Starlight Buster*<br><div class="jap">セイントバスター</div></td>
+                <td>128</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
+                <td>Deals major spell damage proportional to ATK to all enemies in area of effect, pulls them up to 1 space closer</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Zenithian Flurry*<br><div class="jap">天空の連撃</div></td>
+                <td>94</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Deals moderate unreflectable physical damage (205% potency) to 1 enemy 2 times, removes some status changes from enemy</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/SCoupRedSpell.png"></td>
+                <td>Moonlight Blade*<br><div class="jap">ムーンライトブレード</div></td>
+                <td>110</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major unreflectable Zap-type spell damage proportional to ATK to 1 enemy, ignores some Light Damage Res, raises the user's Phsyical, Spell, Martial, and Breath Res for 3 turns<br>Turns needed: 2 turns (Times usable: 2)</td>
+            </tr>
+            <tr>
+                <td><img class="charbuilder" src="../images/Rank/TalentCharBuilder.png"></td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Santa's Pranks*<br><div class="jap">サンタのいたずら</div></td>
+                <td>56</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
+                <td>Often stuns or paralyses 1 enemy<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lunar Prince*<br><div class="jap">月の王子</div></td>
+                <td>Heals 50% of max HP when the user's HP drops to 70% or less, up to 2 times per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Physical Potency/Recovery +2%</td>
+                <td>Raises physical potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Spell Potency/Recovery +2%</td>
+                <td>Raises spell potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Holy Night Hero*<br><div class="jap">聖夜の勇者</div></td>
+                <td>Battle start:<br>Greatly raises ATK, DEF, AGL, and reduces damage taken by 30% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Moonlit Protection*<br><div class="jap">月夜の加護</div></td>
+                <td>Action start on even turns until turn 6:<br>Removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Blessing of Gotha*<br><div class="jap">グランバニアの祝福</div></td>
+                <td>Battle start:<br>Raises Spell Res for 3 turns<br><br>Action start:<br>Heals 5% of max HP and restores 4% of max MP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table  class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Character Builder</th>
+            </tr>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santa's Pranks*<br><div class="jap">サンタのいたずら</div></td>
+                <td>Often stuns or paralyses 1 enemy<br>(Times usable: 1)</td>
+            </tr>
+            <tr>
+                <td>Youthful Surge*<br><div class="jap">みなぎる元気</div></td>
+                <td>Action start on odd turns from turn 3 until turn 9:<br>Raises ATK, DEF, AGL, and reduces damage taken by 30% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Mini Spark Follow-Up*<br><div class="jap">ミニスパークの追撃</div></td>
+                <td>When any other ally makes a physical, spell, or breath attack:<br>Attacks with Mini Spark* if enemy is within 1 to 3-space range<br><div class="attackdesc">(Mini Spark*: Deals moderate Zap-type spell damage proportional to ATK to 1 enemy, ignores some Light Damage Res)</div></td>
+            </tr>
+            <tr>
+                <td>DEF +50</td>
+                <td>Raises max DEF by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 0.5%</td>
+                <td>Reduces all damage taken by 0.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1.5%</td>
+                <td>Reduces all damage taken by 1.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 2%</td>
+                <td>Reduces all damage taken by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack resistance by 5</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang Res +5%</td>
+                <td>Raises Bang resistance by 5</td>
+            </tr>
+            <tr>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>Max HP & Max MP +30</td>
+                <td>Raises max HP and max MP by 30</td>
+            </tr>
+            <tr>
+                <td>Max MP +20</td>
+                <td>Raises max MP by 20</td>
+            </tr>
+            <tr>
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr>
+                <td>ATK & WIS +15</td>
+                <td>Raises max ATK and max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>DEF +10</td>
+                <td>Raises max DEF by 10</td>
+            </tr>
+            <tr>
+                <td>DEF & AGL +15</td>
+                <td>Raises max DEF and max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>Holy Night Flash* potency +2%</td>
+                <td>Raises Holy Night Flash* potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Holy Night Flash* potency +3%</td>
+                <td>Raises Holy Night Flash* potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Starlight Buster* potency +2%</td>
+                <td>Raises Starlight Buster* potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Starlight Buster* potency +3%</td>
+                <td>Raises Starlight Buster* potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zenithian Flurry* potency +2%</td>
+                <td>Raises Zenithian Flurry* potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zenithian Flurry* potency +3%</td>
+                <td>Raises Zenithian Flurry* potency by 3%</td>
+            </tr>
+            <tr class="grey">
+                <td>Moonlight Blade* potency +2%</td>
+                <td>Raises Moonlight Blade* potency by 2%</td>
+            </tr>
+            <tr class="grey">
+                <td>Moonlight Blade* potency +3%</td>
+                <td>Raises Moonlight Blade* potency by 3%</td>
+            </tr>
+        </tbody>    
+    </table>
+</body>
+</html>
