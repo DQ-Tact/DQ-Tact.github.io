@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/summonstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Potbelly</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Potbelly</h1>
+    <a href="./heroeight.html">Return to Prev. Unit</a>
+    <div class="centred">
+    <img src="../images/Potbelly.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>130</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1385</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>340</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>292</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>608</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>371</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>121</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>--</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/HeavyWoosh.png"></td>
+            <td><img src="../images/Element/HeavyZap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/BrthLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details2">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyDragon.png"></td>
+        </tr>
+    </table>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col" style="min-width:400px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/CGreenMartial.png"></td>
+                <td>Cover</td>
+                <td>11</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/AroundSelf.png"><br>Self</td>
+                <td>Take attacks for directly adjacent allies and reduces damage taken by 20% for the user for 1 turn<br><div class="attackdesc">(Note: Cover damage reduction can stack 2 times for 40% damage reduction)</div></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td><img src="../images/AttackType/BBlueBreath.png"></td>
+                <td>Daunting Breath*<br><div class="jap">だつりょくブレス</div></td>
+                <td>80</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Deals moderate breath damage (85 base potency) to all enemies in area of effect, occasionally lowers ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td><img src="../images/AttackType/ARedBreath.png"></td>
+                <td>Pyre of Darkness*<br><div class="jap">闇の炎</div></td>
+                <td>81</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major Zam-type breath damage (250 base potency) to 1 enemy</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Potbelly Body*<br><div class="jap">でんすけボディ</div></td>
+                <td>When summoned:<br>Raises Spell and Breath Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>80, 90, 100, 110, 120, 130</td>
+                <td>Pyre of Darkness* potency +10%</td>
+                <td>Raises Pyre of Darkness* potency by 10%</td>
+            </tr>
+        </tbody>
+    </table>
