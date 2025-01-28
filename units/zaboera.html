@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/metalscorpion.js"></script>
+    <script src="../unitscripts/wingedsabrecat.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Metal Scorpion</title>
+    <title>Zaboera</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Metal Scorpion</h1>
+    <h1>Zaboera</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/MetalScorpion.png" class="border">
+    <img src="../images/Zaboera.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
-            <td>140</td>
+            <td>130</td>
         </tr>
         <tr>
             <th scope="row">HP:</th>
@@ -59,38 +59,38 @@
         </tr>
         <tr>
             <th scope="row">Weight:</th>
-            <td>50</td>
+            <td>35</td>
         </tr>
     </table>
-    <h2><strong>Leader Perk:</strong> <br>Nature Martial Potency +20%</h2>
+    <h2><strong>Leader Perk:</strong> <br>Spell Potency +5%</h2>
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Sizz.png"></td>
             <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
             <td class="large">/</td>
             <td><img src="../images/Status/Bind.png"></td> 
-            <td><img src="../images/Status/Charm.png"></td>   
+            <td><img src="../images/Status/Confusion.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
             <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zap.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/MrtlLock.png"></td> 
-            <td><img src="../images/Status/Confusion.png"></td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/SpellLock.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Sleep.png"></td>
+            <td><img src="../images/Status/Poison.png"></td>
         </tr>
     </table>
     <table class="flat" id="details">
         <tr>
             <th>Family:</th>
-            <td><img class="metal" src="../images/Family/FamilyNature.png"></td>
+            <td><img class="metal" src="../images/Family/FamilyDemon.png"></td>
             <th>Role:</th>
-            <td><img class="metal" src="../images/Role/DefenceType.png"></td>
+            <td><img class="metal" src="../images/Role/DebuffType.png"></td>
             <th>Element:</th>
             <td><img class="metal" src="../images/Role/FrizzType.png"></td>
         </tr>
@@ -119,9 +119,6 @@
             <option value="9">Elemental Rank 9</option>
         </select>
     </div>
-    <div class="unofficial">
-        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
-    </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
         <thead>
@@ -141,30 +138,30 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>Selflessness</td>
-                <td>23</td>
+                <td><img src="../images/AttackType/CBlueSpell.png"></td>
+                <td>Mystic Bishop's Seizing Spell</td>
+                <td>15</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/AroundSelf.png"><br>Self</td>
-                <td>Take attacks for directly adjacent allies and reduces damage taken by 40% for the user for 1 turn</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>4</td>
+                <td>Occasionally stuns 1 enemy</td>
             </tr>
             <tr>
-                <td>31</td>
-                <td><img src="../images/AttackType/ABlueMartial.png"></td>
-                <td>Burning Scissors*<br><div class="jap">バーニングシザー</div></td>
-                <td>125</td>
-                <td><img src="../images/Element/Frizz.png"></td>
-                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
-                <td>Deals major Frizz-type martial damage (155 base potency) to all enemies in area of effect 2 times, occasionally paralyses</td>
+                <td>22</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Dark Incense</td>
+                <td>42</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
+                <td>Occasionally puts all enemies in area of effect to sleep</td>
             </tr>
             <tr>
-                <td>52</td>
-                <td><img src="../images/AttackType/ARedMartial.png"></td>
-                <td>Guarding Stinger*<br><div class="jap">ガードスティンガー</div></td>
-                <td>103</td>
+                <td>40</td>
+                <td><img src="../images/AttackType/AGreenSpell.png"></td>
+                <td>Hexcitation</td>
+                <td>80</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
-                <td>Deals major surehit martial damage (280 base potency) to 1 enemy, enables Cover for the user for 1 turn</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Grants the user x1.5 spell potency/recovery for 3 turns, grants Spell Nullify for 3 turns<br>(Times usable: 1)</td>
             </tr>
         </tbody>
     </table>
@@ -183,23 +180,23 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Max HP +30</td>
-                <td>Raises max HP by 30</td>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>DEF +20</td>
-                <td>Raises max DEF by 20</td>
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Guarded Scorpion*<br><div class="jap">スコーピオンガード</div></td>
-                <td>Battle start or when revived:<br>Enables Cover for 3 turns<br><div class="attackdesc">(Cover: Take attacks for directly adjacent allies and reduces damage taken by 20% for the user)</div><br>Battle start:<br>If there are 4 or more Nature allies (incl. self) in the party:<br>Enacts Auto Revive (50% of max HP) for 99 turns</td>
+                <td>Mystic Heat Spell Follow-Up</td>
+                <td>When any other ally attacks:<br>Attacks with Mystic Heat Spell if enemy is within 3 to 4-space range<br><div class="attackdesc">(Mystic Heat Spell: Deals moderate Sizz-type spell damage to 1 enemy)</div></td>
             </tr>
             <tr>
-                <td>110, 120, 130, 140</td>
-                <td>Guarding Stinger* potency +2%</td>
-                <td>Raises Guarding Stinger* potency by 2%</td>
+                <td>100, 110, 120, 130</td>
+                <td>Mystic Heat Spell potency +2%</td>
+                <td>Raises Mystic Heat Spell potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -218,8 +215,8 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Move +1</td>
-                <td>Raises Move by 1</td>
+                <td>Mystic Legion Support</td>
+                <td>When any other ally attacks:<br>Attacks with Mystic Legion Kafrizz if enemy is within 1 to 2-space range, up to 3 times per battle<br><div class="attackdesc">(Mystic Legion Kafrizz: Deals major Frizz-type spell damage to 1 enemy)</div></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -228,23 +225,28 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>Nerves of Steel*<br><div class="jap">鋼鉄の意思</div></td>
-                <td>When attacked by enemy:<br>Heals 10% of user's max HP and raises martial potency/recovery for 3 turns</td>
+                <td>Venom Chain Ambush</td>
+                <td>When any other ally is attacked by enemy:<br>Attacks with Venom Chain if enemy is within 1 to 4-space range, up to 3 times per battle<br><div class="attackdesc">(Venom Chain: Envenomates 1 enemy)</div></td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Guarding Stinger* potency +5%</td>
-                <td>Raises Guarding Stinger* potency by 5%</td>
+                <td>Mystic Heat Spell potency +5%</td>
+                <td>Raises Mystic Heat Spell potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Zap Res +25</td>
-                <td>Raises Zap resistance by 25</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>Max HP +100</td>
-                <td>Raises max HP by 100</td>
+                <td>Sleep Success Rate +5%</td>
+                <td>Raises Sleep success rate by 5%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Stun Success Rate +5%</td>
+                <td>Raises Stun success rate by 5%</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
