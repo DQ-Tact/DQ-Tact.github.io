@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Poison.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyNature.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/DebuffType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/BangType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -117,7 +142,7 @@
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/CBlueMartial.png"></td>
-                <td>悪魔のしょくしゅ</td>
+                <td>Demonic Feeler*<br><div class="jap">悪魔のしょくしゅ</div></td>
                 <td>18</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>44</td>
                 <td><img src="../images/AttackType/ABlueBreath.png"></td>
-                <td>エビルブレス</td>
+                <td>Vile Breath*<br><div class="jap">エビルブレス</div></td>
                 <td>84</td>
                 <td><img src="../images/Element/Bang.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>3</td>
@@ -168,8 +193,8 @@
             </tr>
             <tr>
                 <td>100, 110, 120, 130</td>
-                <td>エビルブレス potency +2%</td>
-                <td>Raises エビルブレス potency by 2%</td>
+                <td>Vile Breath* potency +2%</td>
+                <td>Raises Vile Breath* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -188,7 +213,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>うごめく触手</td>
+                <td>Writhing Vines*<br><div class="jap">うごめく触手</div></td>
                 <td>Battle start:<br>Greatly raises Move and breath potency/recovery for 3 turns</td>
             </tr>
             <tr>
@@ -198,13 +223,13 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>植物連鎖</td>
-                <td>When user's ability poisons or puts enemy to sleep:<br>Attacks with チェーンプラント if enemy is within 2 to 4-space range, up to 3 times per battle<br>This perk can be triggered by non-damage dealing abilities<br><div class="attackdesc">(チェーンプラント: Deals moderate breath damage (85 base potency) to 1 enemy, occasionally poisons or puts to sleep)</div></td>
+                <td>Mycorrhizal Network*<br><div class="jap">植物連鎖</div></td>
+                <td>When user's ability poisons or puts enemy to sleep:<br>Attacks with Chaining Roots* if enemy is within 2 to 4-space range, up to 3 times per battle<br>This perk can be triggered by non-damage dealing abilities<br><div class="attackdesc">(Chaining Roots*: Deals moderate breath damage (85 base potency) to 1 enemy, occasionally poisons or puts to sleep)</div></td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>エビルブレス potency +5%</td>
-                <td>Raises エビルブレス potency by 5%</td>
+                <td>Vile Breath* potency +5%</td>
+                <td>Raises Vile Breath* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>

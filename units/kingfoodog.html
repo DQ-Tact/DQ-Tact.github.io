@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyBeast.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -126,7 +151,7 @@
             <tr>
                 <td>22</td>
                 <td><img src="../images/AttackType/BBlueBreath.png"></td>
-                <td>地獄の吹雪</td>
+                <td>Hellish Blizzard*<br><div class="jap">地獄の吹雪</div></td>
                 <td>72</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/T.png"><br>T</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>44</td>
                 <td><img src="../images/AttackType/ARedPhysical.png"></td>
-                <td>氷獄の爪</td>
+                <td>Cryonic Claws*<br><div class="jap">氷獄の爪</div></td>
                 <td>58</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/FanS.png"><br>Fan (S)</td>
@@ -168,8 +193,8 @@
             </tr>
             <tr>
                 <td>100, 110, 120, 130</td>
-                <td>氷獄の爪 potency +2%</td>
-                <td>Raises 氷獄の爪 potency by 2%</td>
+                <td>Cryonic Claws* potency +2%</td>
+                <td>Raises Cryonic Claws* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -188,7 +213,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>地獄の獅子</td>
+                <td>Hellish Guard Dog*<br><div class="jap">地獄の獅子</div></td>
                 <td>Battle start:<br>Raises ATK, AGL, and breath potency/recovery for 3 turns</td>
             </tr>
             <tr>
@@ -203,8 +228,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>氷獄の爪 potency +5%</td>
-                <td>Raises 氷獄の爪 potency by 5%</td>
+                <td>Cryonic Claws* potency +5%</td>
+                <td>Raises Cryonic Claws* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>

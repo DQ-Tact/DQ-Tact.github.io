@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyInorganic.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
+        </tr>
+    </table>
     <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,11 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
         <form name="formTBCB">
             <label>
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -149,7 +174,7 @@
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
                 <td><img src="../images/AttackType/BBlueBreath.png"></td>
-                <td>凍土の吹雪</td>
+                <td>Frostbitten Blizzard*<br><div class="jap">凍土の吹雪</div></td>
                 <td>78</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
@@ -212,8 +237,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>凍土の吹雪 potency +5%</td>
-                <td>Raises 凍土の吹雪 potency by 5%</td>
+                <td>Frostbitten Blizzard* potency +5%</td>
+                <td>Raises Frostbitten Blizzard* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -240,7 +265,7 @@
     </thead>
     <tbody>
         <tr>
-            <td>凍土の吹雪</td>
+            <td>Frostbitten Blizzard*<br><div class="jap">凍土の吹雪</div></td>
             <td>Deals moderate Crack-type breath damage (80 base potency) to all enemies in area of effect, occasionally lowers Sleep Res for 3 turns</td>
         </tr>
         <tr>
@@ -248,7 +273,7 @@
             <td>Raises Move by 1</td>
         </tr>
         <tr>
-            <td>氷河の護り</td>
+            <td>Glacial Protection*<br><div class="jap">氷河の護り</div></td>
             <td>Battle start:<br>Raises DEF, Physical Res, and Martial Res for 3 turns</td>
         </tr>
         <tr>

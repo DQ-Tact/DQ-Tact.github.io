@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Poison.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilySlime.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/DefenceType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/BangType.png"></td>
+        </tr>
+    </table>
     <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,11 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
         <form name="formTBCB">
             <label>
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -149,7 +174,7 @@
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
                 <td><img src="../images/AttackType/ABlueBreath.png"></td>
-                <td>バブルブレス</td>
+                <td>Bubbling Breath*<br><div class="jap">バブルブレス</div></td>
                 <td>110</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
@@ -217,8 +242,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>バブルブレス potency +5%</td>
-                <td>Raises バブルブレス potency by 5%</td>
+                <td>Bubbling Breath* potency +5%</td>
+                <td>Raises Bubbling Breath* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -245,15 +270,15 @@
         </thead>
         <tbody>
             <tr>
-                <td>バブルブレス</td>
+                <td>Bubbling Breath*<br><div class="jap">バブルブレス</div></td>
                 <td>Deals major breath damage (200 base potency) to all enemies in area of effect, often envenomates, occasionally lowers ATK for 3 turns</td>
             </tr>
             <tr>
-                <td>ドロドロボディ</td>
+                <td>Sludgy Skin*<br><div class="jap">ドロドロボディ</div></td>
                 <td>Battle start:<br>Greatly raises Physical and Martial Res for 3 turns</td>
             </tr>
             <tr>
-                <td>ポイズンショック</td>
+                <td>Poison Surge*<br><div class="jap">ポイズンショック</div></td>
                 <td>When any ally (incl. self) poisons an enemy with an ability:<br>Raises Move, Physical Res, Martial Res, and breath potency/recovery for 3 turns (4 turns if activated by an ally's ability), up to 3 times per battle<br>This perk can be triggered by non-damage dealing abilities</td>
             </tr>
             <tr>

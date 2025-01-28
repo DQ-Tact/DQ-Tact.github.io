@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Confusion.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyDragon.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
+        </tr>
+    </table>
     <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,11 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
         <form name="formTBCB">
             <label>
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -149,7 +174,7 @@
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
                 <td><img src="../images/AttackType/ARedBreath.png"></td>
-                <td>プロミネンスブレス</td>
+                <td>Prominence Breath*<br><div class="jap">プロミネンスブレス</div></td>
                 <td>99</td>
                 <td><img src="../images/Element/Frizz.png"><img src="../images/Element/Sizz.png"></td>
                 <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
@@ -217,8 +242,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>プロミネンスブレス potency +5%</td>
-                <td>Raises プロミネンスブレス potency by 5%</td>
+                <td>Prominence Breath* potency +5%</td>
+                <td>Raises Prominence Breath* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -245,7 +270,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>プロミネンスブレス</td>
+                <td>Prominence Breath*<br><div class="jap">プロミネンスブレス</div></td>
                 <td>Deals major Frizz-type breath damage (110 base potency) and major Sizz-type breath damage (110 base potency) to all enemies in area of effect</td>
             </tr>
             <tr>
@@ -253,7 +278,7 @@
                 <td>Battle start:<br>Reduces damage taken by 50% up to 2 times for 99 turns</td>
             </tr>
             <tr>
-                <td>龍の鳴動</td>
+                <td>Dragon's Roar*<br><div class="jap">龍の鳴動</div></td>
                 <td>Action start on even turns until turn 10:<br>Raises breath potency/recovery for Dragon units in a 5x5 area (incl. self) for 3 turns (self: 4 turns)</td>
             </tr>
             <tr>

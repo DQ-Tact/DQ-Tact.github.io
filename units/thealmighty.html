@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Stun.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
     <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,11 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
         <form name="formTBCB">
             <label>
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include max HP increase from base perk</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -122,7 +147,7 @@
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>天界の守り</td>
+                <td>Heavenly Guard*<br><div class="jap">天界の守り</div></td>
                 <td>24</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
@@ -131,7 +156,7 @@
             <tr>
                 <td>33</td>
                 <td><img src="../images/AttackType/ARedSpell.png"></td>
-                <td>天罰</td>
+                <td>Divine Punishment*<br><div class="jap">天罰</div></td>
                 <td>133</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-4</td>
@@ -140,7 +165,7 @@
             <tr>
                 <td>54</td>
                 <td><img src="../images/AttackType/ABlueMartial.png"></td>
-                <td>ステテコストリーム</td>
+                <td>Underpants Stream*<br><div class="jap">ステテコストリーム</div></td>
                 <td>147</td>
                 <td><img src="../images/Element/Woosh.png"></td>
                 <td><img src="../images/AttackRange/Front10.png"><br>Front</td>
@@ -182,7 +207,7 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>神のめぐみ</td>
+                <td>Almighty Blessings*<br><div class="jap">神のめぐみ</div></td>
                 <td>Raises max HP by 500<br>Raises max HP of all allies (incl. self) by 100</td>
             </tr>
             <tr>
@@ -212,7 +237,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>神のチカラ</td>
+                <td>Almighty Power*<br><div class="jap">神のチカラ</div></td>
                 <td>Battle start:<br>Grants a barrier that reduces damage taken by 20% for 3 turns<br><br>Action start on odd turns until turn 10:<br>Raises DEF, AGL, and damage dealt for 3 turns</td>
             </tr>
             <tr>
@@ -222,7 +247,7 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>不動のこころ</td>
+                <td>Immutable Heart*<br><div class="jap">不動のこころ</div></td>
                 <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
             </tr>
             <tr>
@@ -242,7 +267,7 @@
             </tr>
             <tr>
                 <td>5</td>
-                <td>天界の加護</td>
+                <td>Heaven's Blessings*<br><div class="jap">天界の加護</div></td>
                 <td>When attacked by enemy:<br>Heals 10% of the user's max HP</td>
             </tr>
             <tr>

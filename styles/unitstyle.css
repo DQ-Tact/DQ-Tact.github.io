@@ -330,6 +330,10 @@ img[src*="AttackRange"]{
     width: 70px;
 }
 
+.toobig{
+    font-size: 16px;
+}
+
 
 @media screen and (max-width: 810px) {
     a[href*="index"]{
@@ -538,6 +542,10 @@ img[src*="AttackRange"]{
         max-width: 93%;
         overflow-x: scroll;
         display: block;
+    }
+
+    .toobig{
+        font-size: 12px;
     }
 }
 
@@ -748,5 +756,9 @@ img[src*="AttackRange"]{
         max-width: 97%;
         overflow-x: scroll;
         display: block;
+    }
+
+    .toobig{
+        font-size: 10px;
     }
 }

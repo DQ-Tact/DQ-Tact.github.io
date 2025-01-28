@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyNature.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/MagicType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
+        </tr>
+    </table>
     <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,11 +105,27 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
         <form name="formTBCB">
             <label>
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -149,7 +174,7 @@
             <tr>
                 <td><img src="../images/Rank/TalentBlossom.png"></td>
                 <td><img src="../images/AttackType/ABlueSpell.png"></td>
-                <td>アビスゾーン</td>
+                <td>Abyssal Zone*<br><div class="jap">アビスゾーン</div></td>
                 <td>125</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/TLong.png"><br>T (Long)</td>
@@ -227,8 +252,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>アビスゾーン potency +5%</td>
-                <td>Raises アビスゾーン potency by 5%</td>
+                <td>Abyssal Zone* potency +5%</td>
+                <td>Raises Abyssal Zone* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -260,15 +285,15 @@
         </thead>
         <tbody>
             <tr>
-                <td>アビスゾーン</td>
+                <td>Abyssal Zone*<br><div class="jap">アビスゾーン</div></td>
                 <td>Deals major Crack-type spell damage to all enemies in area of effect, occasionally puts to sleep</td>
             </tr>
             <tr>
-                <td>深海の魔王</td>
+                <td>Deep Sea Dread Fiend*<br><div class="jap">深海の魔王</div></td>
                 <td>When any ally (incl. self) puts an enemy to sleep with an ability:<br>Raises Move, evasion rate, and damage dealt for 3 turns (4 turns if activated by an ally's ability), up to 3 times per battle<br>This perk can be triggered by non-damage dealing abilities</td>
             </tr>
             <tr>
-                <td>深海の守護</td>
+                <td>Deep Sea Guardian*<br><div class="jap">深海の守護</div></td>
                 <td>Battle start:<br>Reduces damage taken by 20% for 3 turns</td>
             </tr>
             <tr>

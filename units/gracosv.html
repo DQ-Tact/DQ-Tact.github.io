@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyNature.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/MagicType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -126,7 +151,7 @@
             <tr>
                 <td>28</td>
                 <td><img src="../images/AttackType/ABlueSpell.png"></td>
-                <td>ナイトメアボール</td>
+                <td>Nightmare Ball*<br><div class="jap">ナイトメアボール</div></td>
                 <td>123</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>52</td>
                 <td><img src="../images/AttackType/ABlueSpell.png"></td>
-                <td>海魔の大波</td>
+                <td>Great Sea Demon's Wave*<br><div class="jap">海魔の大波</div></td>
                 <td>137</td>
                 <td><img src="../images/Element/Crack.png"></td>
                 <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
@@ -173,8 +198,8 @@
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>海魔の大波 potency +2%</td>
-                <td>Raises 海魔の大波 potency by 2%</td>
+                <td>Great Sea Demon's Wave* potency +2%</td>
+                <td>Raises Great Sea Demon's Wave* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -193,7 +218,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>さざなみ</td>
+                <td>Rippling Waves*<br><div class="jap">さざなみ</div></td>
                 <td>Action start on even turns until turn 6:<br>Raises WIS and Move for 3 turns</td>
             </tr>
             <tr>
@@ -208,8 +233,8 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>海魔の大波 potency +5%</td>
-                <td>Raises 海魔の大波 potency by 5%</td>
+                <td>Great Sea Demon's Wave* potency +5%</td>
+                <td>Raises Great Sea Demon's Wave* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -218,8 +243,8 @@
             </tr>
             <tr>
                 <td>5</td>
-                <td>最後の大波</td>
-                <td>When attacked and KO'd by enemy:<br>Attacks with 最後の大波 if enemy is within rhombus area, 1 time per battle<br><div class="attackdesc">(最後の大波: Deals major Crack-type spell damage to all enemies in area of effect, occasionally binds)</div></td>
+                <td>Final Tidal Wave*<br><div class="jap">最後の大波</div></td>
+                <td>When attacked and KO'd by enemy:<br>Attacks with Final Tidal Wave* if enemy is within rhombus area, 1 time per battle<br><div class="attackdesc">(Final Tidal Wave*: Deals major Crack-type spell damage to all enemies in area of effect, occasionally binds)</div></td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
