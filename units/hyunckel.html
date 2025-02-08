@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/hyunckel.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Hyunckel</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Hyunckel</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/Hyunckel.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Zam-type Physical Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr class="metal">
+            <th scope="row">Weaknesses:</th>
+            <td><img class="metal" src="../images/Element/Zap.png"></td>
+            <td class="metallarge">/</td>
+            <td><img class="metal" src="../images/Status/MrtlLock.png"></td>  
+            <td><img class="metal" src="../images/Status/Paralysis.png"></td>  
+        </tr>
+        <tr class="metal">
+            <th scope="row" rowspan="2">Resistances:</th>
+            <td><img class="metal" src="../images/Element/Frizz.png"></td>
+            <td><img class="metal" src="../images/Element/Sizz.png"></td>
+            <td><img class="metal" src="../images/Element/Crack.png"></td>
+            <td><img class="metal" src="../images/Element/Woosh.png"></td>
+            <td><img class="metal" src="../images/Element/Bang.png"></td>
+            <td><img class="metal" src="../images/Element/Zam.png"></td>
+        </tr>
+        <tr class="metal">
+            <td><img class="metal" src="../images/Status/Stun.png"></td>
+            <td><img class="metal" src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr class="metal">
+            <th scope="row">Immunities:</th>
+            <td><img class="metal" src="../images/Status/Bind.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZamType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col" style="min-width:400px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBluePhysical.png"></td>
+                <td>Earth Slash</td>
+                <td>30</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1</td>
+                <td>Deals moderate physical damage (195% potency) to 1 enemy, occasionally greatly lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Dark Puppetry Aura Hand</td>
+                <td>95</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/Front3.png"><br>Front</td>
+                <td>Deals major Zam-type martial damage (230 base potency) to all enemies in area of effect, occasionally stuns</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Bloody Scryde</td>
+                <td>58</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Deals major Zam-type physical damage (280% potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/ACoupBluePhysical.png"></td>
+                <td>Farewell Bloody Scryde</td>
+                <td>80</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/StraightLine5.png"><br>Straight Line</td>
+                <td>Deals major Zam-type physical damage (380% potency) to all enemies in area of effect, greatly lowers DEF for 3 turns<br>Turns needed: 3 turns (Times usable: 2)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dark Armour Blade</td>
+                <td>Halves all element Res except Zap-type Res</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Bloody Scryde potency +2%</td>
+                <td>Raises Bloody Scryde potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Farewell Bloody Scryde potency +2%</td>
+                <td>Raises Farewell Bloody Scryde potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Immortal</td>
+                <td>Before HP hits 0:<br>Occasionally preserves HP at 1<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>2, 4</td>
+                <td>All Element Res +5</td>
+                <td>Raises resistance to all elements by 5</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Immortal Chance +10%</td>
+                <td>Raises chance of Immortal by 10%</td>
+            </tr>
+            <tr>
+                <td>3,5</td>
+                <td>(Physical Potency +5%) x2</td>
+                <td>Raises physical potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3,5</td>
+                <td>Ability MP Cost -5%</td>
+                <td>Lowers ability MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+<table class="fintable">
+    <thead>
+        <tr>
+            <th colspan="2" class="bigheader">Talent Blossom</th>
+        </tr>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bloody Scryde potency +20%</td>
+            <td>Raises Bloody Scryde potency by 20%</td>
+        </tr>
+        <tr>
+            <td>Farewell Bloody Scryde potency +50%</td>
+            <td>Raises Farewell Bloody Scryde potency by 50%</td>
+        </tr>
+        <tr>
+            <td>Lonely Soldier</td>
+            <td>Raises Move by 1 and raises Zam-type potency by 20%</td>
+        </tr>
+        <tr>
+            <td>All Element Res +5</td>
+            <td>Raises resistance to all elements by 5</td>
+        </tr>
+        <tr>
+            <td>HP +50</td>
+            <td>Raises max HP by 50</td>
+        </tr>
+        <tr>
+            <td>AGL +40</td>
+            <td>Raises max AGL by 40</td>
+        </tr>
+        <tr class="grey">
+            <td>(HP +25) x2</td>
+            <td>Raises max HP by 25</td>
+        </tr>
+        <tr class="grey">
+            <td>MP +30</td>
+            <td>Raises max MP by 30</td>
+        </tr>
+        <tr class="grey">
+            <td>ATK +15</td>
+            <td>Raises max ATK by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>DEF +25</td>
+            <td>Raises max DEF by 25</td>
+        </tr>
+        <tr class="grey">
+            <td>AGL +15</td>
+            <td>Raises max AGL by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>WIS +15</td>
+            <td>Raises max WIS by 15</td>
+        </tr>
+        <tr>
+            <td>(Zam-type Physical Potency +1.5%) x2</td>
+            <td>Raises Zam-type physical potency by 1.5%</td>
+        </tr>
+        <tr>
+            <td>(Zam-type Physical Brilliant +1.5%) x2</td>
+            <td>Raises Zam-type physical brilliant by 1.5%</td>
+        </tr>
+        <tr>
+            <td>Zam-type Physical MP Cost -10%</td>
+            <td>Lowers Zam-type physical MP cost by 10%</td>
+        </tr>
+        <tr>
+            <td>(Zam-type Martial Potency +1.5%) x2</td>
+            <td>Raises Zam-type martial potency by 1.5%</td>
+        </tr>
+        <tr>
+            <td>(Zam-type Martial Brilliant +1.5%) x2</td>
+            <td>Raises Zam-type martial brilliant by 1.5%</td>
+        </tr>
+        <tr>
+            <td>Zam-type Martial MP Cost -10%</td>
+            <td>Lowers Zam-type martial MP cost by 10%</td>
+        </tr>
+        <tr class="grey">
+            <td>All Damage Down 1%</td>
+            <td>Reduces all damage taken by 1%</td>
+        </tr>
+        <tr class="grey">
+            <td>(Zap Res +2.5%) x2</td>
+            <td>Raises Zap Res by 2.5%</td>
+        </tr>
+        <tr class="grey">
+            <td>(Zap-type Physical Res +2.5%) x2</td>
+            <td>Raises Zap-type Physical Res by 2.5%</td>
+        </tr>
+        <tr class="grey">
+            <td>(Zap-type Martial Res +2.5%) x2</td>
+            <td>Raises Zap-type Martial Res by 2.5%</td>
+        </tr>
+        <tr class="grey">
+            <td>(Zap-type Spell Res +2.5%) x2</td>
+            <td>Raises Zap-type Spell Res by 2.5%</td>
+        </tr>
+        <tr class="grey">
+            <td>(Zap-type Breath Res +2.5%) x2</td>
+            <td>Raises Zap-type Breath Res by 2.5%</td>
+        </tr>
+        <tr>
+            <td>(Martial Lock Res +5%) x2</td>
+            <td>Raises Martial Lock Res by 5%</td>
+        </tr>
+        <tr>
+            <td>(Paralysis Res +5%) x2</td>
+            <td>Raises Paralysis Res by 5%</td>
+        </tr>
+        <tr>
+            <td>Stun Res +5%</td>
+            <td>Raises Stun Res by 5%</td>
+        </tr>
+        <tr>
+            <td>Charm Res +5%</td>
+            <td>Raises Charm Res by 5%</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
