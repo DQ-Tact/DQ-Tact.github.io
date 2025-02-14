@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilySlime.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -117,7 +142,7 @@
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/BRedMartial.png"></td>
-                <td>スライダーキャッチ</td>
+                <td>Slider Swipe*<br><div class="jap">スライダーキャッチ</div></td>
                 <td>32</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/StraightLine4.png"><br>Straight Line</td>
@@ -126,7 +151,7 @@
             <tr>
                 <td>28</td>
                 <td><img src="../images/AttackType/ARedMartial.png"></td>
-                <td>スライダーブロウ</td>
+                <td>Slider Blow*<br><div class="jap">スライダーブロウ</div></td>
                 <td>81</td>
                 <td><img src="../images/Element/Woosh.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>54</td>
                 <td><img src="../images/AttackType/ARedMartial.png"></td>
-                <td>必殺スライダーアクセル</td>
+                <td>Ulitmate Slider Charge*<br><div class="jap">必殺スライダーアクセル</div></td>
                 <td>99</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/T.png"><br>T</td>
@@ -168,13 +193,13 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>高速ヒーロー</td>
+                <td>High-Speed Hero*<br><div class="jap">高速ヒーロー</div></td>
                 <td>Battle start:<br>Greatly raises AGL and Move for 3 turns</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>必殺スライダーアクセル potency +2%</td>
-                <td>Raises 必殺スライダーアクセル potency by 2%</td>
+                <td>Ulitmate Slider Charge* potency +2%</td>
+                <td>Raises Ulitmate Slider Charge* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -193,8 +218,8 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>追撃ヒーロー</td>
-                <td>When any other ally makes a physical or martial attack:<br>Attacks with スライダーブロウ if enemy is within 1 to 3-space range, up to 4 times per battle</td>
+                <td>Hero's Pursuit*<br><div class="jap">追撃ヒーロー</div></td>
+                <td>When any other ally makes a physical or martial attack:<br>Attacks with Slider Blow* if enemy is within 1 to 3-space range, up to 4 times per battle</td>
             </tr>
             <tr>
                 <td>2</td>
@@ -203,13 +228,13 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>不動のヒーロー</td>
+                <td>Immutable Hero*<br><div class="jap">不動のヒーロー</div></td>
                 <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>必殺スライダーアクセル potency +5%</td>
-                <td>Raises 必殺スライダーアクセル potency by 5%</td>
+                <td>Ulitmate Slider Charge* potency +5%</td>
+                <td>Raises Ulitmate Slider Charge* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>

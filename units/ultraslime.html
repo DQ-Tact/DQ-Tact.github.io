@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilySlime.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZapType.png"></td>
+        </tr>
+    </table>
     <div id="statfiltermindini">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -95,6 +104,19 @@
             <option value="3">Awakening 3</option>
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
         </select>
         <form name="formTBCB">
             <label>
@@ -121,6 +143,9 @@
             </label>
         </form>
     </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
         <thead>
@@ -141,7 +166,7 @@
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/BRedPhysical.png"></td>
-                <td>スライダパンチ</td>
+                <td>Slider Punch*<br><div class="jap">スライダーパンチ</div></td>
                 <td>34</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
@@ -150,7 +175,7 @@
             <tr>
                 <td>1st A-Rank Ability Choice<br><div class="attackdesc">(Left)</div></td>
                 <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>スライダーガード</td>
+                <td>Slider Guard*<br><div class="jap">スライダーガード</div></td>
                 <td>32</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
@@ -159,7 +184,7 @@
             <tr>
                 <td>1st A-Rank Ability Choice<br><div class="attackdesc">(Centre)</div></td>
                 <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>スライダーエール</td>
+                <td>Slider Cheer*<br><div class="jap">スライダーエール</div></td>
                 <td>32</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
@@ -168,7 +193,7 @@
             <tr>
                 <td>1st A-Rank Ability Choice<br><div class="attackdesc">(Right)</div></td>
                 <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>スライダーヒール</td>
+                <td>Slider Heal*<br><div class="jap">スライダーヒール</div></td>
                 <td>70</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/SelfAoE.png"><br>1 AOE (incl. self)</td>
@@ -177,7 +202,7 @@
             <tr>
                 <td>2nd A-Rank Ability Choice<br><div class="attackdesc">(Left)</div></td>
                 <td><img src="../images/AttackType/ABluePhysical.png"></td>
-                <td>必殺スライダーキック</td>
+                <td>Ultimate Slider Kick*<br><div class="jap">必殺スライダーキック</div></td>
                 <td>75</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
@@ -186,7 +211,7 @@
             <tr>
                 <td>2nd A-Rank Ability Choice<br><div class="attackdesc">(Centre)</div></td>
                 <td><img src="../images/AttackType/ARedPhysical.png"></td>
-                <td>必殺スライダークロス</td>
+                <td>Ultimate Slider Cross*<br><div class="jap">必殺スライダークロス</div></td>
                 <td>70</td>
                 <td><img src="../images/Element/Zap.png"></td>
                 <td><img src="../images/AttackRange/FrontCross.png"><br>Front</td>
@@ -195,7 +220,7 @@
             <tr>
                 <td>2nd A-Rank Ability Choice<br><div class="attackdesc">(Right)</div></td>
                 <td><img src="../images/AttackType/ABluePhysical.png"></td>
-                <td>必殺スライダーラッシュ</td>
+                <td>Ultimate Slider Rush*<br><div class="jap">必殺スライダーラッシュ</div></td>
                 <td>72</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
@@ -228,7 +253,7 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>クールなヒーロー</td>
+                <td>Awesome Hero*<br><div class="jap">クールなヒーロー</div></td>
                 <td>When user's ability KO's enemy:<br>Grants the user Stylish for 3 turns</td>
             </tr>
             <tr>
@@ -332,9 +357,9 @@
                 </tr>
             </div>
             <tr>
-                <td><strong>スライダーガード</strong><br>Reduces damage taken by 20% for all allies in area of effect for 3 turns</td>
-                <td><strong>スライダーエール</strong><br>Raises ATK of all allies in area of effect for 3 turns</td>
-                <td><strong>スライダーヒール</strong><br>Heals a major amount of HP for all allies in area of effect</td>
+                <td><strong>Slider Guard*<br><div class="jap">スライダーガード</div></strong><br>Reduces damage taken by 20% for all allies in area of effect for 3 turns</td>
+                <td><strong>Slider Cheer*<br><div class="jap">スライダーエール</div></strong><br>Raises ATK of all allies in area of effect for 3 turns</td>
+                <td><strong>Slider Heal*<br><div class="jap">スライダーヒール</div></strong><br>Heals a major amount of HP for all allies in area of effect</td>
             </tr>
             <div>
                 <tr>
@@ -369,9 +394,9 @@
                 </tr>
             </div>
             <tr>
-                <td><strong>連撃ヒーロー</strong><br>Lowers physical ability MP cost by 10%, raises potency and recovery by 10%<br><br>When making a physical attack:<br>Rarely activates a physical ability or Fight 2 times in succession<br><span style="font-size:12px">This perk can be triggered by non-damage dealing abilities</span></td>
-                <td><strong>勇敢ヒーロー</strong><br>Action start on even turns until turn 6:<br>Raises ATK, DEF, and AGL for 3 turns</td>
-                <td><strong>軽快ヒーロー</strong><br>Battle start:<br>Greatly raises ATK and evasion rate for 3 turns</td>
+                <td><strong>Multi-Striking Hero*<br><div class="jap">連撃ヒーロー</div></strong><br>Lowers physical ability MP cost by 10%, raises potency and recovery by 10%<br><br>When making a physical attack:<br>Rarely activates a physical ability or Fight 2 times in succession<br><span style="font-size:12px">This perk can be triggered by non-damage dealing abilities</span></td>
+                <td><strong>Fearless Hero*<br><div class="jap">勇敢ヒーロー</div></strong><br>Action start on even turns until turn 6:<br>Raises ATK, DEF, and AGL for 3 turns</td>
+                <td><strong>Fleet-Footed Hero*<br><div class="jap">軽快ヒーロー</div></strong><br>Battle start:<br>Greatly raises ATK and evasion rate for 3 turns</td>
             </tr>
             <div>
                 <tr>
@@ -406,9 +431,9 @@
                 </tr>
             </div>
             <tr>
-                <td><strong>必殺スライダーキック</strong><br>Deals huge physical damage (600% potency) to ??? units, and deals major physical damage (300% potency) to all other units, occasionally lowers DEF for 3 turns</td>
-                <td><strong>必殺スライダークロス</strong><br>Deals major surehit Zap-type physical damage (300% potency) to all enemies in area of effect</td>
-                <td><strong>必殺スライダーラッシュ</strong><br>Deals minor physical damage (45% potency) to random enemies in area of effect 8 times, very rarely paralyses</td>
+                <td><strong>Ultimate Slider Kick*<br><div class="jap">必殺スライダーキック</div></strong><br>Deals huge physical damage (600% potency) to ??? units, and deals major physical damage (300% potency) to all other units, occasionally lowers DEF for 3 turns</td>
+                <td><strong>Ultimate Slider Cross*<br><div class="jap">必殺スライダークロス</div></strong><br>Deals major surehit Zap-type physical damage (300% potency) to all enemies in area of effect</td>
+                <td><strong>Ultimate Slider Rush*<br><div class="jap">必殺スライダーラッシュ</div></strong><br>Deals minor physical damage (45% potency) to random enemies in area of effect 8 times, very rarely paralyses</td>
             </tr>
             <div>
                 <tr>
@@ -443,9 +468,9 @@
                 </tr>
             </div>
             <tr>
-                <td><strong>不沈のヒーロー</strong><br>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
-                <td><strong>不屈のヒーロー</strong><br>Before HP hits 0:<br>Occasionally preserves HP at 1<br><span style="font-size:12px">This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</span></td>
-                <td><strong>不動のヒーロー</strong><br>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br><span style="font-size:12px">This perk can be triggered by non-damage dealing abilities or attacks by allies</span></td>
+                <td><strong>Ironclad Hero*<br><div class="jap">不沈のヒーロー</div></strong><br>Battle start:<br>Reduces damage taken by 50% 1 time only for 99 turns</td>
+                <td><strong>Indomitable Hero*<br><div class="jap">不屈のヒーロー</div></strong><br>Before HP hits 0:<br>Occasionally preserves HP at 1<br><span style="font-size:12px">This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</span></td>
+                <td><strong>Immutable Hero*<br><div class="jap">不動のヒーロー</div></strong><br>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br><span style="font-size:12px">This perk can be triggered by non-damage dealing abilities or attacks by allies</span></td>
             </tr>
             <div>
                 <tr>

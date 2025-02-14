@@ -18,7 +18,7 @@ function applyStats() {
     $('#HP').text(Math.floor((1243 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].hp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].hp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].hp : 0))));
     $('#MP').text(Math.floor((441 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].mp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].mp : 0)+ (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].mp : 0))));
     $('#ATK').text(Math.floor((272 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].atk : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].atk : 0)));
-    $('#DEF').text(Math.floor((405 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0)+ (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))));
+    $('#DEF').text(Math.floor((405 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))));
     $('#AGL').text(Math.floor((322 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].agl : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].agl : 0)));
     $('#WIS').text(Math.floor((151 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].wis : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].wis : 0)));
     $('#Move').text(2 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].move : 0));

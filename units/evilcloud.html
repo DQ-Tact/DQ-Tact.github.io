@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyInorganic.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/DebuffType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -126,7 +151,7 @@
             <tr>
                 <td>18</td>
                 <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>くもがくれ</td>
+                <td>Clouded View*<br><div class="jap">くもがくれ</div></td>
                 <td>32</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>42</td>
                 <td><img src="../images/AttackType/ABlueBreath.png"></td>
-                <td>ブレイクウインド</td>
+                <td>Wind Breaker*<br><div class="jap">ブレイクウインド</div></td>
                 <td>76</td>
                 <td><img src="../images/Element/Woosh.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>3</td>
@@ -168,8 +193,8 @@
             </tr>
             <tr>
                 <td>100, 110, 120, 130</td>
-                <td>ブレイクウインド potency +2%</td>
-                <td>Raises ブレイクウインド potency by 2%</td>
+                <td>Wind Breaker* potency +2%</td>
+                <td>Raises Wind Breaker* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -198,13 +223,13 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>曇天の息の追撃</td>
-                <td>When attacking:<br>Attacks with 曇天の息 if enemy is within 3-space range, up to 3 times per battle<br><div class="attackdesc">(曇天の息: Deals moderate Woosh-type breath damage (75 base potency) to 1 enemy, occasionally lowers Martial and Breath Res for 3 turns)</div></td>
+                <td>Clouded Breath Follow-Up*<br><div class="jap">曇天の息の追撃</div></td>
+                <td>When attacking:<br>Attacks with Clouded Breath* if enemy is within 3-space range, up to 3 times per battle<br><div class="attackdesc">(Clouded Breath*: Deals moderate Woosh-type breath damage (75 base potency) to 1 enemy, occasionally lowers Martial and Breath Res for 3 turns)</div></td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>ブレイクウインド potency +5%</td>
-                <td>Raises ブレイクウインド potency by 5%</td>
+                <td>Wind Breaker* potency +5%</td>
+                <td>Raises Wind Breaker* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>

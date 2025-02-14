@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilySlime.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZamType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -96,6 +105,22 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -117,7 +142,7 @@
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>スライダークアイ</td>
+                <td>Dark Slider Footwork*<br><div class="jap">スライダークアイ</div></td>
                 <td>24</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
@@ -126,7 +151,7 @@
             <tr>
                 <td>28</td>
                 <td><img src="../images/AttackType/ARedPhysical.png"></td>
-                <td>スライダークバーニング</td>
+                <td>Dark Slider Scorcher*<br><div class="jap">スライダークバーニング</div></td>
                 <td>70</td>
                 <td><img src="../images/Element/Frizz.png"></td>
                 <td><img src="../images/AttackRange/StraightLine4.png"><br>Straight Line</td>
@@ -135,7 +160,7 @@
             <tr>
                 <td>54</td>
                 <td><img src="../images/AttackType/ABluePhysical.png"></td>
-                <td>必殺スライダークブレイク</td>
+                <td>Ultimate Dark Slider Break*<br><div class="jap">必殺スライダークブレイク</div></td>
                 <td>100</td>
                 <td><img src="../images/Element/Zam.png"></td>
                 <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
@@ -168,13 +193,13 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>ダークヒーロー</td>
+                <td>Dark Antihero*<br><div class="jap">ダークヒーロー</div></td>
                 <td>Battle start:<br>Raises AGL and physical potency/recovery for 3 turns, reduces damage taken by 50% up to 2 times for 99 turns</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>必殺スライダークブレイク potency +2%</td>
-                <td>Raises 必殺スライダークブレイク potency by 2%</td>
+                <td>Ultimate Dark Slider Break* potency +2%</td>
+                <td>Raises Ultimate Dark Slider Break* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -193,7 +218,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>死神ヒーロー</td>
+                <td>Deadly Antihero*<br><div class="jap">死神ヒーロー</div></td>
                 <td>Action start until turn 5:<br>Raises ATK and Physical Critical Hit Rate for 3 turns</td>
             </tr>
             <tr>
@@ -203,13 +228,13 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td>闇夜のヒーロー</td>
+                <td>Shadow-Cloaked Antihero*<br><div class="jap">闇夜のヒーロー</div></td>
                 <td>Battle start:<br>Greatly raises evasion rate and grants a barrier that reflects spell attacks for 2 turns</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>必殺スライダークブレイク potency +5%</td>
-                <td>Raises 必殺スライダークブレイク potency by 5%</td>
+                <td>Ultimate Dark Slider Break* potency +5%</td>
+                <td>Raises Ultimate Dark Slider Break* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
