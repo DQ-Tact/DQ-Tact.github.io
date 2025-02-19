@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Prism Sword*</title>
+    <title>Chaos Spark*</title>
 </head>
 <body>
     <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Prism Sword*</h1>
+    <h1>Chaos Spark*</h1>
     <a class="return" href="../abilitylist.html">Return to Ability List</a>
         
     <table class="fintable">
@@ -34,42 +34,46 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="../images/AttackType/ARedPhysical.png"></td>
-                <td>Prism Sword*<br><div class="jap">プリズムソード</div></td>
-                <td>96</td>
-                <td><img src="../images/Element/Frizz.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
-                <td>Deals major Frizz-type, Sizz-type, Crack-type, Woosh-type, Bang-type, Zap-type, or Zam-type surehit physical damage (410% potency) to 1 enemy</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Chaos Spark*<br><div class="jap">カオススパーク</div></td>
+                <td>142</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/FrontSquare.png"><br>Front</td>
+                <td>Deals major Zam-type or Zap-type spell damage proportional to ATK to all enemies in area of effect<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness</td>
             </tr>
         </tbody>
     </table>
     <table>
         <thead>
             <tr>
-                <th colspan="5" class="bigheader">Details</th>
+                <th colspan="7" class="bigheader">Details</th>
             </tr>
             <tr>
                 <th scope="col">No. of Attacks</th>
-                <th scope="col">ATK Multiplier</th>
-                <th scope="col">Damage Calc.</th>
-                <th scope="col">Accuracy</th>  
+                <th scope="col">Min ATK</th>
+                <th scope="col">Max ATK</th>
+                <th scope="col">Damage Calc.</th> 
+                <th scope="col">Min Damage</th> 
+                <th scope="col">Max Damage</th> 
                 <th scope="col">Secondary Effect Chance</th>             
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="smallpadding">
                 <td>1</td>
-                <td>4.1</td>
-                <td>[(User's ATK/2) - (Enemy's DEF/4)] x ATK Multiplier</td>
-                <td>Never Misses</td>
-                <td>100%:<br><div class="extra">Of the elements listed, the element that deals the highest damage possible after its brilliance is calculated will be chosen, and if more than one element deals the highest damage, then the element chosen shall be the first one in the order chain listed</div></td>
+                <td>82</td>
+                <td>1524</td>
+                <td>(1.041 x ATK) + 13.638</td>
+                <td>99</td>
+                <td>1600</td>
+                <td>100%:<br><div class="extra">Attack ignores Spell Reflect <img src="../images/Buffs/ReflectSpell.png"></div></td>
             </tr>
         </tbody>
     </table>
 
     <h3>Units with this ability:</h3>
     <div class="group">
-        <a href="../units/heroeight.html"><img src="../images/HeroEight.png" class="border"></a>
+        <a href="../units/archfiendgargeos.html"><img src="../images/ArchfiendGargeos.png" class="border"></a>
     </div>
 </body>
 </html>
