@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/erinn.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Erinn</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Erinn</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/Erinn.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>60</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Hero Martial Potency/Recovery +15%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Bind.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Sleep.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/SupportType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/SizzType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilter">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col">Range</th>
+                <th scope="col" style="min-width:400px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Welcome Drink*<br><div class="jap">ウェルカムドリンク</div></td>
+                <td>30</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Raises the Tension of 1 ally other than self for 1 turn</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>Royal Heal*<br><div class="jap">ロイヤルヒール</div></td>
+                <td>84</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/RhombusLAoE.png"><br>Rhombus (L) (incl. self)</td>
+                <td>Heals a major amount of HP for all allies in area of effect, generates spaces in area of effect that reduce damage taken by 10% and raise damage dealt by 10% for 3 turns for allies on those spaces only</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Dropping Inn*<br><div class="jap">宿屋落とし</div></td>
+                <td>121</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>2-4</td>
+                <td>Deals major martial damage to all enemies in area of effect, often puts to sleep</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td><img src="../images/AttackType/SGreenMartial.png"></td>
+                <td>Innjoy Your Stay!*<br><div class="jap">宿屋開店！</div></td>
+                <td>138</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/RhombusLAoE.png"><br>Rhombus (L) (incl. self)</td>
+                <td>Heals a major amount of HP and restores a major amount of MP for all allies in area of effect<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Daughter of the Inncredible Inntertainer*<br><div class="jap">宿王の娘</div></td>
+                <td>Battle start:<br>Reduces damage taken by 20%, raises Physical, Spell, Martial, and Breath Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Helpful Erinn</td>
+                <td>When an ally (incl. self) is attacked by enemy:<br>Helpful Erinn heals them if ally is within 1 to 3-space range (incl. self)<br><div class="attackdesc">(Helpful Erinn: Heals a minor amount of HP for 1 ally)</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Dropping Inn* potency +2%</td>
+                <td>Raises Dropping Inn* potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Innjoy Your Stay!* potency +2%</td>
+                <td>Raises Innjoy Your Stay!* potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Royal Suite's Blessing*<br><div class="jap">ロイヤルルームの加護</div></td>
+                <td>Action start on odd turns until turn 10:<br>Heals 15% of max HP, restores 8% of max MP, raises martial potency/recovery for 3 turns, and triggers Royal Suite*<br><div class="attackdesc">(Royal Suite*: Generates spaces in large rhombus area of effect that reduce damage taken by 10% and raise damage dealt by 10% for 3 turns for allies on those spaces only)</div></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Good Night's Sleep*<br><div class="jap">快眠リフレッシュ</div></td>
+                <td>Action start on odd turns until turn 5:<br>Removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Dropping Inn* potency +5%</td>
+                <td>Raises Dropping Inn* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Innjoy Your Stay!* potency +5%</td>
+                <td>Raises Innjoy Your Stay!* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
