@@ -85,8 +85,17 @@
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
-
-    <div id="statfilter">
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/SupportType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/BangType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -96,6 +105,24 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
     </div>
     <div class="unofficial">
         <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
@@ -162,6 +189,15 @@
                 <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
                 <td>Deals major martial damage (235 base potency) to 1 enemy 2 times<br>This attack cannot be redirected by abilities or perks such as Cover or Selflessness<br>Turns needed: 2 turns (Times usable: 2)</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Burst Pellet Shot*<br><div class="jap">バーストショット弾</div></td>
+                <td>107</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front6.png"><br>Front</td>
+                <td>Deals major martial damage (274 base potency) to all enemies in area of effect, occasionally stuns</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -205,7 +241,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="fintable">
+    <table>
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -234,13 +270,23 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Bang-type potency +5%</td>
+                <td>Bang-type Potency +5%</td>
                 <td>Raises Bang-type potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
             </tr>
             <tr>
                 <td>3, 5</td>
                 <td>Dragon Attack: Snipe Shot* potency +5%</td>
                 <td>Raises Dragon Attack: Snipe Shot* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Burst Pellet Shot* potency +5%</td>
+                <td>Raises Burst Pellet Shot* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -259,5 +305,143 @@
             </tr>
         </tbody>
     </table>
+    <!-- Table showing all learnable talent blossoming skills -->
+<table class="fintable">
+    <thead>
+        <tr>
+            <th colspan="2" class="bigheader">Talent Blossom</th>
+        </tr>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Burst Pellet Shot*<br><div class="jap">バーストショット弾</div></td>
+            <td>Deals major martial damage (274 base potency) to all enemies in area of effect, occasionally stuns</td>
+        </tr>
+        <tr>
+            <td>Porcus's Swiftness*<br><div class="jap">トンブーダッシュ</div></td>
+            <td>Battle start:<br>Raises AGL, evasion rate, and Spell Res for 3 turns</td>
+        </tr>
+        <tr>
+            <td>Treasure Hunter's Secret Elixir*<br><div class="jap">トレジャーハンターの秘伝薬</div></td>
+            <td>Removes some status ailments when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally<br><br>Heals a major amount of HP when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+        </tr>
+        <tr>
+            <td>(HP +50) x2</td>
+            <td>Raises max HP by 50</td>
+        </tr>
+        <tr class="grey">
+            <td>(HP +25) x2</td>
+            <td>Raises max HP by 25</td>
+        </tr>
+        <tr class="grey">
+            <td>(MP +15) x2</td>
+            <td>Raises max MP by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>ATK +15</td>
+            <td>Raises max ATK by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>DEF +25</td>
+            <td>Raises max DEF by 25</td>
+        </tr>
+        <tr class="grey">
+            <td>AGL +15</td>
+            <td>Raises max AGL by 15</td>
+        </tr>
+        <tr class="grey">
+            <td>WIS +15</td>
+            <td>Raises max WIS by 15</td>
+        </tr>
+        <tr>
+            <td>(Bang-type Martial Potency +1.5%) x2</td>
+            <td>Raises Bang-type martial potency by 1.5%</td>
+        </tr>
+        <tr>
+            <td>(Bang-type Martial Brilliant +1.5%) x2</td>
+            <td>Raises Bang-type martial brilliant by 1.5%</td>
+        </tr>
+        <tr>
+            <td>Bang-type Martial MP Cost -10%</td>
+            <td>Lowers Bang-type martial MP cost by 10%</td>
+        </tr>
+        <tr>
+            <td>(Martial Potency +1%) x2</td>
+            <td>Raises martial potency by 1%</td>
+        </tr>
+        <tr>
+            <td>(Martial Brilliant +1%) x2</td>
+            <td>Raises martial brilliant by 1%</td>
+        </tr>
+        <tr>
+            <td>Martial MP Cost -5%</td>
+            <td>Lowers martial MP cost by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>All Damage Down 1%</td>
+            <td>Reduces all damage taken by 1%</td>
+        </tr>
+        <tr class="grey">
+            <td>Woosh Res +5%</td>
+            <td>Raises Woosh Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Woosh-type Physical Res +5%</td>
+            <td>Raises Woosh-type Physical Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Woosh-type Martial Res +5%</td>
+            <td>Raises Woosh-type Martial Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Woosh-type Spell Res +5%</td>
+            <td>Raises Woosh-type Spell Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Woosh-type Breath Res +5%</td>
+            <td>Raises Woosh-type Breath Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Zap Res +5%</td>
+            <td>Raises Zap Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Zap-type Physical Res +5%</td>
+            <td>Raises Zap-type Physical Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Zap-type Martial Res +5%</td>
+            <td>Raises Zap-type Martial Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Zap-type Spell Res +5%</td>
+            <td>Raises Zap-type Spell Res by 5%</td>
+        </tr>
+        <tr class="grey">
+            <td>Zap-type Breath Res +5%</td>
+            <td>Raises Zap-type Breath Res by 5%</td>
+        </tr>
+        <tr>
+            <td>(Sleep Res +5%) x2</td>
+            <td>Raises Sleep Res by 5%</td>
+        </tr>
+        <tr>
+            <td>(Poison Res +5%) x2</td>
+            <td>Raises Poison Res by 5%</td>
+        </tr>
+        <tr>
+            <td>Martial Lock Res +5%</td>
+            <td>Raises Martial Lock Res by 5%</td>
+        </tr>
+        <tr>
+            <td>Confusion Res +5%</td>
+            <td>Raises Confusion Res by 5%</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>

@@ -74,6 +74,23 @@ img{
     height: 80px;
 }
 
+.master{
+    width: 82px;
+    height: 35px;
+    position: relative;
+    bottom: 51px;
+    right: 10px;
+    margin-bottom: -50px;
+}
+
+.master2{
+    width: 82px;
+    height: 35px;
+    display: block;
+    margin: auto;
+    margin-right: 55%;
+}
+
 #filter{
     padding: 10px; 
     background-color: darkslateblue;
