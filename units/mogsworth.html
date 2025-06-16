@@ -85,7 +85,16 @@
             <td><img src="../images/Status/Stun.png"></td>
         </tr>
     </table>
-
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyBeast.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
     <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
@@ -95,6 +104,19 @@
             <option value="3">Awakening 3</option>
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
         </select>
     </div>
     <div class="unofficial">
@@ -106,14 +128,14 @@
             <tr>
                 <th colspan="7" class="bigheader">Abilities</th>
             </tr>
-            <tr>
+                        <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
                 <th scope="col" style="min-width:100px">Name</th>
                 <th scope="col">MP</th>
                 <th scope="col">Element</th>
-                <th scope="col">Range</th>
-                <th scope="col" style="min-width:400px">Description</th>                
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
             </tr>
         </thead>
         <tbody>
@@ -147,15 +169,15 @@
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
-    <table>
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Base Perks</th>
             </tr>
             <tr>
-                <th scope="col">Level</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th> 
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
             </tr>
         </thead>
         <tbody>
@@ -182,15 +204,15 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="fintable">
+    <table class="scroll fintable">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
             </tr>
             <tr>
                 <th scope="col">Awakening</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th> 
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
             </tr>
         </thead>
         <tbody>

@@ -281,3 +281,328 @@ img[src*="Buffs"]{
     position: relative;
     top: 5px;
 }
+
+@media screen and (max-width: 810px) {
+    a[href*="abilitylist"]{
+        display: none;
+    }
+
+    a[href*="perklist"]{
+        display: none;
+    }
+
+    a[href*="statuschanges"]{
+        display: none;
+    }
+
+    .border{
+        background-color: rgb(244, 242, 253);
+        padding: 12px;
+        width:60px;
+        height: 76px;
+        border-radius: 4px;
+    }
+
+    .percent{    
+        background-color: rgb(244, 242, 253);
+        padding: 12px;
+        width:62px;
+        border-radius: 5px;
+        font-size: 0.84em;
+    }
+
+    #largegroup{
+        text-align: center;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #largegroup img{
+        width: 55px;
+        height: 69px;
+        padding: 10px;
+    }
+
+    #largegroup .percent{
+        background-color: rgb(244, 242, 253);
+        padding: 10px;
+        width: 57px;
+        border-radius: 4px;
+        font-size: 0.84em;
+    }
+
+    #largergroup{
+        text-align: center;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #largergroup img{
+        width: 43px;
+        height: 54px;
+        padding: 8px;
+    }
+
+    #largergroup .percent{
+        background-color: rgb(244, 242, 253);
+        padding: 8px;
+        width: 44px;
+        border-radius: 3px;
+        font-size: 0.63em;
+    }
+
+    /* h2{
+        background-color: rgb(244, 242, 253);
+        text-align: center;
+        width: 170px;
+        height: 89px;
+        font-size: 18px;
+        padding: 6px;
+        border-radius: 4px;
+        margin-left: calc(50% - 137px);
+        position: relative;
+        bottom: 369px;
+    } */
+    
+    .large{
+        font-size: 30px;
+    }  
+    
+    img[src*="Element"]{
+        width: 33px;
+    }
+    
+    img[src*="Status"]{
+        width: 33px;
+    }
+
+    img[src*="Rank"]{
+        width: 24px;
+    }
+
+    img[src*="AttackType"]{
+        width: 64px;
+    }
+
+    img[src*="AttackRange"]{
+        width: 48px;
+    }
+
+    img.metal{
+        width: 21px !important;
+    }
+    
+    img.heavymetal{
+        width: 18px !important;
+    }
+
+    table{
+        background-color: rgb(166, 160, 194);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 93%;
+        font-size: 14px;
+    }
+
+    .equaltable{
+        table-layout: fixed;
+        width: 93%;
+    }
+
+    .unofficial{
+        color: rgb(244, 242, 253);
+        text-align: center;
+        display: block;
+        position: relative;
+        top: 90px;
+        font-size: 13px;
+        margin-bottom: -20px;
+    }
+    
+    .jap{
+        color: rgb(128, 166, 224);
+        font-size: 10px;
+    }
+
+    table.scroll{
+        table-layout: fixed;
+        max-width: 93%;
+        overflow-x: scroll;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    a[href*="abilitylist"]{
+        display: none;
+    }
+    
+    a[href*="perklist"]{
+        display: none;
+    }
+
+    a[href*="statuschanges"]{
+        display: none;
+    }
+
+    .flat{
+        font-size: 13px;
+    }  
+
+    .border{
+        background-color: rgb(244, 242, 253);
+        padding: 8px;
+        width:49px;
+        height: 63px;
+        border-radius: 4px;
+    }
+
+    .percent{    
+        background-color: rgb(244, 242, 253);
+        padding: 12px;
+        width:48px;
+        border-radius: 4px;
+        font-size: 0.65em;
+    }
+
+    #largegroup{
+        text-align: center;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #largegroup img{
+        width: 44px;
+        height: 57px;
+        padding: 7px;
+    }
+
+    #largegroup .percent{
+        background-color: rgb(244, 242, 253);
+        padding: 7px;
+        width: 45px;
+        border-radius: 3px;
+        font-size: 0.63em;
+    }
+
+    #largergroup{
+        text-align: center;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #largergroup img{
+        width: 35px;
+        height: 45px;
+        padding: 7px;
+    }
+
+    #largergroup .percent{
+        background-color: rgb(244, 242, 253);
+        padding: 7px;
+        width: 36px;
+        border-radius: 3px;
+        font-size: 0.52em;
+    }
+
+    /* h2{
+        background-color: rgb(244, 242, 253);
+        text-align: center;
+        width: 128px;
+        height: 67px;
+        font-size: 15px;
+        padding: 6px;
+        border-radius: 4px;
+        margin-left: calc(50% - 99px);
+        position: relative;
+        bottom: 305px;
+    } */
+
+    .large{
+        font-size: 20px;
+    }  
+    
+    .flat img[src*="Element"]{
+        width: 19px;
+    }
+    
+    img[src*="Status"]{
+        width: 19px;
+    }
+
+    img[src*="Rank"]{
+        width: 24px;
+    }
+
+    img[src*="AttackType"]{
+        width: 64px;
+    }
+
+    img[src*="AttackRange"]{
+        width: 48px;
+    }
+
+    img.metal{
+        width: 16px !important;
+    }
+    
+    .metal{
+        font-size: 12px;
+    } 
+
+    .metallarge{
+        font-size: 16px;
+    } 
+
+    img.heavymetal{
+        width: 13px !important;
+    }
+
+    #minimetal{
+        font-size: 10px;
+    }
+
+    .heavymetal{
+        font-size: 8px;
+    } 
+
+    table{
+        background-color: rgb(166, 160, 194);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 97%;
+        font-size: 14px;
+    }
+
+    .equaltable{
+        table-layout: fixed;
+        width: 97%;
+    }
+
+    .unofficial{
+        color: rgb(244, 242, 253);
+        text-align: center;
+        display: block;
+        position: relative;
+        top: 90px;
+        font-size: 13px;
+        margin-bottom: -20px;
+    }
+    
+    .jap{
+        color: rgb(128, 166, 224);
+        font-size: 10px;
+    }
+
+    table.scroll{
+        table-layout: fixed;
+        max-width: 97%;
+        overflow-x: scroll;
+        display: block;
+    }
+}

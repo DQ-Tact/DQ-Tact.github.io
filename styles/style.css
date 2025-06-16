@@ -275,3 +275,75 @@ a:hover{
     }
 
 }
+
+@media screen and (max-width: 510px) {
+
+    .switchpage{
+        color: rgb(241, 239, 255);
+        background-image: url(../images/Rank/TexturedButton.jpg);
+        background-size: cover;
+        background-color: slateblue;
+        box-shadow: 0 3px darkslateblue;
+        transform: translateY(2px);
+        font-size: 0.9em;
+        font-family: Merriweather, 'Times New Roman';
+        margin-left: 3px;
+        margin-bottom: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border: 1.5px solid darkslateblue;
+        border-radius: 3px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+        display: inline-block;
+    }
+
+    .currentpage{
+        color: rgb(241, 239, 255);
+        background-image: url(../images/Rank/TexturedButton.jpg);
+        background-size: cover;
+        background-color: slateblue;
+        font-family: Merriweather, 'Times New Roman';
+        width: 28px;
+        height: 28px;
+        font-size: 0.9em;
+        position: relative;
+        margin-left: 3px;
+        top: 3px;
+        padding: 3px;
+        border: 1.5px solid darkslateblue;
+        border-radius: 3px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+    }
+
+    #menu{
+        background-color: slateblue;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    table{
+        table-layout: fixed;
+        max-width: 100%;
+        overflow-x: scroll;
+        display: block;
+    }
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .buttons{
+        width: 24px;
+        height: 24px;
+    }
+
+    input[type=radio]:checked+img{
+        background: url(../images/Rank/WhiteGlow.png) no-repeat;
+        background-size: 24px;
+    }
+}
