@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/BangType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,14 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -163,6 +171,15 @@
                 <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
                 <td>Deals minor physical damage (110% potency) to 1 enemy 3 times</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Explosive Whip*<br><div class="jap">爆裂ウィップ</div></td>
+                <td>67</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major Bang-type physical damage (350% potency) to 1 enemy, cannot be redirected by Selflessness</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -201,7 +218,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -234,6 +251,11 @@
                 <td>Raises Serpent's Bite potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Explosive Whip* potency +5%</td>
+                <td>Raises Explosive Whip* potency by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Crack Res +25</td>
                 <td>Raises Crack resistance by 25</td>
@@ -247,6 +269,144 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Explosive Whip*<br><div class="jap">爆裂ウィップ</div></td>
+                <td>Deals major Bang-type physical damage (350% potency) to 1 enemy, cannot be redirected by Selflessness</td>
+            </tr>
+            <tr>
+                <td>Passionate Tango*<br><div class="jap">情熱のタンゴ</div></td>
+                <td>Battle start:<br>Raises physical and martial potency/recovery for 3 turns<br><br>Battle start:<br>If there are 4 or more Beast allies (incl. self) in the party:<br>Raises ATK and AGL for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Physical Teachings</td>
+                <td>Raises physical potency/recovery by 15%</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Physical Potency +1.5%) x2</td>
+                <td>Raises Bang-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Bang-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Bang-type Physical MP Cost -10%</td>
+                <td>Lowers Bang-type physical MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam Res +5%</td>
+                <td>Raises Zam Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Physical Res +5%</td>
+                <td>Raises Zam-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Martial Res +5%</td>
+                <td>Raises Zam-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Spell Res +5%</td>
+                <td>Raises Zam-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Breath Res +5%</td>
+                <td>Raises Zam-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Physical Lock Res +5%) x2</td>
+                <td>Raises Physical Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Bind Res +5%</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Stun Res +5%</td>
+                <td>Raises Stun Res by 5%</td>
             </tr>
         </tbody>
     </table>
