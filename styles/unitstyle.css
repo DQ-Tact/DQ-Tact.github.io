@@ -252,6 +252,19 @@ img[src*="Status"]{
     bottom: 465px;
 }
 
+#statfilterexawk{
+    text-align: center;
+    background-color: rgb(244, 242, 253);
+    width: 588px;
+    height: 29px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: calc(50% - 306px);
+    margin-bottom: -560px;
+    position: relative;
+    bottom: 465px;
+}
+
 #statfilterblossom{
     text-align: center;
     background-color: rgb(244, 242, 253);
@@ -328,6 +341,10 @@ img[src*="AttackType"]{
 
 img[src*="AttackRange"]{
     width: 70px;
+}
+
+img[src*="TalentBlossom"]{
+    width: 32px;
 }
 
 .toobig{
@@ -445,6 +462,12 @@ img[src*="AttackRange"]{
         font-size: 11px;
     }
 
+    select[class="formexawk"]{
+        width: 165px;
+        height: 18px;
+        font-size: 11px;
+    }
+
     input[type="radio"]{
         width: 10px;
         height: 10px;
@@ -464,12 +487,27 @@ img[src*="AttackRange"]{
         left: 69px;
         bottom: 365px;
     }
+
+    #statfilterexawk{
+        text-align: center;
+        background-color: rgb(244, 242, 253);
+        width: 444px;
+        height: 42px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-left: calc(50% - 306px);
+        margin-bottom: -460px;
+        position: relative;
+        left: 69px;
+        bottom: 365px;
+    }
     
     #statfilterblossom{
         text-align: center;
         background-color: rgb(244, 242, 253);
         width: 449px;
-        height: 45px;
+        height: 52px;
         padding: 6px;
         font-size: 12px;
         border-radius: 4px;
@@ -553,7 +591,7 @@ img[src*="AttackRange"]{
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 545px) {
     a[href*="index"]{
         display: none;
     }
@@ -679,6 +717,12 @@ img[src*="AttackRange"]{
         font-size: 11px;
     }
 
+        select[class="formexawk"]{
+        width: 165px;
+        height: 18px;
+        font-size: 11px;
+    }
+
     input[type="radio"]{
         width: 10px;
         height: 10px;
@@ -689,6 +733,21 @@ img[src*="AttackRange"]{
         background-color: rgb(244, 242, 253);
         width: 332px;
         height: 19px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-left: calc(50% - 306px);
+        margin-bottom: -415px;
+        position: relative;
+        left: 134px;
+        bottom: 323px;
+    }
+  
+    #statfilterexawk{
+        text-align: center;
+        background-color: rgb(244, 242, 253);
+        width: 332px;
+        height: 38px;
         padding: 8px;
         font-size: 12px;
         border-radius: 5px;

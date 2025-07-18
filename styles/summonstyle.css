@@ -404,7 +404,7 @@ img[src*="AttackRange"]{
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 545px) {
     a[href*="index"]{
         display: none;
     }

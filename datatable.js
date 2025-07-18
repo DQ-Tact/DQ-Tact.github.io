@@ -4,6 +4,7 @@ $(document).ready( function () {
           { orderable: false, targets: 1}  
           ,{ visible: false, targets: 13}
           ,{ visible: false, targets: 14}
+          ,{ visible: false, targets: 15}
         ],
         order: [[0, 'asc']],
         "pageLength": 25
@@ -30,6 +31,14 @@ $(document).ready( function () {
         $('#myTable').DataTable().columns(14).search("1").draw();
       } else {
         $('#myTable').DataTable().columns(14).search("").draw();
+      }
+    });
+
+    $('#ExAwakening').change(function() {
+      if ($(this).is(':checked')) {
+        $('#myTable').DataTable().columns(15).search("1").draw();
+      } else {
+        $('#myTable').DataTable().columns(15).search("").draw();
       }
     });
 } );

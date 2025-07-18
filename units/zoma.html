@@ -105,7 +105,21 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
-        <label class="filterheader">and at: </label>
+        <label class="filterheader">, </label>
+        <select class="formexawk">
+            <option value="0" selected="selected">Extreme Awakening Rank 0</option>
+            <option value="1">Extreme Awakening Rank 1</option>
+            <option value="2">Extreme Awakening Rank 2</option>
+            <option value="3">Extreme Awakening Rank 3</option>
+            <option value="4">Extreme Awakening Rank 4</option>
+            <option value="5">Extreme Awakening Rank 5</option>
+            <option value="6">Extreme Awakening Rank 6</option>
+            <option value="7">Extreme Awakening Rank 7</option>
+            <option value="8">Extreme Awakening Rank 8</option>
+            <option value="9">Extreme Awakening Rank 9</option>
+            <option value="10">Extreme Awakening Rank 10</option>
+        </select>
+        <label class="filterheader">, and </label>
         <select class="formelement">
             <option value="0" selected="selected">Elemental Rank 0</option>
             <option value="1">Elemental Rank 1</option>
@@ -123,6 +137,9 @@
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -270,6 +287,71 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all extreme awakening perks -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Extreme Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening Rank</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Glacial Doom potency +30%</td>
+                <td>Raises Glacial Doom potency by 30%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ruler of Darkness*<br><div class="jap">闇の支配者</div></td>
+                <td>Action start on odd turns until turn 10:<br>Raises DEF, AGL, and Move for 3 turns, removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Psycho Requiem potency +30%</td>
+                <td>Raises Psycho Requiem potency by 30%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Pitch Dark Robes (Lv. 2)</td>
+                <td>Enhances Dark Robes to Pitch Dark Robes<br>Pitch Dark Robes reduces damage taken at start of battle by 50% for 10 turns</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Zoma's Master Badge*<br><div class="jap">ゾーマのマスターバッジ</div></td>
+                <td>Raises ??? spell potency by 2%<br><div class="attackdesc">This perk will also affect units who have not undergone Extreme Awakening</div></td>
             </tr>
         </tbody>
     </table>
