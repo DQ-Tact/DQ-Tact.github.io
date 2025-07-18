@@ -213,6 +213,10 @@ img[src*="Status"]{
     width: 44px;
 }
 
+/* select[class="formexawk"]{
+    width: 180px;
+} */
+
 .unofficial{
     color: rgb(244, 242, 253);
     text-align: center;
@@ -255,11 +259,11 @@ img[src*="Status"]{
 #statfilterexawk{
     text-align: center;
     background-color: rgb(244, 242, 253);
-    width: 588px;
+    width: 608px;
     height: 29px;
     padding: 8px;
     border-radius: 5px;
-    margin-left: calc(50% - 306px);
+    margin-left: calc(50% - 316px);
     margin-bottom: -560px;
     position: relative;
     bottom: 465px;
