@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/mudmannequin.js"></script>
+    <script src="../unitscripts/flamethrower.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Mud Mannequin</title>
+    <title>Flamethrower</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Mud Mannequin</h1>
+    <h1>Flamethrower</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/MudMannequin.png" class="border">
+    <img src="../images/Flamethrower.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
@@ -66,23 +66,23 @@
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/Bind.png"></td> 
-            <td><img src="../images/Status/Confusion.png"></td>   
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Sizz.png"></td>
-            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Woosh.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/MrtlLock.png"></td> 
-            <td><img src="../images/Status/Paralysis.png"></td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/MrtlLock.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Poison.png"></td>
+            <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
     <table class="flat" id="details">
@@ -90,9 +90,9 @@
             <th>Family:</th>
             <td><img class="metal" src="../images/Family/FamilyInorganic.png"></td>
             <th>Role:</th>
-            <td><img class="metal" src="../images/Role/MagicType.png"></td>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
             <th>Element:</th>
-            <td><img class="metal" src="../images/Role/ZapType.png"></td>
+            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
         </tr>
     </table>
     <div id="statfilter">
@@ -125,7 +125,7 @@
             <tr>
                 <th colspan="7" class="bigheader">Abilities</th>
             </tr>
-                        <tr>
+            <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
                 <th scope="col" style="min-width:100px">Name</th>
@@ -138,21 +138,21 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/CRedSpell.png"></td>
-                <td>Zap</td>
-                <td>4</td>
-                <td><img src="../images/Element/Zap.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>3</td>
-                <td>Deals minor Zap-type spell damage to 1 enemy</td>
+                <td><img src="../images/AttackType/CBlueBreath.png"></td>
+                <td>Burning Breath</td>
+                <td>11</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Occasionally paralyses all enemies in area of effect</td>
             </tr>
             <tr>
-                <td>16</td>
-                <td><img src="../images/AttackType/BBlueSpell.png"></td>
-                <td>Kasap</td>
-                <td>14</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>3</td>
-                <td>Occasionally lowers the DEF of all enemies in area of effect for 3 turns</td>
+                <td>18</td>
+                <td><img src="../images/AttackType/BRedBreath.png"></td>
+                <td>Searing Breath</td>
+                <td>27</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Deals moderate Frizz-type breath damage (44 base potency) to all enemies in area of effect</td>
             </tr>
         </tbody>
     </table>
@@ -171,13 +171,13 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Max MP +3</td>
-                <td>Raises max MP by 3</td>
+                <td>AGL +5</td>
+                <td>Raises max AGL by 5</td>
             </tr>
             <tr>
                 <td>85, 95, 105, 115</td>
-                <td>Zap potency +2%</td>
-                <td>Raises Zap potency by 2%</td>
+                <td>Searing Breath potency +2%</td>
+                <td>Raises Searing Breath potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -196,23 +196,23 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Zap-type Spell Potency +5%</td>
-                <td>Raises Zap-type spell potency by 5%</td>
+                <td>Frizz-type Breath Potency +5%</td>
+                <td>Raises Frizz-type breath potency by 5%</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Sizz Res +25</td>
-                <td>Raises Sizz resistance by 25</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Zap potency +5%</td>
-                <td>Raises Zap potency by 5%</td>
+                <td>Searing Breath potency +5%</td>
+                <td>Raises Searing Breath potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Crack Res +25</td>
-                <td>Raises Crack resistance by 25</td>
+                <td>Woosh Res +25</td>
+                <td>Raises Woosh resistance by 25</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
