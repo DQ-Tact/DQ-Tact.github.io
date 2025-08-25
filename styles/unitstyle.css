@@ -98,6 +98,24 @@ table{
     width: 88%;
 }
 
+.supreme{
+   background-color: rgb(196, 187, 232);
+}
+
+.supremeheader{
+   background-color: rgb(113, 87, 169);
+   color: rgb(247, 250, 235);
+}
+
+.supremetable{
+   background-color: rgb(131, 125, 157);
+}
+
+.supremejap{
+    color: rgb(113, 87, 169);
+    font-size: 12px;
+}
+
 thead{
     background-color: rgb(196, 187, 232);
     height: 4em; 

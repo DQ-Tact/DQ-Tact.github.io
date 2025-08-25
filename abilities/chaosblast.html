@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/abilitystyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Chaos Blast*</title>
+</head>
+<body>
+    <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Chaos Blast*</h1>
+    <a class="return" href="../abilitylist.html">Return to Ability List</a>
+        
+    <table class="scroll fintable">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Ability</th>
+            </tr>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:50px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../images/AttackType/ABlueBreath.png"></td>
+                <td>Chaos Blast*<br><div class="jap">カオスブラスト</div></td>
+                <td>147</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
+                <td>Deals major Bang-type breath damage (406 base potency) to all enemies in area of effect, often confuses and often raises damage taken for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="4" class="bigheader">Details</th>
+            </tr>
+            <tr>
+                <th scope="col">No. of Attacks</th>
+                <th scope="col">Base Potency</th>
+                <th scope="col" style="min-width:200px">Damage Calc.</th> 
+                <th scope="col" style="min-width:300px">Secondary Effect Chance</th>             
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td> 406 </td>
+                <td>[1 + (User's Level/91)] x Base Potency</td>
+                <td>60%:<br><div class="extra">Confuses enemy <img src="../images/Status/Confusion.png"></div><br>60%:<br><div class="extra">Damage dealt to enemy increased <img src="../images/Buffs/DMGTaken.png"> +1 (3 turns)</div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Units with this ability:</h3>
+    <div class="group">
+       <a href="../units/zomaarchfiend.html"><img src="../images/ZomaArchfiend.png" class="border"></a>
+    </div>
+</body>
+</html>
