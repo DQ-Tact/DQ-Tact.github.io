@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for mainpage -->
+<link rel="stylesheet" href="./styles/equipstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Datatable information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="./equipmenttable.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <title>DQT Equipment List</title>
+</head>
+
+<body>
+  <h1>Equipment List</h1>
+  <div id="menu">
+    <a href="./abilitylist.html" class="switchpage">Unit List</a>
+    <a href="./abilitylist.html" class="switchpage">Ability List</a>
+    <a href="./perklist.html" class="switchpage">Perk List</a>
+    <a href="./statuschanges.html" class="switchpage">Status Changes List</a>
+    <a class="currentpage">Equipment List</a>
+  </div>
+  
+  <div id="filter">
+    <label class="form">Filters:</label>
+    <form name="formrank">
+      <label class="filterheader">Rank:</label>
+      <label>
+        <input type="radio" name="rank" value="6">
+        <img class="buttons" title="S" src="./images/Rank/RankS.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="5">
+        <img class="buttons" title="A" src="./images/Rank/RankA.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="4">
+        <img class="buttons" title="B" src="./images/Rank/RankB.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="3">
+        <img class="buttons" title="C" src="./images/Rank/RankC.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value="2">
+        <img class="buttons" title="D" src="./images/Rank/RankD.png">
+      </label>
+      <label>
+        <input type="radio" name="rank" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+
+    <form name="formslot">
+      <label class="filterheader">Equip. Slot:</label>
+      <label>
+        <input type="radio" name="slot" value="0">
+        <img class="buttons" title="Weapon" src="./images/Equipment/Filters/ShadowWeapon.png">
+      </label>
+      <label>
+        <input type="radio" name="slot" value="1">
+        <img class="buttons" title="Armour" src="./images/Equipment/Filters/ShadowArmour.png">
+      </label>
+      <label>
+        <input type="radio" name="slot" value="2">
+        <img class="buttons" title="Accessory" src="./images/Equipment/Filters/ShadowAccessory.png">
+      <label>
+        <input type="radio" name="slot" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+
+    <form name="formtype">
+      <label class="filterheader">Type:</label>
+      <label>
+        <input type="radio" name="type" value="0">
+        <img class="buttons" title="Swords" src="./images/Equipment/Filters/White/AlchemySword.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="1">
+        <img class="buttons" title="Daggers" src="./images/Equipment/Filters/White/AlchemyDagger.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="2">
+        <img class="buttons" title="Axes" src="./images/Equipment/Filters/White/AlchemyAxe.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="3">
+        <img class="buttons" title="Claws" src="./images/Equipment/Filters/White/AlchemyClaw.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="4">
+        <img class="buttons" title="Staffs" src="./images/Equipment/Filters/White/AlchemyWand.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="5">
+        <img class="buttons" title="Other Weapons" src="./images/Equipment/Filters/White/AlchemyOther_Weapon.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="6">
+        <img class="buttons" title="Helmets" src="./images/Equipment/Filters/White/AlchemyHelmet.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="7">
+        <img class="buttons" title="Hats" src="./images/Equipment/Filters/White/AlchemyHat.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="8">
+        <img class="buttons" title="Armour" src="./images/Equipment/Filters/White/AlchemyArmour.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="9">
+        <img class="buttons" title="Clothes" src="./images/Equipment/Filters/White/AlchemyClothes.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="!">
+        <img class="buttons" title="Shields" src="./images/Equipment/Filters/White/AlchemyShield.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value="£">
+        <img class="buttons" title="Other Armour" src="./images/Equipment/Filters/White/AlchemyOther_Armour.png">
+      </label>
+      <label>
+        <input type="radio" name="type" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label> 
+    </form>
+  </div>
+
+  <p>Note: Anything denoted with an * is using an unofficial translation</div></p>
+
+  <table id="myTable" class="display">
+    <thead>
+      <tr>
+<!-- Table headers: Icon column cannot be sorted, whiel FilterTB and FilterCB are hidden from view -->
+        <th scope="col" style="min-width:70px;">Name</th>
+        <th scope="col">Icon <!--(put group here)--></th>
+        <th scope="col">Rarity</th>
+        <th scope="col">Type</th>
+        <th scope="col" style="min-width:40px;">Stats</th>
+        <th scope="col">Special Effect</th>
+        <th scope="col">Roles</th>
+        <th scope="col">Alchemy Effect 1</th>
+        <th scope="col">Alchemy Effect 2</th>
+        <th scope="col">Alchemy Effect 3</th>
+        <th scope="col">Where Obtained</th>
+        <th scope="col">Main Unit</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Copper Sword<br><div class="jap">どうのつるぎ</div></td>
+          <td><img src="./images/Equipment/CopperSword.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
+          <td>HP +9<br><br>ATK +3</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +14</td>
+          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +4</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +3</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Bronze Sword<br><div class="jap">せいどうのつるぎ</div></td>
+          <td><img src="./images/Equipment/BronzeSword.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
+          <td>HP +14<br><br>ATK +4</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/BreathPotency.png"><br>Breath Brilliant +2%<br><div class="jap">息ばつぐん +2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +23</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Fire Blade<br><div class="jap">ほのおのつるぎ</div></td>
+          <td><img src="./images/Equipment/FireBlade.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
+          <td>HP +36<br><br>ATK +11</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency2.png"><br>Frizz-type Physical Potency +4%</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Physical Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Breath Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +51</td>
+          <td>DQ I Event</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Demon King Axe<br><div class="jap">天魔のオノ</div></td>
+          <td><img src="./images/Equipment/DemonKingAxe.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +28</td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Potency +5%<br><div class="jap">ドルマ属性物理威力 +5%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Potency +4%<br><div class="jap">ドルマ属性物理威力 +4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Brilliant +5%<br><div class="jap">ドルマ属性物理ばつぐん +5%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Ominous Impact Potency +6%<br><div class="jap">おぞましい衝撃威力 +6%</div></td>
+          <td>DQ VII Event</td>
+          <td><a href="./units/demonkingorgodemir.html"><img src="./images/DKOrgodemir.png" class="icon"></a><span style="display:none;">Demon King Orgodemir</span></td>
+        </tr>
+        <tr>
+          <td>Dragon Shield<br><div class="jap">ドラゴンシールド</div></td>
+          <td><img src="./images/Equipment/DragonShield.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyShield.png"><span style="display:none;">!</span></td>
+          <td>DEF +12</td>
+          <td><img src="./images/Equipment/Alchemy/SpellRes2.png"><br>Dragon Spell Res +3%</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/SpellRes.png"><br>Dragon Spell Res +2%</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Spell Res +4%</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Res +3%</td>
+          <td>Dragon Fest</td>
+          <td><img src="./images/Family/FamilyDragon.png"> Only</td>
+        </tr>
+        <tr>
+          <td>Steel Shield<br><div class="jap">はがねのたて</div></td>
+          <td><img src="./images/Equipment/IronShield.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyShield.png"><span style="display:none;">!</span></td>
+          <td>DEF +9</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/WooshRes.png"><br>Woosh-type Spell Res +3%</td>
+          <td><img src="./images/Equipment/Alchemy/SpellRes.png"><br>Spell Res +1%</td>
+          <td><img src="./images/Equipment/Alchemy/WooshRes.png"><br>Woosh-type Res +1%</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Oaken Club<br><div class="jap">こんぼう</div></td>
+          <td><img src="./images/Equipment/OakenClub.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +6</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +5</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +11</td>
+          <td><img src="./images/Equipment/Alchemy/MP2.png"><br>MP +3</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Iron Club<br><div class="jap">てつのかなぼう</div></td>
+          <td><img src="./images/Equipment/IronClub.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +8</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical Brilliant +2%</td>
+          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +6</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Silver Claws<br><div class="jap">シルバークロー</div></td>
+          <td><img src="./images/Equipment/SilverClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td>ATK +8<br><br>AGL +13</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/MartialPotency.png"><br>Martial Brilliant +2%</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +8</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +7</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Kestrel Claws<br><div class="jap">オオワシのツメ</div></td>
+          <td><img src="./images/Equipment/KestrelClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td>ATK +11<br><br>AGL +17</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency2.png"><br>Woosh-type Potency +2%</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Breath Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Martial Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +14</td>
+          <td>Base Game</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Mr Euston's Conductor Cap*<br><div class="jap">トマソンの車掌帽</div></td>
+          <td><img src="./images/Equipment/EustonCap.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Shambles's Hat*<br><div class="jap">ベニーシャハット</div></td>
+          <td><img src="./images/Equipment/ShamblesHat.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Lin's Hat*<br><div class="jap">リィンのぼうし</div></td>
+          <td><img src="./images/Equipment/LinsHat.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Bronze Claws<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/BronzeClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Copper Claws<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/CopperClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Dragon Scale<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/DragonScale.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Goddess's Crystal Ball*<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/GoddessCrystalBall.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><a href="./units/rubiss.html"><img src="./images/Rubiss.png" class="icon"></a><span style="display:none;">Rubiss</span></td>
+        </tr>
+        <tr>
+          <td>Heavenly Helm<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/HeavenlyHelm.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Helm of Sebath<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/HelmofSebath.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Horde Helm<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/HordeHelm.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Iron Axe<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/IronAxe.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Iron Mask<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/IronMask.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Large Vernier Unit<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/LargeVernierUnit.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pirate's Pistol*<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/PiratePistol.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><a href="./units/pirateslime.html"><img src="./images/PirateSlime.png" class="icon"></a><span style="display:none;">Pirate Slime</span></td>
+        </tr>
+        <tr>
+          <td>Ring of Clarity<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/RingofClarity.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Safety Goggles<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/SafetyGoggles.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Silver Rapier<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/SilverRapier.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Silver Shield<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/SilverShield.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Slime Fan*<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/SlimeFan.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Sword of Kings<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/SwordofKings.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Thundara Materia<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/ThundaraMateria.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td></td>
+          <td><img src="./images/AttackType/BRedSpell.png"><br><a href="./abilities/thundermateria.html">Thundara Materia</a><br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Tough Guy Tatoo<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/ToughGuyTatoo.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+   <!-- <tr>
+          <td><br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Rank/"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>-</td>
+          <td>-</td>
+        </tr> -->
