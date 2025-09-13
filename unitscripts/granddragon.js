@@ -35,10 +35,10 @@ $(".formelement").on("change", function() {
 });
 $("#TalentBlossom").change(function() {
     if ($(this).is(":checked")) {
-        FullTalent2 = true;
+        FullTalent = true;
         applyStats();
     } else {
-        FullTalent2 = false;
+        FullTalent = false;
         applyStats();
     }
 });
