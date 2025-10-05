@@ -107,7 +107,7 @@
             <td><img class="metal" src="../images/Role/ZapType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -130,6 +130,14 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -175,6 +183,15 @@
                 <td><img src="../images/AttackRange/FrontPlusFar.png"><br>Front</td>
                 <td>Deals major spell damage to all enemies in area of effect</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>Gold Spark*<br><div class="jap">ゴールドスパーク</div></td>
+                <td>117</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major Zap-type spell damage to 1 enemy, lowers Slime Res for 3 turns</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -213,7 +230,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -241,9 +258,124 @@
                 <td>Raises Gold Cannon potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Gold Spark* potency +5%</td>
+                <td>Raises Gold Spark* potency by 5%</td>
+            </tr>
+            <tr>
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gold Spark*<br><div class="jap">ゴールドスパーク</div></td>
+                <td>Deals major Zap-type spell damage to 1 enemy, lowers Slime Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Golden Healing*<br><div class="jap">黄金のいやし</div></td>
+                <td>When any Slime ally (incl. self) is attacked by enemy:<br>Golden Healing* heals them if Slime ally is within 1 to 3-space range (incl. self), up to 3 times per battle<br><div class="attackdesc">(Golden Healing*: Heals a major amount of HP for 1 ally)</div></td>
+            </tr>
+            <tr>
+                <td>Gemstone Body*<br><div class="jap">ゴールデンボディ</div></td>
+                <td>Reduces damage taken by 15%<br><br>If there are 3 or more Slime allies (incl. self) in the party:<br>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr>
+                <td>WIS +40</td>
+                <td>Raises max WIS by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Zap-type Spell Potency +1.5%) x2</td>
+                <td>Raises Zap-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Zap-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Zap-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Zap-type Spell MP Cost -10%</td>
+                <td>Lowers Zap-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Healing Spell Recovery +1.5%) x2</td>
+                <td>Raises healing spell recovery by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Spell Brilliant +1%) x2</td>
+                <td>Raises spell brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Spell MP Cost -5%</td>
+                <td>Lowers spell MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zam Res +2.5%) x2</td>
+                <td>Raises Zam Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zam-type Physical Res +2.5%) x2</td>
+                <td>Raises Zam-type Physical Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zam-type Martial Res +2.5%) x2</td>
+                <td>Raises Zam-type Martial Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zam-type Spell Res +2.5%) x2</td>
+                <td>Raises Zam-type Spell Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zam-type Breath Res +2.5%) x2</td>
+                <td>Raises Zam-type Breath Res by 2.5%</td>
+            </tr>
+            <tr>
+                <td>(Charm Res +2.5%) x6</td>
+                <td>Raises Charm Res by 2.5%</td>
             </tr>
         </tbody>
     </table>
