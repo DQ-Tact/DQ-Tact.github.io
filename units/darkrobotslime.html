@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/darkrobotslime.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Dark Robot Slime</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Dark Robot Slime</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/DarkRobotSlime.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Slime ATK +20%</h2>
+    <table class="flat" id="weakres">
+        <tr id="minimetal" class="metal">
+            <th scope="row">Weaknesses:</th>
+            <td class="heavymetal">None</td>
+            <td>/</td>
+            <td><img class="metal" src="../images/Status/Charm.png"></td>  
+        </tr>
+        <tr id="minimetal" class="metal">
+            <th scope="row">Resistances:</th>
+            <td><img class="heavymetal" src="../images/Element/Frizz.png"></td>
+            <td><img class="heavymetal" src="../images/Element/Sizz.png"></td>
+            <td><img class="heavymetal" src="../images/Element/Crack.png"></td>
+            <td><img class="heavymetal" src="../images/Element/Woosh.png"></td>
+            <td><img class="heavymetal" src="../images/Element/Bang.png"></td>
+            <td><img class="heavymetal" src="../images/Element/Zap.png"></td>
+            <td><img class="heavymetal" src="../images/Element/Zam.png"></td>
+        </tr>
+        <tr id="minimetal" class="metal">
+            <th scope="row" rowspan="2">Resistances:</th>
+            <td><img class="heavymetal" src="../images/Status/Sleep.png"></td>
+            <td><img class="heavymetal" src="../images/Status/Poison.png"></td>
+            <td><img class="heavymetal" src="../images/Status/PhysLock.png"></td>
+            <td><img class="heavymetal" src="../images/Status/SpellLock.png"></td>
+            <td><img class="heavymetal" src="../images/Status/MrtlLock.png"></td>
+            <td><img class="heavymetal" src="../images/Status/BrthLock.png"></td>
+        </tr>
+        <tr id="minimetal" class="metal">
+            <td><img class="heavymetal" src="../images/Status/Bind.png"></td>
+            <td><img class="heavymetal" src="../images/Status/Stun.png"></td>
+            <td><img class="heavymetal" src="../images/Status/Blind.png"></td>
+            <td><img class="heavymetal" src="../images/Status/Curse.png"></td>
+            <td><img class="heavymetal" src="../images/Status/Paralysis.png"></td>
+            <td><img class="heavymetal" src="../images/Status/Confusion.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilySlime.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/SizzType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+                Include max HP increase from awakening 5 Perk (+50 HP) <input type="checkbox" name="family" id="TalentBlossom2" value="1"><label for="checkbox"></label>
+            </label>
+        </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Bodyguard*<br><div class="jap">ボディガード</div></td>
+                <td>28</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
+                <td>Take attacks for selected ally for 1 turn<br><div class="attackdesc">(Note: ally does not need to remain within 1 to 2-space range after Bodyguard* has been used)</div></td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ABlueBreath.png"></td>
+                <td>Dark Robot Burner*<br><div class="jap">ダークロボバーナー</div></td>
+                <td>99</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major Sizz-type breath damage (189 base potency) to 1 enemy 2 times, often lowers Slime Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Black Automatonic Knuckle*<br><div class="jap">黒鉄魔神ナックル</div></td>
+                <td>102</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
+                <td>Deals minor physical damage (125% potency) to all enemies in area of effect, always results in a critical hit</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Metal Body</td>
+                <td>Reduces damage taken by 30% and raises ability MP cost by 20%</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dark Robot Slime Formation Complete!*<br><div class="jap">合体完了！スライダークロボ</div></td>
+                <td>If there are 4 or more Slime allies (incl. self) in the party:<br>Raises Charm Res by 150%<br><br>Battle start:<br>Raises ATK, DEF, and breath potency/recovery for 3 turns<br>If there are 3 or more Slime allies (incl. self) in the party:<br>Raises AGL for 3 turns</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Black Automatonic Knuckle* potency +2%</td>
+                <td>Raises Black Automatonic Knuckle* potency by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="scroll fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dark Robot Counter*<br><div class="jap">ダークロボカウンター</div></td>
+                <td>When any ally (incl. self) is attacked by enemy:<br>Attacks with Dark Robot Counter* <!--ダークロボカウンター--> if enemy is within 1 to 4-space range, up to 5 times per battle<br><br>When any Slime ally (incl. self) is attacked by enemy:<br>Attacks with Dark Robot Counter* <!--ダークロボカウンター--> if enemy is within 1 to 4-space range, up to 5 times per battle<br><div class="attackdesc">(Dark Robot Counter*: Deals moderate unreflectable physical damage (200% potency) to 1 enemy)</div></td>
+            </tr>
+            <tr>
+                <td>2, 4</td>
+                <td>All Element Res +5</td>
+                <td>Raises resistance to all elements by 5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Auto HP Regen (L)</td>
+                <td>Action start:<br>Heals 15% of max HP</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Black Automatonic Knuckle* potency +5%</td>
+                <td>Raises Black Automatonic Knuckle* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Slime Blessings*<br><div class="jap">スライムのめぐみ</div></td>
+                <td>Raises max HP by 100<br>If there are 3 or more Slime allies (incl. self) in the party:<br>Raises max HP of all Slime allies (incl. self) by 50</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

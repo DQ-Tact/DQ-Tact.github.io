@@ -5,29 +5,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Script information -->
+<!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/dankbubbleslime.js"></script>
+    <script src="../unitscripts/ironslime.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Dank Bubble Slime</title>
+    <title>Iron Slime</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Dank Bubble Slime</h1>
+    <h1>Iron Slime</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/DankBubbleSlime.png" class="border">
+    <img src="../images/IronSlime.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
-            <td>120</td>
+            <td>115</td>
         </tr>
         <tr>
             <th scope="row">HP:</th>
@@ -59,26 +59,26 @@
         </tr>
         <tr>
             <th scope="row">Weight:</th>
-            <td>25</td>
+            <td>20</td>
         </tr>
     </table>
     <h2><strong>Leader Perk:</strong> <br>None</h2>
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
             <td><img src="../images/Element/Sizz.png"></td>
-            <td><img src="../images/Element/Woosh.png"></td>
             <td class="large">/</td>
             <td><img src="../images/Status/Bind.png"></td> 
-            <td><img src="../images/Status/Confusion.png"></td>   
+            <td><img src="../images/Status/Stun.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Crack.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
             <td class="large">/</td>
             <td><img src="../images/Status/BrthLock.png"></td> 
-            <td><img src="../images/Status/Paralysis.png"></td>
+            <td><img src="../images/Status/Confusion.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
@@ -92,7 +92,7 @@
             <th>Role:</th>
             <td><img class="metal" src="../images/Role/DebuffType.png"></td>
             <th>Element:</th>
-            <td><img class="metal" src="../images/Role/CrackType.png"></td>
+            <td><img class="metal" src="../images/Role/ZamType.png"></td>
         </tr>
     </table>
     <div id="statfilter">
@@ -118,6 +118,9 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -146,22 +149,13 @@
                 <td>Deals minor breath damage (19 base potency) to all enemies in area of effect, rarely puts to sleep</td>
             </tr>
             <tr>
-                <td>18</td>
-                <td><img src="../images/AttackType/BRedBreath.png"></td>
-                <td>White Ice</td><!--白氷-->
-                <td>65</td>
-                <td><img src="../images/Element/Crack.png"></td>
-                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
-                <td>Deals moderate Crack-type breath damage (68 base potency) to all enemies in area of effect</td>
-            </tr>
-            <tr>
-                <td>30</td>
+                <td>24</td>
                 <td><img src="../images/AttackType/BBlueBreath.png"></td>
-                <td>Mushroom Gasp</td>
-                <td>23</td>
+                <td>Sleep Steam*<br><div class="jap">スリープスチーム</div></td>
+                <td>63</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
-                <td>Occasionally puts to sleep or poisons all enemies in area of effect</td>
+                <td><img src="../images/AttackRange/Rhombus.png"><br>Rhombus</td>
+                <td>Deals moderate breath damage (60 base potency) to all enemies in area of effect enemy, occasionally puts to sleep</td>
             </tr>
         </tbody>
     </table>
@@ -180,13 +174,13 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Max HP +15</td>
-                <td>Raises max HP by 15</td>
+                <td>Max HP +10</td>
+                <td>Raises max HP by 10</td>
             </tr>
             <tr>
-                <td>90, 100, 110, 120</td>
-                <td>White Ice potency +2%</td>
-                <td>Raises White Ice potency by 2%</td>
+                <td>85, 95, 105, 115</td>
+                <td>Sleep Steam* potency +2%</td>
+                <td>Raises Sleep Steam* potency by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -205,23 +199,23 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Poison Success Rate +5%</td>
-                <td>Raises Poison success rate by 5%</td>
+                <td>Iron Will*<br><div class="jap">テツの意思</div></td>
+                <td>Raises breath potency by 5%<br><br>If there are 4 or more Slime allies (incl. self) in the party:<br>Raises Sleep success rate by 20% and raises Move by 1</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Crack Res +25</td>
-                <td>Raises Crack resistance by 25</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>White Ice potency +5%</td>
-                <td>Raises White Ice potency by 5%</td>
+                <td>Sleep Steam* potency +5%</td>
+                <td>Raises Sleep Steam* potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Zam Res +25</td>
-                <td>Raises Zam resistance by 25</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>

@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Sleep Smog</title>
+    <title>Fighting Champion's Blow*</title>
 </head>
 <body>
     <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Sleep Smog</h1>
+    <h1>Fighting Champion's Blow*</h1>
     <a class="return" href="../abilitylist.html">Return to Ability List</a>
         
     <table class="scroll fintable">
@@ -34,40 +34,42 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="../images/AttackType/CBlueBreath.png"></td>
-                <td>Sleep Smog</td>
-                <td>12</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Fighting Champion's Blow*<br><div class="jap">闘技王の一撃</div></td>
+                <td>70</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
-                <td>Deals minor breath damage (19 base potency) to all enemies in area of effect, rarely puts to sleep</td>
+                <td><img src="../images/AttackRange/Front1Close.png"><br>Front</td>
+                <td>Deals major physical damage (410% potency) to 1 enemy, knocks them back up to 2 spaces</td>
             </tr>
         </tbody>
     </table>
     <table class="scroll">
         <thead>
             <tr>
-                <th colspan="4" class="bigheader">Details</th>
+                <th colspan="5" class="bigheader">Details</th>
             </tr>
             <tr>
                 <th scope="col">No. of Attacks</th>
-                <th scope="col">Base Potency</th>
-                <th scope="col" style="min-width:200px">Damage Calc.</th> 
+                <th scope="col">ATK Multiplier</th>
+                <th scope="col" style="min-width:250px">Damage Calc.</th>
+                <th scope="col">Accuracy</th>  
                 <th scope="col" style="min-width:300px">Secondary Effect Chance</th>             
             </tr>
         </thead>
         <tbody>
-            <tr class="smallpadding">
+            <tr class="padding">
                 <td>1</td>
-                <td> 19 </td>
-                <td>[1 + (User's Level/91)] x Base Potency</td>
-                <td>20%:<br><div class="extra">Puts enemy to sleep <img src="../images/Status/Sleep.png"></div></td>
+                <td>4.1</td>
+                <td>[(User's ATK/2) - (Enemy's DEF/4)] x ATK Multiplier</td>
+                <td>100%</td>
+                <td>-</td>
             </tr>
         </tbody>
     </table>
+
     <h3>Units with this ability:</h3>
     <div class="group">
-        <a href="../units/dankbubbleslime.html"><img src="../images/DankBubbleSlime.png" class="border"></a>
-        <a href="../units/ironslime.html"><img src="../images/IronSlime.png" class="border"></a>
+        <a><img src="../images/FightingChampionsAxe.png" class="border"></a>
     </div>
 </body>
 </html>
