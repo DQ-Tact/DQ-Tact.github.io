@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/darck.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Darck</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Darck</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/Darck.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>??? Spell Potency +25%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Sizz.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Bind.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/SpellLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/MagicType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilter">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Envious Focus*<br><div class="jap">羨望のまと</div></td>
+                <td>32</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Heals a major amount of the user's HP and raises spell potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Greedy Gale*<br><div class="jap">強欲なる暴風</div></td>
+                <td>118</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals major Woosh-type spell damage to 1 enemy, ignores some Light Damage Res</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Overdesire*<br><div class="jap">オーバーディザイア</div></td>
+                <td>143</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FrontSquareFar.png"><br>Front</td>
+                <td>Deals major unreflectable spell damage to all enemies in area of effect and generates treasure trove spaces that raise damage taken by 20% for enemies on those spaces only</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>The King of Limbo*<br><div class="jap">狭間の世界の王</div></td>
+                <td>Battle start:<br>Grants a barrier that reflects physical, spell, martial, and breath attacks 1 time only in 99 turns</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>The Terrifying Collector*<br><div class="jap">恐ろしき蒐集家</div></td>
+                <td>Battle start, action start, or when revived:<br>Grants x1.5 spell potency/recovery when the user's HP is 100%<br>Reduces damage taken by 30% if the user's HP is 100% or less</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Martial Potency/Recovery +2%</td>
+                <td>Raises martial potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Spell Potency/Recovery +2%</td>
+                <td>Raises spell potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="scroll fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Surging Desires*<br><div class="jap">みなぎる欲望</div></td>
+                <td>Action start on odd turns until turn 10:<br>Heals 10% of max HP, raises AGL and WIS for 3 turns, removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Wonderous Treasures*<br><div class="jap">すばらしい宝</div></td>
+                <td>Heals 50% of max HP and grants a barrier that reflects physical, spell, martial, and breath attacks 1 time only in 99 turns when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Zap Res +25</td>
+                <td>Raises Zap resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Fwahahahahahah!<!--*<br><div class="jap">ファッファッファッ！</div>--></td>
+                <td>When attacked by enemy:<br>Heals 10% of the user's max HP</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
