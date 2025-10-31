@@ -116,6 +116,12 @@ table{
     font-size: 12px;
 }
 
+.subfamily{
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+}
+
 thead{
     background-color: rgb(196, 187, 232);
     height: 4em; 
@@ -455,6 +461,12 @@ img[src*="TalentBlossom"]{
         width: 18px !important;
     }
 
+    .subfamily{
+        font-size: 10px;
+        height: 16px;
+        width: 16px;
+    }
+
     #details{
         text-align: center;
         background-color: rgb(244, 242, 253);
@@ -700,6 +712,12 @@ img[src*="TalentBlossom"]{
 
     img.heavymetal{
         width: 13px !important;
+    }
+
+    .subfamily{
+        font-size: 8px;
+        height: 13px;
+        width: 13px;
     }
 
     #minimetal{

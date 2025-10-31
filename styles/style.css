@@ -91,6 +91,13 @@ img{
     margin-right: 55%;
 }
 
+.subfamily{
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin-left: 8.5px;
+}
+
 #filter{
     padding: 10px; 
     background-color: darkslateblue;
@@ -330,6 +337,13 @@ a:hover{
         max-width: 100%;
         overflow-x: scroll;
         display: block;
+    }
+
+    .subfamily{
+        width: 28px;
+        height: 28px;
+        display: block;
+        margin-left: 6px;
     }
 
     img{
