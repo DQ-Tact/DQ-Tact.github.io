@@ -33,13 +33,6 @@ $(".formelement").on("change", function() {
     Elemental = $(this).val();
     applyStats();
 });
-if ($("#TalentBlossom").is(":checked")) {
-    FullTalent = true;
-    applyStats();
-} else {
-    FullTalent = false;
-    applyStats();
-}
 $("#TalentBlossom").change(function() {
     if ($(this).is(":checked")) {
         FullTalent = true;
