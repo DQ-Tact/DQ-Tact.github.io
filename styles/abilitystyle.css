@@ -160,6 +160,14 @@ td{
     border-radius: 5px;
 }
 
+.wpn{
+    background-color: rgb(244, 242, 253);
+    padding: 16px;
+    width:64px;
+    height: 64px;
+    border-radius: 5px;
+}
+
 .percentgroup{
     display: inline-block;
     margin-bottom: 12px;

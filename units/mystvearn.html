@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/ZamType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,14 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -201,7 +209,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -234,6 +242,16 @@
                 <td>Raises Byut Deathstringer potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3,5</td>
+                <td>Martial MP Cost -5%</td>
+                <td>Lowers martial MP cost by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Zam Res +25</td>
                 <td>Raises Zam resistance by 25</td>
@@ -247,6 +265,132 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The Strongest Being Within the Demon Army*<br><div class="jap">魔王軍最強</div></td>
+                <td>Raises some status ailment resistances by 25%</td>
+            </tr>
+            <tr>
+                <td>Enraged Demonic Spirit*<br><div class="jap">怒りの魔闘気</div></td>
+                <td>When attacked by enemy:<br>Raises physical potency/recovery for 3 turns, up to 5 times per battle<br><br>When attacked by enemy:<br>Triggers Dark Puppetry Aura Decimation Field if enemy is within rhombus area, up to 5 times per battle</td>
+            </tr>
+            <tr>
+                <td>Shadow Vizier (Lv. 2)</td>
+                <td>Action start on even turns until turn 10:<br>Raises physical potency/recovery and greatly raises DEF and Move for 3 turns</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x4</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x3</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical MP Cost -5%) x3</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang Res +5%</td>
+                <td>Raises Bang Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Physical Res +5%</td>
+                <td>Raises Bang-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Martial Res +5%</td>
+                <td>Raises Bang-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Spell Res +5%</td>
+                <td>Raises Bang-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Breath Res +5%</td>
+                <td>Raises Bang-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Blind Res +5%) x2</td>
+                <td>Raises Blind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Charm Res +5%) x2</td>
+                <td>Raises Charm Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Martial Lock Res +5%</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Bind Res +5%</td>
+                <td>Raises Bind Res by 5%</td>
             </tr>
         </tbody>
     </table>

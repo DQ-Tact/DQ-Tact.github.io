@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/SizzType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,14 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -206,7 +214,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -235,13 +243,18 @@
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Physical Potency/Recovery +5%</td>
+                <td>(Physical Potency/Recovery +5%) x2</td>
                 <td>Raises physical potency/recovery by 5%</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Spell Potency/Recovery +5%</td>
+                <td>(Spell Potency/Recovery +5%) x2</td>
                 <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3,5</td>
+                <td>Ability MP Cost -5%</td>
+                <td>Lowers ability MP cost by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -257,6 +270,148 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Physical & Spell Master*<br><div class="jap">物理＆呪文マスター</div></td>
+                <td>Lowers physical and spell ability MP cost by 15%, raises potency and recovery by 15%</td>
+            </tr>
+            <tr>
+                <td>The Power Within One's Right Arm*<br><div class="jap">右腕に宿るチカラ</div></td>
+                <td>Battle start:<br>Raises damage dealt for 3 turns and reduces damage taken by 50% 1 time only for 99 turns</td>
+            </tr>
+            <tr>
+                <td>Unbridled (Lv. 2)</td>
+                <td>Action start on odd turns until turn 10:<br>Restores 8% of max MP, raises ATK, AGL, and Move for 3 turns, removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>No Going Back<!--<br><div class="jap">不退転の覚悟</div>--></td>
+                <td>Battle start:<br>Raises ATK, Physical Res, and Spell Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr>
+                <td>DEF +40</td>
+                <td>Raises max DEF by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Spell Potency +1.5%) x2</td>
+                <td>Raises Sizz-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Sizz-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Sizz-type Spell MP Cost -10%</td>
+                <td>Lowers Sizz-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam Res +5%</td>
+                <td>Raises Zam Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Physical Res +5%</td>
+                <td>Raises Zam-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Martial Res +5%</td>
+                <td>Raises Zam-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Spell Res +5%</td>
+                <td>Raises Zam-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zam-type Breath Res +5%</td>
+                <td>Raises Zam-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Stun Res +5%) x2</td>
+                <td>Raises Stun Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Curse Res +5%) x2</td>
+                <td>Raises Curse Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Physical Lock Res +5%</td>
+                <td>Raises Physical Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Confusion Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
             </tr>
         </tbody>
     </table>

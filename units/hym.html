@@ -101,7 +101,7 @@
             <td><img class="metal" src="../images/Role/FrizzType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -124,6 +124,11 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -131,7 +136,7 @@
             <tr>
                 <th colspan="7" class="bigheader">Abilities</th>
             </tr>
-                        <tr>
+            <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
                 <th scope="col" style="min-width:100px">Name</th>
@@ -207,7 +212,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -240,6 +245,11 @@
                 <td>Raises Heat Knuckle potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Physical Potency/Recovery +5%</td>
+                <td>Raises physical potency/recovery by 5%</td>
+            </tr>
+            <tr>
                 <td>5</td>
                 <td>Max HP +30</td>
                 <td>Raises max HP by 30</td>
@@ -248,6 +258,104 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Physical Tricks</td>
+                <td>Lowers physical ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>Accursed Life Belligerence (Lv. 2)</td>
+                <td>When attacked by enemy:<br>Raises ATK and physical potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Bodyguard of Steel<!--<br><div class="jap">鋼の親衛隊</div>--></td>
+                <td>Battle start:<br>Massively raises DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>(HP +40) x2</td>
+                <td>Raises max HP by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +20) x2</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x2</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Physical Potency +1.5%) x2</td>
+                <td>Raises Frizz-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Frizz-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Frizz-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Frizz-type Physical MP Cost -10%</td>
+                <td>Lowers Frizz-type physical MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(All Damage Down 0.5%) x11</td>
+                <td>Reduces all damage taken by 0.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Stun Res +5%) x2</td>
+                <td>Raises Stun Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Bind Res +5%) x2</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Physical Lock Res +5%</td>
+                <td>Raises Physical Lock Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Blind Res +5%</td>
+                <td>Raises Blind Res by 5%</td>
             </tr>
         </tbody>
     </table>

@@ -3,7 +3,7 @@ $(document).ready( function () {
         columnDefs: [
           { orderable: false, targets: 1}  
           ,{ orderable: false, targets: 6}
-          ,{ orderable: false, targets: 11}
+          ,{ orderable: false, targets: 10}
         //   ,{ visible: false, targets: 15}
         ],
         order: [[0, 'asc']],
@@ -20,5 +20,17 @@ $(document).ready( function () {
 
     $('input:radio[name=type]').change(function() {
         $('#myTable').DataTable().columns(3).search(this.value).draw();
+    });
+
+    $('input:radio[name=stat]').change(function() {
+        $('#myTable').DataTable().columns(4).search(this.value).draw();
+    });
+
+    $('#Arena').change(function() {
+      if ($(this).is(':checked')) {
+        $('#myTable').DataTable().columns(0).search("&").draw();
+      } else {
+        $('#myTable').DataTable().columns(0).search("").draw();
+      }
     });
 } );

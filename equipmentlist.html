@@ -133,6 +133,44 @@
         <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
       </label> 
     </form>
+
+    <form name="formstat">
+      <label class="filterheader">Best Equip. For:</label>
+      <label>
+        <input type="radio" name="stat" value="!">
+        <img class="buttons" title="HP" src="./images/Equipment/Filters/HPicon.png">
+      </label>
+      <label>
+        <input type="radio" name="stat" value="£">
+        <img class="buttons" title="MP" src="./images/Equipment/Filters/MPicon.png">
+      </label>
+      <label>
+        <input type="radio" name="stat" value="$">
+        <img class="buttons" title="ATK" src="./images/Equipment/Filters/ATKicon.png">
+      <label>
+        <label>
+        <input type="radio" name="stat" value="%">
+        <img class="buttons" title="DEF" src="./images/Equipment/Filters/DEFicon.png">
+      </label>
+      <label>
+        <input type="radio" name="stat" value="^">
+        <img class="buttons" title="AGL" src="./images/Equipment/Filters/AGLicon.png">
+      </label>
+      <label>
+        <input type="radio" name="stat" value="&">
+        <img class="buttons" title="WIS" src="./images/Equipment/Filters/WISicon.png">
+      <label>
+        <input type="radio" name="stat" value checked="checked">
+        <img class="buttons" title="ALL" src="./images/Family/FilterAll.png">
+      </label>
+    </form>
+
+    <form name="formRTA">
+      <label>
+        <input type="checkbox" name="family" id="Arena" value="1"><label for="checkbox">  Only show equipment that can be obtained via RTA swap shops</label>
+      </label>
+    </form>
+  </div>
   </div>
 
   <p>Note: Anything denoted with an * is using an unofficial translation</div></p>
@@ -151,7 +189,6 @@
         <th scope="col">Alchemy Effect 1</th>
         <th scope="col">Alchemy Effect 2</th>
         <th scope="col">Alchemy Effect 3</th>
-        <th scope="col">Where Obtained</th>
         <th scope="col">Main Unit</th>
       </tr>
     </thead>
@@ -167,7 +204,6 @@
           <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +14</td>
           <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +4</td>
           <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +3</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -181,7 +217,6 @@
           <td><img src="./images/Equipment/Alchemy/BreathPotency.png"><br>Breath Brilliant +2%<br><div class="jap">息ばつぐん +2%</div></td>
           <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +23</td>
           <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -195,7 +230,6 @@
           <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Physical Potency +3%</td>
           <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Breath Potency +3%</td>
           <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +51</td>
-          <td>DQ I Event</td>
           <td>-</td>
         </tr>
         <tr>
@@ -204,12 +238,11 @@
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
           <td>ATK +28</td>
-          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Potency +5%<br><div class="jap">ドルマ属性物理威力 +5%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency2.png"><br>Zam-type Physical Potency +5%<br><div class="jap">ドルマ属性物理威力 +5%</div></td>
           <td>-</td>
           <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Potency +4%<br><div class="jap">ドルマ属性物理威力 +4%</div></td>
           <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Brilliant +5%<br><div class="jap">ドルマ属性物理ばつぐん +5%</div></td>
           <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Ominous Impact Potency +6%<br><div class="jap">おぞましい衝撃威力 +6%</div></td>
-          <td>DQ VII Event</td>
           <td><a href="./units/demonkingorgodemir.html"><img src="./images/DKOrgodemir.png" class="icon"></a><span style="display:none;">Demon King Orgodemir</span></td>
         </tr>
         <tr>
@@ -223,7 +256,6 @@
           <td><img src="./images/Equipment/Alchemy/SpellRes.png"><br>Dragon Spell Res +2%</td>
           <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Spell Res +4%</td>
           <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Res +3%</td>
-          <td>Dragon Fest</td>
           <td><img src="./images/Family/FamilyDragon.png"> Only</td>
         </tr>
         <tr>
@@ -237,7 +269,6 @@
           <td><img src="./images/Equipment/Alchemy/WooshRes.png"><br>Woosh-type Spell Res +3%</td>
           <td><img src="./images/Equipment/Alchemy/SpellRes.png"><br>Spell Res +1%</td>
           <td><img src="./images/Equipment/Alchemy/WooshRes.png"><br>Woosh-type Res +1%</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -251,7 +282,6 @@
           <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +5</td>
           <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +11</td>
           <td><img src="./images/Equipment/Alchemy/MP2.png"><br>MP +3</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -265,7 +295,6 @@
           <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical Brilliant +2%</td>
           <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +6</td>
           <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -279,7 +308,6 @@
           <td><img src="./images/Equipment/Alchemy/MartialPotency.png"><br>Martial Brilliant +2%</td>
           <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +8</td>
           <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +7</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -293,7 +321,6 @@
           <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Breath Potency +3%</td>
           <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Martial Potency +3%</td>
           <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +14</td>
-          <td>Base Game</td>
           <td>-</td>
         </tr>
         <tr>
@@ -308,7 +335,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Shambles's Hat*<br><div class="jap">ベニーシャハット</div></td>
@@ -321,7 +347,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
@@ -336,7 +361,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Bronze Claws<br><div class="jap"></div></td>
@@ -349,7 +373,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
@@ -364,7 +387,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Dragon Scale<br><div class="jap"></div></td>
@@ -378,7 +400,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Goddess's Crystal Ball*<br><div class="jap"></div></td>
@@ -391,7 +412,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td><a href="./units/rubiss.html"><img src="./images/Rubiss.png" class="icon"></a><span style="display:none;">Rubiss</span></td>
         </tr>
         <tr>
@@ -406,7 +426,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Helm of Sebath<br><div class="jap"></div></td>
@@ -419,7 +438,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
@@ -434,7 +452,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Iron Axe<br><div class="jap"></div></td>
@@ -447,7 +464,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
@@ -462,7 +478,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Large Vernier Unit<br><div class="jap"></div></td>
@@ -476,7 +491,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Pirate's Pistol*<br><div class="jap"></div></td>
@@ -489,21 +503,19 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td><a href="./units/pirateslime.html"><img src="./images/PirateSlime.png" class="icon"></a><span style="display:none;">Pirate Slime</span></td>
         </tr>
         <tr>
-          <td>Ring of Clarity<br><div class="jap"></div></td>
+          <td>Ring of Clarity<br><div class="jap">りせいのリング</div></td>
           <td><img src="./images/Equipment/RingofClarity.png" class="wpn"><span style="display:none;">2</span></td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td>None</td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/ConfusionRes2.png"><br>Confusion Res +5%<br><div class="jap">混乱耐性+5%</div></td>
           <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ConfusionRes.png"><br>Confusion Res +7%<br><div class="jap">混乱耐性+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jap">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jap">しゅび力+13</div></td>
           <td>-</td>
         </tr>
         <tr>
@@ -518,7 +530,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Silver Rapier<br><div class="jap"></div></td>
@@ -531,7 +542,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
@@ -546,7 +556,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Slime Fan*<br><div class="jap"></div></td>
@@ -559,7 +568,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
@@ -574,7 +582,6 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>Thundara Materia<br><div class="jap"></div></td>
@@ -588,25 +595,23 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
-          <td>Tough Guy Tatoo<br><div class="jap"></div></td>
+          <td>Tough Guy Tatoo<br><div class="jap">いかりのタトゥー</div></td>
           <td><img src="./images/Equipment/ToughGuyTatoo.png" class="wpn"><span style="display:none;">2</span></td>
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td>None</td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
+          <td>ATK +7<br><br>DEF +5<span style="display:none;">$</span></td>
+          <td><img src="./images/Equipment/Alchemy/Special.png"><br><a href="./perks/equipment.html#VoltageUp">Voltage Up</a><br><div class="jap">ボルテージアップ</div></td>
           <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jap">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/ATK.png"><br>ATK +10<br><div class="jap">こうげき力+10</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jap">しゅび力+15</div></td>
           <td>-</td>
         </tr>
         <!-- Grand RTA Equipment  -->
         <tr>
-          <td>Treasured Sword of Flames*<br><div class="jap">炎の宝剣</div></td>
+          <td>Treasured Sword of Flames*<br><div class="jap">炎の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -616,11 +621,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Treasured Sword of Flashing Fire*<br><div class="jap">閃熱の宝剣</div></td>
+          <td>Treasured Sword of Flashing Fire*<br><div class="jap">閃熱の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -630,11 +634,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Treasured Sword of Ice*<br><div class="jap">氷の宝剣</div></td>
+          <td>Treasured Sword of Ice*<br><div class="jap">氷の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -644,11 +647,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Treasured Sword of Wind*<br><div class="jap">風の宝剣</div></td>
+          <td>Treasured Sword of Wind*<br><div class="jap">風の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -658,11 +660,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Treasured Sword of Light*<br><div class="jap">光の宝剣</div></td>
+          <td>Treasured Sword of Light*<br><div class="jap">光の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -672,11 +673,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Treasured Sword of Thunder*<br><div class="jap">雷の宝剣</div></td>
+          <td>Treasured Sword of Thunder*<br><div class="jap">雷の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -686,11 +686,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Treasured Sword of Darkness*<br><div class="jap">闇の宝剣</div></td>
+          <td>Treasured Sword of Darkness*<br><div class="jap">闇の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -700,11 +699,10 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Fighting Champion's Axe*<br><div class="jap">闘技王のオノ</div></td>
+          <td>Fighting Champion's Axe*<br><div class="jap">闘技王のオノ</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
@@ -715,6 +713,96 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td>-</td>
+        </tr>
+        <tr>
+          <td>Meteorite Bracer<br><div class="jap">ほしふるうでわ</div></td>
+          <td><img src="./images/Equipment/MeteoriteBracer.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td>AGL +10<span style="display:none;">^</span></td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>Entire Party AGL +3<br><div class="jap">パーティ全体のすばやさ+3</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/AGL.png"><br>Entire Party AGL +4<br><div class="jap">パーティ全体のすばやさ+4</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jap">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/AGL.png"><br>AGL +8<br><div class="jap">すばやさ+8</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Full Moon Ring<br><div class="jap">まんげつのリング</div></td>
+          <td><img src="./images/Equipment/FullMoonRing.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/ParalysisRes2.png"><br>Paralysis Res +5%<br><div class="jap">マヒ耐性+5%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ParalysisRes.png"><br>Paralysis Res +7%<br><div class="jap">マヒ耐性+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jap">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jap">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Rubber Earrings<br><div class="jap">雷のイヤリング</div></td>
+          <td><img src="./images/Equipment/RubberEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/ZapRes2.png"><br>Zap-type Res +3%<br><div class="jap">デイン属性耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ZapRes.png"><br>Zap-type Res +4%<br><div class="jap">デイン属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jap">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jap">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Mirror Earrings<br><div class="jap">光のイヤリング</div></td>
+          <td><img src="./images/Equipment/MirrorEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes2.png"><br>Bang-type Res +3%<br><div class="jap">イオ属性耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Bang-type Res +4%<br><div class="jap">イオ属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jap">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jap">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Anti-Freeze Earrings<br><div class="jap">氷のイヤリング</div></td>
+          <td><img src="./images/Equipment/AntiFreezeEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/CrackRes2.png"><br>Crack-type Res +3%<br><div class="jap">ヒャド属性耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/CrackRes.png"><br>Crack-type Res +4%<br><div class="jap">ヒャド属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jap">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jap">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Flashy Necklace<br><div class="jap">めざめのネックレス</div></td>
+          <td><img src="./images/Equipment/FlashyNecklace.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +10</td>
+          <td><img src="./images/Equipment/Alchemy/SleepRes2.png"><br>Entire Party Sleep Res +3%<br><div class="jap">パーティ全体の眠り耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/SleepRes.png"><br>Entire Party Sleep Res +4%<br><div class="jap">パーティ全体の眠り耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jap">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jap">しゅび力+15</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Ruby of Protection<br><div class="jap">まもりのルビー</div></td>
+          <td><img src="./images/Equipment/RubyofProtection.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>DEF +15</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jap">しゅび力+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jap">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP.png"><br>HP +11<br><div class="jap">HP+11</div></td>
           <td>-</td>
         </tr>
     </tbody>
@@ -733,6 +821,5 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jap"></div></td>
-          <td>-</td>
           <td>-</td>
         </tr> -->
