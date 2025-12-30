@@ -21,7 +21,7 @@ function applyStats() {
     $('#DEF').text(Math.floor((358 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0)+ (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))));
     $('#AGL').text(Math.floor((367 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].agl : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].agl : 0)));
     $('#WIS').text(Math.floor((329 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].wis : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].wis : 0)));
-    $('#Move').text(2 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].move : 0));
+    $('#Move').text(4 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].move : 0));
 }
 // Start of Javascript code: where it checks what has been selected from the drop-down lists on the unit page, and updates the value of Awk and Elemental when the selected option from the drop-down list changes to be the value selected from the drop-down list
 $(document).ready( function () {
