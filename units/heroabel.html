@@ -27,7 +27,7 @@
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
-            <td>140</td>
+            <td>150</td>
         </tr>
         <tr>
             <th scope="row">HP:</th>
@@ -124,6 +124,9 @@
             </label>
           </form>
     </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
         <thead>
@@ -186,6 +189,15 @@
                 <td><img src="../images/AttackRange/Range1.png"><br>1</td>
                 <td>Summons 1 of <a href="./brickman.html" class="summon">Brickman</a>, <a href="./slimehopper.html" class="summon">Slimehopper</a>, or <a href="./kimmyra.html" class="summon">Kim Myra</a><br>(Times usable: 1)<br><div class="attackdesc">Note: If another party member has already activated an ability that summons units, then this ability will fail</div></td>
             </tr>
+            <tr>
+                <td><img class="charbuilder" src="../images/Rank/TalentCharBuilder.png"></td>
+                <td><img src="../images/AttackType/ABlueBreath.png"></td>
+                <td>Zenithian Wingbeat*<br><div class="jap">天空竜のはばたき</div></td>
+                <td>130</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
+                <td>Deals major breath damage (257 base potency) to all enemies in area of effect, often lowers Breath Res for 3 turns</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -220,6 +232,11 @@
                 <td>110, 120, 130, 140</td>
                 <td>Breath Potency/Recovery +2%</td>
                 <td>Raises breath potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>Ability Potency/Recovery +2%</td>
+                <td>Raises ability potency/recovery by 2%</td>
             </tr>
         </tbody>
     </table>
@@ -290,6 +307,10 @@
                 <td>Summons 1 of Brickman, Slimehopper, or Kim Myra<br>(Times usable: 1)</td>
             </tr>
             <tr>
+                <td>Zenithian Wingbeat*<br><div class="jap">天空竜のはばたき</div></td>
+                <td>Deals major breath damage (257 base potency) to all enemies in area of effect, often lowers Breath Res for 3 turns</td>
+            </tr>
+            <tr>
                 <td>Fairy's Fortitude</td>
                 <td>When any other ally attacks:<br>Attacks with Fairy's Flurry if enemy is within 3-space range, up to 5 times per battle<br><div class="attackdesc">(Fairy's Flurry: Deals major Woosh-type breath damage (111 base potency) to 1 enemy, heals the user by 50% of the damage dealt)</div></td>
             </tr>
@@ -298,8 +319,20 @@
                 <td>Action start:<br>Heals 10% of max HP and restores 4% of max MP</td>
             </tr>
             <tr>
+                <td>Legendary Monster Wrangler (Lv. 2)</td>
+                <td>Battle start:<br>Reduces damage taken by 20% and raises breath potency/recovery and Physical, Spell, Martial, and Breath Res for 3 turns<br>Action start until turn 10:<br>Reduces damage taken by 20% for all allies in the surrounding large rhombus (incl. self) for 3 turns (self: 4 turns)</td>
+            </tr>
+            <tr>
+                <td>Fairy's Zephyr Follow-Up*<br><div class="jap">妖精の息吹の追撃</div></td>
+                <td>When attacking:<br>Attacks with Fairy's Zephyr* if enemy is within 1 to 3-space range, up to 5 times per battle<br><div class="attackdesc">(Fairy's Zephyr*: Deals major breath damage (111 base potency) to 1 enemy, heals the user by 50% of the damage dealt)</div></td>
+            </tr>
+            <tr>
                 <td>Max HP +100</td>
                 <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>(Breath Potency +5%) x2</td>
+                <td>Raises breath potency by 5%</td>
             </tr>
             <tr class="grey">
                 <td>All Damage Down 0.5%</td>
@@ -318,6 +351,10 @@
                 <td>Reduces all damage taken by 2%</td>
             </tr>
             <tr class="grey">
+                <td>All Damage Down 2.5%</td>
+                <td>Reduces all damage taken by 2.5%</td>
+            </tr>
+            <tr class="grey">
                 <td>Woosh Res +5%</td>
                 <td>Raises Woosh resistance by 5</td>
             </tr>
@@ -330,8 +367,16 @@
                 <td>Raises max HP by 20</td>
             </tr>
             <tr>
+                <td>Max HP +25</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr>
                 <td>Max HP & Max MP +30</td>
                 <td>Raises max HP and max MP by 30</td>
+            </tr>
+            <tr>
+                <td>Max MP +25</td>
+                <td>Raises max MP by 25</td>
             </tr>
             <tr>
                 <td>Max MP +20</td>
@@ -342,8 +387,16 @@
                 <td>Raises max ATK by 10</td>
             </tr>
             <tr>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
                 <td>ATK & WIS +15</td>
                 <td>Raises max ATK and max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
             </tr>
             <tr>
                 <td>WIS +10</td>
@@ -354,8 +407,16 @@
                 <td>Raises max DEF by 10</td>
             </tr>
             <tr>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr>
                 <td>DEF & AGL +15</td>
                 <td>Raises max DEF and max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
             </tr>
             <tr>
                 <td>AGL +10</td>

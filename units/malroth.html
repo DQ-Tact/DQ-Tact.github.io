@@ -27,7 +27,7 @@
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
-            <td>140</td>
+            <td>150</td>
         </tr>
         <tr>
             <th scope="row">HP:</th>
@@ -105,7 +105,21 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
-        <label class="filterheader">and at: </label>
+        <label class="filterheader">, </label>
+        <select class="formexawk">
+            <option value="0" selected="selected">Ultimate Awakening Rank 0</option>
+            <option value="1">Ultimate Awakening Rank 1</option>
+            <option value="2">Ultimate Awakening Rank 2</option>
+            <option value="3">Ultimate Awakening Rank 3</option>
+            <option value="4">Ultimate Awakening Rank 4</option>
+            <option value="5">Ultimate Awakening Rank 5</option>
+            <option value="6">Ultimate Awakening Rank 6</option>
+            <option value="7">Ultimate Awakening Rank 7</option>
+            <option value="8">Ultimate Awakening Rank 8</option>
+            <option value="9">Ultimate Awakening Rank 9</option>
+            <option value="10">Ultimate Awakening Rank 10</option>
+        </select>
+        <label class="filterheader">, and </label>
         <select class="formelement">
             <option value="0" selected="selected">Elemental Rank 0</option>
             <option value="1">Elemental Rank 1</option>
@@ -123,6 +137,9 @@
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -212,6 +229,11 @@
                 <td>Lightning Storm potency +2%</td>
                 <td>Raises Lightning Storm potency by 2%</td>
             </tr>
+            <tr>
+                <td>150</td>
+                <td>Ability Potency/Recovery +2%</td>
+                <td>Raises ability potency/recovery by 2%</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
@@ -261,6 +283,71 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all Ultimate Awakening perks -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Ultimate Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening Rank</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lightning Storm potency +30%</td>
+                <td>Raises Lightning Storm potency by 30%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Desperation Fullheal (Lv. 2)</td>
+                <td>Heals the user to full HP when HP drops to 20% or less, up to 2 times per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Withering Glint potency +30%</td>
+                <td>Raises Withering Glint potency by 30%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Dark God's Awakening*<br><div class="jap">邪神覚醒</div></td>
+                <td>Action start on even turns until turn 10:<br>Restores 8% of max MP, raises Move, DEF, Spell Res, and spell and martial potency/recovery for 3 turns<br><br>Before HP hits 0:<br>Preserves HP at 1, up to 2 times per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Malroth's Master Badge*<br><div class="jap">シドーのマスターバッジ</div></td>
+                <td>Raises ??? martial potency by 2%<br><div class="attackdesc">This perk will also affect units who have not undergone ultimate awakening</div></td>
             </tr>
         </tbody>
     </table>
