@@ -111,9 +111,45 @@ table{
    background-color: rgb(131, 125, 157);
 }
 
-.supremejap{
+.supremejp{
     color: rgb(113, 87, 169);
     font-size: 12px;
+}
+
+.supremeattackdesc{
+    color: rgb(115, 88, 173);
+}
+
+.supremesummon{
+    position:relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    color: rgb(72, 50, 151);
+    background-image: none;
+    background-color: rgb(196, 187, 232);
+    box-shadow: none;
+    text-decoration: underline;
+    transition-duration: 0s;
+}
+.supremesummon:hover{
+    color: rgb(102, 142, 223);
+    background-image: none;
+    background-color: rgb(196, 187, 232);
+    box-shadow: none;
+    border: none;
+}
+
+.supremesummon:active{
+    color: rgb(102, 142, 223);
+    background-image: none;
+    background-color: rgb(196, 187, 232);
+    box-shadow: none;
+    border: none;
+    position: relative;
+    top: 0;
 }
 
 .subfamily{
@@ -250,7 +286,7 @@ img[src*="Status"]{
     margin-bottom: -20px;
 }
 
-.jap{
+.jp{
     color: rgb(128, 166, 224);
     font-size: 12px;
 }
@@ -608,7 +644,7 @@ img[src*="TalentBlossom"]{
         margin-bottom: -20px;
     }
     
-    .jap{
+    .jp{
         color: rgb(128, 166, 224);
         font-size: 10px;
     }
@@ -869,7 +905,7 @@ img[src*="TalentBlossom"]{
         margin-bottom: -20px;
     }
     
-    .jap{
+    .jp{
         color: rgb(128, 166, 224);
         font-size: 10px;
     }

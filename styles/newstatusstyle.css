@@ -127,9 +127,16 @@ a:hover{
     color: rgb(151, 122, 214);
 }
 
-.jap{
+.jp{
     color: rgb(128, 166, 224);
     font-size: 12px;
+}
+
+.preextra{
+    width: 20px !important;
+    height: 20px !important;
+    position: relative;
+    top: 5px;
 }
 
 .switchpage{

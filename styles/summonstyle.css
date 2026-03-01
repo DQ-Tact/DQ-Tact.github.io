@@ -66,6 +66,28 @@ table{
     width: 85%;
 }
 
+.supreme{
+   background-color: rgb(187, 232, 190);
+}
+
+.supremeheader{
+   background-color: rgb(81, 172, 97);
+   color: rgb(247, 250, 235);
+}
+
+.supremetable{
+   background-color: rgb(105, 153, 111);
+}
+
+.supremejp{
+    color: rgb(81, 158, 111);
+    font-size: 12px;
+}
+
+.supremeattackdesc{
+    color: rgb(71, 154, 72);
+}
+
 thead{
     background-color: rgb(187, 232, 190);
     height: 4em; 
@@ -150,8 +172,8 @@ img.metal{
     margin-bottom: -20px;
 }
 
-.jap{
-    color: rgb(103, 183, 150);
+.jp{
+    color: rgb(103, 183, 106);
     font-size: 12px;
 }
 
@@ -391,7 +413,7 @@ img[src*="AttackRange"]{
         margin-bottom: -20px;
     }
     
-    .jap{
+    .jp{
         color: rgb(103, 183, 150);
         font-size: 10px;
     }
@@ -569,7 +591,7 @@ img[src*="AttackRange"]{
         top: 255px;
     }
     
-    .jap{
+    .jp{
         font-size: 10px;
     }
 
