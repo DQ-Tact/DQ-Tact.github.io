@@ -14,12 +14,12 @@ var TalentBlossomStats2 = {"hp":50,"mp":0,"atk":0,"def":0,"agl":0,"wis":0,"move"
 var FullTalent2 = false;
 
 function applyStats() {
-    $('#HP').text(Math.floor((1044 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].hp : 0) + (FullTalent2 ? TalentBlossomStats2.hp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].hp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].hp : 0))));
-    $('#MP').text(Math.floor((435 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].mp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].mp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].mp : 0))));
-    $('#ATK').text(Math.floor((531 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].atk : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].atk : 0)));
-    $('#DEF').text(Math.floor((455 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))));
-    $('#AGL').text(Math.floor((439 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].agl : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].agl : 0)));
-    $('#WIS').text(Math.floor((108 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].wis : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].wis : 0)));
+    $('#HP').text(Math.floor((1079 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].hp : 0) + (FullTalent2 ? TalentBlossomStats2.hp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].hp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].hp : 0))));
+    $('#MP').text(Math.floor((473 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].mp : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].mp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].mp : 0))));
+    $('#ATK').text(Math.floor((295 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].atk : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].atk : 0)));
+    $('#DEF').text(Math.floor((452 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0)) * ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))));
+    $('#AGL').text(Math.floor((452 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].agl : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].agl : 0)));
+    $('#WIS').text(Math.floor((258 + (AwkStatBuff[Awk] ? AwkStatBuff[Awk].wis : 0)) * (AwkStatsUp[Awk] ? AwkStatsUp[Awk].wis : 0)));
     $('#Move').text(3 + ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].move : 0)));
 }
 
