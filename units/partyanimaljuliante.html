@@ -105,7 +105,21 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
-        <label class="filterheader">and at: </label>
+        <label class="filterheader">, </label>
+        <select class="formexawk">
+            <option value="0" selected="selected">Ultimate Awakening Rank 0</option>
+            <option value="1">Ultimate Awakening Rank 1</option>
+            <option value="2">Ultimate Awakening Rank 2</option>
+            <option value="3">Ultimate Awakening Rank 3</option>
+            <option value="4">Ultimate Awakening Rank 4</option>
+            <option value="5">Ultimate Awakening Rank 5</option>
+            <option value="6">Ultimate Awakening Rank 6</option>
+            <option value="7">Ultimate Awakening Rank 7</option>
+            <option value="8">Ultimate Awakening Rank 8</option>
+            <option value="9">Ultimate Awakening Rank 9</option>
+            <option value="10">Ultimate Awakening Rank 10</option>
+        </select>
+        <label class="filterheader">, and </label>
         <select class="formelement">
             <option value="0" selected="selected">Elemental Rank 0</option>
             <option value="1">Elemental Rank 1</option>
@@ -123,6 +137,9 @@
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -261,6 +278,71 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all Ultimate Awakening perks -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Ultimate Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening Rank</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Summer Dragon Dance potency +30%</td>
+                <td>Raises Summer Dragon Dance potency by 30%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bon Beat*<br><div class="jp">ボン・ビート</div></td>
+                <td>Action start on even turns until turn 10:<br>Raises ATK, evasion rate, and physical potency/recovery for 3 turns</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Big Fireworks potency +30%</td>
+                <td>Raises Big Fireworks potency by 30%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Feel the Boom*<br><div class="jp">テンションドーン</div></td>
+                <td>When attacking:<br>Raises Tension for 1 turn, up to 4 times per battle</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Party Animal Juliante's Master Badge*<br><div class="jp">祭魔ジュリアンテのマスターバッジ</div></td>
+                <td>Raises Beast physical potency by 2%<br><div class="attackdesc">This perk will also affect units who have not undergone ultimate awakening</div></td>
             </tr>
         </tbody>
     </table>
