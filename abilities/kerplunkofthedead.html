@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/abilitystyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Kerplunk of the Dead*</title>
+</head>
+<body>
+    <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Kerplunk of the Dead*</h1>
+    <a class="return" href="../abilitylist.html">Return to Ability List</a>
+        
+    <table class="scroll fintable">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Ability</th>
+            </tr>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:50px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../images/AttackType/SGreenMartial.png"></td>
+                <td>Kerplunk of the Dead*<br><div class="jp">メガザル・オブ・ザ・デッド</div></td>
+                <td>150</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Sacrifices self to revive all fallen Undead allies to 100% of their max HP, raises ATK, DEF, AGL, WIS, and grants Undead March for 3 turns<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="4" class="bigheader">Details</th>
+            </tr>
+            <tr>
+                <th scope="col">No. of Attacks</th>
+                <th scope="col">Base Potency</th>
+                <th scope="col">Damage Calc.</th>
+                <th scope="col" style="min-width:300px">Secondary Effect Chance</th>             
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td> - </td>
+                <td> - </td>
+                <td>100%:<br><div class="extra">Revives all fallen Undead allies to 100% of their max HP. The fallen allies will be revived in the spaces directly adjacent to the user. The revived allies will still be counted as an ally that has been KO'd, and so this effect cannot be used to bypass clear conditions that check for remaining allies (for example, if one ally is KO'd and then revived using this ability, the condition "Clear with fewer than 1 party member KO'd" would not be met)</div><br>100%:<br><div class="extra">Ally's ATK <img src="../images/Buffs/ATKup.png"> +1 (3 turns)<br>Ally's DEF <img src="../images/Buffs/DEFup.png"> +1 (3 turns)<br>Ally's AGL <img src="../images/Buffs/AGLup.png"> +1 (3 turns)<br>Ally's WIS <img src="../images/Buffs/WISup.png"> +1 (3 turns)<br>Ally gains Undead March <img src="../images/Buffs/UndeadMarch.png"> (3 turns)</div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Units with this ability:</h3>
+    <div class="group">
+        <a href="../units/lazamanus.html"><img src="../images/Lazamanus.png" class="border"></a>
+    </div>
+</body>
+</html>

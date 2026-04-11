@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/omega.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Omega</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Omega</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/Omega.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>140</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>65</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Martial Potency +15%</h2>
+    <table class="flat" id="weakres">
+        <tr class="metal">
+            <th scope="row">Weaknesses:</th>
+            <td><img class="metal" src="../images/Element/Zap.png"></td>
+            <td class="metallarge">/</td>
+            <td><img class="metal" src="../images/Status/Bind.png"></td>  
+            <td><img class="metal" src="../images/Status/Confusion.png"></td>  
+        </tr>
+        <tr class="metal">
+            <th scope="row" rowspan="2">Resistances:</th>
+            <td><img class="metal" src="../images/Element/Frizz.png"></td>
+            <td><img class="metal" src="../images/Element/Sizz.png"></td>
+            <td><img class="metal" src="../images/Element/Crack.png"></td>
+            <td><img class="metal" src="../images/Element/Woosh.png"></td>
+            <td><img class="metal" src="../images/Element/Bang.png"></td>
+            <td><img class="metal" src="../images/Element/Zam.png"></td>
+        </tr>
+        <tr class="metal">
+            <td><img class="metal" src="../images/Status/MrtlLock.png"></td>
+            <td><img class="metal" src="../images/Status/Paralysis.png"></td>
+        </tr>
+        <tr class="metal">
+            <th scope="row">Immunities:</th>
+            <td><img class="metal" src="../images/Status/Charm.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/DebuffType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/SizzType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Mustard Bomb</td>
+                <td>44</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>2-4</td>
+                <td>Deals moderate martial damage (90 base potency) to 1 enemy, occasionally paralyses</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ARedSpell.png"></td>
+                <td>Atomic Ray</td>
+                <td>123</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Front5.png"><br>Front</td>
+                <td>Deals major Sizz-type spell damage to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Wave Cannon</td>
+                <td>125</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/FanLong.png"><br>Fan (Long)</td>
+                <td>Deals major martial damage (285 base potency) to all enemies in area of effect, occasionally lowers Martial Res for 3 turns</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Max MP +15</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ancient Weapon</td>
+                <td>Halves all element Res except Zap-type Res</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Wave Cannon potency +2%</td>
+                <td>Raises Wave Cannon potency by 2%</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>Ability Potency/Recovery +2%</td>
+                <td>Raises ability potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Heartless One</td>
+                <td>Battle start:<br>Greatly raises evasion rate and grants a barrier that reflects spell attacks for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2, 4</td>
+                <td>All Element Res +5</td>
+                <td>Raises resistance to all elements by 5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Engine of Annihilation</td>
+                <td>When making a martial attack:<br>For number of attacked enemies only, raises martial potency/recovery for 1 turn</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Wave Cannon potency +5%</td>
+                <td>Raises Wave Cannon potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3,5</td>
+                <td>Ability MP Cost -5%</td>
+                <td>Lowers ability MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Max HP +100</td>
+                <td>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spell & Martial Master*<br><div class="jp">呪文＆体技マスター</div></td>
+                <td>Lowers spell and martial ability MP cost by 15%, raises potency and recovery by 15%</td>
+            </tr>
+            <tr>
+                <td>Incomprehensible Machine*<br><div class="jp">人智を超えた兵器</div></td>
+                <td>Battle start:<br>Greatly raises Typeless Res for 3 turns<br><br>Action start on odd turns until turn 10:<br>Heals 15% of max HP and restores 8% of max MP, raises AGL for 3 turns, removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>Advanced Technology*<br><div class="jp">オーバーテクノロジー</div></td>
+                <td>When making a spell or martial attack:<br>Attacks with Wave Cannon if enemy is within long fan-shaped area, up to 2 times per battle<!---<br><div class="attackdesc">(Wave Cannon: Deals major martial damage (285 base potency) to all enemies in area of effect, occasionally lowers Martial Res for 3 turns)</div>--></td>
+            </tr>
+            <tr>
+                <td>Move +1</td>
+                <td>Raises Move by 1</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Spell Potency +1.5%) x2</td>
+                <td>Raises Sizz-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Sizz-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Sizz-type Spell MP Cost -10%</td>
+                <td>Lowers Sizz-type spell MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Martial Potency +1%) x2</td>
+                <td>Raises martial potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Martial Brilliant +1%) x2</td>
+                <td>Raises martial brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Martial MP Cost -5%</td>
+                <td>Lowers martial MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zap Res +2.5%) x2</td>
+                <td>Raises Zap Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zap-type Physical Res +2.5%) x2</td>
+                <td>Raises Zap-type Physical Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zap-type Martial Res +2.5%) x2</td>
+                <td>Raises Zap-type Martial Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zap-type Spell Res +2.5%) x2</td>
+                <td>Raises Zap-type Spell Res by 2.5%</td>
+            </tr>
+            <tr class="grey">
+                <td>(Zap-type Breath Res +2.5%) x2</td>
+                <td>Raises Zap-type Breath Res by 2.5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Bind Res +5%) x2</td>
+                <td>Raises Bind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Martial Lock Res +5%</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Paralysis Res +5%</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

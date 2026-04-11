@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/ZamType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,14 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -163,6 +171,15 @@
                 <td><img src="../images/AttackRange/Range1.png"><br>1</td>
                 <td>Deals minor Zam-type physical damage (75% potency) to 1 enemy 4 times, rarely lowers ATK for 3 turns</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Genocide Break*<br><div class="jp">ジェノサイドブレイク</div></td>
+                <td>87</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Front5Close.png"><br>Front</td>
+                <td>Deals major physical damage (300% potency) to all enemies in area of effect, occasionally lowers Undead Res for 3 turns</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -206,7 +223,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -239,6 +256,11 @@
                 <td>Raises Dastardly Talons potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Genocide Break* potency +5%</td>
+                <td>Raises Genocide Break* potency by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Zap Res +25</td>
                 <td>Raises Zap resistance by 25</td>
@@ -252,6 +274,148 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Genocide Break*<br><div class="jp">ジェノサイドブレイク</div></td>
+                <td>Deals major physical damage (300% potency) to all enemies in area of effect, occasionally lowers Undead Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Prideful Corpse*<br><div class="jp">屍の矜持</div></td>
+                <td>Action start until turn 3:<br>Greatly raises phsyical and breath potency/recovery, raises ATK, and reduces damage taken by 20% for 3 turns<br><br>Battle start:<br>If there are 4 or more Undead allies (incl. self) in the party:<br>Greatly raises damage dealt, raises AGL, and reduces damage taken by 20% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>Hatred Incarnate*<br><div class="jp">憎悪の化身</div></td>
+                <td>Raises physical and breath potency/recovery by 10%<br><br>If there are 4 or more Undead allies (incl. self) in the party:<br>Raises physical and breath potency/recovery by 20%</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr>
+                <td>AGL +40</td>
+                <td>Raises max AGL by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>(Breath Potency +1%) x2</td>
+                <td>Raises breath potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Breath Brilliant +1%) x2</td>
+                <td>Raises breath brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Breath MP Cost -5%</td>
+                <td>Lowers breath MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz Res +5%</td>
+                <td>Raises Frizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Physical Res +5%</td>
+                <td>Raises Frizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Martial Res +5%</td>
+                <td>Raises Frizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Spell Res +5%</td>
+                <td>Raises Frizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Frizz-type Breath Res +5%</td>
+                <td>Raises Frizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Blind Res +5%) x2</td>
+                <td>Raises Blind Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Breath Lock Res +5%) x2</td>
+                <td>Raises Breath Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Paralysis Res +5%</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Physical Lock Res +5%</td>
+                <td>Raises Physical Lock Res by 5%</td>
             </tr>
         </tbody>
     </table>
