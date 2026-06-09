@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/rebjorn.js"></script>
+    <script src="../unitscripts/sliderkids.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Rebjørn</title>
+    <title>Slider Kids</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Rebjørn</h1>
+    <h1>Slider Kids</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/Rebjorn.png" class="border">
+    <img src="../images/SliderKids.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
@@ -62,37 +62,49 @@
             <td id="Weight"></td>
         </tr>
     </table>
-    <h2><strong>Leader Perk:</strong> <br>Martial Potency +15%</h2>
+    <h2><strong>Leader Perk:</strong> <br>Slime Martial Potency +20%</h2>
     <table class="flat" id="weakres">
-        <tr>
+        <tr class="metal">
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
-            <td class="large">/</td>
-            <td><img src="../images/Status/Bind.png"></td> 
-            <td><img src="../images/Status/Paralysis.png"></td>   
+            <td><img class="metal" src="../images/Element/Zam.png"></td>
+            <td class="metallarge">/</td>
+            <td><img class="metal" src="../images/Status/Charm.png"></td>  
         </tr>
-        <tr>
+        <tr class="metal">
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Sizz.png"></td>
-            <td><img src="../images/Element/Crack.png"></td>
-            <td class="large">/</td>
-            <td><img src="../images/Status/MrtlLock.png"></td> 
-            <td><img src="../images/Status/Confusion.png"></td>
+            <td><img class="metal" src="../images/Element/Frizz.png"></td>
+            <td><img class="metal" src="../images/Element/Sizz.png"></td>
+            <td><img class="metal" src="../images/Element/Crack.png"></td>
+            <td><img class="metal" src="../images/Element/Woosh.png"></td>
+            <td><img class="metal" src="../images/Element/Bang.png"></td>
+            <td><img class="metal" src="../images/Element/Zap.png"></td>
         </tr>
-        <tr>
-            <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Charm.png"></td>
+        <tr class="metal">
+            <th scope="row" rowspan="2">Resistances:</th>
+            <td><img class="metal" src="../images/Status/Sleep.png"></td>
+            <td><img class="metal" src="../images/Status/Poison.png"></td>
+            <td><img class="metal" src="../images/Status/PhysLock.png"></td>
+            <td><img class="metal" src="../images/Status/SpellLock.png"></td>
+            <td><img class="metal" src="../images/Status/MrtlLock.png"></td>
+            <td><img class="metal" src="../images/Status/BrthLock.png"></td>
+        </tr>
+        <tr class="metal">
+            <td><img class="metal" src="../images/Status/Bind.png"></td>
+            <td><img class="metal" src="../images/Status/Stun.png"></td>
+            <td><img class="metal" src="../images/Status/Blind.png"></td>
+            <td><img class="metal" src="../images/Status/Curse.png"></td>
+            <td><img class="metal" src="../images/Status/Paralysis.png"></td>
+            <td><img class="metal" src="../images/Status/Confusion.png"></td>
         </tr>
     </table>
     <table class="flat" id="details">
         <tr>
             <th>Family:</th>
-            <td><img class="metal" src="../images/Family/FamilyBeast.png"></td>
+            <td><img class="metal" src="../images/Family/FamilySlime.png"></td>
             <th>Role:</th>
             <td><img class="metal" src="../images/Role/AttackType.png"></td>
             <th>Element:</th>
-            <td><img class="metal" src="../images/Role/BangType.png"></td>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
         </tr>
     </table>
     <div id="statfilterblossom">
@@ -120,7 +132,7 @@
         </select>
         <form name="formTBCB">
             <label>
-              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include Weight & max HP changes from base perk</label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include Weight change from base perk</label>
             </label>
           </form>
     </div>
@@ -147,29 +159,29 @@
             <tr>
                 <td>1</td>
                 <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>Booork!<!--<br><div class="jp">プイイーッ！</div>--></td>
-                <td>24</td>
+                <td>Courage Booster*<br><div class="jp">ゆうきチャージ</div></td>
+                <td>40</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
-                <td>Reduces damage taken by 15% for the user and grants x1.5 martial potency/recovery for 1 turn</td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-3 (incl. self)</td>
+                <td>Raises Tension of all allies in area of effect for 1 turn</td>
             </tr>
             <tr>
                 <td>31</td>
-                <td><img src="../images/AttackType/ABlueMartial.png"></td>
-                <td>Adorable Tantrum*<br><div class="jp">ラブリージダンダ</div></td>
-                <td>120</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Rhombus.png"><br>Rhombus</td>
-                <td>Deals major martial damage (265 base potency) to all enemies in area of effect, occasionally charms</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>Freezing Cuts & Cuffs*<br><div class="jp">フリーズブレード＆グローブ</div></td>
+                <td>113</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Front6Far.png"><br>Front</td>
+                <td>Deals major Crack-type martial damage (150 base potency) to all enemies in area of effect 2 times, rarely raises the user's damage dealt or martial potency/recovery for 3 turns</td>
             </tr>
             <tr>
-                <td>54</td>
-                <td><img src="../images/AttackType/ARedMartial.png"></td>
-                <td>Rebjørn Impact*<br><div class="jp">プオーンインパクト</div></td>
-                <td>94</td>
-                <td><img src="../images/Element/Bang.png"></td>
-                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
-                <td>Deals major Bang-type martial damage (260 base potency) to all enemies in area of effect</td>
+                <td>52</td>
+                <td><img src="../images/AttackType/ABlueMartial.png"></td>
+                <td>Combo Slider Strike*<br><div class="jp">スライダーコンビネーション</div></td>
+                <td>104</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/TwoHitRhombus.png"><br>1-3</td>
+                <td>Deals major martial damage (146 base potency) to 1 enemy in purple area ignoring some Light Damage Res and rarely lowers Martial Res or rarely raises damage taken for 3 turns, deals major martial damage (146 base potency) to all enemies in orange area ignoring some Light Damage Res and rarely lowers Martial Res or rarely raises damage taken for 3 turns</td>
             </tr>
         </tbody>
     </table>
@@ -188,28 +200,28 @@
         <tbody>
             <tr>
                 <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
                 <td>DEF +20</td>
                 <td>Raises max DEF by 20</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Max MP +15</td>
-                <td>Raises max MP by 15</td>
+                <td>We are the Slider Kids!*<br><div class="jp">ふたりはスライダーキッズ！</div></td>
+                <td>When any ally (incl. self) is attacked by enemy:<br>We are the Slider Kids!* heals them if ally is within 1 to 3-space range (incl. self), up to 3 times per battle<br><div class="attackdesc">(We are the Slider Kids!*: Heals a major amount of HP and raises evasion rate for 1 ally for 3 turns (self: 4 turns), raises damage dealt for 1 Slime ally for 3 turns (self: 4 turns))</div></td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Sealed Beast*<br><div class="jp">封印されし魔獣</div></td>
-                <td>Battle start:<br>Prevents incoming attacks from dealing over 50% of the unit's max HP for 10 turns</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Tiny Body*<br><div class="jp">プチボディ</div></td>
-                <td>Lowers Weight by 5 and raises max HP by 10</td>
+                <td>Tiny Light Metal Body*<br><div class="jp">ライトメタルプチボディ</div></td>
+                <td>Lowers Weight by 5, reduces damage taken by 15% and raises ability MP cost by 10%</td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>Rebjørn Impact* potency +2%</td>
-                <td>Raises Rebjørn Impact* potency by 2%</td>
+                <td>Combo Slider Strike* potency +2%</td>
+                <td>Raises Combo Slider Strike* potency by 2%</td>
             </tr>
             <tr>
                 <td>150</td>
@@ -233,33 +245,28 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Move +1</td>
-                <td>Raises Move by 1</td>
+                <td>Friendly Duo*<br><div class="jp">仲良しふたり組</div></td>
+                <td>Battle start:<br>Greatly raises AGL, evasion rate, martial potency/recovery, and reduces damage taken by 20% for 3 turns</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Sizz Res +25</td>
-                <td>Raises Sizz resistance by 25</td>
+                <td>2, 4</td>
+                <td>All Element Res +5</td>
+                <td>Raises resistance to all elements by 5</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Auto HP Regen</td>
-                <td>Action start:<br>Heals 10% of max HP</td>
+                <td>Strong-Hearted Wills*<br><div class="jp">つよいココロ</div></td>
+                <td>Battle start, action start, or when revived:<br>Nullifies some status ailments if the user's HP is 70% or over</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Rebjørn Impact* potency +5%</td>
-                <td>Raises Rebjørn Impact* potency by 5%</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Crack Res +25</td>
-                <td>Raises Crack resistance by 25</td>
+                <td>Combo Slider Strike* potency +5%</td>
+                <td>Raises Combo Slider Strike* potency by 5%</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>Dynamic Soul*<br><div class="jp">ダイナマイトソウル</div></td>
-                <td>Action start on even turns until turn 10:<br>Heals 10% of max HP and restores 4% of max MP, raises martial potency/recovery for 3 turns</td>
+                <td>Unbreakable Bonds*<br><div class="jp">かたいキズナ</div></td>
+                <td>Heals 30% of max HP when the user's HP drops to 70% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>

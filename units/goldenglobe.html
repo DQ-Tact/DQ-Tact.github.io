@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/rebjorn.js"></script>
+    <script src="../unitscripts/goldenglobe.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Rebjørn</title>
+    <title>Golden Globe</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Rebjørn</h1>
+    <h1>Golden Globe</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/Rebjorn.png" class="border">
+    <img src="../images/GoldenGlobe.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
-            <td>150</td>
+            <td>140</td>
         </tr>
         <tr>
             <th scope="row">HP:</th>
@@ -59,43 +59,43 @@
         </tr>
         <tr>
             <th scope="row">Weight:</th>
-            <td id="Weight"></td>
+            <td>35</td>
         </tr>
     </table>
-    <h2><strong>Leader Perk:</strong> <br>Martial Potency +15%</h2>
+    <h2><strong>Leader Perk:</strong> <br>Nature ATK +10%</h2>
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
             <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/Bind.png"></td> 
-            <td><img src="../images/Status/Paralysis.png"></td>   
+            <td><img src="../images/Status/Stun.png"></td> 
+            <td><img src="../images/Status/Curse.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
             <td><img src="../images/Element/Sizz.png"></td>
-            <td><img src="../images/Element/Crack.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/PhysLock.png"></td> 
             <td><img src="../images/Status/Confusion.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Charm.png"></td>
+            <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
     <table class="flat" id="details">
         <tr>
             <th>Family:</th>
-            <td><img class="metal" src="../images/Family/FamilyBeast.png"></td>
+            <td><img class="metal" src="../images/Family/FamilyNature.png"></td>
             <th>Role:</th>
             <td><img class="metal" src="../images/Role/AttackType.png"></td>
             <th>Element:</th>
-            <td><img class="metal" src="../images/Role/BangType.png"></td>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
         </tr>
     </table>
-    <div id="statfilterblossom">
+    <div id="statfilter">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,14 +118,6 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
-        <form name="formTBCB">
-            <label>
-              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include Weight & max HP changes from base perk</label>
-            </label>
-          </form>
-    </div>
-    <div class="unofficial">
-        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -133,7 +125,7 @@
             <tr>
                 <th colspan="7" class="bigheader">Abilities</th>
             </tr>
-                        <tr>
+            <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
                 <th scope="col" style="min-width:100px">Name</th>
@@ -146,30 +138,30 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>Booork!<!--<br><div class="jp">プイイーッ！</div>--></td>
-                <td>24</td>
+                <td><img src="../images/AttackType/CGreenMartial.png"></td>
+                <td>Defence</td>
+                <td>16</td>
                 <td><img src="../images/Element/Typeless.png"></td>
                 <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
-                <td>Reduces damage taken by 15% for the user and grants x1.5 martial potency/recovery for 1 turn</td>
+                <td>Reduces damage taken by 50% for the user for 1 turn</td>
             </tr>
             <tr>
-                <td>31</td>
-                <td><img src="../images/AttackType/ABlueMartial.png"></td>
-                <td>Adorable Tantrum*<br><div class="jp">ラブリージダンダ</div></td>
-                <td>120</td>
+                <td>22</td>
+                <td><img src="../images/AttackType/BRedPhysical.png"></td>
+                <td>Golden Spike</td>
+                <td>36</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Rhombus.png"><br>Rhombus</td>
-                <td>Deals major martial damage (265 base potency) to all enemies in area of effect, occasionally charms</td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals minor physical damage (65% potency) to 1 enemy 3 times, generates 100-damage thorn spaces in area that target enemies and allies for 2 turns</td>
             </tr>
             <tr>
-                <td>54</td>
-                <td><img src="../images/AttackType/ARedMartial.png"></td>
-                <td>Rebjørn Impact*<br><div class="jp">プオーンインパクト</div></td>
-                <td>94</td>
-                <td><img src="../images/Element/Bang.png"></td>
-                <td><img src="../images/AttackRange/Fan.png"><br>Fan</td>
-                <td>Deals major Bang-type martial damage (260 base potency) to all enemies in area of effect</td>
+                <td>44</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Spiked Roller</td>
+                <td>44</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/StraightLine.png"><br>Straight Line</td>
+                <td>Deals major physical damage (235% potency) to all enemies in area of effect, moves up to 4 spaces, generates 100-damage thorn spaces in area that target enemies and allies for 2 turns</td>
             </tr>
         </tbody>
     </table>
@@ -188,31 +180,21 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>DEF +20</td>
-                <td>Raises max DEF by 20</td>
+                <td>Max HP +20</td>
+                <td>Raises max HP by 20</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Max MP +15</td>
-                <td>Raises max MP by 15</td>
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Sealed Beast*<br><div class="jp">封印されし魔獣</div></td>
-                <td>Battle start:<br>Prevents incoming attacks from dealing over 50% of the unit's max HP for 10 turns</td>
+                <td>100, 110, 120, 130</td>
+                <td>Spiked Roller potency +2%</td>
+                <td>Raises Spiked Roller potency by 2%</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Tiny Body*<br><div class="jp">プチボディ</div></td>
-                <td>Lowers Weight by 5 and raises max HP by 10</td>
-            </tr>
-            <tr>
-                <td>110, 120, 130, 140</td>
-                <td>Rebjørn Impact* potency +2%</td>
-                <td>Raises Rebjørn Impact* potency by 2%</td>
-            </tr>
-            <tr>
-                <td>150</td>
+                <td>140</td>
                 <td>Ability Potency/Recovery +2%</td>
                 <td>Raises ability potency/recovery by 2%</td>
             </tr>
@@ -238,28 +220,28 @@
             </tr>
             <tr>
                 <td>2</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gold Thorn Counter</td>
+                <td>When attacked by enemy:<br>Occasionally attacks with Golden Spike if enemy is within 1 to 3-space range<!--<br><div class="attackdesc">(Golden Spike: Deals minor physical damage (65% potency) to 1 enemy 3 times, generates 100-damage thorn spaces in area that target enemies and allies for 2 turns)</div>--></td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spiked Roller potency +5%</td>
+                <td>Raises Spiked Roller potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
                 <td>Sizz Res +25</td>
                 <td>Raises Sizz resistance by 25</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Auto HP Regen</td>
-                <td>Action start:<br>Heals 10% of max HP</td>
-            </tr>
-            <tr>
-                <td>3, 5</td>
-                <td>Rebjørn Impact* potency +5%</td>
-                <td>Raises Rebjørn Impact* potency by 5%</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Crack Res +25</td>
-                <td>Raises Crack resistance by 25</td>
-            </tr>
-            <tr>
                 <td>5</td>
-                <td>Dynamic Soul*<br><div class="jp">ダイナマイトソウル</div></td>
-                <td>Action start on even turns until turn 10:<br>Heals 10% of max HP and restores 4% of max MP, raises martial potency/recovery for 3 turns</td>
+                <td>Gold Thorn Follow-Up</td>
+                <td>When any other ally attacks:<br>Attacks with Golden Spike if enemy is within 1 to 3-space range<!--<br><div class="attackdesc">(Golden Spike: Deals minor physical damage (65% potency) to 1 enemy 3 times, generates 100-damage thorn spaces in area that target enemies and allies for 2 turns)</div>--></td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
