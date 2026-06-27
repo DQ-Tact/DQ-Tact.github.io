@@ -2,8 +2,9 @@ $(document).ready( function () {
     $('#myTable').DataTable({
         columnDefs: [
           { orderable: false, targets: 1}  
-          ,{ orderable: false, targets: 6}
-          ,{ orderable: false, targets: 10}
+          ,{ orderable: false, targets: 5}
+          ,{ orderable: false, targets: 7}
+          ,{ orderable: false, targets: 11}
         //   ,{ visible: false, targets: 15}
         ],
         order: [[0, 'asc']],
@@ -11,7 +12,7 @@ $(document).ready( function () {
       });
 
     $('input:radio[name=rank]').change(function() {
-        $('#myTable').DataTable().columns(2).search(this.value).draw();
+        $('#myTable').DataTable().columns(3).search(this.value).draw();
     });
 
     $('input:radio[name=slot]').change(function() {
@@ -19,11 +20,11 @@ $(document).ready( function () {
     });
 
     $('input:radio[name=type]').change(function() {
-        $('#myTable').DataTable().columns(3).search(this.value).draw();
+        $('#myTable').DataTable().columns(4).search(this.value).draw();
     });
 
     $('input:radio[name=stat]').change(function() {
-        $('#myTable').DataTable().columns(4).search(this.value).draw();
+        $('#myTable').DataTable().columns(5).search(this.value).draw();
     });
 
     $('#Arena').change(function() {

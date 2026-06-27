@@ -167,7 +167,7 @@
 
     <form name="formRTA">
       <label>
-        <input type="checkbox" name="family" id="Arena" value="1"><label for="checkbox">  Only show equipment that can be obtained via RTA swap shops</label>
+        <input type="checkbox" name="family" id="Arena" value="1"><label for="checkbox">  Only show equipment that can be obtained via arena swap shops</label>
       </label>
     </form>
   </div>
@@ -181,9 +181,10 @@
 <!-- Table headers: Icon column cannot be sorted, whiel FilterTB and FilterCB are hidden from view -->
         <th scope="col" style="min-width:70px;">Name</th>
         <th scope="col">Icon <!--(put group here)--></th>
+        <th scope="col" style="min-width:70px;">Where Obtained?</th>
         <th scope="col">Rarity</th>
         <th scope="col">Type</th>
-        <th scope="col" style="min-width:40px;">Stats</th>
+        <th scope="col" style="min-width:55px;">Stats</th>
         <th scope="col">Special Effect</th>
         <th scope="col">Roles</th>
         <th scope="col">Alchemy Effect 1</th>
@@ -193,74 +194,12 @@
       </tr>
     </thead>
     <tbody>
-        <tr>
-          <td>Copper Sword<br><div class="jp">どうのつるぎ</div></td>
-          <td><img src="./images/Equipment/CopperSword.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
-          <td>HP +9<br><br>ATK +3</td>
-          <td>-</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +14</td>
-          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +4</td>
-          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +3</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Bronze Sword<br><div class="jp">せいどうのつるぎ</div></td>
-          <td><img src="./images/Equipment/BronzeSword.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
-          <td>HP +14<br><br>ATK +4</td>
-          <td>-</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/BreathPotency.png"><br>Breath Brilliant +2%<br><div class="jp">息ばつぐん +2%</div></td>
-          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +23</td>
-          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Fire Blade<br><div class="jp">ほのおのつるぎ</div></td>
-          <td><img src="./images/Equipment/FireBlade.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
-          <td>HP +36<br><br>ATK +11</td>
-          <td><img src="./images/Equipment/Alchemy/FrizzPotency2.png"><br>Frizz-type Physical Potency +4%</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Physical Potency +3%</td>
-          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Breath Potency +3%</td>
-          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +51</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Demon King Axe<br><div class="jp">天魔のオノ</div></td>
-          <td><img src="./images/Equipment/DemonKingAxe.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
-          <td>ATK +28</td>
-          <td><img src="./images/Equipment/Alchemy/ZamPotency2.png"><br>Zam-type Physical Potency +5%<br><div class="jp">ドルマ属性物理威力 +5%</div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Potency +4%<br><div class="jp">ドルマ属性物理威力 +4%</div></td>
-          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Brilliant +5%<br><div class="jp">ドルマ属性物理ばつぐん +5%</div></td>
-          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Ominous Impact Potency +6%<br><div class="jp">おぞましい衝撃威力 +6%</div></td>
-          <td><a href="./units/demonkingorgodemir.html"><img src="./images/DKOrgodemir.png" class="icon"></a><br><div class="jp">Demon King Orgodemir</div></td>
-        </tr>
-        <tr>
-          <td>Dragon Shield<br><div class="jp">ドラゴンシールド</div></td>
-          <td><img src="./images/Equipment/DragonShield.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyShield.png"><span style="display:none;">!</span></td>
-          <td>DEF +12</td>
-          <td><img src="./images/Equipment/Alchemy/SpellRes2.png"><br>Dragon Spell Res +3%</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/SpellRes.png"><br>Dragon Spell Res +2%</td>
-          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Spell Res +4%</td>
-          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Res +3%</td>
-          <td><img src="./images/Family/FamilyDragon.png"> Only</td>
-        </tr>
+    <!-- Gold Swap Shop  -->
+      <div>
         <tr>
           <td>Steel Shield<br><div class="jp">はがねのたて</div></td>
           <td><img src="./images/Equipment/IronShield.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Equipment/Events/GoldShop.png" class="event"><br>Gold Swap Shop</td>
           <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
           <td><img src="./images/Equipment/Filters/AlchemyShield.png"><span style="display:none;">!</span></td>
           <td>DEF +9</td>
@@ -271,348 +210,25 @@
           <td><img src="./images/Equipment/Alchemy/WooshRes.png"><br>Woosh-type Res +1%</td>
           <td>-</td>
         </tr>
-        <tr>
-          <td>Oaken Club<br><div class="jp">こんぼう</div></td>
-          <td><img src="./images/Equipment/OakenClub.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
-          <td>ATK +6</td>
-          <td>-</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +5</td>
-          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +11</td>
-          <td><img src="./images/Equipment/Alchemy/MP2.png"><br>MP +3</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Iron Club<br><div class="jp">てつのかなぼう</div></td>
-          <td><img src="./images/Equipment/IronClub.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
-          <td>ATK +8</td>
-          <td>-</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical Brilliant +2%</td>
-          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +6</td>
-          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Silver Claws<br><div class="jp">シルバークロー</div></td>
-          <td><img src="./images/Equipment/SilverClaws.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
-          <td>ATK +8<br><br>AGL +13</td>
-          <td>-</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/MartialPotency.png"><br>Martial Brilliant +2%</td>
-          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +8</td>
-          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +7</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Kestrel Claws<br><div class="jp">オオワシのツメ</div></td>
-          <td><img src="./images/Equipment/KestrelClaws.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
-          <td>ATK +11<br><br>AGL +17</td>
-          <td><img src="./images/Equipment/Alchemy/WooshPotency2.png"><br>Woosh-type Potency +2%</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Breath Potency +3%</td>
-          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Martial Potency +3%</td>
-          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +14</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Mr Euston's Conductor Cap*<br><div class="jp">トマソンの車掌帽</div></td>
-          <td><img src="./images/Equipment/EustonCap.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Shambles's Hat*<br><div class="jp">ベニーシャハット</div></td>
-          <td><img src="./images/Equipment/ShamblesHat.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Lin's Hat*<br><div class="jp">リィンのぼうし</div></td>
-          <td><img src="./images/Equipment/LinsHat.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Bronze Claws<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/BronzeClaws.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Copper Claws<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/CopperClaws.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
-          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Dragon's Scale<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/DragonScale.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td>None</td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Goddess's Crystal Ball*<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/GoddessCrystalBall.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><a href="./units/rubiss.html"><img src="./images/Rubiss.png" class="icon"></a><br><div class="jp">Rubiss</div></td>
-        </tr>
-        <tr>
-          <td>Heavenly Helm<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/HeavenlyHelm.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Helm of Sebath<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/HelmofSebath.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Horde Helm<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/HordeHelm.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Iron Axe<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/IronAxe.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Iron Mask<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/IronMask.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Large Vernier Unit<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/LargeVernierUnit.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Pirate's Pistol*<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/PiratePistol.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><a href="./units/pirateslime.html"><img src="./images/PirateSlime.png" class="icon"></a><br><div class="jp">Pirate Slime</div></td>
-        </tr>
-        <tr>
-          <td>Ring of Clarity<br><div class="jp">りせいのリング</div></td>
-          <td><img src="./images/Equipment/RingofClarity.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td>None</td>
-          <td>MP +5<br><br>DEF +5</td>
-          <td><img src="./images/Equipment/Alchemy/ConfusionRes2.png"><br>Confusion Res +5%<br><div class="jp">混乱耐性+5%</div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/ConfusionRes.png"><br>Confusion Res +7%<br><div class="jp">混乱耐性+7%</div></td>
-          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
-          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Safety Goggles<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/SafetyGoggles.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td>None</td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Silver Rapier<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/SilverRapier.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Silver Shield<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/SilverShield.png" class="wpn"><span style="display:none;">1</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Slime Fan*<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/SlimeFan.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Sword of Kings<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/SwordofKings.png" class="wpn"><span style="display:none;">0</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
-          <td></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Thundara Materia<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/ThundaraMateria.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
-          <td>None</td>
-          <td></td>
-          <td><img src="./images/AttackType/BRedSpell.png"><br><a href="./abilities/thundermateria.html">Thundara Materia</a><br><div class="jp"></div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Tough Guy Tatoo<br><div class="jp">いかりのタトゥー</div></td>
-          <td><img src="./images/Equipment/ToughGuyTatoo.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td>None</td>
-          <td>ATK +7<br><br>DEF +5<span style="display:none;">$</span></td>
-          <td><img src="./images/Equipment/Alchemy/Special.png"><br><a href="./perks/equipment.html#VoltageUp">Voltage Up</a><br><div class="jp">ボルテージアップ</div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
-          <td><img src="./images/Equipment/Alchemy/ATK.png"><br>ATK +10<br><div class="jp">こうげき力+10</div></td>
-          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jp">しゅび力+15</div></td>
-          <td>-</td>
-        </tr>
-        <!-- Grand RTA Equipment  -->
+      </div>
+    <!-- Mini Medal Swap Shop  -->
+      <div>
+
+      </div>
+    <!-- Individual Arena Swap Shop -->
+      <div>
+
+      </div>
+    <!-- RTA Swap Shop  -->
+      <div>
+
+      </div>
+    <!-- Grand Tournament Swap Shop  -->
+      <div>
         <tr>
           <td>Treasured Sword of Flames*<br><div class="jp">炎の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaIndividual.png" class="event"><br>Arena:<span style="display:none;">0</span> Individual Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -626,6 +242,7 @@
         <tr>
           <td>Treasured Sword of Flashing Fire*<br><div class="jp">閃熱の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaRTA.png" class="event"><br>Arena:<span style="display:none;">1</span> Real-Time Match</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -639,6 +256,7 @@
         <tr>
           <td>Treasured Sword of Ice*<br><div class="jp">氷の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaGrand.png" class="event"><br>Arena:<span style="display:none;">2</span> Grand Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -652,6 +270,7 @@
         <tr>
           <td>Treasured Sword of Wind*<br><div class="jp">風の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaGrand.png" class="event"><br>Arena:<span style="display:none;">2</span> Grand Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -665,6 +284,7 @@
         <tr>
           <td>Treasured Sword of Light*<br><div class="jp">光の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaGrand.png" class="event"><br>Arena:<span style="display:none;">2</span> Grand Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -678,6 +298,7 @@
         <tr>
           <td>Treasured Sword of Thunder*<br><div class="jp">雷の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaGrand.png" class="event"><br>Arena:<span style="display:none;">2</span> Grand Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -691,6 +312,7 @@
         <tr>
           <td>Treasured Sword of Darkness*<br><div class="jp">闇の宝剣</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaGrand.png" class="event"><br>Arena:<span style="display:none;">2</span> Grand Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -704,6 +326,7 @@
         <tr>
           <td>Fighting Champion's Axe*<br><div class="jp">闘技王のオノ</div><span style="display:none;">&</span></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td><img src="./images/Equipment/Events/ArenaGrand.png" class="event"><br>Arena:<span style="display:none;">2</span> Grand Tournament</td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>
@@ -714,35 +337,58 @@
           <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
           <td>-</td>
         </tr>
+      </div>
+    <!-- Battle Road Equipment  -->
+      <div>
         <tr>
-          <td>Meteorite Bracer<br><div class="jp">ほしふるうでわ</div></td>
-          <td><img src="./images/Equipment/MeteoriteBracer.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
-          <td>None</td>
-          <td>AGL +10<span style="display:none;">^</span></td>
-          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>Entire Party AGL +3<br><div class="jp">パーティ全体のすばやさ+3</div></td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/AGL.png"><br>Entire Party AGL +4<br><div class="jp">パーティ全体のすばやさ+4</div></td>
-          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
-          <td><img src="./images/Equipment/Alchemy/AGL.png"><br>AGL +8<br><div class="jp">すばやさ+8</div></td>
-          <td>-</td>
+          <td>Beastly Jacket<br><div class="jp">牙獣のジャケット</div></td>
+          <td><img src="./images/Equipment/BeastlyJacket.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Equipment/Events/BattleRoad.png" class="event"><br>Battle Road:<span style="display:none;"></span> Bewarewolf</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClothes.png"><span style="display:none;">9</span></td>
+          <td>DEF +8<br><br>AGL +8</td>
+          <td><img src="./images/Equipment/Alchemy/BindRes2.png"><br>Beast Bind Res +9%<br><div class="jp">魔獣系移動制限耐性+9%</div></td>
+          <td><img class="roles" src="./images/Role/AttackType.png"><br><img class="roles" src="./images/Role/SupportType.png"><br><img class="roles" src="./images/Role/DebuffType.png"></td>
+          <td><img src="./images/Equipment/Alchemy/BindRes.png"><br>Beast Bind Res +4%<br><div class="jp">魔獣系移動制限耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamRes.png"><br>Beast Zam-type Spell Res +4%<br><div class="jp">魔獣系ドルマ属性呪文耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamRes.png"><br>Beast Zam-type Res +3%<br><div class="jp">魔獣系ドルマ属性耐性+3%</div></td>
+          <td><img src="./images/Family/FamilyBeast.png"> <br><div class="jp">Beast Units Only</div></td>
         </tr>
         <tr>
-          <td>Full Moon Ring<br><div class="jp">まんげつのリング</div></td>
-          <td><img src="./images/Equipment/FullMoonRing.png" class="wpn"><span style="display:none;">2</span></td>
-          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>Abyss Robe<br><div class="jp">深淵のローブ</div></td>
+          <td><img src="./images/Equipment/AbyssRobe.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Equipment/Events/BattleRoad.png" class="event"><br>Blossom Battle Road: Ghost</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClothes.png"><span style="display:none;">9</span></td>
+          <td>DEF +10<br><br>WIS +7</td>
+          <td><img src="./images/Equipment/Alchemy/SizzRes2.png"><br>Undead Sizz-type Res +6%<br><div class="jp">ゾンビ系ギラ属性耐性+6%</div></td>
+          <td><img class="roles" src="./images/Role/MagicType.png"><br><img class="roles" src="./images/Role/SupportType.png"><br><img class="roles" src="./images/Role/DebuffType.png"></td>
+          <td><img src="./images/Equipment/Alchemy/BindRes.png"><br>Undead Bind Res +10%<br><div class="jp">ゾンビ系移動制限耐性+10%</div></td>
+          <td><img src="./images/Equipment/Alchemy/SizzRes.png"><br>Undead Sizz-type Spell Res +9%<br><div class="jp">ゾンビ系ギラ属性呪文耐性+9%</div></td>
+          <td><img src="./images/Equipment/Alchemy/SizzRes.png"><br>Undead Sizz-type Res +5%<br><div class="jp">ゾンビ系ギラ属性耐性+5%</div></td>
+          <td><img src="./images/Family/FamilyUndead.png"> <br><div class="jp">Undead Units Only</div></td>
+        </tr>
+      </div>
+    <!-- T'n'T Equipment  -->
+      <div>
+        <tr>
+          <td>Tough Guy Tatoo<br><div class="jp">いかりのタトゥー</div></td>
+          <td><img src="./images/Equipment/ToughGuyTatoo.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">0</span> Bravas</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td>None</td>
-          <td>MP +5<br><br>DEF +5</td>
-          <td><img src="./images/Equipment/Alchemy/ParalysisRes2.png"><br>Paralysis Res +5%<br><div class="jp">マヒ耐性+5%</div></td>
+          <td>ATK +7<br><br>DEF +5<span style="display:none;">$</span></td>
+          <td><img src="./images/Equipment/Alchemy/Special.png"><br><a href="./perks/equipment.html#VoltageUp">Voltage Up</a><br><div class="jp">ボルテージアップ</div></td>
           <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/ParalysisRes.png"><br>Paralysis Res +7%<br><div class="jp">マヒ耐性+7%</div></td>
-          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
-          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/ATK.png"><br>ATK +10<br><div class="jp">こうげき力+10</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jp">しゅび力+15</div></td>
           <td>-</td>
         </tr>
         <tr>
           <td>Rubber Earrings<br><div class="jp">雷のイヤリング</div></td>
           <td><img src="./images/Equipment/RubberEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">0</span> Bravas</td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td>None</td>
           <td>MP +5<br><br>DEF +5</td>
@@ -754,14 +400,43 @@
           <td>-</td>
         </tr>
         <tr>
-          <td>Mirror Earrings<br><div class="jp">光のイヤリング</div></td>
-          <td><img src="./images/Equipment/MirrorEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td>Ruby of Protection<br><div class="jp">まもりのルビー</div></td>
+          <td><img src="./images/Equipment/RubyofProtection.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">0</span> Bravas</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>DEF +15<span style="display:none;">! %</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP.png"><br>HP +11<br><div class="jp">HP+11</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Flashy Necklace<br><div class="jp">めざめのネックレス</div></td>
+          <td><img src="./images/Equipment/FlashyNecklace.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">1</span> Woodwin</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +10<span style="display:none;">£ %</span></td>
+          <td><img src="./images/Equipment/Alchemy/SleepRes2.png"><br>Entire Party Sleep Res +3%<br><div class="jp">パーティ全体の眠り耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/SleepRes.png"><br>Entire Party Sleep Res +4%<br><div class="jp">パーティ全体の眠り耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jp">しゅび力+15</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Full Moon Ring<br><div class="jp">まんげつのリング</div></td>
+          <td><img src="./images/Equipment/FullMoonRing.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">1</span> Woodwin</td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td>None</td>
           <td>MP +5<br><br>DEF +5</td>
-          <td><img src="./images/Equipment/Alchemy/BangRes2.png"><br>Bang-type Res +3%<br><div class="jp">イオ属性耐性+3%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ParalysisRes2.png"><br>Paralysis Res +5%<br><div class="jp">マヒ耐性+5%</div></td>
           <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Bang-type Res +4%<br><div class="jp">イオ属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ParalysisRes.png"><br>Paralysis Res +7%<br><div class="jp">マヒ耐性+7%</div></td>
           <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
           <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
           <td>-</td>
@@ -769,6 +444,7 @@
         <tr>
           <td>Anti-Freeze Earrings<br><div class="jp">氷のイヤリング</div></td>
           <td><img src="./images/Equipment/AntiFreezeEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">1</span> Woodwin</td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td>None</td>
           <td>MP +5<br><br>DEF +5</td>
@@ -780,37 +456,54 @@
           <td>-</td>
         </tr>
         <tr>
-          <td>Flashy Necklace<br><div class="jp">めざめのネックレス</div></td>
-          <td><img src="./images/Equipment/FlashyNecklace.png" class="wpn"><span style="display:none;">2</span></td>
+          <td>Meteorite Bracer<br><div class="jp">ほしふるうでわ</div></td>
+          <td><img src="./images/Equipment/MeteoriteBracer.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">2</span> Percusso</td>
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td>None</td>
-          <td>MP +5<br><br>DEF +10</td>
-          <td><img src="./images/Equipment/Alchemy/SleepRes2.png"><br>Entire Party Sleep Res +3%<br><div class="jp">パーティ全体の眠り耐性+3%</div></td>
+          <td>AGL +10<span style="display:none;">^</span></td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>Entire Party AGL +3<br><div class="jp">パーティ全体のすばやさ+3</div></td>
           <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/SleepRes.png"><br>Entire Party Sleep Res +4%<br><div class="jp">パーティ全体の眠り耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/AGL.png"><br>Entire Party AGL +4<br><div class="jp">パーティ全体のすばやさ+4</div></td>
           <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
-          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jp">しゅび力+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/AGL.png"><br>AGL +8<br><div class="jp">すばやさ+8</div></td>
           <td>-</td>
         </tr>
         <tr>
-          <td>Ruby of Protection<br><div class="jp">まもりのルビー</div></td>
-          <td><img src="./images/Equipment/RubyofProtection.png" class="wpn"><span style="display:none;">2</span></td>
+          <td>Ring of Clarity<br><div class="jp">りせいのリング</div></td>
+          <td><img src="./images/Equipment/RingofClarity.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">2</span> Percusso</td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td>None</td>
-          <td>DEF +15</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/ConfusionRes2.png"><br>Confusion Res +5%<br><div class="jp">混乱耐性+5%</div></td>
           <td>-</td>
-          <td>-</td>
-          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/ConfusionRes.png"><br>Confusion Res +7%<br><div class="jp">混乱耐性+7%</div></td>
           <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
-          <td><img src="./images/Equipment/Alchemy/HP.png"><br>HP +11<br><div class="jp">HP+11</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Mirror Earrings<br><div class="jp">光のイヤリング</div></td>
+          <td><img src="./images/Equipment/MirrorEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">2</span> Percusso</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes2.png"><br>Bang-type Res +3%<br><div class="jp">イオ属性耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Bang-type Res +4%<br><div class="jp">イオ属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
           <td>-</td>
         </tr>
         <tr>
           <td>Life Bracer<br><div class="jp">命のブレスレット</div></td>
           <td><img src="./images/Equipment/LifeBracer.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">3</span> Cordania</td>
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td>None</td>
-          <td>HP +10<br><br>DEF +5</td>
+          <td>HP +10<br><br>DEF +5<span style="display:none;">!</span></td>
           <td>-</td>
           <td>-</td>
           <td><img src="./images/Equipment/Alchemy/HP.png"><br>Entire Party HP +7<br><div class="jp">パーティ全体のHP+7</div></td>
@@ -819,8 +512,65 @@
           <td>-</td>
         </tr>
         <tr>
+          <td>Asbestos Earrings<br><div class="jp">炎のイヤリング</div></td>
+          <td><img src="./images/Equipment/AsbestosEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">3</span> Cordania</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzRes2.png"><br>Frizz-type Res +3%<br><div class="jp">メラ属性耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzRes.png"><br>Frizz-type Res +4%<br><div class="jp">メラ属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Angel's Sandals<br><div class="jp">天使のサンダル</div></td>
+          <td><img src="./images/Equipment/AngelsSandals.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">3</span> Cordania</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>AGL +7<span style="display:none;">^</span></td>
+          <td><img src="./images/Equipment/Alchemy/StunRes2.png"><br>Stun Res +5%<br><div class="jp">休み耐性+5%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/StunRes.png"><br>Stun Res +7%<br><div class="jp">休み耐性+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Dragon's Scale<br><div class="jp">りゅうのうろこ</div></td>
+          <td><img src="./images/Equipment/DragonScale.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">4</span> Kibodos</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td>MP +10<br><br>DEF +5<span style="display:none;">£</span></td>
+          <td><img src="./images/Equipment/Alchemy/BreathPotency2.png"><br>[Adventuring Only] Breath Potency +10%<br><div class="jp">[冒険専用]息威力+10%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/BreathPotency.png"><br>Breath Potency +2%<br><div class="jp">息威力+2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jp">しゅび力+15</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Safety Goggles<br><div class="jp">ぐるぐるメガネ</div></td>
+          <td><img src="./images/Equipment/SafetyGoggles.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">4</span> Kibodos</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>WIS +7<span style="display:none;">&</span></td>
+          <td><img src="./images/Equipment/Alchemy/CharmRes2.png"><br>Charm Res +5%<br><div class="jp">魅了耐性+5%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/CharmRes.png"><br>Charm Res +7%<br><div class="jp">魅了耐性+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/WIS.png"><br>WIS +9<br><div class="jp">かしこさ+9</td>
+          <td>-</td>
+        </tr>
+        <tr>
           <td>Gloomy Gloves<br><div class="jp">くらやみのミトン</div></td>
           <td><img src="./images/Equipment/GloomyGloves.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">4</span> Kibodos</td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td>None</td>
           <td>MP +5<br><br>DEF +5</td>
@@ -834,9 +584,10 @@
         <tr>
           <td>Expert Bracer*<br><div class="jp">たつじんのうでわ</div></td>
           <td><img src="./images/Equipment/ExpertBracer.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">5</span> Crimson Badlands*</td>
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td>None</td>
-          <td>MP +10<br><br>DEF +5</td>
+          <td>MP +10<br><br>DEF +5<span style="display:none;">£</span></td>
           <td><img src="./images/Equipment/Alchemy/MartialPotency2.png"><br>[Adventuring Only] Martial Potency +10%<br><div class="jp">[冒険専用]体技威力+10%</div></td>
           <td>-</td>
           <td><img src="./images/Equipment/Alchemy/MartialPotency.png"><br>Martial Potency +2%<br><div class="jp">体技威力+2%</div></td>
@@ -845,8 +596,688 @@
           <td>-</td>
         </tr>
         <tr>
+          <td>Aerofoil Earrings<br><div class="jp">風のイヤリング</div></td>
+          <td><img src="./images/Equipment/AerofoilEarrings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">5</span> Crimson Badlands*</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +5</td>
+          <td><img src="./images/Equipment/Alchemy/WooshRes2.png"><br>Woosh-type Res +3%<br><div class="jp">バギ属性耐性+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/WooshRes.png"><br>Woosh-type Res +4%<br><div class="jp">バギ属性耐性+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Wasteband<br><div class="jp">のろいのベルト</div></td>
+          <td><img src="./images/Equipment/Wasteband.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/TnT.png" class="event"><br>T'n'T:<span style="display:none;">5</span> Crimson Badlands*</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>DEF +17<span style="display:none;">! % ^</span></td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL -10<br><div class="jp">すばやさ-10</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +14<br><div class="jp">しゅび力+14</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP.png"><br>HP +11<br><div class="jp">HP+11</div></td>
+          <td>-</td>
+        </tr>
+      </div>
+    <!-- Equipment Quests  -->
+      <div>
+        <tr>
+          <td>Copper Sword<br><div class="jp">どうのつるぎ</div></td>
+          <td><img src="./images/Equipment/CopperSword.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
+          <td>HP +9<br><br>ATK +3</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +14</td>
+          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +4</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +3</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Bronze Sword<br><div class="jp">せいどうのつるぎ</div></td>
+          <td><img src="./images/Equipment/BronzeSword.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
+          <td>HP +14<br><br>ATK +4</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/BreathPotency.png"><br>Breath Brilliant +2%<br><div class="jp">息ばつぐん +2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +23</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Silver Rapier<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/SilverRapier.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Oaken Club<br><div class="jp">こんぼう</div></td>
+          <td><img src="./images/Equipment/OakenClub.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +6</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +5<br><div class="jp">こうげき力+5</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +11<br><div class="jp">HP+11</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP2.png"><br>MP +3<br><div class="jp">MP+3</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Iron Club<br><div class="jp">てつのかなぼう</div></td>
+          <td><img src="./images/Equipment/IronClub.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +8</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical Brilliant +2%<br><div class="jp">物理ばつぐん+2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ATK2.png"><br>ATK +6<br><div class="jp">こうげき力+6</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +20<br><div class="jp">HP+20</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Iron Axe<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/IronAxe.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Copper Claws<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/CopperClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankD.png"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Bronze Claws<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/BronzeClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Silver Claws<br><div class="jp">シルバークロー</div></td>
+          <td><img src="./images/Equipment/SilverClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td>ATK +8<br><br>AGL +13</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/MartialPotency.png"><br>Martial Brilliant +2%</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +8</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +7</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Kestrel Claws<br><div class="jp">オオワシのツメ</div></td>
+          <td><img src="./images/Equipment/KestrelClaws.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td>ATK +11<br><br>AGL +17</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency2.png"><br>Woosh-type Potency +2%</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Breath Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Martial Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/AGL2.png"><br>AGL +14</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Assassin's Dagger<br><div class="jp">アサシンダガー</div></td>
+          <td><img src="./images/Equipment/AssassinsDagger.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/ExtraRemi.png" class="event"><br>Reminiscence:<span style="display:none;">a</span> Equipment Quests</td>
+          <td><img src="./images/Rank/RankC.png"><span style="display:none;">3</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyDagger.png"><span style="display:none;">1</span></td>
+          <td>MP +4<br><br>WIS +4</td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical MP Cost -3%<br><div class="jp">物理の消費MP-3%</div></td>
+          <td><img src="./images/Equipment/Alchemy/SpellPotency.png"><br>Spell MP Cost -3%<br><div class="jp">呪文の消費MP-3%</div></td>
+          <td><img src="./images/Equipment/Alchemy/BreathPotency.png"><br>Breath MP Cost -3%<br><div class="jp">息の消費MP-3%</div><br><img src="./images/Equipment/Alchemy/MartialPotency.png"><br>Martial MP Cost -3%<br><div class="jp">体技の消費MP-3%</div></td>
+          <td>-</td>
+        </tr>
+      </div>
+    <!-- Cave of Trials  -->
+      <div>
+
+      </div>
+    <!-- DQ 1 Event  -->
+      <div>
+        <tr>
+          <td>Fire Blade<br><div class="jp">ほのおのつるぎ</div></td>
+          <td><img src="./images/Equipment/FireBlade.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQ1.png" class="event"><br>Reminiscence:<span style="display:none;">c</span> DQ Series</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemySword.png"><span style="display:none;">0</span></td>
+          <td>HP +36<br><br>ATK +11</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency2.png"><br>Frizz-type Physical Potency +4%</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Physical Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Breath Potency +3%</td>
+          <td><img src="./images/Equipment/Alchemy/HP2.png"><br>HP +51</td>
+          <td>-</td>
+        </tr>
+      </div>
+    <!-- 2020 Summer Event  -->
+      <div>
+
+      </div>
+    <!-- Slime Fest  -->
+      <div>
+
+      </div>
+    <!-- DQ 3 Event  -->
+      <div>
+
+      </div>
+    <!-- 2020 Halloween Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 4 Event  -->
+      <div>
+        <tr>
+          <td>Battle-Axe<br><div class="jp">バトルアックス</div></td>
+          <td><img src="./images/Equipment/BattleAxe.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQ4.png" class="event"><br>Reminiscence:<span style="display:none;">h</span> DQ Series</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +22</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency2.png"><br>Physical Potency +2%<br><div class="jp">物理威力+2%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical Potency +2%<br><div class="jp">物理威力+2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Physical Brilliant +3%<br><div class="jp">物理ばつぐん+3%</div></td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Phoenix Dance Potency +5%<br><div class="jp">不死鳥天舞威力+5%</div></td>
+          <td><a href="./units/ragnar.html"><img src="./images/Ragnar.png" class="icon"></a><br><div class="jp">Ragnar</div></td>
+        </tr>
+      </div>
+    <!-- 2020 Christmas Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 5 Event  -->
+      <div>
+        <tr>
+          <td>Akillics<br><div class="jp">シャイニーネイル</div></td>
+          <td><img src="./images/Equipment/Akillics.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQ5.png" class="event"><br>Reminiscence:<span style="display:none;">j</span> DQ Series</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyClaw.png"><span style="display:none;">3</span></td>
+          <td>ATK +11<br><br>AGL +17</td>
+          <td><img src="./images/Equipment/Alchemy/SizzPotency2.png"><br>Sizz-type Physical Potency +4%<br><div class="jp">ギラ属性物理威力+4%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/SizzPotency.png"><br>Sizz-type Physical Potency +3%<br><div class="jp">ギラ属性物理威力+3%</div></td>
+          <td><img src="./images/Equipment/Alchemy/SizzPotency.png"><br>Sizz-type Physical Brilliant +4%<br><div class="jp">ギラ属性物理ばつぐん+4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/SizzPotency.png"><br>Firetwirl Potency +5%<br><div class="jp">剛熱舞闘撃威力+5%</div></td>
+          <td><a href="./units/debora.html"><img src="./images/Debora.png" class="icon"></a><br><div class="jp">Debora</div></td>
+        </tr>
+      </div>
+    <!-- .5 Yr Anniversary Equipment  -->
+      <div>
+
+      </div>
+    <!-- 2021 Valentine's Day Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 2 Event  -->
+      <div>
+
+      </div>
+    <!-- 2021 Spring Event  -->
+      <div>
+
+      </div>
+    <!-- Dragon Fest Event  -->
+      <div>
+        <tr>
+          <td>Dragon Shield<br><div class="jp">ドラゴンシールド</div></td>
+          <td><img src="./images/Equipment/DragonShield.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Equipment/Events/DragonFest.png" class="event"><br>Reminiscence:<span style="display:none;">o</span> 2021</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyShield.png"><span style="display:none;">!</span></td>
+          <td>DEF +12</td>
+          <td><img src="./images/Equipment/Alchemy/SpellRes2.png"><br>Dragon Spell Res +3%</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/SpellRes.png"><br>Dragon Spell Res +2%</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Spell Res +4%</td>
+          <td><img src="./images/Equipment/Alchemy/BangRes.png"><br>Dragon Bang-type Res +3%</td>
+          <td><img src="./images/Family/FamilyDragon.png"> <br><div class="jp">Dragon Units Only</div></td>
+        </tr>
+      </div>
+    <!-- DQ 7 Event  -->
+      <div>
+        <tr>
+          <td>Demon King Axe<br><div class="jp">天魔のオノ</div></td>
+          <td><img src="./images/Equipment/DemonKingAxe.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQ7.png" class="event"><br>Reminiscence:<span style="display:none;">p</span> DQ Series</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +28</td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency2.png"><br>Zam-type Physical Potency +5%<br><div class="jp">ドルマ属性物理威力 +5%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Potency +4%<br><div class="jp">ドルマ属性物理威力 +4%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Zam-type Physical Brilliant +5%<br><div class="jp">ドルマ属性物理ばつぐん +5%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZamPotency.png"><br>Ominous Impact Potency +6%<br><div class="jp">おぞましい衝撃威力 +6%</div></td>
+          <td><a href="./units/demonkingorgodemir.html"><img src="./images/DKOrgodemir.png" class="icon"></a><br><div class="jp">Demon King Orgodemir</div></td>
+        </tr>
+      </div>
+    <!-- Beast Fest Event  -->
+      <div>
+
+      </div>
+    <!-- 2021 Golden Week Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 6 Event  -->
+      <div>
+
+      </div>
+    <!-- 1st Yr Anniversary Equipment  -->
+      <div>
+
+      </div>
+    <!-- 2021 Summer Event  -->
+      <div>
+
+      </div>
+    <!-- 2021 Silver Week  -->
+      <div>
+
+      </div>
+    <!-- DQ 8 Event  -->
+      <div>
+        <tr>
+          <td>Bandit Axe<br><div class="jp">さんぞくのオノ</div></td>
+          <td><img src="./images/Equipment/BanditAxe.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQ8.png" class="event"><br>Reminiscence:<span style="display:none;">w</span> DQ Series</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +22</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency2.png"><br>Physical Potency +2%<br><div class="jp">物理威力+2%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Axes of Evil Potency +7%<br><div class="jp">オノむそう威力+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Über Parallax Potency +7%<br><div class="jp">蒼天魔斬・極威力+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP.png"><br>HP +45<br><div class="jp">HP+45</div></td>
+          <td><a href="./units/yangus.html"><img src="./images/Yangus.png" class="icon"></a><br><div class="jp">Yangus</div></td>
+        </tr>
+      </div>
+    <!-- 2021 Halloween Event  -->
+      <div>
+
+      </div>
+    <!-- 2021 Christmas Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 11 Event  -->
+      <div>
+
+      </div>
+    <!-- 1.5 Yr Anniversary Equipment  -->
+      <div>
+
+      </div>
+    <!-- DQM Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 9 Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 10 Event  -->
+      <div>
+
+      </div>
+    <!-- DQ 6 Dream Event  -->
+      <div>
+
+      </div>
+    <!-- 2022 Golden Week Event  -->
+      <div>
+
+      </div>
+    <!-- True DQ 3 Event  -->
+      <div>
+
+      </div>
+    <!-- 2nd Yr Anniversary Equipment  -->
+      <div>
+
+      </div>
+    <!-- 2022 Summer Event  -->
+      <div>
+
+      </div>
+    <!-- 2022 Halloween Event  -->
+      <div>
+
+      </div>
+    <!-- DQMJ Event  -->
+      <div>
+        <tr>
+          <td>Ace Halberd<br><div class="jp">キングハルバード</div></td>
+          <td><img src="./images/Equipment/AceHalberd.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQMJ.png" class="event"><br>Reminiscence:<span style="display:none;">zk</span> DQ Series</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyAxe.png"><span style="display:none;">2</span></td>
+          <td>ATK +28</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency2.png"><br>Physical Potency +4%<br><div class="jp">物理威力+4%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/PhysicalPotency.png"><br>Rapid Cross Potency +8%<br><div class="jp">ラピッドクロス威力+8%</div></td>
+          <td><img src="./images/Equipment/Alchemy/ZapPotency.png"><br>Thunder Brave Potency +8%<br><div class="jp">サンダーブレイブ威力+8%</div></td>
+          <td><img src="./images/Equipment/Alchemy/HP.png"><br>HP +67<br><div class="jp">HP+67</div></td>
+          <td><a href="./units/wulfspadeace.html"><img src="./images/WulfspadeAce.png" class="icon"></a><br><div class="jp">Wulfspade Ace</div></td>
+        </tr>
+        <tr>
+          <td>Ace Dagger<br><div class="jp">クインダガー</div></td>
+          <td><img src="./images/Equipment/AceDagger.png" class="wpn"><span style="display:none;">0</span></td>
+          <td><img src="./images/Equipment/Events/DQMJ.png" class="event"><br>Reminiscence:<span style="display:none;">zk</span> DQ Series</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyDagger.png"><span style="display:none;">1</span></td>
+          <td>MP +11<br><br>WIS +11</td>
+          <td><img src="./images/Equipment/Alchemy/Healing2.png"><br>Healing Ability Recovery +3%<br><div class="jp">回復とくぎ回復力+3%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/SizzPotency.png"><br>Ace Volcano Potency +7%<br><div class="jp">クインボルケーノ威力+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/Healing.png"><br>Healing Arts Recovery +7%<br><div class="jp">癒しの秘術回復力+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/WIS.png"><br>WIS +8<br><div class="jp">かしこさ+8</div></td>
+          <td><a href="./units/hawkhartace.html"><img src="./images/HawkhartAce.png" class="icon"></a><br><div class="jp">Hawkhart Ace</div></td>
+        </tr>
+      </div>
+    <!-- 2022 Christmas Event  -->
+      <div>
+
+      </div>
+    <!-- True DQ 4 Event  -->
+      <div>
+
+      </div>
+    <!-- 2.5 Yr Anniversary Equipment  -->
+      <div>
+
+      </div>
+    <!-- 2023 Valentine's Day Event  -->
+      <div>
+
+      </div>
+    <!-- 2023 Spring Event  -->
+      <div>
+
+      </div>
+    <!-- True DQ 10 Event  -->
+      <div>
+
+      </div>
+    <!-- Mindini Hunter Event  -->
+      <div>
+
+      </div>
+    <!-- 2023 Golden Week Event  -->
+      <div>
+        <tr>
+          <td>Alluring Bunny Ears<br><div class="jp">ゆうわくのカチューシャ</div></td>
+          <td><img src="./images/Equipment/AlluringBunnyEars.png" class="wpn"><span style="display:none;">1</span></td>
+          <td><img src="./images/Equipment/Events/3rdAnniBefore.png" class="event"><br>Reminiscence:<span style="display:none;">zs</span> 2023</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td>MP +11<br><br>DEF +6</td>
+          <td><img src="./images/Equipment/Alchemy/CrackRes2.png"><br>Crack-type Physical Res +4%<br><div class="jp">ヒャド属性物理耐性+4%</div></td>
+          <td><img class="roles" src="./images/Role/AttackType.png"><br><img class="roles" src="./images/Role/SupportType.png"><br><img class="roles" src="./images/Role/DebuffType.png"></td>
+          <td><img src="./images/Equipment/Alchemy/BlindRes.png"><br>Blind Res +7%<br><div class="jp">幻惑耐性+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/CrackRes.png"><br>Crack-type Physical Res +7%<br><div class="jp">ヒャド属性物理耐性+7%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +11<br><div class="jp">MP+11</div></td>
+          <td>-</td>
+        </tr>
+      </div>
+
+        
+        
+        <tr>
+          <td>Mr Euston's Conductor Cap*<br><div class="jp">トマソンの車掌帽</div></td>
+          <td><img src="./images/Equipment/EustonCap.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Shambles's Hat*<br><div class="jp">ベニーシャハット</div></td>
+          <td><img src="./images/Equipment/ShamblesHat.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Lin's Hat*<br><div class="jp">リィンのぼうし</div></td>
+          <td><img src="./images/Equipment/LinsHat.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/AlchemyHat.png"><span style="display:none;">7</span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Goddess's Crystal Ball*<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/GoddessCrystalBall.png" class="wpn"><span style="display:none;">0</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><a href="./units/rubiss.html"><img src="./images/Rubiss.png" class="icon"></a><br><div class="jp">Rubiss</div></td>
+        </tr>
+        <tr>
+          <td>Heavenly Helm<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/HeavenlyHelm.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Helm of Sebath<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/HelmofSebath.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Horde Helm<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/HordeHelm.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Iron Mask<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/IronMask.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankB.png"><span style="display:none;">4</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Large Vernier Unit<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/LargeVernierUnit.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pirate's Pistol*<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/PiratePistol.png" class="wpn"><span style="display:none;">0</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><a href="./units/pirateslime.html"><img src="./images/PirateSlime.png" class="icon"></a><br><div class="jp">Pirate Slime</div></td>
+        </tr>
+        <tr>
+          <td>Silver Shield<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/SilverShield.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Slime Fan*<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/SlimeFan.png" class="wpn"><span style="display:none;">0</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Sword of Kings<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/SwordofKings.png" class="wpn"><span style="display:none;">0</span></td>
+          <td>-</td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
+          <td></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td><img src="./images/Equipment/Alchemy/"><br>a<br><div class="jp"></div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Thundara Materia<br><div class="jp">サンダラのマテリア</div></td>
+          <td><img src="./images/Equipment/ThundaraMateria.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/FF7EC.png" class="event"><br>Collaboration<span style="display:none;">4</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>WIS +7<span style="display:none;">&</span></td>
+          <td><img class="attack" src="./images/AttackType/BRedSpell.png"><br><a href="./abilities/thundermateria.html">Thundara Materia</a><br><div class="jp">サンダラのマテリア</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/ZapPotency.png"><br>Zap-type Potency +1%<br><div class="jp">デイン属性威力+1%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/WIS.png"><br>WIS +9<br><div class="jp">かしこさ+9</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
           <td>Dai's Armour<br><div class="jp">ダイの鎧</div></td>
           <td><img src="./images/Equipment/DaisArmour.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td><img src="./images/Equipment/Filters/AlchemyArmour.png"><span style="display:none;">8</span></td>
           <td>DEF +20</td>
@@ -860,6 +1291,7 @@
         <tr>
           <td>Hela's Armour<br><div class="jp">まじんのよろい</div></td>
           <td><img src="./images/Equipment/HelasArmour.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
           <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
           <td><img src="./images/Equipment/Filters/AlchemyArmour.png"><span style="display:none;">8</span></td>
           <td>DEF +35<span style="display:none;">^</span></td>
@@ -873,6 +1305,7 @@
         <tr>
           <td>Silver Mail<br><div class="jp">シルバーメイル</div></td>
           <td><img src="./images/Equipment/SilverMail.png" class="wpn"><span style="display:none;">1</span></td>
+          <td>-</td>
           <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
           <td><img src="./images/Equipment/Filters/AlchemyArmour.png"><span style="display:none;">8</span></td>
           <td>DEF +16</td>
@@ -883,6 +1316,90 @@
           <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
           <td>-</td>
         </tr>
+        <tr>
+          <td>Dolphin Statue<br><div class="jp">イルカ像</div></td>
+          <td><img src="./images/Equipment/DolphinStatue.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/RomancingSaGa.png" class="event"><br>Collaboration<span style="display:none;">6</span></td>
+          <td><img src="./images/Rank/RankS.png"><span style="display:none;">6</span></td>
+          <td>None</td>
+          <td>MP +5<br><br>DEF +15<span style="display:none;">£ %</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/CrackRes.png"><br>Crack-type Res +5%<br><div class="jp">ヒャド属性耐性+5%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +15<br><div class="jp">MP+15</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +15<br><div class="jp">しゅび力+15</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Fira Materia<br><div class="jp">ファイラのマテリア</div></td>
+          <td><img src="./images/Equipment/FiraMateria.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/FF7EC.png" class="event"><br>Collaboration<span style="display:none;">4</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>WIS +7<span style="display:none;">&</span></td>
+          <td><img class="attack" src="./images/AttackType/BRedSpell.png"><br><a href="./abilities/firemateria.html">Fira Materia</a><br><div class="jp">ファイラのマテリア</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/FrizzPotency.png"><br>Frizz-type Potency +1%<br><div class="jp">メラ属性威力+1%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/WIS.png"><br>WIS +9<br><div class="jp">かしこさ+9</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Blizzara Materia<br><div class="jp">ブリザラのマテリア</div></td>
+          <td><img src="./images/Equipment/BlizzaraMateria.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/FF7EC.png" class="event"><br>Collaboration<span style="display:none;">4</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>WIS +7<span style="display:none;">&</span></td>
+          <td><img class="attack" src="./images/AttackType/BRedSpell.png"><br><a href="./abilities/icemateria.html">Blizzara Materia</a><br><div class="jp">ブリザラのマテリア</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/CrackPotency.png"><br>Crack-type Potency +1%<br><div class="jp">ヒャド属性威力+1%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/WIS.png"><br>WIS +9<br><div class="jp">かしこさ+9</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>MP Up Materia<br><div class="jp">ＭＰアップのマテリア</div></td>
+          <td><img src="./images/Equipment/MPUpMateria.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/FF7EC.png" class="event"><br>Collaboration<span style="display:none;">4</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>MP +15<span style="display:none;">£</span></td>
+          <td>-</td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/DEF.png"><br>DEF +13<br><div class="jp">しゅび力+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP2.png"><br>MP +9<br><div class="jp">MP+9</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Aerofoil Piercings*<br><div class="jp">風のピアス</div></td>
+          <td><img src="./images/Equipment/AerofoilPiercings.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/PurtyAccessories.png" class="event"><br>Event<span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>WIS +7<span style="display:none;">&</span></td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency2.png"><br>Woosh-type Spell Potency +2%<br><div class="jp">バギ属性呪文威力+2%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/WooshPotency.png"><br>Woosh-type Spell Potency +2%<br><div class="jp">バギ属性呪文威力+2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/WIS.png"><br>WIS +9<br><div class="jp">かしこさ+9</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Icy Choker*<br><div class="jp">氷のチョーカー</div></td>
+          <td><img src="./images/Equipment/IcyChoker.png" class="wpn"><span style="display:none;">2</span></td>
+          <td><img src="./images/Equipment/Events/PurtyAccessories.png" class="event"><br>Event<span style="display:none;">0</span></td>
+          <td><img src="./images/Rank/RankA.png"><span style="display:none;">5</span></td>
+          <td>None</td>
+          <td>ATK +7<span style="display:none;">$</span></td>
+          <td><img src="./images/Equipment/Alchemy/CrackPotency2.png"><br>Crack-type Physical Potency +2%<br><div class="jp">ヒャド属性物理威力+2%</div></td>
+          <td>-</td>
+          <td><img src="./images/Equipment/Alchemy/CrackPotency.png"><br>Crack-type Physical Potency +2%<br><div class="jp">ヒャド属性物理威力+2%</div></td>
+          <td><img src="./images/Equipment/Alchemy/MP.png"><br>MP +13<br><div class="jp">MP+13</div></td>
+          <td><img src="./images/Equipment/Alchemy/ATK.png"><br>ATK +9<br><div class="jp">こうげき力+9</div></td>
+          <td>-</td>
+        </tr>
     </tbody>
   </table>
 </body>
@@ -891,6 +1408,7 @@
    <!-- <tr>
           <td><br><div class="jp"></div></td>
           <td><img src="./images/Equipment/" class="wpn"><span style="display:none;"></span></td>
+          <td></td>
           <td><img src="./images/Rank/"><span style="display:none;"></span></td>
           <td><img src="./images/Equipment/Filters/"><span style="display:none;"></span></td>
           <td></td>

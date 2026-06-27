@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/ZamType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,14 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -163,6 +171,15 @@
                 <td><img src="../images/AttackRange/Front10.png"><br>Front</td>
                 <td>Deals major unreflectable Zam-type spell damage and major Zap-type spell damage to all enemies in area of effect</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>Chaos Blaster*<br><div class="jp">カオスブラスター</div></td>
+                <td>148</td>
+                <td><img src="../images/Element/Bang.png"></td>
+                <td><img src="../images/AttackRange/Front10.png"><br>Front</td>
+                <td>Deals major Bang-type spell damage to all enemies in area of effect, occasionally lowers Demon Res for 3 turns</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -206,7 +223,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -239,6 +256,16 @@
                 <td>Raises Chaos Stream potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Chaos Blaster* potency +5%</td>
+                <td>Raises Chaos Blaster* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Spell Potency/Recovery +5%</td>
+                <td>Raises spell potency/recovery by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Sizz Res +25</td>
                 <td>Raises Sizz resistance by 25</td>
@@ -252,6 +279,144 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chaos Blaster*<br><div class="jp">カオスブラスター</div></td>
+                <td>Deals major Bang-type spell damage to all enemies in area of effect, occasionally lowers Demon Res for 3 turns</td>
+            </tr>
+            <tr>
+                <td>The One True Ruler</td>
+                <td>Action start on odd turns until turn 10:<br>Raises DEF and AGL for 3 turns<br><br>Action start on odd turns until turn 10:<br>If there are 4 or more Demon allies (incl. self) in the party:<br>Raises spell potency/recovery for 3 turns and removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>Auto HP/MP Regen</td>
+                <td>Action start:<br>Heals 10% of max HP and restores 8% of max MP</td>
+            </tr>
+            <tr>
+                <td>Indomitable Spirit</td>
+                <td>Before HP hits 0:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
+            </tr>
+            <tr>
+                <td>(HP +50) x2</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Spell Potency +1%) x2</td>
+                <td>Raises spell potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Spell Brilliant +1%) x2</td>
+                <td>Raises spell brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Spell MP Cost -5%</td>
+                <td>Lowers spell MP cost by 5%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Spell Potency +1.5%) x2</td>
+                <td>Raises Bang-type spell potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Bang-type Spell Brilliant +1.5%) x2</td>
+                <td>Raises Bang-type spell brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Bang-type Spell MP Cost -10%</td>
+                <td>Lowers Bang-type spell MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Physical Res +5%</td>
+                <td>Raises Crack-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Martial Res +5%</td>
+                <td>Raises Crack-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Spell Res +5%</td>
+                <td>Raises Crack-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Breath Res +5%</td>
+                <td>Raises Crack-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh Res +5%</td>
+                <td>Raises Woosh Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Physical Res +5%</td>
+                <td>Raises Woosh-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Martial Res +5%</td>
+                <td>Raises Woosh-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Spell Res +5%</td>
+                <td>Raises Woosh-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Woosh-type Breath Res +5%</td>
+                <td>Raises Woosh-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Paralysis Res +5%) x2</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Poison Res +5%) x2</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Stun Res +5%</td>
+                <td>Raises Stun Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Spell Lock Res +5%</td>
+                <td>Raises Spell Lock Res by 5%</td>
             </tr>
         </tbody>
     </table>

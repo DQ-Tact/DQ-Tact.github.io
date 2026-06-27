@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/ZamType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfiltermindini">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,18 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom2" value="1"><label for="checkbox">  Include max HP increase from Talent Blossom (3 allies)</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -163,6 +175,15 @@
                 <td><img src="../images/AttackRange/Front1.png"><br>Front</td>
                 <td>Deals moderate physical damage (190% potency) to 1 enemy, moves up to 2 spaces, only works if there are no enemies or obstacles between the user and target</td>
             </tr>
+            <tr>
+                <td><img src="../images/Rank/TalentBlossom.png"></td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Cover and Recover*<br><div class="jp">かばって回復</div></td>
+                <td>24</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/MontCover.png"><br>Self</td>
+                <td>Take attacks for directly adjacent allies and reduces damage taken by 20% for the user for 1 turn, heals a moderate amount of HP for the user</td>
+            </tr>
         </tbody>
     </table>
 <!-- Table containing all passive skills -->
@@ -196,7 +217,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -224,6 +245,11 @@
                 <td>Raises Shield Tackle potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Cover and Recover* recovery +5%</td>
+                <td>Raises Cover and Recover* recovery by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Zap Res +25</td>
                 <td>Raises Zap resistance by 25</td>
@@ -232,6 +258,144 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cover and Recover*<br><div class="jp">かばって回復</div></td>
+                <td>Take attacks for directly adjacent allies and reduces damage taken by 20% for the user for 1 turn, heals a moderate amount of HP for the user</td>
+            </tr>
+            <tr>
+                <td>Dastardly Spirit*<br><div class="jp">邪悪な精霊</div></td>
+                <td>Raises max HP by 100<br><br>If there are 3 or more Demon allies (incl. self) in the party:<br>Raises max HP by 100</td>
+            </tr>
+            <tr>
+                <td>Sporadic Demon Bash Counter*<br><div class="jp">ときどきデーモンバッシュの反撃</div></td>
+                <td>When attacked by enemy:<br>Occasionally triggers Demon Bash* if enemy is within 1 to 2-space range<br><div class="attackdesc">(Demon Bash*: Lowers 1 enemy's Demon Res for 3 turns)</div></td>
+            </tr>
+            <tr>
+                <td>(HP +30) x2</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +15) x2</td>
+                <td>Raises max HP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +10) x2</td>
+                <td>Raises max MP by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +10</td>
+                <td>Raises max ATK by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +15</td>
+                <td>Raises max DEF by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +10</td>
+                <td>Raises max AGL by 10</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +10</td>
+                <td>Raises max WIS by 10</td>
+            </tr>
+            <tr>
+                <td>(Zam-type Physical Potency +1.5%) x2</td>
+                <td>Raises Zam-type physical potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Zam-type Physical Brilliant +1.5%) x2</td>
+                <td>Raises Zam-type physical brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Zam-type Physical MP Cost -10%</td>
+                <td>Lowers Zam-type physical MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Physical Potency +1%) x2</td>
+                <td>Raises physical potency by 1%</td>
+            </tr>
+            <tr>
+                <td>(Physical Brilliant +1%) x2</td>
+                <td>Raises physical brilliant by 1%</td>
+            </tr>
+            <tr>
+                <td>Physical MP Cost -5%</td>
+                <td>Lowers physical MP cost by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz Res +5%</td>
+                <td>Raises Sizz Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Physical Res +5%</td>
+                <td>Raises Sizz-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Martial Res +5%</td>
+                <td>Raises Sizz-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Spell Res +5%</td>
+                <td>Raises Sizz-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Sizz-type Breath Res +5%</td>
+                <td>Raises Sizz-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack Res +5%</td>
+                <td>Raises Crack Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Physical Res +5%</td>
+                <td>Raises Crack-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Martial Res +5%</td>
+                <td>Raises Crack-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Spell Res +5%</td>
+                <td>Raises Crack-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Crack-type Breath Res +5%</td>
+                <td>Raises Crack-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Paralysis Res +5%) x2</td>
+                <td>Raises Paralysis Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Martial Lock Res +5%) x2</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Sleep Res +5%</td>
+                <td>Raises Sleep Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Confusion Res +5%</td>
+                <td>Raises Confusion Res by 5%</td>
             </tr>
         </tbody>
     </table>

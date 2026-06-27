@@ -66,9 +66,19 @@ img{
     height: 40px;
 }
 
+.attack{
+    width:46px;
+    height: 46px;
+}
+
 .wpn{
     width:64px;
     height: 64px;
+}
+
+.event{
+    width:90px;
+    height:90px;
 }
 
 .dualdiv{
