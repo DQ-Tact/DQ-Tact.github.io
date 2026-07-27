@@ -65,23 +65,25 @@
     <h2><strong>Leader Perk:</strong> <br>Enemy Bang Res -25%</h2>
     <table class="flat" id="weakres">
         <tr>
-            <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Frizz.png"></td>
-            <td><img src="../images/Element/Crack.png"></td>
+            <th id="minimetal" scope="row">Weaknesses:</th>
+            <td><img class="metal" src="../images/Element/Frizz.png"></td>
+            <td><img class="metal" src="../images/Element/Crack.png"></td>
+            <td></td>
             <td class="large">/</td>
             <td><img src="../images/Status/BrthLock.png"></td> 
             <td><img src="../images/Status/Blind.png"></td>   
         </tr>
         <tr>
-            <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zam.png"></td>
+            <th id="minimetal" scope="row">Resistances:</th>
+            <td><img class="metal" src="../images/Element/HeavySizz.png"></td>
+            <td><img class="metal" src="../images/Element/Woosh.png"></td>
+            <td><img class="metal" src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
             <td><img src="../images/Status/PhysLock.png"></td> 
             <td><img src="../images/Status/Stun.png"></td>
         </tr>
         <tr>
-            <th scope="row">Immunities:</th>
+            <th id="minimetal"  scope="row">Immunities:</th>
             <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
     </table>
@@ -95,7 +97,7 @@
             <td><img class="metal" src="../images/Role/BangType.png"></td>
         </tr>
     </table>
-    <div id="statfilterblossom">
+   <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -105,7 +107,21 @@
             <option value="4">Awakening 4</option>
             <option value="5">Awakening 5</option>
         </select>
-        <label class="filterheader">and at: </label>
+        <label class="filterheader">, </label>
+        <select class="formexawk">
+            <option value="0" selected="selected">Ultimate Awakening Rank 0</option>
+            <option value="1">Ultimate Awakening Rank 1</option>
+            <option value="2">Ultimate Awakening Rank 2</option>
+            <option value="3">Ultimate Awakening Rank 3</option>
+            <option value="4">Ultimate Awakening Rank 4</option>
+            <option value="5">Ultimate Awakening Rank 5</option>
+            <option value="6">Ultimate Awakening Rank 6</option>
+            <option value="7">Ultimate Awakening Rank 7</option>
+            <option value="8">Ultimate Awakening Rank 8</option>
+            <option value="9">Ultimate Awakening Rank 9</option>
+            <option value="10">Ultimate Awakening Rank 10</option>
+        </select>
+        <label class="filterheader">, and </label>
         <select class="formelement">
             <option value="0" selected="selected">Elemental Rank 0</option>
             <option value="1">Elemental Rank 1</option>
@@ -123,6 +139,9 @@
               <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
             </label>
           </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
     </div>
 <!-- Table containing all skills the unit learns -->
     <table class="skills">
@@ -266,6 +285,71 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all Ultimate Awakening perks -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Ultimate Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening Rank</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Demonic Devastation potency +30%</td>
+                <td>Raises Demonic Devastation potency by 30%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Immutable Heart*<br><div class="jp">不動のこころ</div></td>
+                <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Sizz Res +25</td>
+                <td>Raises Sizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Grotesquely Big Fist potency +30%</td>
+                <td>Raises Grotesquely Big Fist potency by 30%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>MP +20</td>
+                <td>Raises max MP by 20</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Grotesque Wrath*<br><div class="jp">異形の怒り</div></td>
+                <td>Battle start:<br>Raises ATK, DEF, AGL, WIS, and reduces damage taken by 30% for 3 turns<br><br>Action start on even turns until turn 10:<br>Restores 8% of max MP and raises ATK, DEF, AGL and WIS for 3 turns</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>HP +20</td>
+                <td>Raises max HP by 20</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Psaro the Manslayer's Master Badge*<br><div class="jp">デスピサロのマスターバッジ</div></td>
+                <td>Raises ??? physical potency by 2%<br><div class="attackdesc">This perk will also affect units who have not undergone ultimate awakening</div></td>
             </tr>
         </tbody>
     </table>

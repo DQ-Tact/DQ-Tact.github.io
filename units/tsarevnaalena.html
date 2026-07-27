@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/summonstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Tomboy Tsarevna Alena</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Tomboy Tsarevna Alena</h1>
+    <a href="./herosofia.html">Return to Prev. Unit</a>
+    <div class="centred">
+    <img src="../images/TsarevnaAlena.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>150</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td>1322</td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td>446</td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td>584</td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td>382</td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td>526</td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td>212</td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>--</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/HeavyWoosh.png"></td>
+            <td><img src="../images/Element/HeavyZam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Charm.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Stun.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
+        </tr>
+    </table>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenMartial.png"></td>
+                <td>Prepare for a good pummelling!*<br><div class="jp">気合注入！</div></td>
+                <td>20</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Raises the user's Tension for 1 turn, raises ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Boiling Hot Dash*<br><div class="jp">熱血ストレート</div></td>
+                <td>68</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/StraightLine4.png"><br>Straight Line</td>
+                <td>Deals major Sizz-type physical damage (310% potency) to all enemies in area of effect, moves up to 5 spaces, raises the user's ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Clap Trap<!--<br><div class="jp">とうこん討ち</div>--></td>
+                <td>80</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major unreflectable physical damage (410% potency) to 1 enemy, raises the user's Tension for 1 turn</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td><img src="../images/AttackType/ACoupRedPhysical.png"></td>
+                <td>Greater Ball of Fire*<br><div class="jp">閃光烈火拳・絶</div></td>
+                <td>101</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/RhombusAoE.png"><br>1-3</td>
+                <td>Deals major surehit Frizz-type physical damage (500% potency) to all enemies in area of effect<br>Turns needed: 2 turns (Times usable: 2)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Smash Punch Follow-Up*<br><div class="jp">とうこんパンチの追撃</div></td>
+                <td>When any other Hero ally makes a physical or spell attack:<br>Attacks with Smash Punch* if enemy is within 1 to 3-space range, up to 4 times per battle<br><div class="attackdesc">(Smash Punch*: Deals major unreflectable physical damage (310% potency) to 1 enemy, raises the user's Tension for 1 turn)</div></td>
+            </tr>
+            <tr>
+                <td>90, 100, 110, 120, 130, 140</td>
+                <td>Boiling Hot Dash* potency +10%</td>
+                <td>Raises Boiling Hot Dash* potency by 10%</td>
+            </tr>
+            <tr>
+                <td>90, 100, 110, 120, 130, 140</td>
+                <td>Clap Trap potency +10%</td>
+                <td>Raises Clap Trap potency by 10%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Greater Ball of Fire* potency +10%</td>
+                <td>Raises Greater Ball of Fire* potency by 10%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
