@@ -656,6 +656,13 @@ img[src*="TalentBlossom"]{
         display: block;
     }
 
+    table.moreskills{
+        table-layout: fixed;
+        max-width: 93%;
+        overflow-x: scroll;
+        display: block;
+    }
+
     .toobig{
         font-size: 12px;
     }
@@ -911,6 +918,13 @@ img[src*="TalentBlossom"]{
     }
 
     table.skills{
+        table-layout: fixed;
+        max-width: 97%;
+        overflow-x: scroll;
+        display: block;
+    }
+
+    table.moreskills{
         table-layout: fixed;
         max-width: 97%;
         overflow-x: scroll;
