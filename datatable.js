@@ -18,6 +18,10 @@ $(document).ready( function () {
       $('#myTable').DataTable().columns(4).search(this.value).draw();
     });
 
+    $('input:radio[name=ability]').change(function() {
+      $('#myTable').DataTable().columns(1).search(this.value).draw();
+    });
+
     $('#TalentBlossom').change(function() {
       if ($(this).is(':checked')) {
         $('#myTable').DataTable().columns(13).search("1").draw();
