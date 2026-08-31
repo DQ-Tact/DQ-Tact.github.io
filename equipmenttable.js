@@ -27,7 +27,7 @@ $(document).ready( function () {
         $('#myTable').DataTable().columns(5).search(this.value).draw();
     });
 
-    $('#Arena').change(function() {
+    $('#Unique').change(function() {
       if ($(this).is(':checked')) {
         $('#myTable').DataTable().columns(0).search("&").draw();
       } else {

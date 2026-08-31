@@ -380,10 +380,18 @@ img[src*="Status"]{
 
 .equaltable{
     table-layout: fixed;
-    width: 85%;
+    width: 88%;
 }
 .equaltable th td{
     width: 33.33%;
+}
+
+.equalabysstable{
+    table-layout: fixed;
+    width: 88%;
+}
+.equalabysstable th td{
+    width: 14.29%;
 }
 
 
@@ -397,6 +405,11 @@ strong{
 
 .attackdesc{
     color: rgb(151, 122, 214);
+}
+
+.abyssdesc{
+    color: rgb(151, 122, 214);
+    font-size: 12px;
 }
 
 img[src*="AttackType"]{
@@ -633,6 +646,11 @@ img[src*="TalentBlossom"]{
         table-layout: fixed;
         width: 93%;
     }
+
+    .equalabysstable{
+        table-layout: fixed;
+        width: 93%;
+    }    
 
     .unofficial{
         color: rgb(244, 242, 253);
@@ -900,6 +918,17 @@ img[src*="TalentBlossom"]{
     .equaltable{
         table-layout: fixed;
         width: 97%;
+    }
+
+    .equalabysstable{
+        table-layout: fixed;
+        width: 97%;
+        font-size: 10px;
+    }
+
+    .abyssdesc{
+        color: rgb(151, 122, 214);
+        font-size: 8px;
     }
 
     .unofficial{

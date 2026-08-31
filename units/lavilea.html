@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/lavilea.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Lavilea</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Lavilea</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/Lavilea.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>150</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>70</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br><div class="toobig">Nature Breath Potency +20% & Nature Martial Potency +15%</div></h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Blind.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/HeavyFrizz.png"></td>
+            <td><img src="../images/Element/HeavyZam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Poison.png"></td> 
+            <td><img src="../images/Status/BrthLock.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyNature.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/SizzType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilterblossom">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Abyss Panel</label>
+            </label>
+          </form>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/ARedBreath.png"></td>
+                <td>Arcane Breath*<br><div class="jp">アルカナブレス</div></td>
+                <td>120</td>
+                <td><img src="../images/Element/Frizz.png"></td>
+                <td><img src="../images/AttackRange/T.png"><br>T</td>
+                <td>Deals major Frizz-type, Sizz-type, Crack-type, Woosh-type, Bang-type, Zap-type, or Zam-type breath damage (240 base potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td><img src="../images/AttackType/ARedMartial.png"></td>
+                <td>Blaze Seed*<br><div class="jp">ブレイズシード</div></td>
+                <td>84</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals major Sizz-type martial damage (380 base potency) to 1 enemy, often raises the user's damage dealt for 3 turns</td>
+            </tr>
+           <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedBreath.png"></td>
+                <td>Solar Flare*<br><div class="jp">ソーラーウェーブ</div></td>
+                <td>127</td>
+                <td><img src="../images/Element/Sizz.png"></td>
+                <td><img src="../images/AttackRange/FanL.png"><br>Fan (L)</td>
+                <td>Deals major Sizz-type breath damage (350 base potency) to all enemies in area of effect</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/SBlueBreath.png"></td>
+                <td>Royal Folium*<br><div class="jp">ロイヤルフォリウム</div></td>
+                <td>145</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>1-3</td>
+                <td>Deals huge breath damage (490 base potency) to 1 enemy, greatly lowers damage dealt for 3 turns<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Glimmering Queen of Lush Green*<br><div class="jp">煌めく万緑の女王</div></td>
+                <td>Battle start:<br>Grants a barrier that takes up to 1500 damage for the user for 99 turns that also reduces damage taken by 30% and raises damage dealt by 20%</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lush Green Aura*<br><div class="jp">万緑のオーラ</div></td>
+                <td>Raises Sizz, Crack, and Woosh resistance by 75<br>Raises Bang and Zap resistance by 125<br><div class="attackdesc">This perk only activates inside the Calamitous Abyss</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Martial Potency/Recovery +2%</td>
+                <td>Raises martial potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Breath Potency/Recovery +2%</td>
+                <td>Raises breath potency/recovery by 2%</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>Ability Potency/Recovery +2%</td>
+                <td>Raises ability potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lavilea Soul*<br><div class="jp">ラビレア・ソウル</div></td>
+                <td>Action start on odd turns until turn 10:<br>Raises DEF, AGL, and martial and breath potency/recovery for 3 turns, removes some status ailments</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Blossoming Flower Flash*<br><div class="jp">百花閃乱</div></td>
+                <td>Action start:<br>Attacks with Elemental Bloom* if enemy is within large rhombus area, 1 time per battle<br><div class="attackdesc">(Elemental Bloom*: Deals major unreflectable Frizz-type, Sizz-type, Crack-type, Woosh-type, Bang-type, Zap-type, or Zam-type breath damage (165 base potency) to all enemies in area of effect, grants the user x1.5 martial and breath potency/recovery for 1 turn)</div></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lush Green Veil*<br><div class="jp">万緑のヴェール</div></td>
+                <td>Grants a barrier that takes up to 1500 damage for the user for 99 turns that also reduces damage taken by 30% and raises damage dealt by 20% when the user's HP drops to 50% or less, 1 time per battle<br>This perk can be triggered when the attack is from an ally</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Breath Potency/Recovery +5%</td>
+                <td>Raises breath potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Elemental Bloom*<br><div class="jp">エレメンタルブルーム</div></td>
+                <td>When reducing an enemy's HP to 70% or less, or when attacking an enemy with 70% HP or less:<br>Attacks with Elemental Bloom* if enemy is within large rhombus area, 1 time per battle</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Nature's Abyss Explorer*<br><div class="jp">深淵の探究者・自然</div></td>
+                <td>Battle start:<br>Massively raises evasion rate for 3 turns<br><br>Battle start:<br>If there are 5 Nature allies (incl. self) in the party:<br>Enables Abyss Explorer for all Nature allies (incl. self) for 10 turns<br><div class="attackdesc">When a unit is in the Abyss Explorer state, the unit's damage dealt, Physical Res, Martial Res, Spell Res, and Breath Res are all raised by 15%</div></td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all character builder perks -->
+    <table class="fintable equalabysstable">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abyss Panel</th>
+            </tr>
+            <tr>
+                <th colspan="7"><span style="font-weight:normal">Note: All perks in a row must be obtained to access the next row</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>HP +50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Abyss Only Frizz-type Potency +10%*<br><div class="jp">深淵限定メラ属性威力+10%</div></strong><br>Raises Frizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Sizz-type Potency +10%*<br><div class="jp">深淵限定ギラ属性威力+10%</div></strong><br>Raises Sizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Crack-type Potency +10%*<br><div class="jp">深淵限定ヒャド属性威力+10%</div></strong><br>Raises Crack-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Woosh-type Potency +10%*<br><div class="jp">深淵限定バギ属性威力+10%</div></strong><br>Raises Woosh-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Bang-type Potency +10%*<br><div class="jp">深淵限定イオ属性威力+10%</div></strong><br>Raises Bang-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zap-type Potency +10%*<br><div class="jp">深淵限定デイン属性威力+10%</div></strong><br>Raises Zap-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zam-type Potency +10%*<br><div class="jp">深淵限定ドルマ属性威力+10%</div></strong><br>Raises Zam-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>DEF +15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Abyss Only Frizz-type Potency +10%*<br><div class="jp">深淵限定メラ属性威力+10%</div></strong><br>Raises Frizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Sizz-type Potency +10%*<br><div class="jp">深淵限定ギラ属性威力+10%</div></strong><br>Raises Sizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Crack-type Potency +10%*<br><div class="jp">深淵限定ヒャド属性威力+10%</div></strong><br>Raises Crack-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Woosh-type Potency +10%*<br><div class="jp">深淵限定バギ属性威力+10%</div></strong><br>Raises Woosh-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Bang-type Potency +10%*<br><div class="jp">深淵限定イオ属性威力+10%</div></strong><br>Raises Bang-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zap-type Potency +10%*<br><div class="jp">深淵限定デイン属性威力+10%</div></strong><br>Raises Zap-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zam-type Potency +10%*<br><div class="jp">深淵限定ドルマ属性威力+10%</div></strong><br>Raises Zam-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>MP +30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Abyss Only Frizz-type Potency +10%*<br><div class="jp">深淵限定メラ属性威力+10%</div></strong><br>Raises Frizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Sizz-type Potency +10%*<br><div class="jp">深淵限定ギラ属性威力+10%</div></strong><br>Raises Sizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Crack-type Potency +10%*<br><div class="jp">深淵限定ヒャド属性威力+10%</div></strong><br>Raises Crack-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Woosh-type Potency +10%*<br><div class="jp">深淵限定バギ属性威力+10%</div></strong><br>Raises Woosh-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Bang-type Potency +10%*<br><div class="jp">深淵限定イオ属性威力+10%</div></strong><br>Raises Bang-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zap-type Potency +10%*<br><div class="jp">深淵限定デイン属性威力+10%</div></strong><br>Raises Zap-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zam-type Potency +10%*<br><div class="jp">深淵限定ドルマ属性威力+10%</div></strong><br>Raises Zam-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>HP +50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Abyss Only Frizz-type Potency +10%*<br><div class="jp">深淵限定メラ属性威力+10%</div></strong><br>Raises Frizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Sizz-type Potency +10%*<br><div class="jp">深淵限定ギラ属性威力+10%</div></strong><br>Raises Sizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Crack-type Potency +10%*<br><div class="jp">深淵限定ヒャド属性威力+10%</div></strong><br>Raises Crack-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Woosh-type Potency +10%*<br><div class="jp">深淵限定バギ属性威力+10%</div></strong><br>Raises Woosh-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Bang-type Potency +10%*<br><div class="jp">深淵限定イオ属性威力+10%</div></strong><br>Raises Bang-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zap-type Potency +10%*<br><div class="jp">深淵限定デイン属性威力+10%</div></strong><br>Raises Zap-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zam-type Potency +10%*<br><div class="jp">深淵限定ドルマ属性威力+10%</div></strong><br>Raises Zam-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>HP +50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Abyss Only Frizz-type Potency +10%*<br><div class="jp">深淵限定メラ属性威力+10%</div></strong><br>Raises Frizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Sizz-type Potency +10%*<br><div class="jp">深淵限定ギラ属性威力+10%</div></strong><br>Raises Sizz-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Crack-type Potency +10%*<br><div class="jp">深淵限定ヒャド属性威力+10%</div></strong><br>Raises Crack-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Woosh-type Potency +10%*<br><div class="jp">深淵限定バギ属性威力+10%</div></strong><br>Raises Woosh-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Bang-type Potency +10%*<br><div class="jp">深淵限定イオ属性威力+10%</div></strong><br>Raises Bang-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zap-type Potency +10%*<br><div class="jp">深淵限定デイン属性威力+10%</div></strong><br>Raises Zap-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+                <td><strong>Abyss Only Zam-type Potency +10%*<br><div class="jp">深淵限定ドルマ属性威力+10%</div></strong><br>Raises Zam-type potency by 10%<br><br><div class="abyssdesc">This perk only activates inside the Calamitous Abyss</div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>DEF +15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Arcane Breath* potency +5%<br><div class="jp">アルカナブレス威力+5%</div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>HP +50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Nature Frizz-type Potency +3%</strong><br><br>Raises Nature Frizz-type potency by 3%</td>
+                <td><strong>Nature Sizz-type Potency +3%</strong><br><br>Raises Nature Sizz-type potency by 3%</td>
+                <td><strong>Nature Crack-type Potency +3%</strong><br><br>Raises Nature Crack-type potency by 3%</td>
+                <td><strong>Nature Woosh-type Potency +3%</strong><br><br>Raises Nature Woosh-type potency by 3%</td>
+                <td><strong>Nature Bang-type Potency +3%</strong><br><br>Raises Nature Bang-type potency by 3%</td>
+                <td><strong>Nature Zap-type Potency +3%</strong><br><br>Raises Nature Zap-type potency by 3%</td>
+                <td><strong>Nature Zam-type Potency +3%</strong><br><br>Raises Nature Zam-type potency by 3%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
