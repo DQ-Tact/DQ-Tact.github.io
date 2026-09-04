@@ -16,12 +16,12 @@ var TalentBlossomStats = {"hp":50,"mp":50,"atk":25,"def":75,"agl":25,"wis":25,"m
 var FullTalent = false;
 
 function applyStats() {
-    $('#HP').text(Math.ceil((801 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].hp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].hp : 0))) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].hp : 0) + (FullTalent ? TalentBlossomStats.hp : 0))));
-    $('#MP').text(Math.ceil((504 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].mp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].mp : 0))) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].mp : 0) + (FullTalent ? TalentBlossomStats.mp : 0))));
-    $('#ATK').text(Math.ceil((562 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].atk : 0)) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].atk : 0) + (FullTalent ? TalentBlossomStats.atk : 0)))));
-    $('#DEF').text(Math.ceil((461 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0) + (FullTalent ? TalentBlossomStats.def : 0))));
-    $('#AGL').text(Math.ceil((510 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].agl : 0)) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].agl : 0) + (FullTalent ? TalentBlossomStats.agl : 0)))));
-    $('#WIS').text(Math.ceil((183 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].wis : 0)) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].wis : 0) + (FullTalent ? TalentBlossomStats.wis : 0)))));
+    $('#HP').text(Math.ceil((1409 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].hp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].hp : 0))) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].hp : 0) + (FullTalent ? TalentBlossomStats.hp : 0))));
+    $('#MP').text(Math.ceil((522 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].mp : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].mp : 0))) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].mp : 0) + (FullTalent ? TalentBlossomStats.mp : 0))));
+    $('#ATK').text(Math.ceil((241 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].atk : 0)) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].atk : 0) + (FullTalent ? TalentBlossomStats.atk : 0)))));
+    $('#DEF').text(Math.ceil((526 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].def : 0) + (ElementalStatsUp[Elemental] ? ElementalStatsUp[Elemental].def : 0))) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].def : 0) + (FullTalent ? TalentBlossomStats.def : 0))));
+    $('#AGL').text(Math.ceil((531 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].agl : 0)) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].agl : 0) + (FullTalent ? TalentBlossomStats.agl : 0)))));
+    $('#WIS').text(Math.ceil((170 / ((AwkStatsUp[Awk] ? AwkStatsUp[Awk].wis : 0)) - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].wis : 0) + (FullTalent ? TalentBlossomStats.wis : 0)))));
     $('#Move').text(3 - ((AwkStatBuff[Awk] ? AwkStatBuff[Awk].move : 0) + (FullTalent ? TalentBlossomStats.move : 0)));
     }
 

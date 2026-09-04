@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/unitstyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Script information -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../unitscripts/captaincrow.js"></script>
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Captain Crow</title>
+</head>
+
+<body>
+<!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Captain Crow</h1>
+    <a href="../index.html">Return to Unit List</a>
+    <div class="centred">
+    <img src="../images/CaptainCrow.png" class="border">
+    </div>
+    <table class="flat" id="level">
+        <tr>
+            <th scope="row">Lv:</th>
+            <td>150</td>
+        </tr>
+        <tr>
+            <th scope="row">HP:</th>
+            <td id="HP"></td>
+        </tr>
+        <tr>
+            <th scope="row">MP:</th>
+            <td id="MP"></td>
+        </tr>
+        <tr>
+            <th scope="row">ATK:</th>
+            <td id="ATK"></td>
+        </tr>
+        <tr>
+            <th scope="row">DEF:</th>
+            <td id="DEF"></td>
+        </tr>
+        <tr>
+            <th scope="row">AGL:</th>
+            <td id="AGL"></td>
+        </tr>
+        <tr>
+            <th scope="row">WIS:</th>
+            <td id="WIS"></td>
+        </tr>
+        <tr>
+            <th scope="row">Move:</th>
+            <td id="Move"></td>
+        </tr>
+        <tr>
+            <th scope="row">Weight:</th>
+            <td>50</td>
+        </tr>
+    </table>
+    <h2><strong>Leader Perk:</strong> <br>Undead Physical Potency +20%</h2>
+    <table class="flat" id="weakres">
+        <tr>
+            <th scope="row">Weaknesses:</th>
+            <td><img src="../images/Element/Woosh.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/Poison.png"></td>   
+        </tr>
+        <tr>
+            <th scope="row">Resistances:</th>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td class="large">/</td>
+            <td><img src="../images/Status/PhysLock.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>
+        </tr>
+        <tr>
+            <th scope="row">Immunities:</th>
+            <td><img src="../images/Status/Paralysis.png"></td>
+        </tr>
+    </table>
+    <table class="flat" id="details">
+        <tr>
+            <th>Family:</th>
+            <td><img class="metal" src="../images/Family/FamilyUndead.png"></td>
+            <th>Role:</th>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
+            <th>Element:</th>
+            <td><img class="metal" src="../images/Role/ZapType.png"></td>
+        </tr>
+    </table>
+    <div id="statfilter">
+        <label class="filterheader">Show stats at: </label>
+        <select class="formawk">
+            <option value="0" selected="selected">Awakening 0</option>
+            <option value="1">Awakening 1</option>
+            <option value="2">Awakening 2</option>
+            <option value="3">Awakening 3</option>
+            <option value="4">Awakening 4</option>
+            <option value="5">Awakening 5</option>
+        </select>
+        <label class="filterheader">and at: </label>
+        <select class="formelement">
+            <option value="0" selected="selected">Elemental Rank 0</option>
+            <option value="1">Elemental Rank 1</option>
+            <option value="2">Elemental Rank 2</option>
+            <option value="3">Elemental Rank 3</option>
+            <option value="4">Elemental Rank 4</option>
+            <option value="5">Elemental Rank 5</option>
+            <option value="6">Elemental Rank 6</option>
+            <option value="7">Elemental Rank 7</option>
+            <option value="8">Elemental Rank 8</option>
+            <option value="9">Elemental Rank 9</option>
+        </select>
+    </div>
+    <div class="unofficial">
+        <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
+    </div>
+<!-- Table containing all skills the unit learns -->
+    <table class="skills">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Abilities</th>
+            </tr>
+            <tr>
+                <th scope="col">Level</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:65px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="../images/AttackType/BGreenSpell.png"></td>
+                <td>Undead Enhancement*<br><div class="jp">ゾンビエンハンス</div></td>
+                <td>45</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>1-3 (incl. self)</td>
+                <td>Raises Undead Enhancement of all Undead allies in area of effect for 4 turns</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Spectral Ice Wave*<br><div class="jp">冥氷波</div></td>
+                <td>89</td>
+                <td><img src="../images/Element/Crack.png"></td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-3</td>
+                <td>Deals major Crack-type physical damage (280% potency) to all enemies in area of effect, ignores some Light Damage Res</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td><img src="../images/AttackType/ARedPhysical.png"></td>
+                <td>Thunderstorm Slash*<br><div class="jp">雷嵐斬り</div></td>
+                <td>97</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/FanLong.png"><br>Fan (Long)</td>
+                <td>Deals moderate unreflectable Zap-type physical damage (150% potency) to all enemies in area of effect 2 times</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all passive skills -->
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Base Perks</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:60px">Level</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:300px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Max HP +30</td>
+                <td>Raises max HP by 30</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEF +20</td>
+                <td>Raises max DEF by 20</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Captain of the Seven Seas*<br><div class="jp">冥海の大号令</div></td>
+                <td>When attacking:<br>Triggers Captain of the Seven Seas*, up to 5 times per battle<br><div class="attackdesc">(Captain of the Seven Seas*: Raises Undead Enhancement of all Undead allies (incl. self) in large rhombus area of effect for 4 turns)</div></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Abyss Only Undead Elemental Potency +50%*<br><div class="jp">深淵限定ゾンビ系全属性威力+50%</div></td>
+                <td>When challenging an Undead stage within the Calamitous Abyss:<br>Raises Undead Frizz-type, Sizz-type, Crack-type, Woosh-type, Bang-type, Zap-type, and Zam-type potency by 50%<br><div class="attackdesc">This perk activates even when the unit is not in the party</div></td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Thunderstorm Slash* potency +2%</td>
+                <td>Raises Thunderstorm Slash* potency by 2%</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>Ability Potency/Recovery +2%</td>
+                <td>Raises ability potency/recovery by 2%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table containing all awakening perks -->
+    <table class="scroll fintable">
+        <thead>
+            <tr>
+                <th colspan="3" class="bigheader">Awakening Perks</th>
+            </tr>
+            <tr>
+                <th scope="col">Awakening</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:340px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Immortal Captain*<br><div class="jp">不滅のキャプテン</div></td>
+                <td>Battle start:<br>Enacts Auto Revive (50% of max HP) for 99 turns<br><br>Battle start or when revived:<br>Reduces damage taken by 20% and raises ATK and AGL for 3 turns</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Immutable Heart*<br><div class="jp">不動のこころ</div></td>
+                <td>When afflicted with a status ailment:<br>Removes some status ailments, 1 time per battle<br>This perk can be triggered by non-damage dealing abilities or attacks by allies</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Thunderstorm Slash* potency +5%</td>
+                <td>Raises Thunderstorm Slash* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Legendary Pirate*<br><div class="jp">伝説の海賊</div></td>
+                <td>Action start on odd turns until turn 7:<br>Raises ATK for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Stats Up</td>
+                <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+            <tr>
+                <td>1, 2, 3, 4, 5</td>
+                <td>Abyss Only Undead Elemental Potency +10%*<br><div class="jp">深淵限定ゾンビ系全属性威力+10%</div></td>
+                <td>When challenging an Undead stage within the Calamitous Abyss:<br>Raises Undead Frizz-type, Sizz-type, Crack-type, Woosh-type, Bang-type, Zap-type, and Zam-type potency by 10%<br><div class="attackdesc">This perk activates even when the unit is not in the party</div></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
