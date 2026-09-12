@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/tifa.js"></script>
+    <script src="../unitscripts/tifa.js"></script> 
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,7 +95,7 @@
             <td><img class="metal" src="../images/Role/CrackType.png"></td>
         </tr>
     </table>
-    <div id="statfilter">
+    <div id="statfilterblossom">
         <label class="filterheader">Show stats at: </label>
         <select class="formawk">
             <option value="0" selected="selected">Awakening 0</option>
@@ -118,6 +118,11 @@
             <option value="8">Elemental Rank 8</option>
             <option value="9">Elemental Rank 9</option>
         </select>
+        <form name="formTBCB">
+            <label>
+              <input type="checkbox" name="family" id="TalentBlossom" value="1"><label for="checkbox">  Include stats from Talent Blossom/Character Builder</label>
+            </label>
+          </form>
     </div>
     <div class="unofficial">
         <p>Note: All perks/abilities denoted with an * are using unofficial translations</p>
@@ -233,7 +238,7 @@
         </tbody>
     </table>
 <!-- Table containing all awakening perks -->
-    <table class="scroll fintable">
+    <table class="scroll">
         <thead>
             <tr>
                 <th colspan="3" class="bigheader">Awakening Perks</th>
@@ -271,6 +276,16 @@
                 <td>Raises Somersault potency by 5%</td>
             </tr>
             <tr>
+                <td>3, 5</td>
+                <td>Martial Potency/Recovery +5%</td>
+                <td>Raises martial potency/recovery by 5%</td>
+            </tr>
+            <tr>
+                <td>3,5</td>
+                <td>Ability MP Cost -5%</td>
+                <td>Lowers ability MP cost by 5%</td>
+            </tr>
+            <tr>
                 <td>4</td>
                 <td>Frizz Res +25</td>
                 <td>Raises Frizz resistance by 25</td>
@@ -284,6 +299,148 @@
                 <td>1, 2, 3, 4, 5</td>
                 <td>Stats Up</td>
                 <td>Raises HP, MP, ATK, DEF, WIS and AGL by 5%</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Table showing all learnable talent blossoming skills -->
+    <table class="fintable scroll">
+        <thead>
+            <tr>
+                <th colspan="2" class="bigheader">Talent Blossom</th>
+            </tr>
+            <tr>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col" style="min-width:350px">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Martial Tricks</td>
+                <td>Lowers martial ability MP cost by 10%, raises potency and recovery by 10%</td>
+            </tr>
+            <tr>
+                <td>Make Your Choice! (Lv. 2)*<br><div class="jp">これで決める！Lv2</div></td><!--正拳突き-->
+                <td>When any other ally attacks:<br>Attacks with True Strike if enemy is within 1 to 3-space range, up to 5 times per battle<br><div class="attackdesc">(True Strike: Deals major martial damage (257 base potency) to 1 enemy, raises user's LIMIT Gauge by 25)</div></td>
+            </tr>
+            <tr>
+                <td>Enemy Away Materia<!--<br><div class="jp">てきよけのマテリア</div>--></td>
+                <td>Battle start, action start, or when revived:<br>Reduces damage taken by 20% and raises evasion rate by 40% if the user's HP is 50% or over</td>
+            </tr>
+            <tr>
+                <td>HP +50</td>
+                <td>Raises max HP by 50</td>
+            </tr>
+            <tr>
+                <td>MP +40</td>
+                <td>Raises max MP by 40</td>
+            </tr>
+            <tr class="grey">
+                <td>(HP +25) x2</td>
+                <td>Raises max HP by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>(MP +15) x2</td>
+                <td>Raises max MP by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>ATK +15</td>
+                <td>Raises max ATK by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>DEF +25</td>
+                <td>Raises max DEF by 25</td>
+            </tr>
+            <tr class="grey">
+                <td>AGL +15</td>
+                <td>Raises max AGL by 15</td>
+            </tr>
+            <tr class="grey">
+                <td>WIS +15</td>
+                <td>Raises max WIS by 15</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Martial Potency +1.5%) x2</td>
+                <td>Raises Crack-type martial potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Crack-type Martial Brilliant +1.5%) x2</td>
+                <td>Raises Crack-type martial brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Crack-type Martial MP Cost -10%</td>
+                <td>Lowers Crack-type martial MP cost by 10%</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Martial Potency +1.5%) x2</td>
+                <td>Raises Sizz-type martial potency by 1.5%</td>
+            </tr>
+            <tr>
+                <td>(Sizz-type Martial Brilliant +1.5%) x2</td>
+                <td>Raises Sizz-type martial brilliant by 1.5%</td>
+            </tr>
+            <tr>
+                <td>Sizz-type Martial MP Cost -10%</td>
+                <td>Lowers Sizz-type martial MP cost by 10%</td>
+            </tr>
+            <tr class="grey">
+                <td>All Damage Down 1%</td>
+                <td>Reduces all damage taken by 1%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang Res +5%</td>
+                <td>Raises Bang Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Physical Res +5%</td>
+                <td>Raises Bang-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Martial Res +5%</td>
+                <td>Raises Bang-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Spell Res +5%</td>
+                <td>Raises Bang-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Bang-type Breath Res +5%</td>
+                <td>Raises Bang-type Breath Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap Res +5%</td>
+                <td>Raises Zap Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Physical Res +5%</td>
+                <td>Raises Zap-type Physical Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Martial Res +5%</td>
+                <td>Raises Zap-type Martial Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Spell Res +5%</td>
+                <td>Raises Zap-type Spell Res by 5%</td>
+            </tr>
+            <tr class="grey">
+                <td>Zap-type Breath Res +5%</td>
+                <td>Raises Zap-type Breath Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Poison Res +5%) x2</td>
+                <td>Raises Poison Res by 5%</td>
+            </tr>
+            <tr>
+                <td>(Confusion Res +5%) x2</td>
+                <td>Raises Confusion Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Martial Lock Res +5%</td>
+                <td>Raises Martial Lock Res by 5%</td>
+            </tr>
+            <tr>
+                <td>Charm Res +5%</td>
+                <td>Raises Charm Res by 5%</td>
             </tr>
         </tbody>
     </table>
