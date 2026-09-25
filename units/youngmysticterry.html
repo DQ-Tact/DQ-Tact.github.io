@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/fluffy.js"></script>
+    <script src="../unitscripts/youngmysticterry.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Fluffy</title>
+    <title>Young Mystic Terry</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Fluffy</h1>
+    <h1>Young Mystic Terry</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/Watabou.png" class="border">
+    <img src="../images/YoungMysticTerry.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
@@ -59,40 +59,40 @@
         </tr>
         <tr>
             <th scope="row">Weight:</th>
-            <td>50</td>
+            <td>60</td>
         </tr>
     </table>
-    <h2><strong>Leader Perk:</strong> <br>Martial MP Cost -10%</h2>
+    <h2><strong>Leader Perk:</strong> <br>Physical & Spell Potency +10%</h2>
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Sizz.png"></td>
-            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/Sleep.png"></td> 
-            <td><img src="../images/Status/Poison.png"></td>   
+            <td><img src="../images/Status/MrtlLock.png"></td> 
+            <td><img src="../images/Status/Stun.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zap.png"></td>
+            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/MrtlLock.png"></td> 
-            <td><img src="../images/Status/Charm.png"></td>
+            <td><img src="../images/Status/Curse.png"></td> 
+            <td><img src="../images/Status/Paralysis.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Confusion.png"></td>
+            <td><img src="../images/Status/Sleep.png"></td>
         </tr>
     </table>
     <table class="flat" id="details">
         <tr>
-            <th>Family:</th>
-            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <th>Family/<span class="subfamily">Subfamily</span>:</th>
+            <td><img class="metal" src="../images/Family/FamilyHero.png">/<img class="subfamily" src="../images/Family/FamilyDemon.png"></td>
             <th>Role:</th>
             <td><img class="metal" src="../images/Role/SupportType.png"></td>
             <th>Element:</th>
-            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
+            <td><img class="metal" src="../images/Role/WooshType.png"></td>
         </tr>
     </table>
     <div id="statfilter">
@@ -128,7 +128,7 @@
             <tr>
                 <th colspan="7" class="bigheader">Abilities</th>
             </tr>
-                        <tr>
+            <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
                 <th scope="col" style="min-width:100px">Name</th>
@@ -141,30 +141,39 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>M-Pathy</td>
-                <td>60</td>
+                <td><img src="../images/AttackType/BGreenSpell.png"></td>
+                <td>Mystic Healing*<br><div class="jp">魔導のいやし</div></td>
+                <td>62</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
-                <td>Restores a minor amount of MP for 1 ally other than self</td>
+                <td><img src="../images/AttackRange/Plus.png"><br>1-2 (incl. self)</td>
+                <td>Heals a moderate amount of HP and grants minor regeneration to all allies in area of effect for 3 turns</td>
             </tr>
             <tr>
-                <td>31</td>
-                <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>Miracle from the Stars*<br><div class="jp">星のきせき</div></td>
-                <td>36</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
-                <td>Raises 1 ally's ATK, DEF, AGL, and WIS for 3 turns</td>
+                <td>33</td>
+                <td><img src="../images/AttackType/ABlueSpell.png"></td>
+                <td>One-Eyed Spark*<br><div class="jp">ひとつめスパーク</div></td>
+                <td>136</td>
+                <td><img src="../images/Element/Zap.png"></td>
+                <td><img src="../images/AttackRange/AreaOfEffect.png"><br>2-4</td>
+                <td>Deals major Zap-type spell damage to all enemies in area of effect, occasionally lowers Spell Res for 3 turns</td>
             </tr>
             <tr>
-                <td>50</td>
-                <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>Guarded Spirit*<br><div class="jp">精霊の守り</div></td>
-                <td>32</td>
+                <td>54</td>
+                <td><img src="../images/AttackType/ABluePhysical.png"></td>
+                <td>Lunatick Tempest*<br><div class="jp">メーダテンペスト</div></td>
+                <td>93</td>
+                <td><img src="../images/Element/Woosh.png"></td>
+                <td><img src="../images/AttackRange/TwoHitAoE.png"><br>1-3</td>
+                <td>Deals moderate Woosh-type physical damage (210% potency) to 1 enemy in purple area and occasionally lowers DEF for 3 turns, deals moderate physical damage (200% potency) to all enemies in orange area and occasionally lowers DEF for 3 turns</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td><img src="../images/AttackType/ACoupGreenMartial.png"></td>
+                <td>Forbidden Trelixir*<br><div class="jp">禁断の秘薬</div></td>
+                <td>94</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Plus.png"><br>+ (incl. self)</td>
-                <td>Reduces damage taken for all allies in area of effect by 30% for 3 turns</td>
+                <td><img src="../images/AttackRange/RhombusLAoE.png"><br>Rhombus (L) (incl. self)</td>
+                <td>Heals a major amount of HP and restores a moderate amount of MP for all allies in area of effect, grants a barrier that that takes up to 500 damage for all allies in area of effect for 99 turns<br>Turns needed: 2 turns (Times usable: 2)</td>
             </tr>
         </tbody>
     </table>
@@ -188,18 +197,28 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>DEF +20</td>
-                <td>Raises max DEF by 20</td>
+                <td>AGL +20</td>
+                <td>Raises max AGL by 20</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Helpful Heal</td>
-                <td>When an ally (incl. self) is attacked by enemy:<br>Heal heals them if ally is within 1 to 2-space range (incl. self)<br><div class="attackdesc">(Heal: Heals a minor amount of HP for 1 ally)</div></td>
+                <td>Demon Dash*<br><div class="jp">デビルダッシュ</div></td>
+                <td>Battle start:<br>Raises AGL, Move, and reduces damage taken by 30% for 3 turns</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Show No More Mercy!*<br><div class="jp">もっとガンガンいこうぜ！</div></td>
+                <td>When attacking:<br>Triggers Show No More Mercy!*, up to 10 times per battle<br><div class="attackdesc">(Show No More Mercy!*: Raises physical and spell potency/recovery of all allies in large rhombus area of effect (incl. self) for 3 turns)</div></td>
             </tr>
             <tr>
                 <td>110, 120, 130, 140</td>
-                <td>Guarded Spirit* MP Cost -5%</td>
-                <td>Lowers Guarded Spirit* MP cost by 5%</td>
+                <td>Lunatick Tempest* potency +2%</td>
+                <td>Raises Lunatick Tempest* potency by 2%</td>
+            </tr>
+            <tr>
+                <td>110, 120, 130, 140</td>
+                <td>Forbidden Trelixir* recovery +2%</td>
+                <td>Raises Forbidden Trelixir* recovery by 2%</td>
             </tr>
             <tr>
                 <td>150</td>
@@ -223,33 +242,38 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Move +1</td>
-                <td>Raises Move by 1</td>
+                <td>Demonic Toolkit*<br><div class="jp">悪魔の道具箱</div></td><!--悪魔のバイシオロン | 悪魔のインテライザー-->
+                <td>When an ally (incl. self) makes a physical attack:<br>Triggers Demonic Party Booster* if ally is within 1 to 3-space range (incl. self)<br><div class="attackdesc">(Demonic Party Booster*: Raises 1 ally's ATK for 3 turns (self: 4 turns), raises 1 Hero or Demon ally's damage dealt for 3 turns (self: 4 turns))</div><br>When an ally (incl. self) makes a spell attack:<br>Triggers Demonic Kapingster* if ally is within 1 to 3-space range (incl. self)<br><div class="attackdesc">(Demonic Kapingster*: Raises 1 ally's WIS for 3 turns (self: 4 turns), raises 1 Hero or Demon ally's damage dealt for 3 turns (self: 4 turns))</div></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Woosh Res +25</td>
-                <td>Raises Woosh resistance by 25</td>
+                <td>Bang Res +25</td>
+                <td>Raises Bang resistance by 25</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Auto MP Regen (S)</td>
-                <td>Action start:<br>Restores 4% of max MP</td>
+                <td>Young Mystic*<br><div class="jp">魔導少年</div></td>
+                <td>Action start:<br>Heals 100 HP for all allies in the surrounding large rhombus (incl. self)<br><br>Before HP hits 0:<br>If there are 3 or more Hero or Demon allies (incl. self) in the party:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Guarded Spirit* MP Cost -10%</td>
-                <td>Lowers Guarded Spirit* MP cost by 10%</td>
+                <td>Lunatick Tempest* potency +5%</td>
+                <td>Raises Lunatick Tempest* potency by 5%</td>
+            </tr>
+            <tr>
+                <td>3, 5</td>
+                <td>Forbidden Trelixir* recovery +5%</td>
+                <td>Raises Forbidden Trelixir* recovery by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Zap Res +25</td>
-                <td>Raises Zap resistance by 25</td>
+                <td>Crack Res +25</td>
+                <td>Raises Crack resistance by 25</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>Fluffy's Rabble Rouser*<br><div class="jp">わたぼうのおうえん</div></td>
-                <td>When any other ally attacks:<br>Occasionally triggers Rabble Rouser if ally is within 1 to 2-space range<br><div class="attackdesc">(Rabble Rouser: Raises the Tension of 1 ally other than self for 1 turn)</div></td>
+                <td>Spell Reflect Shield</td>
+                <td>Battle start:<br>Grants a barrier that reflects spell attacks for 2 turns</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>

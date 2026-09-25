@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Protective Special Medicine*</title>
+    <title>Scruffy's Whims*</title>
 </head>
 <body>
     <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Protective Special Medicine*</h1>
+    <h1>Scruffy's Whims*</h1>
     <a class="return" href="../abilitylist.html">Return to Ability List</a>
         
     <table class="scroll fintable">
@@ -34,42 +34,47 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>Protective Special Medicine*<br><div class="jp">まもりの特やくそう</div></td>
-                <td>26</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
-                <td>Heals a moderate amount of HP and greatly raises DEF for 1 ally for 3 turns</td>
+                <td><img src="../images/AttackType/BBlueMartial.png"></td>
+                <td>Scruffy's Whims*<br><div class="jp">ワルぼうのきまぐれ</div></td>
+                <td>0</td>
+                <td><img src="../images/Element/Zam.png"></td>
+                <td><img src="../images/AttackRange/RhombusL.png"><br>Rhombus (L)</td>
+                <td>Deals moderate Zam-type martial damage (80 base potency) to all enemies in area of effect, very rarely puts to sleep, stuns, paralyses, charms, or confuses</td>
             </tr>
         </tbody>
     </table>
-
     <table class="scroll">
         <thead>
             <tr>
-                <th colspan="4" class="bigheader">Details</th>
+                <th colspan="5" class="bigheader">Details</th>
             </tr>
             <tr>
                 <th scope="col">No. of Attacks</th>
                 <th scope="col">Base Potency</th>
                 <th scope="col" style="min-width:200px">Damage Calc.</th> 
+                <th scope="col">Accuracy</th> 
                 <th scope="col" style="min-width:300px">Secondary Effect Chance</th>             
             </tr>
         </thead>
         <tbody>
-            <tr class="smallpadding">
+            <tr>
                 <td>1</td>
-                <td> 70 </td>
+                <td> 80 </td>
                 <td>[1 + (User's Level/91)] x Base Potency</td>
-                <td>100%:<br><div class="extra">Ally's DEF <img src="../images/Buffs/DEFup.png"> +2 (3 turns)</div></td>
+                <td>100%</td>
+                <td>10%:<br><div class="extra">Puts enemy to sleep <img src="../images/Status/Sleep.png"><br>Stuns enemy <img src="../images/Status/Stun.png"><br>Paralyses enemy <img src="../images/Status/Paralysis.png"><br>Confuses enemy <img src="../images/Status/Confusion.png"><br>Charms enemy <img src="../images/Status/Charm.png"></div></td>
             </tr>
         </tbody>
     </table>
 
     <h3>Units with this ability:</h3>
     <div class="group">
-        <a href="../units/scruffy.html"><img src="../images/Scruffy.png" class="border"></a>
-        <a href="../units/ironscorpion.html"><img src="../images/IronScorpion.png" class="border"></a>
+        <a class="none">No Units Available</a>
+    </div>
+
+    <h3>Perks that use this ability:</h3>
+    <div class="group">
+        <a class="perkattack" href="../perks/multiturnbuffs.html#ScruffyWhims">Scruffy's Whims*</a>
     </div>
 </body>
 </html>

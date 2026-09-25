@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Script information -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../unitscripts/fluffy.js"></script>
+    <script src="../unitscripts/picksy.js"></script>
 <!-- Merriweather font information -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <!-- Website tab icon (it's Majellan!)   -->
     <link rel="icon" type="image/x-icon" href="../icon.ico">
-    <title>Fluffy</title>
+    <title>Picksy</title>
 </head>
 
 <body>
 <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
-    <h1>Fluffy</h1>
+    <h1>Picksy</h1>
     <a href="../index.html">Return to Unit List</a>
     <div class="centred">
-    <img src="../images/Watabou.png" class="border">
+    <img src="../images/Picksy.png" class="border">
     </div>
     <table class="flat" id="level">
         <tr>
             <th scope="row">Lv:</th>
-            <td>150</td>
+            <td>120</td>
         </tr>
         <tr>
             <th scope="row">HP:</th>
@@ -59,40 +59,40 @@
         </tr>
         <tr>
             <th scope="row">Weight:</th>
-            <td>50</td>
+            <td>15</td>
         </tr>
     </table>
-    <h2><strong>Leader Perk:</strong> <br>Martial MP Cost -10%</h2>
+    <h2><strong>Leader Perk:</strong> <br>None</h2>
     <table class="flat" id="weakres">
         <tr>
             <th scope="row">Weaknesses:</th>
-            <td><img src="../images/Element/Sizz.png"></td>
-            <td><img src="../images/Element/Crack.png"></td>
+            <td><img src="../images/Element/Bang.png"></td>
+            <td><img src="../images/Element/Zap.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/Sleep.png"></td> 
-            <td><img src="../images/Status/Poison.png"></td>   
+            <td><img src="../images/Status/Blind.png"></td> 
+            <td><img src="../images/Status/Confusion.png"></td>   
         </tr>
         <tr>
             <th scope="row">Resistances:</th>
-            <td><img src="../images/Element/Woosh.png"></td>
-            <td><img src="../images/Element/Zap.png"></td>
+            <td><img src="../images/Element/Frizz.png"></td>
+            <td><img src="../images/Element/Zam.png"></td>
             <td class="large">/</td>
-            <td><img src="../images/Status/MrtlLock.png"></td> 
-            <td><img src="../images/Status/Charm.png"></td>
+            <td><img src="../images/Status/Sleep.png"></td> 
+            <td><img src="../images/Status/PhysLock.png"></td>
         </tr>
         <tr>
             <th scope="row">Immunities:</th>
-            <td><img src="../images/Status/Confusion.png"></td>
+            <td><img src="../images/Status/Stun.png"></td>
         </tr>
     </table>
     <table class="flat" id="details">
         <tr>
             <th>Family:</th>
-            <td><img class="metal" src="../images/Family/FamilyMystery.png"></td>
+            <td><img class="metal" src="../images/Family/FamilyDemon.png"></td>
             <th>Role:</th>
-            <td><img class="metal" src="../images/Role/SupportType.png"></td>
+            <td><img class="metal" src="../images/Role/AttackType.png"></td>
             <th>Element:</th>
-            <td><img class="metal" src="../images/Role/FrizzType.png"></td>
+            <td><img class="metal" src="../images/Role/CrackType.png"></td>
         </tr>
     </table>
     <div id="statfilter">
@@ -128,7 +128,7 @@
             <tr>
                 <th colspan="7" class="bigheader">Abilities</th>
             </tr>
-                        <tr>
+            <tr>
                 <th scope="col">Level</th>
                 <th scope="col">Type</th>
                 <th scope="col" style="min-width:100px">Name</th>
@@ -141,30 +141,21 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td><img src="../images/AttackType/BGreenMartial.png"></td>
-                <td>M-Pathy</td>
-                <td>60</td>
+                <td><img src="../images/AttackType/CBluePhysical.png"></td>
+                <td>Daunting Stab</td>
+                <td>5</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2</td>
-                <td>Restores a minor amount of MP for 1 ally other than self</td>
+                <td><img src="../images/AttackRange/StraightLine2.png"><br>Straight Line</td>
+                <td>Deals minor physical damage (105% potency) to all enemies in area of effect, occasionally lowers ATK for 3 turns</td>
             </tr>
             <tr>
-                <td>31</td>
-                <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>Miracle from the Stars*<br><div class="jp">星のきせき</div></td>
-                <td>36</td>
+                <td>16</td>
+                <td><img src="../images/AttackType/CRedPhysical.png"></td>
+                <td>Tackle</td>
+                <td>7</td>
                 <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Range1.png"><br>1-2 (incl. self)</td>
-                <td>Raises 1 ally's ATK, DEF, AGL, and WIS for 3 turns</td>
-            </tr>
-            <tr>
-                <td>50</td>
-                <td><img src="../images/AttackType/AGreenMartial.png"></td>
-                <td>Guarded Spirit*<br><div class="jp">精霊の守り</div></td>
-                <td>32</td>
-                <td><img src="../images/Element/Typeless.png"></td>
-                <td><img src="../images/AttackRange/Plus.png"><br>+ (incl. self)</td>
-                <td>Reduces damage taken for all allies in area of effect by 30% for 3 turns</td>
+                <td><img src="../images/AttackRange/Front1.png"><br>Front</td>
+                <td>Deals minor physical damage (110% potency) to 1 enemy, moves up to 2 spaces, only works if there are no enemies or obstacles between the user and target</td>
             </tr>
         </tbody>
     </table>
@@ -182,27 +173,12 @@
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
-                <td>Max HP +30</td>
-                <td>Raises max HP by 30</td>
+                <td>80, 90, 100, 110</td>
+                <td>Tackle potency +2%</td>
+                <td>Raises Tackle potency by 2%</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>DEF +20</td>
-                <td>Raises max DEF by 20</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Helpful Heal</td>
-                <td>When an ally (incl. self) is attacked by enemy:<br>Heal heals them if ally is within 1 to 2-space range (incl. self)<br><div class="attackdesc">(Heal: Heals a minor amount of HP for 1 ally)</div></td>
-            </tr>
-            <tr>
-                <td>110, 120, 130, 140</td>
-                <td>Guarded Spirit* MP Cost -5%</td>
-                <td>Lowers Guarded Spirit* MP cost by 5%</td>
-            </tr>
-            <tr>
-                <td>150</td>
+                <td>120</td>
                 <td>Ability Potency/Recovery +2%</td>
                 <td>Raises ability potency/recovery by 2%</td>
             </tr>
@@ -223,33 +199,23 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Move +1</td>
-                <td>Raises Move by 1</td>
+                <td>Demonic Faerie*<br><div class="jp">ようせい悪魔</div></td>
+                <td>Battle start:<br>Raises Move for 3 turns<br><br>Before HP hits 0:<br>If there are 4 or more Demon allies (incl. self) in the party:<br>Preserves HP at 1, 1 time per battle<br>This perk can be triggered by poison, special effect spaces, ally attacks, and reflected attacks, as well as counterattacks, follow-ups, and other attacks or effects triggered by perks</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>Woosh Res +25</td>
-                <td>Raises Woosh resistance by 25</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Auto MP Regen (S)</td>
-                <td>Action start:<br>Restores 4% of max MP</td>
+                <td>Frizz Res +25</td>
+                <td>Raises Frizz resistance by 25</td>
             </tr>
             <tr>
                 <td>3, 5</td>
-                <td>Guarded Spirit* MP Cost -10%</td>
-                <td>Lowers Guarded Spirit* MP cost by 10%</td>
+                <td>Tackle potency +5%</td>
+                <td>Raises Tackle potency by 5%</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Zap Res +25</td>
-                <td>Raises Zap resistance by 25</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Fluffy's Rabble Rouser*<br><div class="jp">わたぼうのおうえん</div></td>
-                <td>When any other ally attacks:<br>Occasionally triggers Rabble Rouser if ally is within 1 to 2-space range<br><div class="attackdesc">(Rabble Rouser: Raises the Tension of 1 ally other than self for 1 turn)</div></td>
+                <td>Zam Res +25</td>
+                <td>Raises Zam resistance by 25</td>
             </tr>
             <tr>
                 <td>1, 2, 3, 4, 5</td>
