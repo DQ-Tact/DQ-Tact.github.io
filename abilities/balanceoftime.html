@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Stylesheet for unit pages -->
+<link rel="stylesheet" href="../styles/abilitystyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Merriweather font information -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<!-- Website tab icon (it's Majellan!)   -->
+    <link rel="icon" type="image/x-icon" href="../icon.ico">
+    <title>Balance of Time*</title>
+</head>
+<body>
+    <!-- Multiple boxes at the top of the page detailing stats, weaknesses, etc. -->
+    <h1>Balance of Time*</h1>
+    <a class="return" href="../abilitylist.html">Return to Ability List</a>
+        
+    <table class="scroll fintable">
+        <thead>
+            <tr>
+                <th colspan="7" class="bigheader">Ability</th>
+            </tr>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col" style="min-width:100px">Name</th>
+                <th scope="col">MP</th>
+                <th scope="col">Element</th>
+                <th scope="col" style="min-width:50px">Range</th>
+                <th scope="col" style="min-width:300px">Description</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../images/AttackType/AGreenMartial.png"></td>
+                <td>Balance of Time*<br><div class="jp">時の天秤</div></td>
+                <td>0</td>
+                <td><img src="../images/Element/Typeless.png"></td>
+                <td><img src="../images/AttackRange/Range1.png"><br>Self</td>
+                <td>Heals a major amount of HP, restores a major amount of MP, and grants the user Overclock and Balance of Time for 3 turns<br>(Times usable: 1)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="scroll">
+        <thead>
+            <tr>
+                <th colspan="4" class="bigheader">Details</th>
+            </tr>
+            <tr>
+                <th scope="col">No. of Attacks</th>
+                <th scope="col">Base Potency</th>
+                <th scope="col" style="min-width:200px">Damage Calc.<br><div class="extra">MP Calculation is based on testing, and may not be entirely accurate</div></th> 
+                <th scope="col" style="min-width:300px">Secondary Effect Chance</th>             
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>148<br><div class="extra">(HP Heal)</div><br>110<br><div class="extra">(MP Heal)</div></td>
+                <td>[1 + (User's Level/91)] x Base Potency<br><br>[1 + (User's Level/332)] x Base Potency</td>
+                <td>100%:<br><div class="extra">User gains Overclock <img src="../images/Buffs/Overclock.png"> (3 turns)<br>User gains Balance of Time <img src="../images/Buffs/SpecialBuff.png"> (3 turns)</div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Units with this ability:</h3>
+    <div class="group">
+        <a href="../units/rigormortex.html"><img src="../images/RigorMortex.png" class="border"></a>
+    </div>
+</body>
+</html>
